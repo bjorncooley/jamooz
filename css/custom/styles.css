@@ -94,6 +94,9 @@ div, nav, form, textarea, input, a {
 a, a:visited {
   text-decoration: none; }
 
+.pointer {
+  cursor: pointer; }
+
 /* Clearfix */
 .group:after {
   content: "";
