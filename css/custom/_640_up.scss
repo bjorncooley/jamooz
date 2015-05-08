@@ -1,0 +1,29 @@
+h2 {
+
+    line-height: 1.3em;
+    padding-bottom: 40px;
+}
+
+#intro {
+
+    padding: 30px 0 60px;
+
+    h2 {
+
+        padding-top: 60px;
+    }
+}
+
+#support {
+
+    background: $mint url('../../img/home/support_background_tablet.png') no-repeat center;
+    min-height: 620px;
+}
+
+#schmooze {
+
+    h3 {
+
+        line-height: 1.5em;
+    }
+}

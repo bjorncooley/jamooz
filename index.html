@@ -1,167 +1,278 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
-    <link rel="stylesheet" href="css/foundation/foundation.css" />
-    <link rel="stylesheet" href="css/custom/styles.css">
-    <script src="js/vendor/modernizr.js"></script>
-  </head>
-  <body>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-      	<div class="panel">
-	        <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-	        <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-	        <p>Once you've exhausted the fun in this document, you should check out:</p>
-	        <div class="row">
-	        	<div class="large-4 medium-4 columns">
-	    		<p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-	    	</div>
-	        	<div class="large-4 medium-4 columns">
-	        		<p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-	        	</div>
-	        	<div class="large-4 medium-4 columns">
-	        		<p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-	        	</div>        
-					</div>
-      	</div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jamooz</title>
+        <link rel="stylesheet" href="css/foundation/foundation.css" />
+        <link rel="stylesheet" href="css/custom/styles.css">
         
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-12.columns" />
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-4 medium-4 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-4.columns" />
-				    </div>
-				    <div class="large-4 medium-4 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-4.columns" />
-				    </div>
-				    <div class="large-4 medium-4 columns">
-				      <div class="row collapse">
-				        <label>Input Label</label>
-				        <div class="small-9 columns">
-				          <input type="text" placeholder="small-9.columns" />
-				        </div>
-				        <div class="small-3 columns">
-				          <span class="postfix">.com</span>
-				        </div>
-				      </div>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Select Box</label>
-				      <select>
-				        <option value="husker">Husker</option>
-				        <option value="starbuck">Starbuck</option>
-				        <option value="hotdog">Hot Dog</option>
-				        <option value="apollo">Apollo</option>
-				      </select>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-6 medium-6 columns">
-				      <label>Choose Your Favorite</label>
-				      <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-				      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-				    </div>
-				    <div class="large-6 medium-6 columns">
-				      <label>Check these out</label>
-				      <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-				      <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Textarea Label</label>
-				      <textarea placeholder="small-12.columns"></textarea>
-				    </div>
-				  </div>
-				</form>
-      </div>     
-
-      <div class="large-4 medium-4 columns">
-			  <h5>Try one of these buttons:</h5>
-			  <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-				<div class="panel">
-        	<h5>So many components, girl!</h5>
-        	<p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-        	<a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
+    </head>
+    <body>
+        <header></header>
+        <div id="hero">
+            <div class="row">
+                <div class="large-12 columns text-center">
+                    <img src="img/shared/jamooz_logo_mobile.png" alt="Large Jamooz logo" class="padding-bottom-30 padding-top-30">
+                    <div class="show-for-small-only">
+                        <button class="radius large-10 columns max-275 medium-dark-gray-border no-background medium-dark-gray small-centered uppercase">Login</button>
+                        <button class="radius large-10 columns max-275 small-centered orange no-background orange-border uppercase">Sign Up</button>
+                        <button class="no-border no-background dark-gray radius large-10 columns max-275 small-centered uppercase">Support</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12 columns text-center">
+                    <h1>Ease Into a Better Communication Experience For
+                    Your Office Staff</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12 columns text-center">
+                    <img src="img/home/hero.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12 columns text-center">
+                    <button class="teal-background uppercase radius width-100-percent max-275">Get Started for 30 Days Free</button>
+                    <h6 class="small-9 columns small small-centered">a customer success teammate is ready to help</h6>
+                    <img src="img/shared/down_arrow_black.png" alt="" class="padding-top-15 padding-bottom-30" id="hero-down-arrow">
+                </div>
+            </div>
+        </div><!-- #hero -->
+        <div id="intro">
+            <div class="row show-for-medium-up padding-bottom-30">
+                <div class="large-3 columns">
+                    <img src="img/shared/jamooz_small_logo.png" alt="">
+                </div>
+                <div class="large-9 columns clearfix text-right padding-top-15">
+                        <button class="no-border no-background dark-gray radius large-3 columns small-centered uppercase max-150">Support</button>
+                        <button class="radius large-3 columns medium-dark-gray-border no-background medium-dark-gray small-centered uppercase max-150">Login</button>
+                        <button class="radius large-3 columns small-centered orange no-background orange-border uppercase max-150">Sign Up</button>
+                    
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="small-12 medium-6 columns text-center right">
+                    <img src="img/home/hardware_graphic.png" alt="" class="padding-bottom-30">
+                </div>
+                <div class="small-12 medium-6 columns text-left left">
+                    <h2 class="padding-bottom-15">Manage every device like never before.</h2>
+                    <p>Ten computers, six smartphones, three office phones, two intercoms, &amp; even one door bell. Connected through the same platform.</p>
+                </div>
+            </div>
+            <div class="orange-background white learn-section">
+                <div class="row">
+                    <div class="large-12 columns text-center">
+                        <h4 class="white small-12 columns small-centered">
+                            <div class="small-9 columns small-centered padding-bottom-50">Learn what hardware works with Jamooz</div>
+                        </h4>
+                        <h4 class="white-border white small-12 columns padding-top-8 padding-bottom-8 max-285 small-centered">See Hardware Integrations</h4>
+                    </div>
+                </div>
+            </div>
+        </div><!-- #intro -->
+        <div class="row clearfix" id="reliable">
+            <div class="small-12 large-6 columns text-center right">
+                <img src="img/home/reliable_graphic_mobile.png" class="padding-top-30 padding-bottom-30 hide-for-large-up center" alt="">
+                <img src="img/home/reliable_graphic_desktop.png" class="padding-top-30 padding-bottom-30 show-for-large-up" alt="">
+            </div>
+            <div class="small-12 large-6 columns small-centered left">
+                <h2 class="padding-bottom-30">A reliable platform using battle tested technology</h2>
+                <p>We’re like a power secretary. Every call, message, file, &amp; voicemail throughout your organization is distributed and managed securely. VoIP, PBX, SIP Trunking, &amp; encryption are combined to make up our reliable platform. We then curate our platform for you, so you don’t have to.</p>
+            </div>
         </div>
-      </div>
-    </div>
-    
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
+        <div class="dark-blue-background learn-section">
+            <div class="row">
+                <div class="large-12 columns text-center">
+                    <h4 class="white small-12 columns small-centered">
+                        <div class="small-9 columns small-centered padding-bottom-50">Learn what software works with Jamooz</div>
+                    </h4>
+                    <h4 class="small-12 columns medium-gray-border white padding-top-8 padding-bottom-8 max-285 small-centered">See Software Integrations</h4>
+                </div>
+            </div>
+        </div><!-- #reliable -->
+        <div class="row padding-top-50 padding-bottom-50" id="analytics">
+            <div class="small-12 medium-6 columns">            
+                <img src="img/home/analytics_graphic.png" alt="">
+            </div>
+            <div class="small-12 medium-6 columns">
+                <h2>Phone analytics for success measurement &amp;
+                team feedback</h2>
+                <p>Jamooz takes analytics to the next step with actions.
+                See where all of your team's efforts are being put.
+                Then share the stats with your team to highlight areas
+                of improvement.</p>
+            </div>
+        </div><!-- #analytics -->
+        <div class="light-gray-background padding-top-50 padding-bottom-50" id="customer-success">
+            <div class="row clearfix">
+                <div class="text-center small-12 medium-6 columns right">
+                    <img src="img/home/customer_success_graphic.png" alt="">
+                </div>
+                <div class="small-12 medium-6 columns left">
+                    <h2 class="padding-top-50 padding-bottom-30">A customer success teammate at every step</h2>
+                    <p>Your communication experience should feel lightweight from setup to adoption. Our success guide makes every step easier. Your success teammates will set you up for success. We also make ourselves available 24/7 by phone, e-mail, and text to identify and solve your problems quickly.</p>
+                </div>
+            </div>
+        </div><!-- #customer-success -->
+        <div class="row padding-top-30 padding-bottom-50" id="schmooze">
+            <div class="small-12 large-6 columns text-center">
+                <img src="img/home/phone_demo.png" alt="">
+            </div>
+            <div class="small-12 large-6 columns text-center">
+                <h2 class="text-left mint light condensed">
+                    <div class="row">
+                        <div class="hide-for-large-up">
+                            <div class="small-12 columns">Coming in 2015:</div>
+                            <div class="small-12 columns">Schmooze by Jamooz</div>
+                        </div>
+                        <div class="show-for-large-up">
+                            <div class="large-12 columns">Coming in 2015: Schmooze by Jamooz</div>
+                        </div>
+                    </div>
+                </h2>
+                <h3 class="text-left padding-bottom-15">Jamooz technology, curated. Phone, messaging,
+                voicemail, &amp; file sharing redesigned for personal
+                use &amp; collaboration.</h3>
+                <p class="text-left">View all of your communication channels in one view.
+                Or revolutionize your team communication with a circuit
+                board of real time team communication.</p>
+            </div>
+        </div><!-- #schmooze -->
+        <div class="medium-blue-background" id="trial">
+            <div class="row">
+                <div class="large-12 columns text-center">
+                    <h4 class="white light padding-top-50 padding-bottom-50 small expanded">We give every new customer a free 30 day trial to test run our service with 1-3 extensions. Get started with a Customer Success Teammate.</h4>
+                </div>
+            </div>
+            <div class="row">
+                <form action="">
+                    <div class="row">
+                        <div class="large-6 small-10 columns small-centered text-center">
+                            <input type="text" placeholder="Your Full Name" class="placeholder-medium-gray  radius large padding-15">
+                        </div>
+                        <div class="large-6 small-10 columns small-centered">
+                            <input type="text" placeholder="Email Address" class="placeholder-medium-gray radius large padding-15">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-12 columns text-center">
+                            <button class="red-orange-background radius width-100-percent max-285 uppercase">Get Started For 30 Days Free</button>
+                            <div class="row">
+                                <p class="tiny white small-6 columns small-centered">a customer success teammate is ready to help</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div><!-- #trial -->
+        <div class="row padding-bottom-30" id="process">
+            <div class="large-12 columns text-center padding-top-30 padding-bottom-30">
+                <h1 class="large expanded">How Does The Process Work?</h1>
+            </div>
+            <div class="large-12 columns text-center">
+                <p>We’ve simplified things for you so it reduces headache and increases your productivity and effectiveness.</p>
+            </div>
+            <div class="row">
+                <div class="small-12 large-4 columns text-center">
+                    <img src="img/shared/plan_icon.png" alt="">
+                    <p class="uppercase tiny normal padding-top-15">Select Base Plan</p>
+                </div>
+                <div class="small-12 large-4 columns text-center">
+                    <img src="img/shared/app_icon.png" alt="">
+                    <p class="uppercase tiny normal padding-top-15">Add Apps &amp; Add-Ons</p>
+                </div>
+                <div class="small-12 large-4 columns text-center">
+                    <img src="img/shared/support_icon.png" alt="">
+                    <p class="uppercase tiny normal padding-top-15">24/7 Personal Support</p>
+                </div>
+            </div>
+        </div><!-- #process -->
+        <div class="padding-top-50" id="support">
+            <div class="row text-center">
+                <button class="red-orange-background small-10 large-4 radius-7 padding-15">
+                    <div class="show-for-small-only">
+                        <div class="small-12 columns uppercase normal">
+                            Need Support?
+                        </div>
+                        <div class="small-12 columns uppercase normal">
+                            Contact Us Here
+                        </div>
+                    </div>
+                    <div class="show-for-medium-up">
+                        <div class="uppercase normal">Need Support? Contact Us Here</div>
+                    </div>
+                </button>
+            </div>
+            <div class="row text-center">
+                
+            </div>
+        </div><!-- #support -->
+        <div class="dark-gray-background white" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="large-12 columns text-center hide-for-large-up">
+                        <img src="img/shared/jamooz_logo_white.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 large-4 columns small-centered large-uncentered">
+                        <div class="row">
+                            <div class="small-6 columns">
+                                <ul class="text-center">
+                                    <li class="strong">Jamooz</li>
+                                    <li>Home</li>
+                                    <li>Pricing</li>
+                                    <li>Integrations</li>
+                                    <li>Apps</li>
+                                    <li>Devices</li>
+                                </ul>
+                            </div>
+                            <div class="small-6 columns">
+                                <ul class="text-center">
+                                    <li class="strong">About Us</li>
+                                    <li>Company</li>
+                                    <li>Our Team</li>
+                                    <li>Jobs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-for-large-up large-4 columns text-center">
+                        <img src="img/shared/jamooz_logo_white.png" alt="">
+                    </div>
+                    <div class="small-12 large-4 columns small-centered large-uncentered">
+                        <div class="row">
+                            <div class="small-6 columns">
+                                <ul class="text-center">
+                                    <li class="strong">Details</li>
+                                    <li>API</li>
+                                    <li>Blog</li>
+                                    <li>Privacy</li>
+                                    <li>Terms</li>
+                                </ul>
+                            </div>
+                            <div class="small-6 columns">
+                                <ul class="text-center">
+                                    <li class="strong">Support</li>
+                                    <li>Contact Us</li>
+                                    <li>Setup Guide</li>
+                                    <li>Sales</li>
+                                    <li>Corporate</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="small text-center padding-top-50">Jamooz Corp | Copyright 2015</p>
+            </div>
+        </div><!-- #footer -->
+        <footer>
+            <link href='http://fonts.googleapis.com/css?family=Roboto:500,400,300,100' rel='stylesheet' type='text/css'>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+            <script src="js/vendor/modernizr.js"></script>
+            <script src="js/functions.js"></script>
+        </footer>
+    </body>
 </html>
