@@ -45,7 +45,7 @@
                                 </div>
                             </div>
                             
-                            <div class="red-orange-background white text-center padding-top-30 padding-bottom-30">
+                            <div class="red-orange-background white text-center padding-top-30 padding-bottom-30 caption">
                                 <h4 class="uppercase">Startup</h4>
                             </div>
                         </div>
@@ -64,7 +64,7 @@
                                 </div>
                             </div>
                             
-                            <div class="red-orange-background white text-center padding-top-30 padding-bottom-30">
+                            <div class="red-orange-background white text-center padding-top-30 padding-bottom-30 caption">
                                 <h4 class="uppercase">Small Business</h4>
                             </div>
                         </div>
@@ -80,7 +80,7 @@
                                 </div>
                             </div>
                             
-                            <div class="red-orange-background white text-center padding-top-30 padding-bottom-30">
+                            <div class="red-orange-background white text-center padding-top-30 padding-bottom-30 caption">
                                 <h4 class="uppercase">Enterprise</h4>
                             </div>
                         </div>

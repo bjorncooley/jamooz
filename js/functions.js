@@ -25,6 +25,16 @@ $(function(){
         $('html, body').animate({ scrollTop: $('#intro').offset()['top']}, 800);
     });
 
+    // Activate plan cards when selected
+    $('#step-2 .plan-card').click(function(){
+
+        $(this).addClass('selected');
+        $(this).siblings().removeClass('selected');
+
+        $(this).find('img').attr('src', 'img/get-started/blue-check-icon-mobile.png');
+        $(this).siblings().find('img').attr('src', 'img/get-started/yellow-plus-icon-mobile.png');
+    });
+
     // Card swapping for Get Started page
 
     $('#step-2 .right-arrow').click(function(){
@@ -87,6 +97,7 @@ function movePlanCards() {
 
             i += 1;
         });
+        
     } else if ( cards_moved = true ) {
 
         $('.plan-card').each(function(){

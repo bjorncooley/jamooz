@@ -305,7 +305,12 @@ button.yellow-background {
 /* ------------------- */
 .plan-card {
   margin-bottom: 50px;
-  max-width: 80%; }
+  max-width: 80%;
+  cursor: pointer; }
+  .plan-card .caption {
+    background-color: #e25736; }
+  .plan-card.selected .caption {
+    background-color: #3f55af; }
   .plan-card p, .plan-card h4 {
     padding: 0 15px; }
   .plan-card p {

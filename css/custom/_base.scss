@@ -89,6 +89,20 @@ button.yellow-background {
 
     margin-bottom: 50px;
     max-width: 80%;
+    cursor: pointer;
+
+    .caption {
+
+        background-color: $red-orange;
+    }
+
+    &.selected {
+
+        .caption {
+
+            background-color: $medium-blue;
+        }
+    }
 
     p, h4 {
 
