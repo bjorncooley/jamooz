@@ -5,6 +5,37 @@ button {
     padding: 0.7em;
 }
 
+button.yellow-background {
+
+    width: 220px;
+    @include border_radius(5px);
+    padding: 15px 0;
+}
+
+/* --------------------- */
+/* --- HEADER/FOOTER --- */
+/* --------------------- */
+
+
+#footer {
+
+    padding-bottom: 15px;
+
+    img {
+
+        padding: 80px 0 60px;
+    }
+
+    .strong {
+
+        padding-bottom: 15px;
+    }
+}
+
+/* ----------------- */
+/* --- HOME PAGE --- */
+/* ----------------- */
+
 .learn-section {
 
     padding: 70px 0;
@@ -44,18 +75,86 @@ button {
     min-height: 512px;
 }
 
-#footer {
 
-    padding-bottom: 15px;
+/* ------------------- */
+/* --- GET STARTED --- */
+/* ------------------- */
+
+.plan-card {    
+
+    margin-bottom: 50px;
+    max-width: 80%;
+
+    p, h4 {
+
+        padding: 0 15px;
+    }
+
+    p {
+
+        margin-bottom: 0;
+    }
+
+
 
     img {
 
-        padding: 80px 0 60px;
+        position: relative;
+        top: 27px;
     }
 
-    .strong {
+    .shadowed {
+        
+        // To get connected faded shadows all the way around, need redundant shadows
+        box-shadow:
+              2px 2px 5px $medium-gray,
+              2px -2px 5px $medium-gray,
+              -2px -2px 5px $medium-gray,
+              -2px 2px 5px $medium-gray;
+        position: relative;
+        padding: 50px 0 0 0;
 
-        padding-bottom: 15px;
+        .card-text {
+
+            height: 110px;
+        }
     }
 }
 
+#step-1 {
+
+    h4, form {
+
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+#step-2 {
+
+    .left-arrow, .right-arrow {
+        position: absolute;
+        top: 345px;
+        cursor: pointer;
+    }
+
+    .left-arrow {
+
+        left: 0;
+    }
+
+    .right-arrow {
+
+        right: 0;
+    }
+}
+
+#step-3 {
+
+    h4 {
+
+        max-width: 400px;
+        margin: 15px auto;
+        font-weight: 100;
+    }
+}

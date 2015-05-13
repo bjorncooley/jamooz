@@ -1,4 +1,5 @@
 <?php include('includes/header.php'); ?>
+        <div id="hero">
             <div class="row">
                 <div class="large-12 columns text-center">
                     <h1>Ease Into a Better Communication Experience For
@@ -200,4 +201,5 @@
                 
             </div>
         </div><!-- #support -->
+        
 <?php include('includes/footer.php'); ?>

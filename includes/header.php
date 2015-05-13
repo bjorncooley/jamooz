@@ -10,7 +10,7 @@
     </head>
     <body>
         <header></header>
-        <div id="hero">
+        <div id="nav">
             <div class="row">
                 <div class="large-12 columns text-center">
                     <img src="img/shared/jamooz_logo_mobile.png" alt="Large Jamooz logo" class="padding-bottom-30 padding-top-30">
@@ -21,3 +21,4 @@
                     </div>
                 </div>
             </div>
+        </div>
