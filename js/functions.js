@@ -9,9 +9,7 @@ $(window).load(function(){
 
     // Check whether we need to rearrange the plan cards on the
     // get started page
-    movePlanCards();
-
-    
+    movePlanCards();    
 });
 
 $(window).resize(function(){
@@ -29,7 +27,7 @@ $(function(){
 
     // Card swapping for Get Started page
 
-    $('#step-2 .left-arrow').click(function(){
+    $('#step-2 .right-arrow').click(function(){
 
         var $current = $('.plan-card.current');
         var $next = $current.next();
@@ -45,11 +43,11 @@ $(function(){
         // Make sure the next card is in the correct position
         $next.css('left', offset + 'px');
 
-        $current.animate({ left: "-=" + width,}, 800).removeClass('current');
-        $next.animate({ left: "-=" + width,}, 800).addClass('current');
+        $current.animate({ left: "-=" + width,}, 500).removeClass('current');
+        $next.animate({ left: "-=" + width,}, 500).addClass('current');
     });
 
-    $('#step-2 .right-arrow').click(function(){
+    $('#step-2 .left-arrow').click(function(){
 
         var $current = $('.plan-card.current');
         var $next = $current.prev();
@@ -65,14 +63,14 @@ $(function(){
         // Make sure the next card is in the correct position
         $next.css('left', '-' + width + 'px');
 
-        $current.animate({ left: "+=" + offset,}, 800).removeClass('current');
-        $next.animate({ left: "+=" + offset,}, 800).addClass('current');
+        $current.animate({ left: "+=" + offset,}, 500).removeClass('current');
+        $next.animate({ left: "+=" + offset,}, 500).addClass('current');
     });
 });
 
 function movePlanCards() {
 
-    if ( $(window).width() < 640 ) {
+    if ( $('body').css('position') == 'relative' ) {
 
         cards_moved = true;
 

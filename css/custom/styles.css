@@ -253,6 +253,9 @@ p.tiny {
 .margin-top-15 {
   margin-top: 15px; }
 
+body {
+  position: relative; }
+
 button {
   font-size: 0.9em;
   letter-spacing: 0.03em;
@@ -337,6 +340,9 @@ button.yellow-background {
   font-weight: 100; }
 
 @media only screen and (min-width: 640px) {
+  body {
+    position: static; }
+
   h2 {
     line-height: 1.3em;
     padding-bottom: 40px; }
