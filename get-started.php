@@ -24,7 +24,7 @@
             </div>
         </div>
     </div><!-- #step-1 -->
-    <div  id="step-2" class="padding-bottom-50 padding-top-50">
+    <div id="step-2" class="card-section padding-bottom-50 padding-top-50">
         <div class="row">
             <div class="large-12 columns relative">
                 <h1 class="text-center padding-bottom-50">Step 2: Pick Your Perfect Plan</h1>
@@ -93,8 +93,8 @@
                     </div>
                 </div>
             </div>
-        </div><!-- #step-2 -->
-    </div>
+        </div>
+    </div><!-- #step-2 -->
     <div class="medium-blue-background padding-top-80 padding-bottom-80" id="step-3">
         <div class="row white">
             <div class="large-12 columns text-center padding-bottom-30">

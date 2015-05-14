@@ -35,9 +35,11 @@ $(function(){
         $(this).siblings().find('img').attr('src', 'img/get-started/yellow-plus-icon-mobile.png');
     });
 
-    // Card swapping for Get Started page
+    // Card swapping
 
-    $('#step-2 .right-arrow').click(function(){
+    $('#step-2 .right-arrow, #discounts .right-arrow').click(function(){
+
+        console.log("Clicked");
 
         var $current = $('.plan-card.current');
         var $next = $current.next();
@@ -57,7 +59,7 @@ $(function(){
         $next.animate({ left: "-=" + width,}, 500).addClass('current');
     });
 
-    $('#step-2 .left-arrow').click(function(){
+    $('#step-2 .left-arrow, #discounts .left-arrow').click(function(){
 
         var $current = $('.plan-card.current');
         var $next = $current.prev();
@@ -97,7 +99,7 @@ function movePlanCards() {
 
             i += 1;
         });
-        
+
     } else if ( cards_moved = true ) {
 
         $('.plan-card').each(function(){

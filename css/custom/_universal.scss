@@ -17,6 +17,30 @@ li {
   -moz-border-radius: $radius;
 }
 
+@mixin top_left_border_radius($radius) {
+
+  border-top-left-radius: $radius;
+  -moz-border-top-left-radius: $radius;
+}
+
+@mixin top_right_border_radius($radius) {
+
+  border-top-right-radius: $radius;
+  -moz-border-top-right-radius: $radius;
+}
+
+@mixin bottom_right_border_radius($radius) {
+
+  border-bottom-right-radius: $radius;
+  -moz-border-bottom-right-radius: $radius;
+}
+
+@mixin bottom_left_border_radius($radius) {
+
+  border-bottom-left-radius: $radius;
+  -moz-border-bottom-left-radius: $radius;
+}
+
 @mixin placeholder_color($color){
   &::-webkit-input-placeholder { /* WebKit browsers */
       color:    $color;

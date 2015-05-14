@@ -37,6 +37,92 @@ button.yellow-background {
     }
 }
 
+
+/* --------------------- */
+/* --- HEADER/FOOTER --- */
+/* --------------------- */
+
+.card-section {
+
+    .left-arrow, .right-arrow {
+        position: absolute;
+        top: 345px;
+        cursor: pointer;
+        z-index: 99;
+    }
+
+    .left-arrow {
+
+        left: 0;
+    }
+
+    .right-arrow {
+
+        right: 0;
+    }
+
+    .card-container {
+
+        overflow: hidden;
+        padding-top: 10px;
+    }
+
+    .plan-card {    
+
+        margin-bottom: 50px;
+        max-width: 80%;
+        cursor: pointer;
+
+        .caption {
+
+            background-color: $red-orange;
+        }
+
+        &.selected {
+
+            .caption {
+
+                background-color: $medium-blue;
+            }
+        }
+
+        p, h4 {
+
+            padding: 0 15px;
+        }
+
+        p {
+
+            margin-bottom: 0;
+        }
+
+
+
+        img {
+
+            position: relative;
+            top: 27px;
+        }
+
+        .shadowed {
+            
+            // To get connected faded shadows all the way around, need redundant shadows
+            box-shadow:
+                  2px 2px 5px $medium-gray,
+                  2px -2px 5px $medium-gray,
+                  -2px -2px 5px $medium-gray,
+                  -2px 2px 5px $medium-gray;
+            position: relative;
+            padding: 50px 0 0 0;
+
+            .card-text {
+
+                height: 110px;
+            }
+        }
+    }
+}
+
 /* ----------------- */
 /* --- HOME PAGE --- */
 /* ----------------- */
@@ -85,60 +171,6 @@ button.yellow-background {
 /* --- GET STARTED --- */
 /* ------------------- */
 
-.plan-card {    
-
-    margin-bottom: 50px;
-    max-width: 80%;
-    cursor: pointer;
-
-    .caption {
-
-        background-color: $red-orange;
-    }
-
-    &.selected {
-
-        .caption {
-
-            background-color: $medium-blue;
-        }
-    }
-
-    p, h4 {
-
-        padding: 0 15px;
-    }
-
-    p {
-
-        margin-bottom: 0;
-    }
-
-
-
-    img {
-
-        position: relative;
-        top: 27px;
-    }
-
-    .shadowed {
-        
-        // To get connected faded shadows all the way around, need redundant shadows
-        box-shadow:
-              2px 2px 5px $medium-gray,
-              2px -2px 5px $medium-gray,
-              -2px -2px 5px $medium-gray,
-              -2px 2px 5px $medium-gray;
-        position: relative;
-        padding: 50px 0 0 0;
-
-        .card-text {
-
-            height: 110px;
-        }
-    }
-}
 
 #step-1 {
 
@@ -146,26 +178,6 @@ button.yellow-background {
 
         max-width: 500px;
         margin: 0 auto;
-    }
-}
-
-#step-2 {
-
-    .left-arrow, .right-arrow {
-        position: absolute;
-        top: 345px;
-        cursor: pointer;
-        z-index: 99;
-    }
-
-    .left-arrow {
-
-        left: 0;
-    }
-
-    .right-arrow {
-
-        right: 0;
     }
 }
 
@@ -178,3 +190,66 @@ button.yellow-background {
         font-weight: 100;
     }
 }
+
+
+/* ----------------------------- */
+/* --- HARDWARE INTEGRATIONS --- */
+/* ----------------------------- */
+
+#hardware-hero {
+
+    background: url(../../img/hardware/hero_background.png) no-repeat 70%;
+}
+
+#hardware-intro {
+
+    padding-top: 30px;
+}
+
+#story-1, #story-2, #story-3, #hardware-intro {
+
+    text-align: center;
+
+    img {
+        padding: 20px 0;
+    }
+}
+
+#all-in-one {
+
+    .button-container {
+
+        cursor: pointer;
+        
+        button, div {
+
+            height: 40px;
+        }
+
+        button {
+
+            padding-right: 50px;
+            @include top_left_border_radius(5px);
+            @include bottom_left_border_radius(5px);
+        }
+
+        div {
+            line-height: 34px;
+            padding: 0 10px;
+            border-left: 1px solid white;
+            @include top_right_border_radius(5px);
+            @include bottom_right_border_radius(5px);
+        }
+    }
+}
+
+#discounts {
+
+    h1 {
+
+        border-bottom: 1px solid $dark-gray;
+        max-width: 70%;
+        margin: 0 auto 60px;
+    }
+}
+

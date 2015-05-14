@@ -277,6 +277,43 @@ button.yellow-background {
   #footer .strong {
     padding-bottom: 15px; }
 
+/* --------------------- */
+/* --- HEADER/FOOTER --- */
+/* --------------------- */
+.card-section .left-arrow, .card-section .right-arrow {
+  position: absolute;
+  top: 345px;
+  cursor: pointer;
+  z-index: 99; }
+.card-section .left-arrow {
+  left: 0; }
+.card-section .right-arrow {
+  right: 0; }
+.card-section .card-container {
+  overflow: hidden;
+  padding-top: 10px; }
+.card-section .plan-card {
+  margin-bottom: 50px;
+  max-width: 80%;
+  cursor: pointer; }
+  .card-section .plan-card .caption {
+    background-color: #e25736; }
+  .card-section .plan-card.selected .caption {
+    background-color: #3f55af; }
+  .card-section .plan-card p, .card-section .plan-card h4 {
+    padding: 0 15px; }
+  .card-section .plan-card p {
+    margin-bottom: 0; }
+  .card-section .plan-card img {
+    position: relative;
+    top: 27px; }
+  .card-section .plan-card .shadowed {
+    box-shadow: 2px 2px 5px #787878, 2px -2px 5px #787878, -2px -2px 5px #787878, -2px 2px 5px #787878;
+    position: relative;
+    padding: 50px 0 0 0; }
+    .card-section .plan-card .shadowed .card-text {
+      height: 110px; }
+
 /* ----------------- */
 /* --- HOME PAGE --- */
 /* ----------------- */
@@ -303,46 +340,52 @@ button.yellow-background {
 /* ------------------- */
 /* --- GET STARTED --- */
 /* ------------------- */
-.plan-card {
-  margin-bottom: 50px;
-  max-width: 80%;
-  cursor: pointer; }
-  .plan-card .caption {
-    background-color: #e25736; }
-  .plan-card.selected .caption {
-    background-color: #3f55af; }
-  .plan-card p, .plan-card h4 {
-    padding: 0 15px; }
-  .plan-card p {
-    margin-bottom: 0; }
-  .plan-card img {
-    position: relative;
-    top: 27px; }
-  .plan-card .shadowed {
-    box-shadow: 2px 2px 5px #787878, 2px -2px 5px #787878, -2px -2px 5px #787878, -2px 2px 5px #787878;
-    position: relative;
-    padding: 50px 0 0 0; }
-    .plan-card .shadowed .card-text {
-      height: 110px; }
-
 #step-1 h4, #step-1 form {
   max-width: 500px;
   margin: 0 auto; }
-
-#step-2 .left-arrow, #step-2 .right-arrow {
-  position: absolute;
-  top: 345px;
-  cursor: pointer;
-  z-index: 99; }
-#step-2 .left-arrow {
-  left: 0; }
-#step-2 .right-arrow {
-  right: 0; }
 
 #step-3 h4 {
   max-width: 400px;
   margin: 15px auto;
   font-weight: 100; }
+
+/* ----------------------------- */
+/* --- HARDWARE INTEGRATIONS --- */
+/* ----------------------------- */
+#hardware-hero {
+  background: url(../../img/hardware/hero_background.png) no-repeat 70%; }
+
+#hardware-intro {
+  padding-top: 30px; }
+
+#story-1, #story-2, #story-3, #hardware-intro {
+  text-align: center; }
+  #story-1 img, #story-2 img, #story-3 img, #hardware-intro img {
+    padding: 20px 0; }
+
+#all-in-one .button-container {
+  cursor: pointer; }
+  #all-in-one .button-container button, #all-in-one .button-container div {
+    height: 40px; }
+  #all-in-one .button-container button {
+    padding-right: 50px;
+    border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px; }
+  #all-in-one .button-container div {
+    line-height: 34px;
+    padding: 0 10px;
+    border-left: 1px solid white;
+    border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px; }
+
+#discounts h1 {
+  border-bottom: 1px solid #434343;
+  max-width: 70%;
+  margin: 0 auto 60px; }
 
 @media only screen and (min-width: 640px) {
   body {
@@ -351,6 +394,9 @@ button.yellow-background {
   h2 {
     line-height: 1.3em;
     padding-bottom: 40px; }
+
+  .card-section .left-arrow, .card-section .right-arrow {
+    display: none; }
 
   #intro {
     padding: 30px 0 60px; }
@@ -364,11 +410,17 @@ button.yellow-background {
   #schmooze h3 {
     line-height: 1.5em; }
 
-  #step-2 .left-arrow, #step-2 .right-arrow {
-    display: none; }
-
   .plan-card .shadowed .card-text {
-    height: 170px; } }
+    height: 170px; }
+
+  /* ----------------------------- */
+  /* --- HARDWARE INTEGRATIONS --- */
+  /* ----------------------------- */
+  #hardware-hero {
+    background-position: center; }
+
+  #hardware-intro {
+    padding-top: 120px; } }
 @media only screen and (min-width: 1025px) {
   h1 {
     font-size: 2em; }

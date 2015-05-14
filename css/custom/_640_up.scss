@@ -9,6 +9,14 @@ h2 {
     padding-bottom: 40px;
 }
 
+.card-section {
+
+    .left-arrow, .right-arrow {
+
+        display: none;
+    }
+}
+
 #intro {
 
     padding: 30px 0 60px;
@@ -33,15 +41,6 @@ h2 {
     }
 }
 
-#step-2 {
-
-    .left-arrow, .right-arrow {
-
-        display: none;
-    }
-}
-
-
 .plan-card {
 
     .shadowed {
@@ -57,4 +56,19 @@ h2 {
 
 
     }
+}
+
+
+/* ----------------------------- */
+/* --- HARDWARE INTEGRATIONS --- */
+/* ----------------------------- */
+
+#hardware-hero {
+
+    background-position: center;
+}
+
+#hardware-intro {
+
+    padding-top: 120px;
 }
