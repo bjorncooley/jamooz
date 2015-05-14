@@ -84,7 +84,7 @@ input {
   padding: 15px;
 }
 
-.white {
+.white, .white:hover {
 
   color: white;
 }
@@ -122,6 +122,11 @@ input {
 .medium-dark-gray, .medium-dark-gray:hover, .medium-dark-gray:focus {
 
   color: $medium-dark-gray;
+}
+
+.medium-dark-gray-background {
+
+  background-color: $medium-dark-gray;
 }
 
 .medium-dark-gray-border {
@@ -300,6 +305,7 @@ h1.expanded {
 h1.large {
 
   font-size: 2.2em;
+  line-height: 1.7em;
 }
 
 h2.condensed {

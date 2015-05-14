@@ -69,7 +69,6 @@ button.yellow-background {
 
     .plan-card {    
 
-        margin-bottom: 50px;
         max-width: 80%;
         cursor: pointer;
 
@@ -199,6 +198,12 @@ button.yellow-background {
 #hardware-hero {
 
     background: url(../../img/hardware/hero_background.png) no-repeat 70%;
+
+    h4 {
+        
+        
+        line-height: 1.8em;
+    }
 }
 
 #hardware-intro {
@@ -253,3 +258,28 @@ button.yellow-background {
     }
 }
 
+#hardware-support {
+
+    margin-top: 50px;
+
+    a.white-border {
+
+        padding: 8px 30px;
+        display: inline-block;
+        width: 170px;
+        letter-spacing: 0.05em;
+    }
+}
+
+#hardware-trial {
+
+    input, button {
+
+        @include border_radius(5px);
+    }
+
+    h4 {
+
+        line-height: 2em;
+    }
+}

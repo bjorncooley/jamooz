@@ -1,18 +1,34 @@
 var card_margin=0;
 var cards_moved = false;
+var mobile = false;
 
 $(window).load(function(){
-    var plan_card_height = $('.plan-card').height();
-    var container_height = $('.card-container').height();
 
-    $('.card-container').height(container_height - plan_card_height * 2);
+    if ( $('body').css('position') == 'relative' ) {
 
-    // Check whether we need to rearrange the plan cards on the
-    // get started page
-    movePlanCards();    
+        mobile = true;
+
+        var plan_card_height = $('.plan-card').height();
+        var container_height = $('.card-container').height();
+
+        $('.card-container').height(container_height - plan_card_height * 2);
+
+        movePlanCards();  
+    }
+
+      
 });
 
 $(window).resize(function(){
+
+    if ( $('body').css('position') == 'relative' ) {
+
+        mobile = true;
+        
+    } else {
+
+        mobile = false;
+    }
 
     movePlanCards();
 });
@@ -82,7 +98,7 @@ $(function(){
 
 function movePlanCards() {
 
-    if ( $('body').css('position') == 'relative' ) {
+    if ( mobile == true ) {
 
         cards_moved = true;
 

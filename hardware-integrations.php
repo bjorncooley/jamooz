@@ -5,10 +5,10 @@
         <div class="large-12 columns">
             <h1 class="large">Hardware Integrations<br />One Platform.</h1>
         </div>
-        <div class="large-12 columns padding-top-50">
-            <h3>Communication occurs on so many devices. Integration is typcially a nightmare.
+        <div class="large-12 columns padding-top-30">
+            <h4 class="light">Communication occurs on so many devices. Integration is typcially a nightmare.
             We simplify it. And if you have a problem, we're available to walk you through it,
-            24/7.</h3>
+            24/7.</h4>
         </div>
         <div class="large-12 columns text-center padding-top-30">
             <img src="img/hardware-integrations/white_down_arrow.png" alt="">
@@ -146,5 +146,60 @@
         </div>
     </div>
 </div><!-- #discounts -->
+<div id="hardware-support">
+    <div class="row">
+        <div class="small-12 columns text-center padding-bottom-30">
+            <h3>Got Questions? See our <a href="#" target="_blank">Guide</a> here or contact
+            <a href="#" target="_blank">Support</a> directly.</h3>
+        </div>
+        <div class="row">
+            <div class="small-12 large-10 columns large-centered">
+                <div class="row">
+                    <div class="small-12 large-6 columns white teal-background padding-top-80 padding-bottom-80 text-center">
+                        <h4 class="white">
+                            <div class="small-9 columns small-centered padding-bottom-30">First time guest?</div>
+                        </h4>
+                        <a href="#" class="white-border white uppercase text-center small">Get Started</a>
+                    </div>
+                    <div class="small-12 large-6 columns white medium-dark-gray-background padding-top-80 padding-bottom-80 text-center">
+                        <h4 class="white text-center">
+                            <div class="small-9 columns small-centered padding-bottom-30">Returning Customer</div>
+                        </h4>
+                        <a href="#" class="white-border white uppercase small">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<div id="hardware-trial" class="light-gray-background padding-bottom-50 padding-top-15">
+    <div class="row">
+        <div class="small-12 columns text-center padding-top-50 padding-bottom-50">
+            <h4>We give every new customer a free 30 day trial to test run our service
+            with 1-3 extensions. Get started with a Customer Success Teammate.</h4>
+        </div>
+        <div class="small-12 columns text-center">
+            <form action="" method="post">
+                <div class="row">
+                    <div class="small-12 large-6 columns">
+                        <input type="text" name="full_name" placeholder="Your Full Name">
+                    </div>
+                    <div class="small-12 large-6 columns">
+                        <input type="email" name="email" placeholder="Email address">
+                    </div>
+                    <div class="small-12 columns padding-top-30 padding-bottom-15">
+                        <button type="submit" class="red-orange-background white uppercase">
+                            Get Started For 30-Days Free
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="small-12 columns text-center">
+            <p class="small">a customer success teammate is ready to help</p>
+        </div>
+    </div>
+</div>
 
 <?php include('includes/footer.php'); ?>
