@@ -178,6 +178,9 @@ h1.large {
   font-size: 2.2em;
   line-height: 1.7em; }
 
+h2.large {
+  font-size: 2em; }
+
 h2.condensed {
   line-height: 1.5em; }
 
@@ -373,14 +376,14 @@ button.yellow-background {
   #all-in-one .button-container button, #all-in-one .button-container div {
     height: 40px; }
   #all-in-one .button-container button {
-    padding-right: 50px;
+    padding-right: 70px;
     border-top-left-radius: 5px;
     -moz-border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     -moz-border-bottom-left-radius: 5px; }
   #all-in-one .button-container div {
     line-height: 34px;
-    padding: 0 10px;
+    padding: 0 5px;
     border-left: 1px solid white;
     border-top-right-radius: 5px;
     -moz-border-top-right-radius: 5px;
@@ -399,12 +402,12 @@ button.yellow-background {
     display: inline-block;
     width: 170px;
     letter-spacing: 0.05em; }
+  #hardware-support h3 {
+    padding-bottom: 30px; }
 
 #hardware-trial input, #hardware-trial button {
   border-radius: 5px;
   -moz-border-radius: 5px; }
-#hardware-trial h4 {
-  line-height: 2em; }
 
 @media only screen and (min-width: 640px) {
   body {
@@ -436,13 +439,7 @@ button.yellow-background {
   /* --- HARDWARE INTEGRATIONS --- */
   /* ----------------------------- */
   #hardware-hero {
-    background-position: center;
-    padding-top: 200px; }
-    #hardware-hero h4 {
-      padding-bottom: 200px; }
-
-  #hardware-intro {
-    padding-top: 120px; }
+    background-position: center; }
 
   #hardware-support {
     margin-bottom: 80px; } }
@@ -452,6 +449,9 @@ button.yellow-background {
 
   h2 {
     font-size: 1.6875rem; }
+
+  p {
+    line-height: 2em; }
 
   .learn-section {
     padding: 80px 0 50px; }
@@ -482,6 +482,71 @@ button.yellow-background {
       margin: 0 auto;
       padding-bottom: 60px; }
 
+  /* ----------------------------- */
+  /* --- HARDWARE INTEGRATIONS --- */
+  /* ----------------------------- */
+  #story-1 h3, #story-2 h3, #story-3 h3 {
+    line-height: 1.7em;
+    text-align: left; }
+
+  #hardware-hero {
+    padding-top: 200px; }
+    #hardware-hero h4 {
+      padding-bottom: 200px; }
+
+  #hardware-intro {
+    padding: 200px 0;
+    background: url("../../img/shared/gradient_bg_1.png") no-repeat center; }
+    #hardware-intro h3 {
+      max-width: 750px;
+      margin: 0 auto; }
+
+  #story-1 {
+    padding: 100px 0 160px; }
+    #story-1 h3 {
+      padding-top: 80px;
+      max-width: 310px; }
+    #story-1 #story-1-phone-icon {
+      position: absolute;
+      top: 300px;
+      left: -30px; }
+
+  #story-2 {
+    background-color: #f2f2f2;
+    padding: 40px 0 20px; }
+    #story-2 h3 {
+      padding-top: 80px;
+      width: 270px; }
+    #story-2 #walking-icon-2 {
+      position: absolute;
+      bottom: -300px;
+      right: 100px; }
+
+  #story-3 h3 {
+    padding-top: 300px; }
+  #story-3 img {
+    padding-top: 80px; }
+
+  #all-in-one {
+    background-color: #f2f2f2;
+    padding: 80px 0; }
+    #all-in-one h2 {
+      width: 200px;
+      padding-bottom: 0; }
+
+  #hardware-trial button {
+    margin-bottom: 0; }
+  #hardware-trial h4 {
+    line-height: 2em; }
+
+  #hardware-support h3 {
+    padding: 60px 0; }
+  #hardware-support .border-top {
+    border-top: 1px solid #434343; }
+
+  /* -------------- */
+  /* --- FOOTER --- */
+  /* -------------- */
   #footer ul {
     padding-top: 55px; } }
 

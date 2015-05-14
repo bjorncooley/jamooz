@@ -201,7 +201,7 @@ button.yellow-background {
 
     h4 {
         
-        
+
         line-height: 1.8em;
     }
 }
@@ -233,14 +233,14 @@ button.yellow-background {
 
         button {
 
-            padding-right: 50px;
+            padding-right: 70px;
             @include top_left_border_radius(5px);
             @include bottom_left_border_radius(5px);
         }
 
         div {
             line-height: 34px;
-            padding: 0 10px;
+            padding: 0 5px;
             border-left: 1px solid white;
             @include top_right_border_radius(5px);
             @include bottom_right_border_radius(5px);
@@ -269,6 +269,10 @@ button.yellow-background {
         width: 170px;
         letter-spacing: 0.05em;
     }
+
+    h3 {
+        padding-bottom: 30px;
+    }
 }
 
 #hardware-trial {
@@ -276,10 +280,5 @@ button.yellow-background {
     input, button {
 
         @include border_radius(5px);
-    }
-
-    h4 {
-
-        line-height: 2em;
     }
 }

@@ -8,6 +8,11 @@ h2 {
     font-size: 1.6875rem;
 }
 
+p {
+
+    line-height: 2em;
+}
+
 .learn-section {
 
     padding: 80px 0 50px;
@@ -66,6 +71,135 @@ h2 {
         padding-bottom: 60px;
     }
 }
+
+
+/* ----------------------------- */
+/* --- HARDWARE INTEGRATIONS --- */
+/* ----------------------------- */
+
+#story-1, #story-2, #story-3 {
+
+    h3 {
+
+        line-height: 1.7em;
+        text-align: left;
+    }
+}
+
+#hardware-hero {
+
+    padding-top: 200px;
+
+    h4 {
+        padding-bottom: 200px;
+    }
+}
+
+#hardware-intro {
+
+    padding: 200px 0;
+    background: url('../../img/shared/gradient_bg_1.png') no-repeat center;
+
+    h3 {
+
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}
+
+#story-1 {
+
+    padding: 100px 0 160px;
+
+    h3 {
+
+        padding-top: 80px;
+        max-width: 310px;
+    }
+
+    #story-1-phone-icon {
+
+        position: absolute;
+        top: 300px;
+        left: -30px;
+    }
+}
+
+#story-2 {
+
+    background-color: $light-gray;
+    padding: 40px 0 20px;
+
+    h3 {
+
+        padding-top: 80px;
+        width: 270px;
+    }
+
+    #walking-icon-2 {
+
+        position: absolute;
+        bottom: -300px;
+        right: 100px;
+    }
+}
+
+#story-3 {
+
+    h3 {
+
+        padding-top: 300px;
+    }
+
+    img {
+
+        padding-top: 80px;
+    }
+}
+
+#all-in-one {
+
+    background-color: $light-gray;
+    padding: 80px 0;
+
+    h2 {
+
+        width: 200px;
+        padding-bottom: 0;
+    }
+}
+
+
+
+#hardware-trial {
+
+    button {
+
+        margin-bottom: 0;
+    }
+
+    h4 {
+
+        line-height: 2em;
+    }
+}
+
+#hardware-support {
+
+    h3 {
+        padding: 60px 0;
+    }
+
+    .border-top {
+
+        border-top: 1px solid $dark-gray;
+    }
+}
+
+
+/* -------------- */
+/* --- FOOTER --- */
+/* -------------- */
 
 #footer {
 
