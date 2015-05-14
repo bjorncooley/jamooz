@@ -370,6 +370,8 @@ button.yellow-background {
   text-align: center; }
   #story-1 img, #story-2 img, #story-3 img, #hardware-intro img {
     padding: 20px 0; }
+  #story-1 img.hide-for-large-up, #story-2 img.hide-for-large-up, #story-3 img.hide-for-large-up, #hardware-intro img.hide-for-large-up {
+    margin: 0 auto; }
 
 #all-in-one .button-container {
   cursor: pointer; }
