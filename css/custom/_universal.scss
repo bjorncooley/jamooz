@@ -67,6 +67,7 @@ li {
 /* Colors */
 $dark-blue: rgb(31,40,55);
 $dark-gray: rgb(67,67,67);
+$light-blue: rgb(56,165,221);
 $light-gray: rgb(242,242,242);
 $medium-dark-gray: rgb(88,88,91);
 $medium-blue: rgb(63,85,175);
@@ -338,6 +339,14 @@ p.tiny {
 .center {
 
   margin: 0 auto;
+}
+
+.inline-block {
+
+  div, h1, h2, h3, h4, h5, img, a, p {
+
+    display: inline-block;
+  }
 }
 
 .full-width {

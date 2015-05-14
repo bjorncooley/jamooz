@@ -11,7 +11,7 @@
             24/7.</h4>
         </div>
         <div class="large-12 columns text-center padding-top-30">
-            <img src="img/hardware-integrations/white_down_arrow.png" alt="">
+            <img src="img/shared/white_down_arrow.png" alt="">
         </div>
     </div>
 </div>
@@ -87,11 +87,11 @@
             </div>
         </div>
         <div class="large-6 columns show-for-large-up">
-            <img src="img/hardware/hardware_graphic_desktop.png" alt="">
+            <img src="img/shared/services_graphic_desktop.png" alt="">
         </div>
     </div>
-    <div class="padding-top-30 hide-for-large-up">
-        <img src="img/hardware/hardware_graphic_mobile.png" alt="">
+    <div class="padding-top-30 hide-for-large-up text-center">
+        <img src="img/shared/services_graphic_mobile.png" alt="">
     </div>
 </div><!-- #all-in-one -->
 

@@ -38,9 +38,9 @@ button.yellow-background {
 }
 
 
-/* --------------------- */
-/* --- HEADER/FOOTER --- */
-/* --------------------- */
+/* -------------- */
+/* --- SHARED --- */
+/* -------------- */
 
 .card-section {
 
@@ -95,14 +95,6 @@ button.yellow-background {
             margin-bottom: 0;
         }
 
-
-
-        img {
-
-            position: relative;
-            top: 27px;
-        }
-
         .shadowed {
             
             // To get connected faded shadows all the way around, need redundant shadows
@@ -112,12 +104,8 @@ button.yellow-background {
                   -2px -2px 5px $medium-gray,
                   -2px 2px 5px $medium-gray;
             position: relative;
-            padding: 50px 0 0 0;
+            padding: 30px 0 0 0;
 
-            .card-text {
-
-                height: 110px;
-            }
         }
     }
 }
@@ -180,6 +168,36 @@ button.yellow-background {
     }
 }
 
+#step-2 {
+
+    .card-section {
+
+        .plan-card {    
+
+            img {
+
+                position: relative;
+                top: 27px;
+            }
+
+            .shadowed {
+
+                padding-top: 50px;
+
+                .card-text {
+
+                    height: 110px;
+
+                    h5 {
+
+                        padding-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 #step-3 {
 
     h4 {
@@ -190,28 +208,19 @@ button.yellow-background {
     }
 }
 
+/* ---------------------------------------- */
+/* --- HARDWARE / SOFTWARE INTEGRATIONS --- */
+/* ---------------------------------------- */
 
-/* ----------------------------- */
-/* --- HARDWARE INTEGRATIONS --- */
-/* ----------------------------- */
-
-#hardware-hero {
-
-    background: url(../../img/hardware/hero_background.png) no-repeat 70%;
+#software-hero, #hardware-hero {
 
     h4 {
         
-
         line-height: 1.8em;
     }
 }
 
-#hardware-intro {
-
-    padding-top: 30px;
-}
-
-#story-1, #story-2, #story-3, #hardware-intro {
+#story-1, #story-2, #story-3, #hardware-intro, #software-intro {
 
     text-align: center;
 
@@ -228,6 +237,92 @@ button.yellow-background {
 
         font-weight: 100;
     }
+}
+
+#apps, #discounts {
+
+    .plan-card { 
+
+        .card-text {
+
+            text-align: center;   
+
+            h5 {
+
+                padding-bottom: 15px;
+                font-weight: 400;
+            }     
+
+            img {
+
+                padding-bottom: 30px;
+            }           
+        }
+    }
+}
+
+#hardware-support, #software-support {
+
+    margin-top: 50px;
+
+    a.white-border {
+
+        padding: 8px 30px;
+        display: inline-block;
+        width: 170px;
+        letter-spacing: 0.05em;
+    }
+
+    h3 {
+        padding-bottom: 30px;
+
+        a, a:hover {
+
+            color: $light-blue;
+        }
+
+        a:hover {
+
+            text-decoration: underline;
+        }
+    }
+}
+
+#hardware-trial, #software-trial {
+
+    input, button {
+
+        @include border_radius(5px);
+    }
+
+    h4 {
+
+        line-height: 2em;
+        font-weight: 100;
+    }
+}
+
+#all-in-one {
+
+    p {
+
+        line-height: 2em;
+    }
+}
+
+
+/* ----------------------------- */
+/* --- HARDWARE INTEGRATIONS --- */
+/* ----------------------------- */
+
+#hardware-hero {
+
+    background: url(../../img/hardware/hero_background.png) no-repeat 70%;
+}
+
+#hardware-intro {
+
+    padding-top: 30px;
 }
 
 #all-in-one {
@@ -268,27 +363,36 @@ button.yellow-background {
     }
 }
 
-#hardware-support {
+/* ----------------------------- */
+/* --- SOFTWARE INTEGRATIONS --- */
+/* ----------------------------- */
 
-    margin-top: 50px;
+#software-integrations {
 
-    a.white-border {
+    #software-hero {
 
-        padding: 8px 30px;
-        display: inline-block;
-        width: 170px;
-        letter-spacing: 0.05em;
+        background: url(../../img/software/software_hero_bg.png) no-repeat;
     }
 
-    h3 {
-        padding-bottom: 30px;
+    #software-intro {
+
+        padding: 80px 0;
+        background-color: $light-gray;
     }
-}
 
-#hardware-trial {
+    #story-2 {
 
-    input, button {
+        img {
 
-        @include border_radius(5px);
+            padding-bottom: 0;
+        }
+    }
+
+    #story-3 {
+
+        img {
+
+            padding-top: 0;
+        }
     }
 }
