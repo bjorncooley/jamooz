@@ -669,7 +669,7 @@ button.yellow-background {
 /* --- SUCCESS --- */
 /* --------------- */
 
-#success-page {
+#success-page, .success-pages {
 
     height: 100%;
     width: 100%;
@@ -685,14 +685,29 @@ button.yellow-background {
 
         .side-menu-header {
 
-            padding: 30px 0;
+            padding: 36px 15px 35px;
         }
 
         .side-menu-item {
 
-            padding: 30px;
+            &>div {
+
+                padding: 20px 30px;
+                width: 100%;
+
+                &:nth-of-type(1) {
+
+                    padding: 40px 30px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+
+                    margin-bottom: 0;
+                }
+            }
+
             border-bottom: 1px solid black;
-            width: 100%;
         }
     }
 
@@ -706,6 +721,18 @@ button.yellow-background {
         #nav {
 
             width: 100%;
+
+            input {
+
+                width: 400px;
+                border: 1px solid black;
+                @include border_radius(5px);
+                display: inline-block;
+                height: 42px;
+                margin-right: 80px;
+                background: url(../../img/success/black_search_icon.png) no-repeat 2%;
+                padding-right: 40px;
+            }
 
             button {
 
@@ -721,6 +748,21 @@ button.yellow-background {
         #welcome {
 
             padding: 90px 0;
+        }
+
+        #success-header {
+
+            padding: 110px 0 90px;
+        }
+
+        #subcategory {
+
+            padding: 20px 0;
+        }
+
+        #success-header, #subcategory, #content-container {
+
+            padding-left: 80px;
         }
     }
 
@@ -770,6 +812,7 @@ button.yellow-background {
             width: 50%;
             margin: 0 -2px;
             padding: 30px;
+            display: inline-block;
 
             p {
 
@@ -797,6 +840,18 @@ button.yellow-background {
                     padding-left: 20px;
                 }
             }
+        }
+    }
+}
+
+#success-page-2 {
+
+    #content-container {
+
+        .content-menu-container {
+
+            padding-left: 20px;
+            border-left: 5px solid $light-blue;
         }
     }
 }

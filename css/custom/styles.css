@@ -47,6 +47,12 @@ input {
 .dark-gray-border {
   border: 1px solid #434343; }
 
+.light-blue {
+  color: #38a5dd; }
+
+.light-blue-background {
+  background-color: #38a5dd; }
+
 .light-gray-background {
   background-color: #f2f2f2; }
 
@@ -223,7 +229,7 @@ p.tiny {
 .center {
   margin: 0 auto; }
 
-.inline-block div, .inline-block h1, .inline-block h2, .inline-block h3, .inline-block h4, .inline-block h5, .inline-block img, .inline-block a, .inline-block p, .inline-block input, .inline-block button {
+.inline-block > div, .inline-block > h1, .inline-block > h2, .inline-block > h3, .inline-block > h4, .inline-block > h5, .inline-block > img, .inline-block > a, .inline-block > p, .inline-block > input, .inline-block > button {
   display: inline-block; }
 
 .block div, .block h1, .block h2, .block h3, .block h4, .block h5, .block img, .block a, .block p, .block input, .block button {
@@ -621,83 +627,110 @@ button.yellow-background {
 /* --------------- */
 /* --- SUCCESS --- */
 /* --------------- */
-#success-page {
+#success-page, .success-pages {
   height: 100%;
   width: 100%;
   position: absolute; }
-  #success-page #sidebar {
+  #success-page #sidebar, .success-pages #sidebar {
     width: 25%;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%; }
-    #success-page #sidebar .side-menu-header {
-      padding: 30px 0; }
-    #success-page #sidebar .side-menu-item {
-      padding: 30px;
-      border-bottom: 1px solid black;
-      width: 100%; }
-  #success-page #main-content {
+    #success-page #sidebar .side-menu-header, .success-pages #sidebar .side-menu-header {
+      padding: 36px 15px 35px; }
+    #success-page #sidebar .side-menu-item, .success-pages #sidebar .side-menu-item {
+      border-bottom: 1px solid black; }
+      #success-page #sidebar .side-menu-item > div, .success-pages #sidebar .side-menu-item > div {
+        padding: 20px 30px;
+        width: 100%; }
+        #success-page #sidebar .side-menu-item > div:nth-of-type(1), .success-pages #sidebar .side-menu-item > div:nth-of-type(1) {
+          padding: 40px 30px;
+          margin-bottom: 20px; }
+        #success-page #sidebar .side-menu-item > div p, .success-pages #sidebar .side-menu-item > div p {
+          margin-bottom: 0; }
+  #success-page #main-content, .success-pages #main-content {
     position: absolute;
     top: 0;
     left: 25%;
     width: 75%; }
-    #success-page #main-content #nav {
+    #success-page #main-content #nav, .success-pages #main-content #nav {
       width: 100%; }
-      #success-page #main-content #nav button {
+      #success-page #main-content #nav input, .success-pages #main-content #nav input {
+        width: 400px;
+        border: 1px solid black;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        display: inline-block;
+        height: 42px;
+        margin-right: 80px;
+        background: url(../../img/success/black_search_icon.png) no-repeat 2%;
+        padding-right: 40px; }
+      #success-page #main-content #nav button, .success-pages #main-content #nav button {
         width: 140px; }
-      #success-page #main-content #nav button:nth-of-type(2) {
+      #success-page #main-content #nav button:nth-of-type(2), .success-pages #main-content #nav button:nth-of-type(2) {
         margin-left: 10px; }
-    #success-page #main-content #welcome {
+    #success-page #main-content #welcome, .success-pages #main-content #welcome {
       padding: 90px 0; }
-  #success-page #welcome {
+    #success-page #main-content #success-header, .success-pages #main-content #success-header {
+      padding: 110px 0 90px; }
+    #success-page #main-content #subcategory, .success-pages #main-content #subcategory {
+      padding: 20px 0; }
+    #success-page #main-content #success-header, #success-page #main-content #subcategory, #success-page #main-content #content-container, .success-pages #main-content #success-header, .success-pages #main-content #subcategory, .success-pages #main-content #content-container {
+      padding-left: 80px; }
+  #success-page #welcome, .success-pages #welcome {
     background: #deccb4 url(../../img/success/success_bg.png) no-repeat 70%; }
-    #success-page #welcome h2, #success-page #welcome p {
+    #success-page #welcome h2, #success-page #welcome p, .success-pages #welcome h2, .success-pages #welcome p {
       max-width: 300px; }
-    #success-page #welcome button {
+    #success-page #welcome button, .success-pages #welcome button {
       padding: 20px 40px; }
-  #success-page #search-bar {
+  #success-page #search-bar, .success-pages #search-bar {
     width: 100%;
     padding: 30px 0 10px;
     text-align: center; }
-    #success-page #search-bar input {
+    #success-page #search-bar input, .success-pages #search-bar input {
       border-radius: 5px;
       -moz-border-radius: 5px;
       background: url(../../img/success/search_icon.png) no-repeat 2%;
       padding: 15px 15px 15px 50px;
       border: 1px solid white; }
-      #success-page #search-bar input::-webkit-input-placeholder {
+      #success-page #search-bar input::-webkit-input-placeholder, .success-pages #search-bar input::-webkit-input-placeholder {
         /* WebKit browsers */
         color: white; }
-      #success-page #search-bar input:-moz-placeholder {
+      #success-page #search-bar input:-moz-placeholder, .success-pages #search-bar input:-moz-placeholder {
         /* Mozilla Firefox 4 to 18 */
         color: white;
         opacity: 1; }
-      #success-page #search-bar input::-moz-placeholder {
+      #success-page #search-bar input::-moz-placeholder, .success-pages #search-bar input::-moz-placeholder {
         /* Mozilla Firefox 19+ */
         color: white;
         opacity: 1; }
-      #success-page #search-bar input:-ms-input-placeholder {
+      #success-page #search-bar input:-ms-input-placeholder, .success-pages #search-bar input:-ms-input-placeholder {
         /* Internet Explorer 10+ */
         color: white; }
-  #success-page #footer-options {
+  #success-page #footer-options, .success-pages #footer-options {
     padding: 200px 0 40px;
     width: 100%; }
-  #success-page #success-footer {
+  #success-page #success-footer, .success-pages #success-footer {
     width: 100%; }
-    #success-page #success-footer > div {
+    #success-page #success-footer > div, .success-pages #success-footer > div {
       width: 50%;
       margin: 0 -2px;
-      padding: 30px; }
-      #success-page #success-footer > div p {
+      padding: 30px;
+      display: inline-block; }
+      #success-page #success-footer > div p, .success-pages #success-footer > div p {
         margin-bottom: 0;
         line-height: 1.2em; }
-      #success-page #success-footer > div img {
+      #success-page #success-footer > div img, .success-pages #success-footer > div img {
         padding-top: 5px; }
-      #success-page #success-footer > div:nth-of-type(1) img {
+      #success-page #success-footer > div:nth-of-type(1) img, .success-pages #success-footer > div:nth-of-type(1) img {
         padding-right: 20px; }
-      #success-page #success-footer > div:nth-of-type(2) img {
+      #success-page #success-footer > div:nth-of-type(2) img, .success-pages #success-footer > div:nth-of-type(2) img {
         padding-left: 20px; }
+
+#success-page-2 #content-container .content-menu-container {
+  padding-left: 20px;
+  border-left: 5px solid #38a5dd; }
 
 @media only screen and (min-width: 640px) {
   body {

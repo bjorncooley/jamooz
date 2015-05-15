@@ -18,13 +18,22 @@
                     <h4 class="large">Success Center</h4>
                 </div>
                 <div class="side-menu-item">
-                    <h4 class="uppercase">Setup &amp; Basics</h4>
+                    <div>
+                        <h4 class="uppercase">Setup &amp; Basics</h4>
+                    </div>
+                    
                 </div>
                 <div class="side-menu-item">
-                    <h4 class="uppercase">Do More</h4>
+                    <div>
+                        <h4 class="uppercase">Do More</h4>
+                    </div>
+                    
                 </div>
                 <div class="side-menu-item">
-                    <h4 class="uppercase">Troubleshooting</h4>
+                    <div>
+                        <h4 class="uppercase">Troubleshooting</h4>
+                    </div>
+                    
                 </div>
             </div>
             <div id="main-content">
@@ -75,7 +84,7 @@
                             <p>Jamooz Home</p>
                         </div>
                     </div>
-                    <div class="text-right orange-background white">
+                    <div class="text-right orange-background white inline-block">
                         <div class="block">
                             <p class="small">next</p>
                             <p>Getting Started</p>

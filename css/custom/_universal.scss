@@ -122,6 +122,16 @@ input {
   border: 1px solid $dark-gray;
 }
 
+.light-blue {
+
+  color: $light-blue;
+}
+
+.light-blue-background {
+
+  background-color: $light-blue;
+}
+
 .light-gray-background {
 
   background-color: $light-gray;
@@ -390,7 +400,7 @@ p.tiny {
 
 .inline-block {
 
-  div, h1, h2, h3, h4, h5, img, a, p, input, button {
+  &>div, &>h1, &>h2, &>h3, &>h4, &>h5, &>img, &>a, &>p, &>input, &>button {
 
     display: inline-block;
   }
