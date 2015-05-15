@@ -279,7 +279,11 @@ button.yellow-background {
 
     &>div {
 
-        padding: 70px 0 30px;
+        &>.row {
+
+            padding: 70px 0;
+        }
+        
 
         p {
 

@@ -446,20 +446,21 @@ button.yellow-background {
 
     .left-arrow {
 
-        right: 1%;
+        left: 1%;
     }
 
     .right-arrow {
 
-        left: 1%;
+        right: 1%;
     }
 
-    &>div {
-        
-        padding: 70px 0 30px;
+    .slide {
+
+        width: 100%;
 
         &>.row {
 
+            padding: 70px 0 30px;
             max-width: 70%;
 
             h1 {

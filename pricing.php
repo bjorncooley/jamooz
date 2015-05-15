@@ -39,10 +39,10 @@
             <h1>Extras</h1>
         </div>
     </div>
-    <div id="extras" class="relative">
+    <div id="extras" class="relative slide-container">
         <div class="dark-blue-background white current slide">
-            <img src="img/shared/slider_right_arrow_white.png" alt="" class="left-arrow">
-            <img src="img/shared/slider_left_arrow_white.png" alt="" class="right-arrow">
+            <img src="img/shared/slider_right_arrow_white.png" alt="" class="right-arrow">
+            <img src="img/shared/slider_left_arrow_white.png" alt="" class="left-arrow">
             <div class="row">
                 <div class="small-12 large-6 columns">
                     <h1 class="no-text-transform light">Efax Pro.</h1>
@@ -59,8 +59,8 @@
             </div>
         </div>
         <div class="light-gray-background slide">
-            <img src="img/shared/slider_right_arrow_black.png" alt="" class="left-arrow">
-            <img src="img/shared/slider_left_arrow_black.png" alt="" class="right-arrow">
+            <img src="img/shared/slider_right_arrow_black.png" alt="" class="right-arrow">
+            <img src="img/shared/slider_left_arrow_black.png" alt="" class="left-arrow">
             <div class="row">
                 <div class="small-12 large-6 columns show-for-large-up">
                     <img src="img/pricing/efax_icon.png" alt="">
@@ -77,8 +77,8 @@
             </div>
         </div>
         <div class="dark-blue-background white slide">
-            <img src="img/shared/slider_right_arrow_white.png" alt="" class="left-arrow">
-            <img src="img/shared/slider_left_arrow_white.png" alt="" class="right-arrow">
+            <img src="img/shared/slider_right_arrow_white.png" alt="" class="right-arrow">
+            <img src="img/shared/slider_left_arrow_white.png" alt="" class="left-arrow">
             <div class="row">
                 <div class="small-12 large-6 columns">
                     <h1 class="no-text-transform light">Call Recording.</h1>
@@ -95,8 +95,8 @@
             </div>
         </div>
         <div class="light-gray-background slide">
-            <img src="img/shared/slider_right_arrow_black.png" alt="" class="left-arrow">
-            <img src="img/shared/slider_left_arrow_black.png" alt="" class="right-arrow">
+            <img src="img/shared/slider_right_arrow_black.png" alt="" class="right-arrow">
+            <img src="img/shared/slider_left_arrow_black.png" alt="" class="left-arrow">
             <div class="row">
                 <div class="small-12 large-6 columns show-for-large-up">
                     <img src="img/pricing/efax_icon.png" alt="">

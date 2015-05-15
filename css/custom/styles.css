@@ -487,16 +487,17 @@ button.yellow-background {
   top: 48%;
   cursor: pointer; }
 #extras .left-arrow {
-  right: 1%; }
-#extras .right-arrow {
   left: 1%; }
-#extras > div {
-  padding: 70px 0 30px; }
-  #extras > div > .row {
+#extras .right-arrow {
+  right: 1%; }
+#extras .slide {
+  width: 100%; }
+  #extras .slide > .row {
+    padding: 70px 0 30px;
     max-width: 70%; }
-    #extras > div > .row h1 {
+    #extras .slide > .row h1 {
       padding-bottom: 50px; }
-    #extras > div > .row p {
+    #extras .slide > .row p {
       line-height: 2em; }
 #extras .add-container {
   padding-top: 30px; }
@@ -676,10 +677,10 @@ button.yellow-background {
     top: 135px;
     left: -249px; }
 
-  #extras > div {
-    padding: 70px 0 30px; }
-    #extras > div p {
-      max-width: 300px; }
+  #extras > div > .row {
+    padding: 70px 0; }
+  #extras > div p {
+    max-width: 300px; }
 
   /* --------------- */
   /* --- PRICING --- */

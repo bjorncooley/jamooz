@@ -15,6 +15,8 @@ $(window).load(function(){
 
         movePlanCards();  
     }
+
+    moveSlides();
 });
 
 $(window).resize(function(){
@@ -29,6 +31,7 @@ $(window).resize(function(){
     }
 
     movePlanCards();
+    moveSlides();
 });
 
 $(function(){
@@ -52,8 +55,6 @@ $(function(){
     // Card swapping
 
     $('#card-right-arrow').click(function(){
-
-        console.log("Clicked");
 
         var $current = $('.plan-card.current');
         var $next = $current.next();
@@ -92,6 +93,47 @@ $(function(){
         $current.animate({ left: "+=" + offset,}, 500).removeClass('current');
         $next.animate({ left: "+=" + offset,}, 500).addClass('current');
     });
+
+    // Slide swapping
+    $('.slide-container .right-arrow').click(function(){
+
+        console.log('clicked');
+
+        var $current = $('.slide.current');
+        var $next = $current.next();
+        var width = $(window).width();
+
+        // Check if this is the first card, if so, get the last card
+        if ( $next.length == 0 ) {
+
+            $next = $('.slide:first');
+        }
+
+        // Make sure the next card is in the correct position
+        $next.css('left', width + 'px');
+
+        $current.animate({ left: "-=" + width,}, 500).removeClass('current');
+        $next.animate({ left: "-=" + width,}, 500).addClass('current');
+    });
+
+    $('.slide-container .left-arrow').click(function(){
+
+        var $current = $('.slide.current');
+        var $next = $current.prev();
+        var width = $(window).width();
+
+        // Check if this is the first card, if so, get the last card
+        if ( $next.length == 0 ) {
+
+            $next = $('.slide:last');
+        }
+
+        // Make sure the next card is in the correct position
+        $next.css('left', '-' + width + 'px');
+
+        $current.animate({ left: "+=" + width,}, 500).removeClass('current');
+        $next.animate({ left: "+=" + width,}, 500).addClass('current');
+    });
 });
 
 function movePlanCards() {
@@ -122,4 +164,21 @@ function movePlanCards() {
 
         cards_moved = false;
     }
+}
+
+function moveSlides() {
+
+    var slide_height = $('.slide').height();
+    $('.slide-container').height(slide_height);
+    var width = $(window).width();
+    var i=0;
+
+    $('.slide').each(function(){
+
+        offset = width * i;
+        $(this).css('position', 'absolute');
+        $(this).css('left', offset + 'px');
+
+        i += 1;
+    });
 }
