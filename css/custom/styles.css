@@ -130,6 +130,9 @@ a, a:visited {
   clear: both; }
 
 /*Fonts*/
+.no-text-transform {
+  text-transform: none; }
+
 html, body, h1, h2, h3, h4, h5, p, a, button {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -139,6 +142,8 @@ h1 {
   text-transform: uppercase;
   font-size: 1.6em;
   letter-spacing: 0.07em; }
+  h1.no-text-transform {
+    font-size: 2.2em; }
 
 h2 {
   line-height: 1.9em; }
@@ -275,7 +280,8 @@ button.yellow-background {
   width: 220px;
   border-radius: 5px;
   -moz-border-radius: 5px;
-  padding: 15px 0; }
+  padding: 15px 0;
+  margin-top: 30px; }
 
 /* --------------------- */
 /* --- HEADER/FOOTER --- */
@@ -318,11 +324,20 @@ button.yellow-background {
     position: relative;
     padding: 30px 0 0 0; }
 
+#software-hero h4, #hardware-hero h4, #pricing-hero h4 {
+  line-height: 1.8em; }
+
+#pricing .shadowed img, #get-started .shadowed img {
+  position: relative;
+  top: 27px; }
+
 /* ----------------- */
 /* --- HOME PAGE --- */
 /* ----------------- */
 .learn-section {
   padding: 70px 0; }
+  .learn-section h4 {
+    margin: 0 auto; }
 
 #hero h6 {
   max-width: 215px; }
@@ -366,9 +381,6 @@ button.yellow-background {
 /* ---------------------------------------- */
 /* --- HARDWARE / SOFTWARE INTEGRATIONS --- */
 /* ---------------------------------------- */
-#software-hero h4, #hardware-hero h4 {
-  line-height: 1.8em; }
-
 #story-1, #story-2, #story-3, #hardware-intro, #software-intro {
   text-align: center; }
   #story-1 img, #story-2 img, #story-3 img, #hardware-intro img, #software-intro img {
@@ -458,6 +470,46 @@ button.yellow-background {
 #software-integrations #story-3 img {
   padding-top: 0; }
 
+/* --------------- */
+/* --- PRICING --- */
+/* --------------- */
+#pricing-hero {
+  background: url(../../img/pricing/pricing_hero_bg.png) no-repeat; }
+
+#extras-title div {
+  max-width: 200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black; }
+
+#extras .left-arrow, #extras .right-arrow {
+  position: absolute;
+  top: 48%;
+  cursor: pointer; }
+#extras .left-arrow {
+  right: 1%; }
+#extras .right-arrow {
+  left: 1%; }
+#extras > div {
+  padding: 70px 0 30px; }
+  #extras > div > .row {
+    max-width: 70%; }
+    #extras > div > .row h1 {
+      padding-bottom: 50px; }
+    #extras > div > .row p {
+      line-height: 2em; }
+#extras .add-container {
+  padding-top: 30px; }
+  #extras .add-container h5 {
+    margin-bottom: 15px; }
+  #extras .add-container img {
+    margin-bottom: 8px; }
+  #extras .add-container p {
+    max-width: none; }
+
+#pricing .learn-section {
+  padding: 70px 0; }
+
 @media only screen and (min-width: 640px) {
   body {
     position: static; }
@@ -492,6 +544,8 @@ button.yellow-background {
 @media only screen and (min-width: 1025px) {
   h1 {
     font-size: 2em; }
+    h1.no-text-transform.large {
+      font-size: 2.4em; }
 
   h2 {
     font-size: 1.6875rem; }
@@ -501,6 +555,10 @@ button.yellow-background {
 
   .learn-section {
     padding: 80px 0 50px; }
+
+  button.yellow-background {
+    width: auto;
+    padding: 15px; }
 
   #hero h1 {
     max-width: 800px;
@@ -528,6 +586,11 @@ button.yellow-background {
       margin: 0 auto;
       padding-bottom: 60px; }
 
+  #hardware-hero, #software-hero, #pricing-hero {
+    padding-top: 200px; }
+    #hardware-hero h4, #software-hero h4, #pricing-hero h4 {
+      padding-bottom: 200px; }
+
   /* ---------------------------------------- */
   /* --- HARDWARE / SOFTWARE INTEGRATIONS --- */
   /* ---------------------------------------- */
@@ -537,11 +600,6 @@ button.yellow-background {
 
   #hardware-support, #software-support {
     margin-bottom: 80px; }
-
-  #hardware-hero, #software-hero {
-    padding-top: 200px; }
-    #hardware-hero h4, #software-hero h4 {
-      padding-bottom: 200px; }
 
   #hardware-intro, #software-intro {
     padding: 200px 0;
@@ -617,6 +675,28 @@ button.yellow-background {
   #software-integrations #story-3 #phone-icon-2 {
     top: 135px;
     left: -249px; }
+
+  #extras > div {
+    padding: 70px 0 30px; }
+    #extras > div p {
+      max-width: 300px; }
+
+  /* --------------- */
+  /* --- PRICING --- */
+  /* --------------- */
+  #pricing-learn-sections {
+    text-align: center; }
+    #pricing-learn-sections .learn-section {
+      display: inline-block;
+      margin: 0 -2px;
+      overflow: hidden;
+      width: 50%; }
+      #pricing-learn-sections .learn-section:nth-child(1) h4 {
+        position: relative;
+        left: 10%; }
+      #pricing-learn-sections .learn-section:nth-child(2) h4 {
+        position: relative;
+        right: 10%; }
 
   /* -------------- */
   /* --- FOOTER --- */

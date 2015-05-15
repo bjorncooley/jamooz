@@ -1,6 +1,11 @@
 h1 {
 
     font-size: 2em;
+
+    &.no-text-transform.large {
+
+        font-size: 2.4em;
+    }
 }
 
 h2 {
@@ -16,6 +21,12 @@ p {
 .learn-section {
 
     padding: 80px 0 50px;
+}
+
+button.yellow-background {
+
+    width: auto;
+    padding: 15px;
 }
 
 #hero {
@@ -72,6 +83,15 @@ p {
     }
 }
 
+#hardware-hero, #software-hero, #pricing-hero {
+
+    padding-top: 200px;
+
+    h4 {
+        padding-bottom: 200px;
+    }
+}
+
 
 /* ---------------------------------------- */
 /* --- HARDWARE / SOFTWARE INTEGRATIONS --- */
@@ -89,15 +109,6 @@ p {
 #hardware-support, #software-support {
 
     margin-bottom: 80px;
-}
-
-#hardware-hero, #software-hero {
-
-    padding-top: 200px;
-
-    h4 {
-        padding-bottom: 200px;
-    }
 }
 
 #hardware-intro, #software-intro {
@@ -260,6 +271,56 @@ p {
 
             top: 135px;
             left: -249px;
+        }
+    }
+}
+
+#extras {
+
+    &>div {
+
+        padding: 70px 0 30px;
+
+        p {
+
+            max-width: 300px;
+        }
+    }
+}
+
+
+
+/* --------------- */
+/* --- PRICING --- */
+/* --------------- */
+
+#pricing-learn-sections {
+
+    text-align: center;
+
+    .learn-section {
+
+        display: inline-block;
+        margin: 0 -2px;
+        overflow: hidden;
+        width: 50%;
+
+        &:nth-child(1) {
+
+            h4 {
+
+                position: relative;
+                left: 10%;
+            } 
+        }
+
+        &:nth-child(2) {
+
+            h4 {
+
+                position: relative;
+                right: 10%;
+            } 
         }
     }
 }

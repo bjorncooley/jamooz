@@ -99,8 +99,8 @@
     <div class="row">
         <div class="large-12 columns relative">
             <h1 class="text-center padding-top-50 padding-bottom-30">Device Discounts</h1>
-            <img src="img/get-started/left-arrow-black.png" alt="" class="left-arrow" id="card-left-arrow">
-            <img src="img/get-started/right-arrow-black.png" alt="" class="right-arrow" id="card-right-arrow">
+            <img src="img/shared/slider_left_arrow_black.png" alt="" class="left-arrow" id="card-left-arrow">
+            <img src="img/shared/slider_right_arrow_black.png" alt="" class="right-arrow" id="card-right-arrow">
             <div class="row">
                 <div class="card-container relative">
                     <div class="small-12 medium-4 columns small-centered medium-uncentered plan-card current">
@@ -180,36 +180,8 @@
             </div>
         </div>
     </div>
-        
-    </div>
 </div>
-<div id="hardware-trial" class="light-gray-background padding-bottom-50 padding-top-15">
-    <div class="row">
-        <div class="small-12 columns text-center padding-top-50 padding-bottom-50">
-            <h4>We give every new customer a free 30 day trial to test run our service
-            with 1-3 extensions. Get started with a Customer Success Teammate.</h4>
-        </div>
-        <div class="small-12 columns text-center">
-            <form action="" method="post">
-                <div class="row">
-                    <div class="small-12 large-6 columns">
-                        <input type="text" name="full_name" placeholder="Your Full Name">
-                    </div>
-                    <div class="small-12 large-6 columns">
-                        <input type="email" name="email" placeholder="Email address">
-                    </div>
-                    <div class="small-12 columns padding-top-30 padding-bottom-15">
-                        <button type="submit" class="red-orange-background white uppercase">
-                            Get Started For 30-Days Free
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="small-12 columns text-center">
-            <p class="small">a customer success teammate is ready to help</p>
-        </div>
-    </div>
-</div>
+
+<?php include('includes/trial.php'); ?>
 
 <?php include('includes/footer.php'); ?>

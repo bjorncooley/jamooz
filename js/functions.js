@@ -40,7 +40,7 @@ $(function(){
     });
 
     // Activate plan cards when selected
-    $('#step-2 .plan-card').click(function(){
+    $('#get-started .plan-card, #pricing .plan-card').click(function(){
 
         $(this).addClass('selected');
         $(this).siblings().removeClass('selected');

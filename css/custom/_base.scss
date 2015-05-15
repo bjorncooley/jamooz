@@ -15,6 +15,7 @@ button.yellow-background {
     width: 220px;
     @include border_radius(5px);
     padding: 15px 0;
+    margin-top: 30px;
 }
 
 /* --------------------- */
@@ -110,6 +111,26 @@ button.yellow-background {
     }
 }
 
+#software-hero, #hardware-hero, #pricing-hero {
+
+    h4 {
+        
+        line-height: 1.8em;
+    }
+}
+
+#pricing, #get-started {
+
+    .shadowed {
+
+        img {
+
+            position: relative;
+            top: 27px;
+        }
+    }
+}
+
 /* ----------------- */
 /* --- HOME PAGE --- */
 /* ----------------- */
@@ -117,6 +138,11 @@ button.yellow-background {
 .learn-section {
 
     padding: 70px 0;
+
+    h4 {
+
+        margin: 0 auto;
+    }
 }
 
 #hero {
@@ -211,14 +237,6 @@ button.yellow-background {
 /* ---------------------------------------- */
 /* --- HARDWARE / SOFTWARE INTEGRATIONS --- */
 /* ---------------------------------------- */
-
-#software-hero, #hardware-hero {
-
-    h4 {
-        
-        line-height: 1.8em;
-    }
-}
 
 #story-1, #story-2, #story-3, #hardware-intro, #software-intro {
 
@@ -394,5 +412,93 @@ button.yellow-background {
 
             padding-top: 0;
         }
+    }
+}
+
+/* --------------- */
+/* --- PRICING --- */
+/* --------------- */
+
+#pricing-hero {
+
+    background: url(../../img/pricing/pricing_hero_bg.png) no-repeat;
+}
+
+#extras-title {
+
+    div {
+
+        max-width: 200px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        border-bottom: 1px solid black;
+    }
+}
+
+#extras {
+
+    .left-arrow, .right-arrow {
+
+        position: absolute;
+        top: 48%;
+        cursor: pointer;
+    }
+
+    .left-arrow {
+
+        right: 1%;
+    }
+
+    .right-arrow {
+
+        left: 1%;
+    }
+
+    &>div {
+        
+        padding: 70px 0 30px;
+
+        &>.row {
+
+            max-width: 70%;
+
+            h1 {
+
+                padding-bottom: 50px;
+            }
+
+            p {
+
+                line-height: 2em;
+            }
+        }
+    }
+
+    .add-container {
+
+        padding-top: 30px;
+
+        h5 {
+
+            margin-bottom: 15px;
+        }
+
+        img {
+
+            margin-bottom: 8px;
+        }
+
+        p {
+
+            max-width: none;
+        }
+    }
+}
+
+#pricing {
+
+    .learn-section {
+
+        padding: 70px 0;
     }
 }

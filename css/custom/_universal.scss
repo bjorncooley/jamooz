@@ -233,6 +233,11 @@ a, a:visited {
 
 /*Fonts*/
 
+.no-text-transform {
+
+  text-transform: none;
+}
+
 html, body, h1, h2, h3, h4, h5, p, a, button {
 
   font-family: 'Roboto', sans-serif;
@@ -245,6 +250,11 @@ h1 {
   text-transform: uppercase;
   font-size: 1.6em;
   letter-spacing: 0.07em;
+
+  &.no-text-transform {
+
+    font-size: 2.2em;
+  }
 }
 
 h2 {
