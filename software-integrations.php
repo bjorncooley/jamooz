@@ -104,11 +104,13 @@
                                     <h5 class="text-center uppercase">Outlook</h5>
                                     <img src="img/software/outlook_icon.png" alt="">
                                 </div>
+                                <div class="text-center">
+                                    <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
+                                </div>
                             </div>
                             
-                            <div class="red-orange-background white text-center padding-top-15 padding-bottom-15 caption inline-block">
+                            <div class="red-orange-background white text-center caption inline-block">
                                 <h4>See Details</h4>
-                                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="">
                             </div>
                         </div>
                         <div class="small-12 medium-4 columns small-centered medium-uncentered plan-card">
@@ -117,11 +119,13 @@
                                     <h5 class="text-center uppercase">Outlook</h5>
                                     <img src="img/software/outlook_icon.png" alt="">
                                 </div>
+                                <div class="text-center">
+                                    <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
+                                </div>
                             </div>
                             
-                            <div class="red-orange-background white text-center padding-top-15 padding-bottom-15 caption inline-block">
+                            <div class="red-orange-background white text-center caption inline-block">
                                 <h4>See Details</h4>
-                                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="">
                             </div>
                         </div>
                         <div class="small-12 medium-4 columns small-centered medium-uncentered plan-card">
@@ -130,11 +134,13 @@
                                     <h5 class="text-center uppercase">Outlook</h5>
                                     <img src="img/software/outlook_icon.png" alt="">
                                 </div>
+                                <div class="text-center">
+                                    <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
+                                </div>
                             </div>
                             
-                            <div class="red-orange-background white text-center padding-top-15 padding-bottom-15 caption inline-block">
+                            <div class="red-orange-background white text-center caption inline-block">
                                 <h4>See Details</h4>
-                                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="">
                             </div>
                         </div>
                     </div>

@@ -7,7 +7,7 @@
                 <p>(Includes 30 Days Free)</p>
             </div>
             <div class="text-center">
-                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="">
+                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
             </div>
         </div>
         
@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="">
+                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
             </div>
         </div>
         

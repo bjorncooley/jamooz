@@ -76,6 +76,7 @@ button.yellow-background {
         .caption {
 
             background-color: $red-orange;
+            padding: 25px 0 20px;
         }
 
         &.selected {
@@ -94,6 +95,26 @@ button.yellow-background {
         p {
 
             margin-bottom: 0;
+        }
+
+        img.relative {
+
+            top: 27px;
+        }
+
+        .shadowed {
+
+            padding-top: 50px;
+
+            .card-text {
+
+                height: 175px;
+
+                h5 {
+
+                    padding-bottom: 30px;
+                }
+            }
         }
 
         .shadowed {
@@ -205,26 +226,7 @@ button.yellow-background {
 
         .plan-card {    
 
-            img {
-
-                position: relative;
-                top: 27px;
-            }
-
-            .shadowed {
-
-                padding-top: 50px;
-
-                .card-text {
-
-                    height: 110px;
-
-                    h5 {
-
-                        padding-bottom: 30px;
-                    }
-                }
-            }
+            
         }
     }
 }

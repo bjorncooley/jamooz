@@ -106,46 +106,46 @@
                     <div class="small-12 medium-4 columns small-centered medium-uncentered plan-card current">
                         <div class="shadowed">
                             <div class="card-text">
-                                <p class="padding-bottom-30">Cisco IP 7960G</p>
-                                
+                                <h5 class="text-center uppercase">Cisco IP 7960G</h5>
+                                <img src="img/software/outlook_icon.png" alt="">
                             </div>
                             <div class="text-center">
-                                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="">
+                                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
                             </div>
                         </div>
                         
-                        <div class="red-orange-background white text-center padding-top-30 padding-bottom-30 caption">
-                            <h4 class="uppercase">See Details</h4>
+                        <div class="red-orange-background white text-center caption inline-block">
+                            <h4>See Details</h4>
                         </div>
                     </div>
                     <div class="small-12 medium-4 columns small-centered medium-uncentered plan-card">
                         <div class="shadowed">
                             <div class="card-text">
-                                <p class="padding-bottom-30">Cisco IP 7960G</p>
-                                
+                                <h5 class="text-center uppercase">Cisco IP 7960G</h5>
+                                <img src="img/software/outlook_icon.png" alt="">
                             </div>
                             <div class="text-center">
-                                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="">
+                                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
                             </div>
                         </div>
                         
-                        <div class="red-orange-background white text-center padding-top-30 padding-bottom-30 caption">
-                            <h4 class="uppercase">See Details</h4>
+                        <div class="red-orange-background white text-center caption inline-block">
+                            <h4>See Details</h4>
                         </div>
                     </div>
                     <div class="small-12 medium-4 columns small-centered medium-uncentered plan-card">
                         <div class="shadowed">
                             <div class="card-text">
-                                <p class="padding-bottom-30">Cisco IP 7960G</p>
-                                
+                                <h5 class="text-center uppercase">Cisco IP 7960G</h5>
+                                <img src="img/software/outlook_icon.png" alt="">
                             </div>
                             <div class="text-center">
-                                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="">
+                                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
                             </div>
                         </div>
                         
-                        <div class="red-orange-background white text-center padding-top-30 padding-bottom-30 caption">
-                            <h4 class="uppercase">See Details</h4>
+                        <div class="red-orange-background white text-center caption inline-block">
+                            <h4>See Details</h4>
                         </div>
                     </div>
                 </div>

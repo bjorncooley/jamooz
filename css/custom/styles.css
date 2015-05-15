@@ -345,13 +345,22 @@ button.yellow-background {
   max-width: 80%;
   cursor: pointer; }
   .card-section .plan-card .caption {
-    background-color: #e25736; }
+    background-color: #e25736;
+    padding: 25px 0 20px; }
   .card-section .plan-card.selected .caption {
     background-color: #3f55af; }
   .card-section .plan-card p, .card-section .plan-card h4 {
     padding: 0 15px; }
   .card-section .plan-card p {
     margin-bottom: 0; }
+  .card-section .plan-card img.relative {
+    top: 27px; }
+  .card-section .plan-card .shadowed {
+    padding-top: 50px; }
+    .card-section .plan-card .shadowed .card-text {
+      height: 175px; }
+      .card-section .plan-card .shadowed .card-text h5 {
+        padding-bottom: 30px; }
   .card-section .plan-card .shadowed {
     box-shadow: 2px 2px 5px #787878, 2px -2px 5px #787878, -2px -2px 5px #787878, -2px 2px 5px #787878;
     position: relative;
@@ -395,16 +404,6 @@ button.yellow-background {
 #step-1 h4, #step-1 form {
   max-width: 500px;
   margin: 0 auto; }
-
-#step-2 .card-section .plan-card img {
-  position: relative;
-  top: 27px; }
-#step-2 .card-section .plan-card .shadowed {
-  padding-top: 50px; }
-  #step-2 .card-section .plan-card .shadowed .card-text {
-    height: 110px; }
-    #step-2 .card-section .plan-card .shadowed .card-text h5 {
-      padding-bottom: 30px; }
 
 #step-3 h4 {
   max-width: 400px;
