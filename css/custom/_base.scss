@@ -173,11 +173,16 @@ button.yellow-background {
     }
 }
 
-#support {
+#home {
 
-    background: $mint url('../../img/home/support_background_mobile.png') no-repeat center;
-    min-height: 512px;
+    #support {
+
+        background: $mint url('../../img/home/support_background_mobile.png') no-repeat center;
+        min-height: 512px;
+    }
 }
+
+
 
 
 /* ------------------- */
@@ -501,5 +506,44 @@ button.yellow-background {
     .learn-section {
 
         padding: 70px 0;
+    }
+}
+
+
+/* --------------- */
+/* --- SUPPORT --- */
+/* --------------- */
+
+#support {
+
+    padding-bottom: 50px;
+
+    #support-hero {
+        
+        padding-top: 80px;
+        background: url(../../img/support/support_hero_mobile.png) no-repeat center;
+        height: 490px;
+        margin-bottom: 20px;
+    }
+
+    button {
+
+        width: 190px;
+        padding: 15px 0;
+        border-radius: 5px;
+        margin-right: 15px;
+    }
+
+    p.uppercase {
+
+        font-weight: 400;
+        font-size: 0.9em;
+        padding-top: 40px;
+    }
+
+    .image-container {
+
+        padding-top: 40px;
+        text-align: center;
     }
 }

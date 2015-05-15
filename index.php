@@ -1,4 +1,5 @@
 <?php include('includes/header.php'); ?>
+<div id="hero">
         <div id="hero">
             <div class="row">
                 <div class="large-12 columns text-center">
@@ -201,5 +202,5 @@
                 
             </div>
         </div><!-- #support -->
-        
+</div>
 <?php include('includes/footer.php'); ?>

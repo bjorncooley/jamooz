@@ -27,11 +27,17 @@ h2 {
     }
 }
 
-#support {
+#home {
+    
+    #support {
 
-    background: $mint url('../../img/home/support_background_tablet.png') no-repeat center;
-    min-height: 620px;
+        background: $mint url('../../img/home/support_background_tablet.png') no-repeat center;
+        min-height: 620px;
+    }
+
 }
+
+
 
 #schmooze {
 
@@ -61,4 +67,17 @@ h2 {
 #hardware-hero {
 
     background-position: center;
+}
+
+
+/* --------------- */
+/* --- SUPPORT --- */
+/* --------------- */
+
+#support {
+
+    #support-hero {
+        
+        background: url(../../img/support/support_hero_tablet.png) no-repeat center;
+    }
 }

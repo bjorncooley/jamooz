@@ -352,7 +352,7 @@ button.yellow-background {
   #schmooze video {
     width: 65%; }
 
-#support {
+#home #support {
   background: #91cc8b url("../../img/home/support_background_mobile.png") no-repeat center;
   min-height: 512px; }
 
@@ -511,6 +511,29 @@ button.yellow-background {
 #pricing .learn-section {
   padding: 70px 0; }
 
+/* --------------- */
+/* --- SUPPORT --- */
+/* --------------- */
+#support {
+  padding-bottom: 50px; }
+  #support #support-hero {
+    padding-top: 80px;
+    background: url(../../img/support/support_hero_mobile.png) no-repeat center;
+    height: 490px;
+    margin-bottom: 20px; }
+  #support button {
+    width: 190px;
+    padding: 15px 0;
+    border-radius: 5px;
+    margin-right: 15px; }
+  #support p.uppercase {
+    font-weight: 400;
+    font-size: 0.9em;
+    padding-top: 40px; }
+  #support .image-container {
+    padding-top: 40px;
+    text-align: center; }
+
 @media only screen and (min-width: 640px) {
   body {
     position: static; }
@@ -527,7 +550,7 @@ button.yellow-background {
     #intro h2 {
       padding-top: 60px; }
 
-  #support {
+  #home #support {
     background: #91cc8b url("../../img/home/support_background_tablet.png") no-repeat center;
     min-height: 620px; }
 
@@ -541,7 +564,13 @@ button.yellow-background {
   /* --- HARDWARE INTEGRATIONS --- */
   /* ----------------------------- */
   #hardware-hero {
-    background-position: center; } }
+    background-position: center; }
+
+  /* --------------- */
+  /* --- SUPPORT --- */
+  /* --------------- */
+  #support #support-hero {
+    background: url(../../img/support/support_hero_tablet.png) no-repeat center; } }
 @media only screen and (min-width: 1025px) {
   h1 {
     font-size: 2em; }
@@ -698,6 +727,14 @@ button.yellow-background {
       #pricing-learn-sections .learn-section:nth-child(2) h4 {
         position: relative;
         right: 10%; }
+
+  /* --------------- */
+  /* --- SUPPORT --- */
+  /* --------------- */
+  #support .image-container {
+    text-align: left; }
+  #support #support-hero {
+    background: url(../../img/support/support_hero_desktop.png) no-repeat center; }
 
   /* -------------- */
   /* --- FOOTER --- */
