@@ -663,3 +663,142 @@ button.yellow-background {
         margin-right: auto;
     }
 }
+
+
+/* --------------- */
+/* --- SUCCESS --- */
+/* --------------- */
+
+#success-page {
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    #sidebar {
+
+        width: 25%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+
+        .side-menu-header {
+
+            padding: 30px 0;
+        }
+
+        .side-menu-item {
+
+            padding: 30px;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+    }
+
+    #main-content {
+
+        position: absolute;
+        top: 0;
+        left: 25%;
+        width: 75%;
+
+        #nav {
+
+            width: 100%;
+
+            button {
+
+                width: 140px;
+            }
+
+            button:nth-of-type(2) {
+
+                margin-left: 10px;
+            }
+        }
+
+        #welcome {
+
+            padding: 90px 0;
+        }
+    }
+
+    #welcome {
+
+        background: $light-brown url(../../img/success/success_bg.png) no-repeat 70%;
+
+        h2, p {
+
+            max-width: 300px;
+        }
+
+        button {
+
+            padding: 20px 40px;
+        }
+    }
+
+    #search-bar {
+
+        width: 100%;
+        padding: 30px 0 10px;
+        text-align: center;
+
+        input {
+
+            @include border_radius(5px);
+            background: url(../../img/success/search_icon.png) no-repeat 2%;
+            padding: 15px 15px 15px 50px;
+            @include placeholder_color(white);
+            border: 1px solid white;
+        }
+    }
+
+    #footer-options {
+
+        padding: 200px 0 40px;
+        width: 100%;
+    }
+
+    #success-footer {
+
+        width: 100%;
+
+        &>div {
+
+            width: 50%;
+            margin: 0 -2px;
+            padding: 30px;
+
+            p {
+
+                margin-bottom: 0;
+                line-height: 1.2em;
+            }
+
+            img {
+
+                padding-top: 5px;
+            }
+
+            &:nth-of-type(1) {
+
+                img {
+
+                    padding-right: 20px;
+                }
+            }
+
+            &:nth-of-type(2) {
+
+                img {
+
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+

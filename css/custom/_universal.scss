@@ -74,6 +74,7 @@ $dark-blue: rgb(31,40,55);
 $dark-gray: rgb(67,67,67);
 $bright-green: rgb(115,190,68);
 $light-blue: rgb(56,165,221);
+$light-brown: rgb(222,204,180);
 $light-gray: rgb(242,242,242);
 $medium-dark-gray: rgb(88,88,91);
 $medium-blue: rgb(63,85,175);
@@ -186,9 +187,19 @@ input {
   background-color: $orange;
 }
 
+.red-orange {
+
+  color: $red-orange;
+}
+
 .red-orange-background, .red-orange-background:hover, .red-orange-background:focus {
 
   background-color: $red-orange;
+}
+
+.red-orange-border {
+
+  border: 1px solid $red-orange;
 }
 
 .teal-background {
@@ -383,6 +394,14 @@ p.tiny {
 
     display: inline-block;
   }
+}
+
+.block {
+
+  div, h1, h2, h3, h4, h5, img, a, p, input, button {
+
+    display: block;
+  }  
 }
 
 .full-width {

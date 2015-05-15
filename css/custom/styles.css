@@ -86,8 +86,14 @@ input {
 .orange-background {
   background-color: #f89f31; }
 
+.red-orange {
+  color: #e25736; }
+
 .red-orange-background, .red-orange-background:hover, .red-orange-background:focus {
   background-color: #e25736; }
+
+.red-orange-border {
+  border: 1px solid #e25736; }
 
 .teal-background {
   background-color: #5fb6b6; }
@@ -219,6 +225,9 @@ p.tiny {
 
 .inline-block div, .inline-block h1, .inline-block h2, .inline-block h3, .inline-block h4, .inline-block h5, .inline-block img, .inline-block a, .inline-block p, .inline-block input, .inline-block button {
   display: inline-block; }
+
+.block div, .block h1, .block h2, .block h3, .block h4, .block h5, .block img, .block a, .block p, .block input, .block button {
+  display: block; }
 
 .full-width {
   width: 100%; }
@@ -608,6 +617,87 @@ button.yellow-background {
     padding: 20px 60px;
     margin-left: auto;
     margin-right: auto; }
+
+/* --------------- */
+/* --- SUCCESS --- */
+/* --------------- */
+#success-page {
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+  #success-page #sidebar {
+    width: 25%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; }
+    #success-page #sidebar .side-menu-header {
+      padding: 30px 0; }
+    #success-page #sidebar .side-menu-item {
+      padding: 30px;
+      border-bottom: 1px solid black;
+      width: 100%; }
+  #success-page #main-content {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 75%; }
+    #success-page #main-content #nav {
+      width: 100%; }
+      #success-page #main-content #nav button {
+        width: 140px; }
+      #success-page #main-content #nav button:nth-of-type(2) {
+        margin-left: 10px; }
+    #success-page #main-content #welcome {
+      padding: 90px 0; }
+  #success-page #welcome {
+    background: #deccb4 url(../../img/success/success_bg.png) no-repeat 70%; }
+    #success-page #welcome h2, #success-page #welcome p {
+      max-width: 300px; }
+    #success-page #welcome button {
+      padding: 20px 40px; }
+  #success-page #search-bar {
+    width: 100%;
+    padding: 30px 0 10px;
+    text-align: center; }
+    #success-page #search-bar input {
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      background: url(../../img/success/search_icon.png) no-repeat 2%;
+      padding: 15px 15px 15px 50px;
+      border: 1px solid white; }
+      #success-page #search-bar input::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: white; }
+      #success-page #search-bar input:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: white;
+        opacity: 1; }
+      #success-page #search-bar input::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: white;
+        opacity: 1; }
+      #success-page #search-bar input:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: white; }
+  #success-page #footer-options {
+    padding: 200px 0 40px;
+    width: 100%; }
+  #success-page #success-footer {
+    width: 100%; }
+    #success-page #success-footer > div {
+      width: 50%;
+      margin: 0 -2px;
+      padding: 30px; }
+      #success-page #success-footer > div p {
+        margin-bottom: 0;
+        line-height: 1.2em; }
+      #success-page #success-footer > div img {
+        padding-top: 5px; }
+      #success-page #success-footer > div:nth-of-type(1) img {
+        padding-right: 20px; }
+      #success-page #success-footer > div:nth-of-type(2) img {
+        padding-left: 20px; }
 
 @media only screen and (min-width: 640px) {
   body {
