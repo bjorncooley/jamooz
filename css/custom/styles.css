@@ -2,6 +2,9 @@
 li {
   list-style: none; }
 
+button:hover {
+  color: initial; }
+
 /*Mixins*/
 /* Radii */
 .radius-7 {
@@ -29,6 +32,9 @@ input {
 .white, .white:hover {
   color: white; }
 
+.bright-green-background {
+  background-color: #73be44; }
+
 .dark-blue-background {
   background-color: #1f2837; }
 
@@ -38,8 +44,14 @@ input {
 .dark-gray-background {
   background-color: #434343; }
 
+.dark-gray-border {
+  border: 1px solid #434343; }
+
 .light-gray-background {
   background-color: #f2f2f2; }
+
+.medium-blue {
+  color: #3f55af; }
 
 .medium-blue-background {
   background-color: #3f55af; }
@@ -61,6 +73,9 @@ input {
 
 .mint-background {
   background-color: #91cc8b; }
+
+.mint-border {
+  border: 1px solid #91cc8b; }
 
 .orange, .orange:hover, .orange:focus {
   color: #f89f31; }
@@ -111,7 +126,7 @@ div, nav, form, textarea, input, a {
   border: none; }
 
 .white-border {
-  border: 2px solid white; }
+  border: 1px solid white; }
 
 .medium-gray-border {
   border: 2px solid #787878; }
@@ -202,7 +217,7 @@ p.tiny {
 .center {
   margin: 0 auto; }
 
-.inline-block div, .inline-block h1, .inline-block h2, .inline-block h3, .inline-block h4, .inline-block h5, .inline-block img, .inline-block a, .inline-block p {
+.inline-block div, .inline-block h1, .inline-block h2, .inline-block h3, .inline-block h4, .inline-block h5, .inline-block img, .inline-block a, .inline-block p, .inline-block input, .inline-block button {
   display: inline-block; }
 
 .full-width {
@@ -216,6 +231,9 @@ p.tiny {
 
 .max-285 {
   max-width: 285px; }
+
+.width-285 {
+  width: 285px; }
 
 .max-1280 {
   max-width: 1280px; }
@@ -533,6 +551,63 @@ button.yellow-background {
   #support .image-container {
     padding-top: 40px;
     text-align: center; }
+
+/* --------------- */
+/* --- SCHMOOZE --- */
+/* --------------- */
+#schmooze-page p {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto; }
+#schmooze-page h3.small {
+  font-size: 1.5em; }
+#schmooze-page h3 {
+  font-size: 1.8em; }
+#schmooze-page #nav {
+  box-shadow: 0 2px 5px #787878; }
+#schmooze-page #communications h2 {
+  max-width: 500px;
+  margin: 0 auto; }
+#schmooze-page #about-jamooz {
+  padding: 200px 0 220px;
+  background: url(../../img/schmooze/about.png) no-repeat center; }
+  #schmooze-page #about-jamooz h3 {
+    font-weight: 100;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 2em; }
+  #schmooze-page #about-jamooz h4 {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 15px 0; }
+#schmooze-page #coming-soon {
+  padding: 100px 0 80px; }
+  #schmooze-page #coming-soon input {
+    max-width: 500px;
+    margin: 0 auto; }
+  #schmooze-page #coming-soon button {
+    width: 400px;
+    padding: 15px 0;
+    border-radius: 5px;
+    -moz-border-radius: 5px; }
+
+#schmooze-intro {
+  padding-top: 80px; }
+  #schmooze-intro h3 {
+    max-width: 410px; }
+  #schmooze-intro form input, #schmooze-intro form button {
+    height: 50px; }
+  #schmooze-intro form input {
+    max-width: 310px; }
+
+#support {
+  background: #1f2837 url(../../img/schmooze/support.png) no-repeat center bottom;
+  height: 550px;
+  padding-top: 100px; }
+  #support h4 {
+    padding: 20px 60px;
+    margin-left: auto;
+    margin-right: auto; }
 
 @media only screen and (min-width: 640px) {
   body {

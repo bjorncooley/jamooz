@@ -547,3 +547,119 @@ button.yellow-background {
         text-align: center;
     }
 }
+
+
+/* --------------- */
+/* --- SCHMOOZE --- */
+/* --------------- */
+
+#schmooze-page {
+
+    p {
+
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h3.small {
+
+        font-size: 1.5em;
+    }
+
+    h3 {
+
+        font-size: 1.8em;
+    }
+
+    #nav {
+
+        box-shadow:
+              0 2px 5px $medium-gray,
+    }
+
+    #communications {
+
+        h2 {
+
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+
+    #about-jamooz {
+
+        padding: 200px 0 220px;
+        background: url(../../img/schmooze/about.png) no-repeat center;
+
+        h3 {
+
+            font-weight: 100;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 2em;            
+        }
+
+        h4 {
+
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 15px 0;
+        }
+    }
+
+    #coming-soon {
+
+        padding: 100px 0 80px;
+
+        input {
+
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        button {
+
+            width: 400px;
+            padding: 15px 0;
+            @include border_radius(5px);
+        }
+    }
+}
+
+#schmooze-intro {
+
+    padding-top: 80px;
+
+    h3 {
+
+        max-width: 410px;
+    }
+
+    form {
+
+        input, button {
+
+            height: 50px;
+        }
+
+        input {
+
+            max-width: 310px;
+        }
+    }
+}
+
+#support {
+
+    background: $dark-blue url(../../img/schmooze/support.png) no-repeat center bottom;
+    height: 550px;
+    padding-top: 100px;
+
+    h4 {
+        
+        padding: 20px 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
