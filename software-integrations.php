@@ -26,46 +26,44 @@
     </div>
     <div id="story-1" class="padding-top-50">
         <div class="row clearfix">
-            <div class="small-12 large-6 columns right">
+            <div class="small-12 large-6 large-offset-1 columns right">
                 <h3>Amy sees a call through the Outlook integration while looking at her email.</h3>
             </div>
-            <div class="small-12 large-6 columns relative left">
+            <div class="small-12 large-5 columns relative left clearfix">
                 <img src="img/software/amy_mobile.png" alt="" class="hide-for-large-up">
-                <img src="img/software/amy_desktop.png" alt="" class="show-for-large-up">
+                <img src="img/software/amy_desktop.png" alt="" class="show-for-large-up right">
+                <img src="img/software/phone_icon_1.png" alt="" class="show-for-large-up absolute" id="phone-icon-1">
             </div>
         </div>
     </div>
     <div id="story-2">
         <div class="row">
-            <div class="small-12 large-5 columns">
-                <h3>Amy answers the call, and her CRM Pointer opens Salesforce to log
+            <div class="small-12 large-6 columns clearfix">
+                <h3 class="right">Amy answers the call, and her CRM Pointer opens Salesforce to log
                 the customer data. Greg, a new lead, wants to buy.</h3>
             </div>
-            <div class="small-12 large-6 large-offset-1 columns">
+            <div class="small-12 large-6 columns">
                 <img src="img/software/crm_mobile.png" alt="" class="hide-for-large-up">
-                <img src="img/software/alex_desktop.png" alt="" class="show-for-large-up">            
-            </div>
-            
-        </div>
-        <div class="row">
-            <div class="large-11 columns large-offset-1 inline-block show-for-large-up padding-top-30">
-                <img src="img/software/david_desktop_1.png" alt="">
-                <img src="img/software/david_desktop_2.png" alt="">
-                <img src="img/software/david_desktop_3.png" alt="">
-                <img src="img/software/walking_icon_2.png" alt="" id="walking-icon-2">
+                <img src="img/software/crm_desktop.png" alt="" class="show-for-large-up">            
             </div>
         </div>
     </div>
     <div id="story-3">
-        <div class="row">
-            <div class="small-12 large-5 columns">
+        <div class="row clearfix">
+            <div class="small-12 large-6 columns right relative">
+                <h3>Amy records the call to remember all the details for the billing
+                information.</h3>
                 <h3>Amy uses efax to send the customer billing information. The customer
                 then sends back a signed bill through fax and Amy sees it in her email.
                 (Saving paper!)</h3>
+                <img src="img/software/phone_icon_2.png" alt="" class="show-for-large-up absolute" id="phone-icon-2">
             </div>
-            <div class="small-12 large-6 large-offset-1 columns">
+            <div class="small-12 large-6 columns left">
                 <img src="img/software/efax_mobile.png" alt="" class="hide-for-large-up">
-                <img src="img/software/david_intercom_desktop.png" alt="" class="show-for-large-up">
+                <img src="img/software/efax_desktop.png" alt="" class="show-for-large-up">
+            </div>
+            <div class="large-12 columns show-for-large-up">
+                <img src="img/software/efax_desktop_2.png" alt="">
             </div>
         </div>
     </div>
@@ -104,7 +102,7 @@
                             <div class="shadowed">
                                 <div class="card-text">
                                     <h5 class="text-center uppercase">Outlook</h5>
-                                    <img src="img/software/outlook-icon.png" alt="">
+                                    <img src="img/software/outlook_icon.png" alt="">
                                 </div>
                             </div>
                             
@@ -117,7 +115,7 @@
                             <div class="shadowed">
                                 <div class="card-text">
                                     <h5 class="text-center uppercase">Outlook</h5>
-                                    <img src="img/software/outlook-icon.png" alt="">
+                                    <img src="img/software/outlook_icon.png" alt="">
                                 </div>
                             </div>
                             
@@ -130,7 +128,7 @@
                             <div class="shadowed">
                                 <div class="card-text">
                                     <h5 class="text-center uppercase">Outlook</h5>
-                                    <img src="img/software/outlook-icon.png" alt="">
+                                    <img src="img/software/outlook_icon.png" alt="">
                                 </div>
                             </div>
                             

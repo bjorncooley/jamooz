@@ -446,11 +446,13 @@ button.yellow-background {
 /* ----------------------------- */
 /* --- SOFTWARE INTEGRATIONS --- */
 /* ----------------------------- */
-#software-integrations #software-hero {
+#software-hero {
   background: url(../../img/software/software_hero_bg.png) no-repeat; }
-#software-integrations #software-intro {
+
+#software-intro {
   padding: 80px 0;
   background-color: #f2f2f2; }
+
 #software-integrations #story-2 img {
   padding-bottom: 0; }
 #software-integrations #story-3 img {
@@ -536,21 +538,21 @@ button.yellow-background {
   #hardware-support, #software-support {
     margin-bottom: 80px; }
 
-  /* ----------------------------- */
-  /* --- HARDWARE INTEGRATIONS --- */
-  /* ----------------------------- */
-  #hardware-hero {
+  #hardware-hero, #software-hero {
     padding-top: 200px; }
-    #hardware-hero h4 {
+    #hardware-hero h4, #software-hero h4 {
       padding-bottom: 200px; }
 
-  #hardware-intro {
+  #hardware-intro, #software-intro {
     padding: 200px 0;
     background: url("../../img/shared/gradient_bg_1.png") no-repeat center; }
-    #hardware-intro h3 {
+    #hardware-intro h3, #software-intro h3 {
       max-width: 650px;
       margin: 0 auto; }
 
+  /* ----------------------------- */
+  /* --- HARDWARE INTEGRATIONS --- */
+  /* ----------------------------- */
   #story-1 {
     padding: 100px 0 160px; }
     #story-1 h3 {
@@ -597,6 +599,25 @@ button.yellow-background {
   /* ----------------------------- */
   /* --- SOFTWARE INTEGRATIONS --- */
   /* ----------------------------- */
+  #software-integrations #story-1 h3 {
+    padding-top: 285px;
+    max-width: 500px; }
+  #software-integrations #story-1 #phone-icon-1 {
+    right: -280px;
+    bottom: 40px; }
+  #software-integrations #story-2 h3 {
+    padding-top: 275px;
+    width: 400px; }
+  #software-integrations #story-3 h3 {
+    padding-top: 150px; }
+    #software-integrations #story-3 h3:nth-of-type(1) {
+      width: 300px; }
+  #software-integrations #story-3 img:nth-of-type(2) {
+    padding-top: 250px; }
+  #software-integrations #story-3 #phone-icon-2 {
+    top: 135px;
+    left: -249px; }
+
   /* -------------- */
   /* --- FOOTER --- */
   /* -------------- */
