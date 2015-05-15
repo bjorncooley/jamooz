@@ -1,5 +1,5 @@
-<img src="img/get-started/left-arrow-black.png" alt="" class="left-arrow">
-<img src="img/get-started/right-arrow-black.png" alt="" class="right-arrow">
+<img src="img/get-started/left-arrow-black.png" alt="" class="left-arrow" id="card-left-arrow">
+<img src="img/get-started/right-arrow-black.png" alt="" class="right-arrow" id="card-right-arrow">
 <div class="row">
     <h3 class="text-center padding-bottom-50">A) Choose a Base Plan</h3>
     <div class="card-container relative">

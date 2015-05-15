@@ -15,6 +15,23 @@
             </div>
         </div>
     </div>
+    <div id="base-plan" class="card-section padding-bottom-50 padding-top-50">
+        <div class="row">
+            <div class="large-12 columns relative">
+                <h1 class="text-center padding-bottom-50">Choose a Base Plan</h1>
+
+                <?php include('includes/plan-cards.php'); ?>
+                
+                <div class="row">
+                    <div class="large-12 columns text-center">
+                        <button class="yellow-background">
+                            Continue with a Customer Success Teammate
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- #step-2 -->
 </div>
 
 <?php include('includes/footer.php'); ?>

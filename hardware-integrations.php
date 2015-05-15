@@ -99,8 +99,8 @@
     <div class="row">
         <div class="large-12 columns relative">
             <h1 class="text-center padding-top-50 padding-bottom-30">Device Discounts</h1>
-            <img src="img/get-started/left-arrow-black.png" alt="" class="left-arrow">
-            <img src="img/get-started/right-arrow-black.png" alt="" class="right-arrow">
+            <img src="img/get-started/left-arrow-black.png" alt="" class="left-arrow" id="card-left-arrow">
+            <img src="img/get-started/right-arrow-black.png" alt="" class="right-arrow" id="card-right-arrow">
             <div class="row">
                 <div class="card-container relative">
                     <div class="small-12 medium-4 columns small-centered medium-uncentered plan-card current">

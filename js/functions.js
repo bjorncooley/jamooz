@@ -51,7 +51,7 @@ $(function(){
 
     // Card swapping
 
-    $('#step-2 .right-arrow, #discounts .right-arrow, #apps .right-arrow').click(function(){
+    $('#card-right-arrow').click(function(){
 
         console.log("Clicked");
 
@@ -73,7 +73,7 @@ $(function(){
         $next.animate({ left: "-=" + width,}, 500).addClass('current');
     });
 
-    $('#step-2 .left-arrow, #discounts .left-arrow, #apps .left-arrow').click(function(){
+    $('#card-left-arrow').click(function(){
 
         var $current = $('.plan-card.current');
         var $next = $current.prev();
