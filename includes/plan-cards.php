@@ -1,5 +1,5 @@
 <div class="card-container relative">
-    <div class="small-12 medium-4 columns small-centered medium-uncentered plan-card current">
+    <div class="small-12 medium-4 columns small-centered medium-uncentered card current">
         <div class="shadowed">
             <div class="card-text">
                 <p class="padding-bottom-30">Under 3 Extensions</p>
@@ -30,7 +30,7 @@
             <p class="white close-details-link hide">Close Details</p>
         </div>
     </div>
-    <div class="small-12 medium-4 columns small-centered plan-card medium-uncentered">
+    <div class="small-12 medium-4 columns small-centered card medium-uncentered">
         <div class="shadowed">
             <div class="card-text">
                 <p class="padding-bottom-30">3-40 Extensions</p>
@@ -65,7 +65,7 @@
             <p class="white close-details-link hide">Close Details</p>
         </div>
     </div>
-    <div class="small-12 medium-4 columns small-centered plan-card medium-uncentered">
+    <div class="small-12 medium-4 columns small-centered card medium-uncentered">
         <div class="shadowed">
             <div class="card-text">
                 <p class="padding-bottom-30">41+ Extensions</p>

@@ -9,7 +9,7 @@ $(window).load(function(){
 
         mobile = true;
 
-        var plan_card_height = $('.plan-card').height();
+        var plan_card_height = $('.card').height();
         var container_height = $('.card-container').height();
 
         $('.card-container').height(container_height - plan_card_height * 2);
@@ -45,7 +45,7 @@ $(function(){
     });
 
     // Activate plan cards when selected
-    $('#get-started .plan-card, #pricing .plan-card').click(function(){
+    $('#get-started .card, #pricing .card').click(function(){
 
         $(this).addClass('selected');
         $(this).siblings().removeClass('selected');
@@ -71,7 +71,7 @@ $(function(){
 
     $('#card-right-arrow').click(function(){
 
-        var $current = $('.plan-card.current');
+        var $current = $('.card.current');
         var $next = $current.next();
         var width = $(window).width();
         var offset = width + card_margin;
@@ -79,7 +79,7 @@ $(function(){
         // Check if this is the first card, if so, get the last card
         if ( $next.length == 0 ) {
 
-            $next = $('.plan-card:first');
+            $next = $('.card:first');
         }
 
         // Make sure the next card is in the correct position
@@ -91,7 +91,7 @@ $(function(){
 
     $('#card-left-arrow').click(function(){
 
-        var $current = $('.plan-card.current');
+        var $current = $('.card.current');
         var $next = $current.prev();
         var width = $(window).width();
         var offset = width + card_margin;
@@ -99,7 +99,7 @@ $(function(){
         // Check if this is the first card, if so, get the last card
         if ( $next.length == 0 ) {
 
-            $next = $('.plan-card:last');
+            $next = $('.card:last');
         }
 
         // Make sure the next card is in the correct position
@@ -196,11 +196,11 @@ function movePlanCards() {
         cards_moved = true;
 
         var width = $(window).width();
-        var padding = parseInt( $('.plan-card.current').css('padding-left') );
-        card_margin = (width - $('.plan-card.current').width()) / 2 - padding;
+        var padding = parseInt( $('.card.current').css('padding-left') );
+        card_margin = (width - $('.card.current').width()) / 2 - padding;
         var i=0;
 
-        $('.plan-card').each(function(){
+        $('.card').each(function(){
 
             offset = (width * i) + card_margin;
             $(this).css('position', 'absolute');
@@ -211,7 +211,7 @@ function movePlanCards() {
 
     } else if ( cards_moved = true ) {
 
-        $('.plan-card').each(function(){
+        $('.card').each(function(){
             $(this).css('position', 'static');
         });
 

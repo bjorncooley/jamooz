@@ -98,7 +98,7 @@
                 <img src="img/shared/slider_right_arrow_black.png" alt="" class="right-arrow" id="card-right-arrow">
                 <div class="row">
                     <div class="card-container relative">
-                        <div class="small-12 medium-4 columns small-centered medium-uncentered plan-card current">
+                        <div class="small-12 medium-4 columns small-centered medium-uncentered card current">
                             <div class="shadowed">
                                 <div class="card-text">
                                     <h5 class="text-center uppercase">Outlook</h5>
@@ -128,7 +128,7 @@
                                 <h4 class="close-details-link hide">Close Details</h4>
                             </div>
                         </div>
-                        <div class="small-12 medium-4 columns small-centered medium-uncentered plan-card">
+                        <div class="small-12 medium-4 columns small-centered medium-uncentered card">
                             <div class="shadowed">
                                 <div class="card-text">
                                     <h5 class="text-center uppercase">Outlook</h5>
@@ -157,7 +157,7 @@
                                 <h4 class="close-details-link hide">Close Details</h4>
                             </div>
                         </div>
-                        <div class="small-12 medium-4 columns small-centered medium-uncentered plan-card">
+                        <div class="small-12 medium-4 columns small-centered medium-uncentered card">
                             <div class="shadowed">
                                 <div class="card-text">
                                     <h5 class="text-center uppercase">Outlook</h5>

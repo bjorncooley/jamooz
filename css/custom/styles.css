@@ -344,44 +344,44 @@ button.yellow-background {
 .card-section .card-container {
   overflow: hidden;
   padding-top: 70px; }
-.card-section .plan-card {
+.card-section .card {
   max-width: 80%;
   cursor: pointer; }
-  .card-section .plan-card .caption {
+  .card-section .card .caption {
     background-color: #e25736;
     padding: 25px 0 20px; }
   .card-section .plan-card.selected .caption, .card-section .plan-card.selected .shadowed .card-details-container .card-details {
     background-color: #38a5dd; }
-  .card-section .plan-card p, .card-section .plan-card h4 {
+  .card-section .card p, .card-section .card h4 {
     padding: 0 15px; }
-  .card-section .plan-card p {
+  .card-section .card p {
     margin-bottom: 0; }
-  .card-section .plan-card img.relative {
+  .card-section .card img.relative {
     top: 27px;
     z-index: 99; }
-  .card-section .plan-card .shadowed {
+  .card-section .card .shadowed {
     box-shadow: 2px 2px 5px #787878, 2px -2px 5px #787878, -2px -2px 5px #787878, -2px 2px 5px #787878;
     position: relative;
     padding: 30px 0 0 0; }
-    .card-section .plan-card .shadowed .card-text {
+    .card-section .card .shadowed .card-text {
       height: 250px; }
-      .card-section .plan-card .shadowed .card-text h5 {
+      .card-section .card .shadowed .card-text h5 {
         padding-bottom: 30px; }
-    .card-section .plan-card .shadowed .card-details-container {
+    .card-section .card .shadowed .card-details-container {
       position: absolute;
       height: 100%;
       width: 100%;
       top: 0;
       overflow: hidden; }
-      .card-section .plan-card .shadowed .card-details-container .card-details {
+      .card-section .card .shadowed .card-details-container .card-details {
         top: 100%;
         background-color: #e25736;
         height: 100%;
         width: 100%;
         padding-top: 50px; }
-        .card-section .plan-card .shadowed .card-details-container .card-details ul {
+        .card-section .card .shadowed .card-details-container .card-details ul {
           padding-left: 15px; }
-          .card-section .plan-card .shadowed .card-details-container .card-details ul li {
+          .card-section .card .shadowed .card-details-container .card-details ul li {
             background: url(../../img/shared/white_check_mark.png) no-repeat left;
             padding: 5px 0 5px 10px;
             font-size: 0.8em; }
@@ -449,12 +449,12 @@ button.yellow-background {
   #story-1 h3, #story-2 h3, #story-3 h3, #hardware-intro h3, #software-intro h3 {
     font-weight: 100; }
 
-#apps .plan-card .card-text, #discounts .plan-card .card-text {
+#apps .card .card-text, #discounts .card .card-text {
   text-align: center; }
-  #apps .plan-card .card-text h5, #discounts .plan-card .card-text h5 {
+  #apps .card .card-text h5, #discounts .card .card-text h5 {
     padding-bottom: 15px;
     font-weight: 400; }
-  #apps .plan-card .card-text img, #discounts .plan-card .card-text img {
+  #apps .card .card-text img, #discounts .card .card-text img {
     padding-bottom: 30px; }
 
 #hardware-support, #software-support {
@@ -781,7 +781,7 @@ button.yellow-background {
   #schmooze h3 {
     line-height: 1.5em; }
 
-  .plan-card .shadowed .card-text {
+  .card .shadowed .card-text {
     height: 170px; }
 
   /* ----------------------------- */
