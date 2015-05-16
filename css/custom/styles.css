@@ -805,7 +805,7 @@ button.yellow-background {
 
   button.yellow-background {
     width: auto;
-    padding: 15px; }
+    padding: 15px 80px; }
 
   #hero h1 {
     max-width: 800px;

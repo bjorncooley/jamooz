@@ -152,7 +152,6 @@
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="red-orange-background white text-center caption inline-block">
                                 <h4 class="show-details-link">See Details</h4>
                                 <h4 class="close-details-link hide">Close Details</h4>
