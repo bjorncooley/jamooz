@@ -26,20 +26,26 @@
         </div>
     </div><!-- #step-1 -->
     <div id="step-2" class="card-section padding-bottom-50 padding-top-50">
-        <div class="row">
-            <div class="large-12 columns relative">
-                <h1 class="text-center padding-bottom-50">Step 2: Pick Your Perfect Plan</h1>
-                <img src="img/shared/slider_left_arrow_black.png" alt="" class="left-arrow" id="card-left-arrow">
-                <img src="img/shared/slider_right_arrow_black.png" alt="" class="right-arrow" id="card-right-arrow">
-                <div class="row">
-                    <h3 class="text-center padding-bottom-50">A) Choose a Base Plan</h3>
-                    <?php include('includes/plan-cards.php'); ?>
-                </div>
-                <div class="row">
-                    <div class="large-12 columns text-center">
-                        <button class="yellow-background">Next</button>
+        <h1 class="text-center padding-bottom-50">Step 2: Pick Your Perfect Plan</h1>
+        <div class="relative">
+            <div class="row relative" id="plans">
+                <div class="large-12 columns relative">
+                    <img src="img/shared/slider_left_arrow_black.png" alt="" class="left-arrow" id="card-left-arrow">
+                    <img src="img/shared/slider_right_arrow_black.png" alt="" class="right-arrow" id="card-right-arrow">
+                    <div class="row">
+                        <h3 class="text-center padding-bottom-50">A) Choose a Base Plan</h3>
+                        <?php include('includes/plan-cards.php'); ?>
+                    </div>
+                    <div class="row">
+                        <div class="large-12 columns text-center">
+                            <button class="yellow-background">Next</button>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="absolute" id="apps-add-ons">
+                <h3 class="text-center padding-bottom-50">B) Choose Extras</h3>
+                <?php include('includes/apps-add-ons.php'); ?>
             </div>
         </div>
     </div><!-- #step-2 -->

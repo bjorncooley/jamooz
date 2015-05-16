@@ -1,7 +1,6 @@
 var card_margin=0;
 var cards_moved = false;
 var mobile = false;
-var card_details_position = [];
 var card_details_icon_position = [];
 
 $(window).load(function(){
@@ -19,6 +18,7 @@ $(window).load(function(){
     }
 
     moveSlides();
+    setUpGetStarted();
 });
 
 $(window).resize(function(){
@@ -53,6 +53,19 @@ $(function(){
         $(this).find('img').attr('src', 'img/get-started/blue-check-icon-mobile.png');
         $(this).siblings().find('img').attr('src', 'img/get-started/yellow-plus-icon-mobile.png');
     });
+
+    // Move Get Started to next slide section
+    $('#get-started #plans button.yellow-background').click(function(){
+
+        var width = $(window).width();
+
+        // Make sure next slide is in correct location
+        $('#apps-add-ons').css('left', width);
+
+        $('#plans').animate({ left: '-=' + width }, 400);
+        $('#apps-add-ons').animate({ left: 0 }, 400);
+
+    }); 
 
     // Card swapping
 
@@ -150,7 +163,6 @@ $(function(){
         $detailsSlide = $(this).parent().siblings().find('.card-details');
 
         card_details_icon_position[index] = parseInt($icon.css('top'));
-        card_details_position[index] = parseInt($detailsSlide.css('top'));
 
         $icon.animate({ top: '-=' + container_height}, 400);
         $detailsSlide.animate({ top: 0}, 400);
@@ -165,7 +177,6 @@ $(function(){
 
         var index = $(this).parent().parent().index();
         var icon_position = card_details_icon_position[index];
-        var details_position = card_details_position[index];
 
         $icon = $(this).parent().siblings().find('img.relative');
         $icon.animate({ top: icon_position}, 400);
@@ -223,4 +234,11 @@ function moveSlides() {
 
         i += 1;
     });
+}
+
+function setUpGetStarted() {
+
+    var width = $(window).width();
+
+    $('#get-started #apps-add-ons').css('left', width);
 }

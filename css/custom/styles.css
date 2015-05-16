@@ -421,6 +421,13 @@ button.yellow-background {
 /* ------------------- */
 /* --- GET STARTED --- */
 /* ------------------- */
+#apps-add-ons {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
 #step-1 h4, #step-1 form {
   max-width: 500px;
   margin: 0 auto; }
@@ -759,7 +766,7 @@ button.yellow-background {
     line-height: 1.3em;
     padding-bottom: 40px; }
 
-  .card-section .left-arrow, .card-section .right-arrow {
+  #plans .left-arrow, #plans .right-arrow, #discounts .left-arrow, #discounts .right-arrow, #apps .left-arrow, #apps .right-arrow, #base-plan .left-arrow, #base-plan .right-arrow {
     display: none; }
 
   #intro {
@@ -923,6 +930,10 @@ button.yellow-background {
     top: 135px;
     left: -249px; }
 
+  #extras .slide {
+    height: 630px; }
+  #extras button {
+    width: 210px; }
   #extras > div > .row {
     padding: 70px 0; }
   #extras > div p {
