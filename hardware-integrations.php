@@ -112,10 +112,25 @@
                             <div class="text-center">
                                 <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
                             </div>
+                            <div class="card-details-container">
+                                <div class="absolute card-details white">
+                                    <ul>
+                                        <li>Easily Transfer your current phone number</li>
+                                        <li>US &amp; Canada Phone Numbers Available</li>
+                                        <li>Unlimited Texting and Inbound Calling</li>
+                                        <li>5000 Mins/mo. Outbound Calling</li>
+                                        <li>Works over WiFi/3G/4G/LTE</li>
+                                        <li>Group calling up to 30 People</li>
+                                        <li>Low International Rates</li>
+                                        <li>Use on any landline, mobile devices, tablets &amp; PCs</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="red-orange-background white text-center caption inline-block">
-                            <h4>See Details</h4>
+                            <h4 class="show-details-link">See Details</h4>
+                            <h4 class="close-details-link hide">Close Details</h4>
                         </div>
                     </div>
                     <div class="small-12 medium-4 columns small-centered medium-uncentered plan-card">
@@ -127,10 +142,25 @@
                             <div class="text-center">
                                 <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
                             </div>
+                            <div class="card-details-container">
+                                <div class="absolute card-details white">
+                                    <ul>
+                                        <li>Easily Transfer your current phone number</li>
+                                        <li>US &amp; Canada Phone Numbers Available</li>
+                                        <li>Unlimited Texting and Inbound Calling</li>
+                                        <li>5000 Mins/mo. Outbound Calling</li>
+                                        <li>Works over WiFi/3G/4G/LTE</li>
+                                        <li>Group calling up to 30 People</li>
+                                        <li>Low International Rates</li>
+                                        <li>Use on any landline, mobile devices, tablets &amp; PCs</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="red-orange-background white text-center caption inline-block">
-                            <h4>See Details</h4>
+                            <h4 class="show-details-link">See Details</h4>
+                            <h4 class="close-details-link hide">Close Details</h4>
                         </div>
                     </div>
                     <div class="small-12 medium-4 columns small-centered medium-uncentered plan-card">
@@ -142,10 +172,25 @@
                             <div class="text-center">
                                 <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
                             </div>
+                            <div class="card-details-container">
+                                <div class="absolute card-details white">
+                                    <ul>
+                                        <li>Easily Transfer your current phone number</li>
+                                        <li>US &amp; Canada Phone Numbers Available</li>
+                                        <li>Unlimited Texting and Inbound Calling</li>
+                                        <li>5000 Mins/mo. Outbound Calling</li>
+                                        <li>Works over WiFi/3G/4G/LTE</li>
+                                        <li>Group calling up to 30 People</li>
+                                        <li>Low International Rates</li>
+                                        <li>Use on any landline, mobile devices, tablets &amp; PCs</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="red-orange-background white text-center caption inline-block">
-                            <h4>See Details</h4>
+                            <h4 class="show-details-link">See Details</h4>
+                            <h4 class="close-details-link hide">Close Details</h4>
                         </div>
                     </div>
                 </div>

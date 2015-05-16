@@ -9,6 +9,11 @@ button:hover {
   color: initial;
 }
 
+.hide {
+
+  display: none !important;
+}
+
 
 /*Mixins*/
 @mixin border_box {

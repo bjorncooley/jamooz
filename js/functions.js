@@ -1,6 +1,8 @@
 var card_margin=0;
 var cards_moved = false;
 var mobile = false;
+var card_details_position = [];
+var card_details_icon_position = [];
 
 $(window).load(function(){
 
@@ -97,8 +99,6 @@ $(function(){
     // Slide swapping
     $('.slide-container .right-arrow').click(function(){
 
-        console.log('clicked');
-
         var $current = $('.slide.current');
         var $next = $current.next();
         var width = $(window).width();
@@ -133,6 +133,48 @@ $(function(){
 
         $current.animate({ left: "+=" + width,}, 500).removeClass('current');
         $next.animate({ left: "+=" + width,}, 500).addClass('current');
+    });
+
+
+    // Slide up card details
+    $('.show-details-link').click(function(e){
+
+        e.stopPropagation();
+
+        var index = $(this).parent().parent().index();
+
+        $shadowed = $(this).parent().siblings('.shadowed');
+        var container_height = $shadowed.height() + parseInt($shadowed.css('padding-top'));
+
+        $icon = $(this).parent().siblings().find('img.relative');
+        $detailsSlide = $(this).parent().siblings().find('.card-details');
+
+        card_details_icon_position[index] = parseInt($icon.css('top'));
+        card_details_position[index] = parseInt($detailsSlide.css('top'));
+
+        $icon.animate({ top: '-=' + container_height}, 400);
+        $detailsSlide.animate({ top: 0}, 400);
+
+        $(this).addClass('hide');
+        $(this).siblings('.close-details-link').removeClass('hide');
+    });
+
+    $('.close-details-link').click(function(e){
+
+        e.stopPropagation();
+
+        var index = $(this).parent().parent().index();
+        var icon_position = card_details_icon_position[index];
+        var details_position = card_details_position[index];
+
+        $icon = $(this).parent().siblings().find('img.relative');
+        $icon.animate({ top: icon_position}, 400);
+
+        $detailsSlide = $(this).parent().siblings().find('.card-details');
+        $detailsSlide.animate({ top: '100%'}, 400);
+
+        $(this).addClass('hide');
+        $(this).siblings('.show-details-link').removeClass('hide');
     });
 });
 

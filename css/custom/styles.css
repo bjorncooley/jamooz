@@ -5,6 +5,9 @@ li {
 button:hover {
   color: initial; }
 
+.hide {
+  display: none !important; }
+
 /*Mixins*/
 /* Radii */
 .radius-7 {
@@ -340,31 +343,48 @@ button.yellow-background {
   right: 0; }
 .card-section .card-container {
   overflow: hidden;
-  padding-top: 10px; }
+  padding-top: 70px; }
 .card-section .plan-card {
   max-width: 80%;
   cursor: pointer; }
   .card-section .plan-card .caption {
     background-color: #e25736;
     padding: 25px 0 20px; }
-  .card-section .plan-card.selected .caption {
-    background-color: #3f55af; }
+  .card-section .plan-card.selected .caption, .card-section .plan-card.selected .shadowed .card-details-container .card-details {
+    background-color: #38a5dd; }
   .card-section .plan-card p, .card-section .plan-card h4 {
     padding: 0 15px; }
   .card-section .plan-card p {
     margin-bottom: 0; }
   .card-section .plan-card img.relative {
-    top: 27px; }
-  .card-section .plan-card .shadowed {
-    padding-top: 50px; }
-    .card-section .plan-card .shadowed .card-text {
-      height: 175px; }
-      .card-section .plan-card .shadowed .card-text h5 {
-        padding-bottom: 30px; }
+    top: 27px;
+    z-index: 99; }
   .card-section .plan-card .shadowed {
     box-shadow: 2px 2px 5px #787878, 2px -2px 5px #787878, -2px -2px 5px #787878, -2px 2px 5px #787878;
     position: relative;
     padding: 30px 0 0 0; }
+    .card-section .plan-card .shadowed .card-text {
+      height: 250px; }
+      .card-section .plan-card .shadowed .card-text h5 {
+        padding-bottom: 30px; }
+    .card-section .plan-card .shadowed .card-details-container {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      overflow: hidden; }
+      .card-section .plan-card .shadowed .card-details-container .card-details {
+        top: 100%;
+        background-color: #e25736;
+        height: 100%;
+        width: 100%;
+        padding-top: 50px; }
+        .card-section .plan-card .shadowed .card-details-container .card-details ul {
+          padding-left: 15px; }
+          .card-section .plan-card .shadowed .card-details-container .card-details ul li {
+            background: url(../../img/shared/white_check_mark.png) no-repeat left;
+            padding: 5px 0 5px 10px;
+            font-size: 0.8em; }
 
 #software-hero h4, #hardware-hero h4, #pricing-hero h4 {
   line-height: 1.8em; }

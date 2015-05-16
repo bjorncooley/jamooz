@@ -65,7 +65,7 @@ button.yellow-background {
     .card-container {
 
         overflow: hidden;
-        padding-top: 10px;
+        padding-top: 70px;
     }
 
     .plan-card {    
@@ -81,9 +81,9 @@ button.yellow-background {
 
         &.selected {
 
-            .caption {
+            .caption, .shadowed .card-details-container .card-details {
 
-                background-color: $medium-blue;
+                background-color: $light-blue;
             }
         }
 
@@ -100,21 +100,7 @@ button.yellow-background {
         img.relative {
 
             top: 27px;
-        }
-
-        .shadowed {
-
-            padding-top: 50px;
-
-            .card-text {
-
-                height: 175px;
-
-                h5 {
-
-                    padding-bottom: 30px;
-                }
-            }
+            z-index: 99;
         }
 
         .shadowed {
@@ -125,8 +111,49 @@ button.yellow-background {
                   2px -2px 5px $medium-gray,
                   -2px -2px 5px $medium-gray,
                   -2px 2px 5px $medium-gray;
+
             position: relative;
             padding: 30px 0 0 0;
+
+            .card-text {
+
+                height: 250px;
+
+                h5 {
+
+                    padding-bottom: 30px;
+                }
+            }   
+
+            .card-details-container {
+
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                overflow: hidden;
+
+                .card-details {
+
+                    top: 100%;
+                    background-color: $red-orange;
+                    height: 100%;
+                    width: 100%;
+                    padding-top: 50px;
+
+                    ul {
+
+                        padding-left: 15px;
+
+                        li {
+
+                            background: url(../../img/shared/white_check_mark.png) no-repeat left;
+                            padding: 5px 0 5px 10px;
+                            font-size: 0.8em;
+                        }
+                    }
+                }
+            }       
 
         }
     }
