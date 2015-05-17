@@ -279,13 +279,6 @@
             </div><!-- .card-container -->
         </div><!-- .slide -->
     </div><!-- .slide-container -->
-    <div class="row">
-        <div class="large-12 columns relative slide">
-            
-            <img src="img/shared/slider_left_arrow_black.png" alt="" class="left-arrow" id="card-left-arrow">
-            <img src="img/shared/slider_right_arrow_black.png" alt="" class="right-arrow" id="card-right-arrow">
-        </div>
-    </div>
 </div><!-- #discounts -->
 <div id="hardware-support">
     <div class="row">

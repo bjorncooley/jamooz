@@ -772,7 +772,7 @@ button.yellow-background {
     line-height: 1.3em;
     padding-bottom: 40px; }
 
-  #plans #card-left-arrow, #plans #card-right-arrow, #apps #card-left-arrow, #apps #card-right-arrow, #base-plan #card-left-arrow, #base-plan #card-right-arrow, #discount #card-left-arrow, #discount #card-right-arrow {
+  #plans #card-left-arrow, #plans #card-right-arrow, #apps #card-left-arrow, #apps #card-right-arrow, #base-plan #card-left-arrow, #base-plan #card-right-arrow, #discounts #card-left-arrow, #discounts #card-right-arrow {
     display: none; }
 
   #discounts.row > .left-arrow, #discounts.row > .right-arrow {
