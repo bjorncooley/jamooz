@@ -89,6 +89,15 @@ $(function(){
         var $nextContainer = $currentContainer.next('.card-container');
 
         var width = $(window).width();
+        var width = $(window).width();
+        var padding = parseInt( $current.css('padding-left') );
+
+        card_margin = (width - $current.width()) / 2 - padding;
+        
+        // var offset = width + card_margin;
+
+        //card_margin = (width - $(this).siblings().find('.card.current').width()) / 2;
+
         var offset = width + card_margin;
 
         // Logic for figuring out what to do if this is the last card
@@ -124,6 +133,11 @@ $(function(){
         var $nextContainer = $currentContainer.prev('.card-container');
 
         var width = $(window).width();
+        var width = $(window).width();
+        var padding = parseInt( $current.css('padding-left') );
+
+        card_margin = (width - $current.width()) / 2 - padding;
+
         var offset = width + card_margin;
 
         // Check if this is the first card, if so, get the last card
@@ -133,7 +147,6 @@ $(function(){
 
                 $nextContainer = $('.card-container:last');
                 $next = $nextContainer.find('.card:last');
-                console.log($next.html());
 
             } else {
 
@@ -238,18 +251,24 @@ function movePlanCards() {
         cards_moved = true;
 
         var width = $(window).width();
-        var padding = parseInt( $('.card.current').css('padding-left') );
-        card_margin = (width - $('.card.current').width()) / 2;
-        var i=0;
 
-        $('.card').each(function(){
+        $('.slide-container').each(function(){
 
-            offset = (width * i) + card_margin;
-            $(this).css('position', 'absolute');
-            $(this).css('left', offset + 'px');
+            var padding = parseInt( $(this).find('.card.current').css('padding-left') );
+            card_margin = (width - $(this).find('.card.current').width()) / 2 - padding;
 
-            i += 1;
+            var i=0;
+
+            $(this).find('.card').each(function(){
+
+                offset = (width * i) + card_margin;
+                $(this).css('position', 'absolute');
+                $(this).css('left', offset + 'px');
+
+                i += 1;
+            });
         });
+        
 
     } else if ( cards_moved = true ) {
 

@@ -1,4 +1,4 @@
-<div class="row current card-container">
+<div class="row current card-container current">
     <div class="relative">
         <div class="small-12 medium-4 columns small-centered medium-uncentered card current">
             <div class="shadowed">

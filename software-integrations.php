@@ -91,13 +91,13 @@
     </div><!-- #all-in-one -->
 
     <div id="apps" class="card-section padding-bottom-50 padding-top-50">
-        <div class="row">
+        <div class="row slide-container">
             <div class="large-12 columns relative">
                 <h1 class="text-center padding-top-50 padding-bottom-30">All Apps</h1>
                 <img src="img/shared/slider_left_arrow_black.png" alt="" class="left-arrow" id="card-left-arrow">
                 <img src="img/shared/slider_right_arrow_black.png" alt="" class="right-arrow" id="card-right-arrow">
-                <div class="row">
-                    <div class="card-container relative">
+                <div class="row card-container">
+                    <div class="relative">
                         <div class="small-12 medium-4 columns small-centered medium-uncentered card current">
                             <div class="shadowed">
                                 <div class="card-text">

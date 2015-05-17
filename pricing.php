@@ -16,16 +16,14 @@
         </div>
     </div>
     <div id="base-plan" class="card-section padding-bottom-50 padding-top-50">
-        <div class="row">
-            <div class="large-12 columns relative">
+        <div class="row slide-container">
+            <div class="large-12 columns relative slide">
                 <h1 class="text-center padding-bottom-50 large no-text-transform">Choose a Base Plan</h1>
                 <img src="img/shared/slider_left_arrow_black.png" alt="" class="left-arrow" id="card-left-arrow">
                 <img src="img/shared/slider_right_arrow_black.png" alt="" class="right-arrow" id="card-right-arrow">
-                <div class="row">
 
                     <?php include('includes/plan-cards.php'); ?>
 
-                </div>
                 <div class="row">
                     <div class="large-12 columns text-center">
                         <button class="yellow-background">Continue with a Customer Success Teammate</button>

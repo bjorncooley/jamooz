@@ -28,7 +28,7 @@
     <div id="step-2" class="card-section padding-bottom-50 padding-top-50">
         <h1 class="text-center padding-bottom-50">Step 2: Pick Your Perfect Plan</h1>
         <div class="relative">
-            <div class="row relative" id="plans">
+            <div class="row relative slide-container" id="plans">
                 <div class="large-12 columns relative">
                     <img src="img/shared/slider_left_arrow_black.png" alt="" class="left-arrow" id="card-left-arrow">
                     <img src="img/shared/slider_right_arrow_black.png" alt="" class="right-arrow" id="card-right-arrow">
@@ -47,6 +47,12 @@
                 <h3 class="text-center padding-bottom-50">B) Choose Extras</h3>
                 <?php include('includes/apps-add-ons.php'); ?>
             </div>
+        </div>
+        <div id="device-discounts">
+            <div class="slide-container">
+                <?php include('includes/devices.php'); ?>
+            </div>
+            
         </div>
     </div><!-- #step-2 -->
     <div class="medium-blue-background padding-top-80 padding-bottom-80" id="step-3">
@@ -67,5 +73,7 @@
             </div>
         </div>
     </div><!-- #step-3 -->
-</div>
+    
+</div><!-- #get-started -->
+
 <?php include('includes/footer.php'); ?>
