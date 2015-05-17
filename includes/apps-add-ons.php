@@ -1,7 +1,7 @@
 <div id="extras" class="relative slide-container">
     <div class="dark-blue-background white current slide">
-        <img src="img/shared/slider_right_arrow_white.png" alt="" class="right-arrow">
-        <img src="img/shared/slider_left_arrow_white.png" alt="" class="left-arrow">
+        <img src="img/shared/slider_right_arrow_white.png" alt="" class="right-arrow" id="slide-right-arrow">
+        <img src="img/shared/slider_left_arrow_white.png" alt="" class="left-arrow" id="slide-left-arrow">
         <div class="row">
             <div class="small-12 large-6 columns">
                 <h1 class="no-text-transform light">Efax Pro.</h1>

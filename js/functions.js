@@ -14,7 +14,18 @@ $(window).load(function(){
 
         $('.card-container').height(container_height - plan_card_height * 2);
 
+
+
         movePlanCards();  
+
+        // Special functions for the discounts slide
+        $('#discounts .card-container').height(container_height - plan_card_height * 3);
+        $('#discounts .slide.current').height($('#discounts .card-container').height());
+        $('#discounts .row.current').next().css({
+            'position': 'absolute',
+            'top' : 0,
+            'left' : 0,
+        });
     }
 
     moveSlides();
@@ -73,13 +84,28 @@ $(function(){
 
         var $current = $('.card.current');
         var $next = $current.next();
+
+        var $currentContainer = $('.card-container.current');
+        var $nextContainer = $currentContainer.next('.card-container');
+
         var width = $(window).width();
         var offset = width + card_margin;
 
-        // Check if this is the first card, if so, get the last card
+        // Logic for figuring out what to do if this is the last card
         if ( $next.length == 0 ) {
 
-            $next = $('.card:first');
+            if ( $nextContainer.length == 0 ) {
+
+                $nextContainer = $('.card-container:first');
+                $next = $nextContainer.find('.card:first');
+
+            } else {
+
+                $next = $nextContainer.find('.card:first');
+            }
+
+            $currentContainer.removeClass('current');
+            $nextContainer.addClass('current');
         }
 
         // Make sure the next card is in the correct position
@@ -93,13 +119,29 @@ $(function(){
 
         var $current = $('.card.current');
         var $next = $current.prev();
+
+        var $currentContainer = $('.card-container.current');
+        var $nextContainer = $currentContainer.prev('.card-container');
+
         var width = $(window).width();
         var offset = width + card_margin;
 
         // Check if this is the first card, if so, get the last card
         if ( $next.length == 0 ) {
 
-            $next = $('.card:last');
+            if ( $nextContainer.length == 0 ) {
+
+                $nextContainer = $('.card-container:last');
+                $next = $nextContainer.find('.card:last');
+                console.log($next.html());
+
+            } else {
+
+                $next = $nextContainer.find('.card:last');
+            }
+
+            $currentContainer.removeClass('current');
+            $nextContainer.addClass('current');
         }
 
         // Make sure the next card is in the correct position
@@ -110,7 +152,7 @@ $(function(){
     });
 
     // Slide swapping
-    $('.slide-container .right-arrow').click(function(){
+    $('#slide-right-arrow').click(function(){
 
         var $current = $('.slide.current');
         var $next = $current.next();
@@ -129,7 +171,7 @@ $(function(){
         $next.animate({ left: "-=" + width,}, 500).addClass('current');
     });
 
-    $('.slide-container .left-arrow').click(function(){
+    $('#slide-left-arrow').click(function(){
 
         var $current = $('.slide.current');
         var $next = $current.prev();
@@ -197,7 +239,7 @@ function movePlanCards() {
 
         var width = $(window).width();
         var padding = parseInt( $('.card.current').css('padding-left') );
-        card_margin = (width - $('.card.current').width()) / 2 - padding;
+        card_margin = (width - $('.card.current').width()) / 2;
         var i=0;
 
         $('.card').each(function(){

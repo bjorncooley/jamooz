@@ -350,7 +350,7 @@ button.yellow-background {
   .card-section .card .caption {
     background-color: #e25736;
     padding: 25px 0 20px; }
-  .card-section .plan-card.selected .caption, .card-section .plan-card.selected .shadowed .card-details-container .card-details {
+  .card-section .card.selected .caption, .card-section .card.selected .shadowed .card-details-container .card-details {
     background-color: #38a5dd; }
   .card-section .card p, .card-section .card h4 {
     padding: 0 15px; }
@@ -385,6 +385,14 @@ button.yellow-background {
             background: url(../../img/shared/white_check_mark.png) no-repeat left;
             padding: 5px 0 5px 10px;
             font-size: 0.8em; }
+  .card-section .card.device .shadowed .card-text {
+    height: 210px; }
+
+.slide {
+  width: 100%; }
+
+.slide-container {
+  position: relative; }
 
 #software-hero h4, #hardware-hero h4, #pricing-hero h4 {
   line-height: 1.8em; }
@@ -549,15 +557,13 @@ button.yellow-background {
   left: 1%; }
 #extras .right-arrow {
   right: 1%; }
-#extras .slide {
-  width: 100%; }
-  #extras .slide > .row {
-    padding: 70px 0 30px;
-    max-width: 70%; }
-    #extras .slide > .row h1 {
-      padding-bottom: 50px; }
-    #extras .slide > .row p {
-      line-height: 2em; }
+#extras .slide > .row {
+  padding: 70px 0 30px;
+  max-width: 70%; }
+  #extras .slide > .row h1 {
+    padding-bottom: 50px; }
+  #extras .slide > .row p {
+    line-height: 2em; }
 #extras .add-container {
   padding-top: 30px; }
   #extras .add-container h5 {
@@ -766,7 +772,10 @@ button.yellow-background {
     line-height: 1.3em;
     padding-bottom: 40px; }
 
-  #plans .left-arrow, #plans .right-arrow, #discounts .left-arrow, #discounts .right-arrow, #apps .left-arrow, #apps .right-arrow, #base-plan .left-arrow, #base-plan .right-arrow {
+  #plans #card-left-arrow, #plans #card-right-arrow, #apps #card-left-arrow, #apps #card-right-arrow, #base-plan #card-left-arrow, #base-plan #card-right-arrow, #discount #card-left-arrow, #discount #card-right-arrow {
+    display: none; }
+
+  #discounts.row > .left-arrow, #discounts.row > .right-arrow {
     display: none; }
 
   #intro {

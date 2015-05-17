@@ -96,106 +96,194 @@
 </div><!-- #all-in-one -->
 
 <div id="discounts" class="card-section padding-bottom-50 padding-top-50">
+    <h1 class="text-center padding-top-50 padding-bottom-30">Device Discounts</h1>
+    <div class="slide-container">
+        <div class="slide current">
+            <img src="img/shared/slider_right_arrow_black.png" alt="" class="right-arrow" id="card-right-arrow">
+            <img src="img/shared/slider_left_arrow_black.png" alt="" class="left-arrow" id="card-left-arrow">
+            <div class="row current card-container">
+                <div class="relative">
+                    <div class="small-12 medium-3 columns small-centered medium-uncentered device card current">
+                        <div class="shadowed">
+                            <div class="card-text">
+                                <h5 class="text-center uppercase">Cisco IP 7960A</h5>
+                                <img src="img/software/outlook_icon.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
+                            </div>
+                            <div class="card-details-container">
+                                <div class="absolute card-details white">
+                                    <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi possimus dolorem in, iste ea dolor delectus esse quisquam, fuga accusantium quo similique incidunt aliquam praesentium et nam quos veniam illo. Epraesentium et nam quos veniam illo</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="red-orange-background white text-center caption inline-block">
+                            <h4 class="show-details-link">See Details</h4>
+                            <h4 class="close-details-link hide">Close Details</h4>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
+                        <div class="shadowed">
+                            <div class="card-text">
+                                <h5 class="text-center uppercase">Cisco IP 7960B</h5>
+                                <img src="img/software/outlook_icon.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
+                            </div>
+                            <div class="card-details-container">
+                                <div class="absolute card-details white">
+                                    <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi possimus dolorem in, iste ea dolor delectus esse quisquam, fuga accusantium quo similique incidunt aliquam praesentium et nam quos veniam illo. Epraesentium et nam quos veniam illo</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="red-orange-background white text-center caption inline-block">
+                            <h4 class="show-details-link">See Details</h4>
+                            <h4 class="close-details-link hide">Close Details</h4>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
+                        <div class="shadowed">
+                            <div class="card-text">
+                                <h5 class="text-center uppercase">Cisco IP 7960C</h5>
+                                <img src="img/software/outlook_icon.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
+                            </div>
+                            <div class="card-details-container">
+                                <div class="absolute card-details white">
+                                    <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi possimus dolorem in, iste ea dolor delectus esse quisquam, fuga accusantium quo similique incidunt aliquam praesentium et nam quos veniam illo. Epraesentium et nam quos veniam illo</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="red-orange-background white text-center caption inline-block">
+                            <h4 class="show-details-link">See Details</h4>
+                            <h4 class="close-details-link hide">Close Details</h4>
+                        </div>
+                    </div><!-- .card -->
+                    <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
+                        <div class="shadowed">
+                            <div class="card-text">
+                                <h5 class="text-center uppercase">Cisco IP 7960D</h5>
+                                <img src="img/software/outlook_icon.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
+                            </div>
+                            <div class="card-details-container">
+                                <div class="absolute card-details white">
+                                    <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi possimus dolorem in, iste ea dolor delectus esse quisquam, fuga accusantium quo similique incidunt aliquam praesentium et nam quos veniam illo. Epraesentium et nam quos veniam illo</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="red-orange-background white text-center caption inline-block">
+                            <h4 class="show-details-link">See Details</h4>
+                            <h4 class="close-details-link hide">Close Details</h4>
+                        </div>
+                    </div><!-- .card -->
+                </div>
+            </div><!-- .card-container -->
+            <div class="row card-container">
+                <div class="relative">
+                    <div class="small-12 medium-3 columns small-centered medium-uncentered device card">
+                        <div class="shadowed">
+                            <div class="card-text">
+                                <h5 class="text-center uppercase">Cisco IP 7960E</h5>
+                                <img src="img/software/outlook_icon.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
+                            </div>
+                            <div class="card-details-container">
+                                <div class="absolute card-details white">
+                                    <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi possimus dolorem in, iste ea dolor delectus esse quisquam, fuga accusantium quo similique incidunt aliquam praesentium et nam quos veniam illo. Epraesentium et nam quos veniam illo</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="red-orange-background white text-center caption inline-block">
+                            <h4 class="show-details-link">See Details</h4>
+                            <h4 class="close-details-link hide">Close Details</h4>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
+                        <div class="shadowed">
+                            <div class="card-text">
+                                <h5 class="text-center uppercase">Cisco IP 7960F</h5>
+                                <img src="img/software/outlook_icon.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
+                            </div>
+                            <div class="card-details-container">
+                                <div class="absolute card-details white">
+                                    <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi possimus dolorem in, iste ea dolor delectus esse quisquam, fuga accusantium quo similique incidunt aliquam praesentium et nam quos veniam illo. Epraesentium et nam quos veniam illo</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="red-orange-background white text-center caption inline-block">
+                            <h4 class="show-details-link">See Details</h4>
+                            <h4 class="close-details-link hide">Close Details</h4>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
+                        <div class="shadowed">
+                            <div class="card-text">
+                                <h5 class="text-center uppercase">Cisco IP 7960G</h5>
+                                <img src="img/software/outlook_icon.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
+                            </div>
+                            <div class="card-details-container">
+                                <div class="absolute card-details white">
+                                    <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi possimus dolorem in, iste ea dolor delectus esse quisquam, fuga accusantium quo similique incidunt aliquam praesentium et nam quos veniam illo. Epraesentium et nam quos veniam illo</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="red-orange-background white text-center caption inline-block">
+                            <h4 class="show-details-link">See Details</h4>
+                            <h4 class="close-details-link hide">Close Details</h4>
+                        </div>
+                    </div><!-- .card -->
+                    <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
+                        <div class="shadowed">
+                            <div class="card-text">
+                                <h5 class="text-center uppercase">Cisco IP 7960H</h5>
+                                <img src="img/software/outlook_icon.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
+                            </div>
+                            <div class="card-details-container">
+                                <div class="absolute card-details white">
+                                    <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi possimus dolorem in, iste ea dolor delectus esse quisquam, fuga accusantium quo similique incidunt aliquam praesentium et nam quos veniam illo. Epraesentium et nam quos veniam illo</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="red-orange-background white text-center caption inline-block">
+                            <h4 class="show-details-link">See Details</h4>
+                            <h4 class="close-details-link hide">Close Details</h4>
+                        </div>
+                    </div><!-- .card -->
+                </div>
+            </div><!-- .card-container -->
+        </div><!-- .slide -->
+    </div><!-- .slide-container -->
     <div class="row">
-        <div class="large-12 columns relative">
-            <h1 class="text-center padding-top-50 padding-bottom-30">Device Discounts</h1>
+        <div class="large-12 columns relative slide">
+            
             <img src="img/shared/slider_left_arrow_black.png" alt="" class="left-arrow" id="card-left-arrow">
             <img src="img/shared/slider_right_arrow_black.png" alt="" class="right-arrow" id="card-right-arrow">
-            <div class="row">
-                <div class="card-container relative">
-                    <div class="small-12 medium-4 columns small-centered medium-uncentered card current">
-                        <div class="shadowed">
-                            <div class="card-text">
-                                <h5 class="text-center uppercase">Cisco IP 7960G</h5>
-                                <img src="img/software/outlook_icon.png" alt="">
-                            </div>
-                            <div class="text-center">
-                                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
-                            </div>
-                            <div class="card-details-container">
-                                <div class="absolute card-details white">
-                                    <ul>
-                                        <li>Easily Transfer your current phone number</li>
-                                        <li>US &amp; Canada Phone Numbers Available</li>
-                                        <li>Unlimited Texting and Inbound Calling</li>
-                                        <li>5000 Mins/mo. Outbound Calling</li>
-                                        <li>Works over WiFi/3G/4G/LTE</li>
-                                        <li>Group calling up to 30 People</li>
-                                        <li>Low International Rates</li>
-                                        <li>Use on any landline, mobile devices, tablets &amp; PCs</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="red-orange-background white text-center caption inline-block">
-                            <h4 class="show-details-link">See Details</h4>
-                            <h4 class="close-details-link hide">Close Details</h4>
-                        </div>
-                    </div>
-                    <div class="small-12 medium-4 columns small-centered medium-uncentered card">
-                        <div class="shadowed">
-                            <div class="card-text">
-                                <h5 class="text-center uppercase">Cisco IP 7960G</h5>
-                                <img src="img/software/outlook_icon.png" alt="">
-                            </div>
-                            <div class="text-center">
-                                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
-                            </div>
-                            <div class="card-details-container">
-                                <div class="absolute card-details white">
-                                    <ul>
-                                        <li>Easily Transfer your current phone number</li>
-                                        <li>US &amp; Canada Phone Numbers Available</li>
-                                        <li>Unlimited Texting and Inbound Calling</li>
-                                        <li>5000 Mins/mo. Outbound Calling</li>
-                                        <li>Works over WiFi/3G/4G/LTE</li>
-                                        <li>Group calling up to 30 People</li>
-                                        <li>Low International Rates</li>
-                                        <li>Use on any landline, mobile devices, tablets &amp; PCs</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="red-orange-background white text-center caption inline-block">
-                            <h4 class="show-details-link">See Details</h4>
-                            <h4 class="close-details-link hide">Close Details</h4>
-                        </div>
-                    </div>
-                    <div class="small-12 medium-4 columns small-centered medium-uncentered card">
-                        <div class="shadowed">
-                            <div class="card-text">
-                                <h5 class="text-center uppercase">Cisco IP 7960G</h5>
-                                <img src="img/software/outlook_icon.png" alt="">
-                            </div>
-                            <div class="text-center">
-                                <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
-                            </div>
-                            <div class="card-details-container">
-                                <div class="absolute card-details white">
-                                    <ul>
-                                        <li>Easily Transfer your current phone number</li>
-                                        <li>US &amp; Canada Phone Numbers Available</li>
-                                        <li>Unlimited Texting and Inbound Calling</li>
-                                        <li>5000 Mins/mo. Outbound Calling</li>
-                                        <li>Works over WiFi/3G/4G/LTE</li>
-                                        <li>Group calling up to 30 People</li>
-                                        <li>Low International Rates</li>
-                                        <li>Use on any landline, mobile devices, tablets &amp; PCs</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="red-orange-background white text-center caption inline-block">
-                            <h4 class="show-details-link">See Details</h4>
-                            <h4 class="close-details-link hide">Close Details</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
         </div>
     </div>
 </div><!-- #discounts -->

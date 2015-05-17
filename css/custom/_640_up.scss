@@ -10,11 +10,22 @@ h2 {
 }
 
 
-#plans, #discounts, #apps, #base-plan {
+#plans, #apps, #base-plan, #discount {
 
-    .left-arrow, .right-arrow {
+    #card-left-arrow, #card-right-arrow {
 
         display: none;
+    }
+}
+
+#discounts {
+
+    &.row > {
+
+        .left-arrow, .right-arrow {
+
+            display: none;
+        }
     }
 }
 

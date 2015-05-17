@@ -155,7 +155,28 @@ button.yellow-background {
                 }
             }       
         }
+
+        &.device {
+
+            .shadowed {
+
+                .card-text {
+
+                    height: 210px;
+                }
+            }
+        }
     }
+}
+
+.slide {
+
+    width: 100%;
+}
+
+.slide-container {
+
+    position: relative;
 }
 
 #software-hero, #hardware-hero, #pricing-hero {
@@ -499,7 +520,6 @@ button.yellow-background {
 
     .slide {
 
-        width: 100%;
 
         &>.row {
 
