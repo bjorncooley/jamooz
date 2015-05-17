@@ -49,6 +49,11 @@ $(window).resize(function(){
 
 $(function(){
 
+    // Close buttons
+    $('.close-button').click(function(){
+        $(this).parent().fadeOut(400);
+    });
+
     // Down arrow for Home Page
 
     $('#hero-down-arrow').click(function(){

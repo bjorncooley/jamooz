@@ -332,6 +332,12 @@ button.yellow-background {
 /* -------------- */
 /* --- SHARED --- */
 /* -------------- */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer; }
+
 .card-section .left-arrow, .card-section .right-arrow {
   position: absolute;
   top: 345px;
