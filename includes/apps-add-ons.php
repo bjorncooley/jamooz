@@ -101,7 +101,7 @@
                 <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi libero sed, facere a ipsam. Eveniet iure, recusandae eligendi, ex magni aperiam ipsa provident quam dicta quae temporibus voluptate porro eos?</p>
             </div>
             <div class="small-12 columns text-center add-container">
-                <button class="white red-orange-background">See All Phones</button>
+                <button class="white red-orange-background" id="device-slide-button">See All Phones</button>
             </div>
         </div>
     </div>

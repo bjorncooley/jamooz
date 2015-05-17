@@ -343,7 +343,7 @@ button.yellow-background {
   right: 0; }
 .card-section .card-container {
   overflow: hidden;
-  padding-top: 70px; }
+  padding-top: 30px; }
 .card-section .card {
   max-width: 80%;
   cursor: pointer; }
@@ -387,7 +387,7 @@ button.yellow-background {
             padding: 5px 0 5px 10px;
             font-size: 0.8em; }
   .card-section .card.device .shadowed .card-text {
-    height: 150px; }
+    height: 120px; }
     .card-section .card.device .shadowed .card-text h5 {
       padding-bottom: 0; }
 
@@ -435,7 +435,8 @@ button.yellow-background {
   width: 100%;
   height: 100%;
   background-color: #5fb6b6;
-  z-index: 199; }
+  z-index: 199;
+  display: none; }
 #get-started #apps-add-ons {
   width: 100%;
   height: 100%;
@@ -782,7 +783,7 @@ button.yellow-background {
     line-height: 1.3em;
     padding-bottom: 40px; }
 
-  #plans #card-left-arrow, #plans #card-right-arrow, #apps #card-left-arrow, #apps #card-right-arrow, #base-plan #card-left-arrow, #base-plan #card-right-arrow, #devices #card-left-arrow, #devices #card-right-arrow {
+  #plans .card-left-arrow, #plans .card-right-arrow, #apps .card-left-arrow, #apps .card-right-arrow, #base-plan .card-left-arrow, #base-plan .card-right-arrow, #devices .card-left-arrow, #devices .card-right-arrow {
     display: none; }
 
   #discounts.row > .left-arrow, #discounts.row > .right-arrow {

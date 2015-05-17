@@ -30,12 +30,10 @@
         <div class="relative">
             <div class="row relative slide-container" id="plans">
                 <div class="large-12 columns relative">
-                    <img src="img/shared/slider_left_arrow_black.png" alt="" class="left-arrow" id="card-left-arrow">
-                    <img src="img/shared/slider_right_arrow_black.png" alt="" class="right-arrow" id="card-right-arrow">
-                    <div class="row">
-                        <h3 class="text-center padding-bottom-50">A) Choose a Base Plan</h3>
-                        <?php include('includes/plan-cards.php'); ?>
-                    </div>
+                    <img src="img/shared/slider_left_arrow_black.png" alt="" class="left-arrow card-left-arrow">
+                    <img src="img/shared/slider_right_arrow_black.png" alt="" class="right-arrow card-right-arrow">
+                    <h3 class="text-center">A) Choose a Base Plan</h3>
+                    <?php include('includes/plan-cards.php'); ?>
                     <div class="row">
                         <div class="large-12 columns text-center">
                             <button class="yellow-background">Next</button>
@@ -44,7 +42,7 @@
                 </div>
             </div>
             <div class="absolute" id="apps-add-ons">
-                <h3 class="text-center padding-bottom-50">B) Choose Extras</h3>
+                <h3 class="text-center padding-bottom-30">B) Choose Extras</h3>
                 <?php include('includes/apps-add-ons.php'); ?>
             </div>
         </div>

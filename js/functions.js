@@ -20,8 +20,8 @@ $(window).load(function(){
 
         // Special functions for the discounts slide
         $('#discounts .card-container').height(container_height - plan_card_height * 3);
-        $('#discounts .slide.current').height($('#discounts .card-container').height());
-        $('#discounts .row.current').next().css({
+        $('#discounts .device-container.current').height($('#discounts .card-container').height());
+        $('#devices .row.current').next().css({
             'position': 'absolute',
             'top' : 0,
             'left' : 0,
@@ -78,14 +78,22 @@ $(function(){
 
     }); 
 
+    // Fade in devices overlay
+    $('#device-slide-button').click(function(){
+
+        $('#device-discounts').fadeIn(400);
+    });
+
     // Card swapping
 
-    $('#card-right-arrow').click(function(){
+    $('.card-right-arrow').click(function(){
 
-        var $current = $('.card.current');
+        console.log("right arrow clicked");
+
+        var $current = $(this).siblings().find('.card.current');
         var $next = $current.next();
 
-        var $currentContainer = $('.card-container.current');
+        var $currentContainer = $(this).siblings('.card-container.current');
         var $nextContainer = $currentContainer.next('.card-container');
 
         var width = $(window).width();
@@ -103,10 +111,16 @@ $(function(){
         // Logic for figuring out what to do if this is the last card
         if ( $next.length == 0 ) {
 
+            console.log("next length 0");
+
             if ( $nextContainer.length == 0 ) {
 
-                $nextContainer = $('.card-container:first');
+                console.log("Next container length 0");
+
+                $nextContainer = $(this).siblings('.card-container:first');
+                console.log($nextContainer.html());
                 $next = $nextContainer.find('.card:first');
+                console.log($next.html());
 
             } else {
 
@@ -124,7 +138,9 @@ $(function(){
         $next.animate({ left: "-=" + width,}, 500).addClass('current');
     });
 
-    $('#card-left-arrow').click(function(){
+    $('.card-left-arrow').click(function(){
+
+        console.log("left arrow clicked");
 
         var $current = $('.card.current');
         var $next = $current.prev();
@@ -167,6 +183,8 @@ $(function(){
     // Slide swapping
     $('#slide-right-arrow').click(function(){
 
+        console.log("right arrow clicked");
+
         var $current = $('.slide.current');
         var $next = $current.next();
         var width = $(window).width();
@@ -185,6 +203,8 @@ $(function(){
     });
 
     $('#slide-left-arrow').click(function(){
+
+        console.log("right arrow clicked");
 
         var $current = $('.slide.current');
         var $next = $current.prev();
@@ -301,5 +321,17 @@ function setUpGetStarted() {
 
     var width = $(window).width();
 
+    var container_height = $('#devices .card-container').height();
+
     $('#get-started #apps-add-ons').css('left', width);
+
+    // Special functions for the discounts slide
+    // $('#devices .card-container').height(container_height - plan_card_height * 3);
+    // console.log($('#devices .card-container').height());
+    // $('#devices .device-container.current').height($('#devices .card-container').height());
+    // $('#devices .row.current').next().css({
+    //     'position': 'absolute',
+    //     'top' : 0,
+    //     'left' : 0,
+    // });
 }

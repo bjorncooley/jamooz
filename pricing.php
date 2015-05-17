@@ -19,8 +19,8 @@
         <div class="row slide-container">
             <div class="large-12 columns relative slide">
                 <h1 class="text-center padding-bottom-50 large no-text-transform">Choose a Base Plan</h1>
-                <img src="img/shared/slider_left_arrow_black.png" alt="" class="left-arrow" id="card-left-arrow">
-                <img src="img/shared/slider_right_arrow_black.png" alt="" class="right-arrow" id="card-right-arrow">
+                <img src="img/shared/slider_left_arrow_black.png" alt="" class="left-arrow card-left-arrow">
+                <img src="img/shared/slider_right_arrow_black.png" alt="" class="right-arrow card-right-arrow">
 
                     <?php include('includes/plan-cards.php'); ?>
 
