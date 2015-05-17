@@ -181,11 +181,9 @@ $(function(){
     });
 
     // Slide swapping
-    $('#slide-right-arrow').click(function(){
+    $('.slide-right-arrow').click(function(){
 
-        console.log("right arrow clicked");
-
-        var $current = $('.slide.current');
+        var $current = $(this).parent('.slide.current');
         var $next = $current.next();
         var width = $(window).width();
 
@@ -202,11 +200,9 @@ $(function(){
         $next.animate({ left: "-=" + width,}, 500).addClass('current');
     });
 
-    $('#slide-left-arrow').click(function(){
+    $('.slide-left-arrow').click(function(){
 
-        console.log("right arrow clicked");
-
-        var $current = $('.slide.current');
+        var $current = $(this).parent('.slide.current');
         var $next = $current.prev();
         var width = $(window).width();
 
