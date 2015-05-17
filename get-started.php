@@ -25,8 +25,8 @@
             </div>
         </div>
     </div><!-- #step-1 -->
-    <div id="step-2" class="card-section padding-bottom-50 padding-top-50">
-        <h1 class="text-center padding-bottom-50">Step 2: Pick Your Perfect Plan</h1>
+    <div id="step-2" class="card-section">
+        <h1 class="text-center padding-bottom-30">Step 2: Pick Your Perfect Plan</h1>
         <div class="relative">
             <div class="row relative slide-container" id="plans">
                 <div class="large-12 columns relative">
@@ -47,9 +47,10 @@
             </div>
         </div>
         <div id="device-discounts">
-            <div class="slide-container">
-                <?php include('includes/devices.php'); ?>
-            </div>
+            <h3 class="white text-center padding-top-80 padding-top-30">
+                Our Device Discounts
+            </h3>
+            <?php include('includes/devices.php'); ?>
             
         </div>
     </div><!-- #step-2 -->

@@ -22,8 +22,8 @@
                         </div>
                         
                         <div class="red-orange-background white text-center caption inline-block">
-                            <h4 class="show-details-link">See Details</h4>
-                            <h4 class="close-details-link hide">Close Details</h4>
+                            <p class="show-details-link">See Details</p>
+                            <p class="close-details-link hide">Close Details</p>
                         </div>
                     </div>
                     <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
@@ -43,8 +43,8 @@
                         </div>
                         
                         <div class="red-orange-background white text-center caption inline-block">
-                            <h4 class="show-details-link">See Details</h4>
-                            <h4 class="close-details-link hide">Close Details</h4>
+                            <p class="show-details-link">See Details</p>
+                            <p class="close-details-link hide">Close Details</p>
                         </div>
                     </div>
                     <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
@@ -64,8 +64,8 @@
                         </div>
                         
                         <div class="red-orange-background white text-center caption inline-block">
-                            <h4 class="show-details-link">See Details</h4>
-                            <h4 class="close-details-link hide">Close Details</h4>
+                            <p class="show-details-link">See Details</p>
+                            <p class="close-details-link hide">Close Details</p>
                         </div>
                     </div><!-- .card -->
                     <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
@@ -85,8 +85,8 @@
                         </div>
                         
                         <div class="red-orange-background white text-center caption inline-block">
-                            <h4 class="show-details-link">See Details</h4>
-                            <h4 class="close-details-link hide">Close Details</h4>
+                            <p class="show-details-link">See Details</p>
+                            <p class="close-details-link hide">Close Details</p>
                         </div>
                     </div><!-- .card -->
                 </div>
@@ -110,8 +110,8 @@
                         </div>
                         
                         <div class="red-orange-background white text-center caption inline-block">
-                            <h4 class="show-details-link">See Details</h4>
-                            <h4 class="close-details-link hide">Close Details</h4>
+                            <p class="show-details-link">See Details</p>
+                            <p class="close-details-link hide">Close Details</p>
                         </div>
                     </div>
                     <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
@@ -131,8 +131,8 @@
                         </div>
                         
                         <div class="red-orange-background white text-center caption inline-block">
-                            <h4 class="show-details-link">See Details</h4>
-                            <h4 class="close-details-link hide">Close Details</h4>
+                            <p class="show-details-link">See Details</p>
+                            <p class="close-details-link hide">Close Details</p>
                         </div>
                     </div>
                     <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
@@ -152,8 +152,8 @@
                         </div>
                         
                         <div class="red-orange-background white text-center caption inline-block">
-                            <h4 class="show-details-link">See Details</h4>
-                            <h4 class="close-details-link hide">Close Details</h4>
+                            <p class="show-details-link">See Details</p>
+                            <p class="close-details-link hide">Close Details</p>
                         </div>
                     </div><!-- .card -->
                     <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
@@ -173,8 +173,8 @@
                         </div>
                         
                         <div class="red-orange-background white text-center caption inline-block">
-                            <h4 class="show-details-link">See Details</h4>
-                            <h4 class="close-details-link hide">Close Details</h4>
+                            <p class="show-details-link">See Details</p>
+                            <p class="close-details-link hide">Close Details</p>
                         </div>
                     </div><!-- .card -->
                 </div>

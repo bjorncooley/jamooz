@@ -65,7 +65,7 @@ button.yellow-background {
     .card-container {
 
         overflow: hidden;
-        padding-top: 30px;
+        padding-top: 50px;
     }
 
     .card {    
@@ -168,7 +168,7 @@ button.yellow-background {
                         padding-bottom: 0;
                     }
 
-                    height: 120px;
+                    height: 100px;
                 }
             }
         }
@@ -246,8 +246,6 @@ button.yellow-background {
 }
 
 
-
-
 /* ------------------- */
 /* --- GET STARTED --- */
 /* ------------------- */
@@ -263,7 +261,6 @@ button.yellow-background {
         height: 100%;
         background-color: $teal;
         z-index: 199;
-        display: none;
     }
 
     #apps-add-ons {
@@ -290,6 +287,8 @@ button.yellow-background {
 #step-2 {
 
     position: relative;
+
+    padding: 50px 0 92px;
 
     .card-section {
 

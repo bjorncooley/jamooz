@@ -277,6 +277,13 @@ function movePlanCards() {
             var padding = parseInt( $(this).find('.card.current').css('padding-left') );
             card_margin = (width - $(this).find('.card.current').width()) / 2 - padding;
 
+            console.log($(this).html());
+            console.log("Padding: " + padding);
+            console.log("Card width: " + $(this).find('.card.current').width());
+            console.log("Screen width: " + width);
+
+            console.log(card_margin);
+
             var i=0;
 
             $(this).find('.card').each(function(){
@@ -324,6 +331,8 @@ function setUpGetStarted() {
     var container_height = $('#devices .card-container').height();
 
     $('#get-started #apps-add-ons').css('left', width);
+
+    $('#get-started #device-discounts').css('display', 'none');
 
     // Special functions for the discounts slide
     // $('#devices .card-container').height(container_height - plan_card_height * 3);
