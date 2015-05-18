@@ -14,8 +14,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="large-12 columns text-center" id="hero-text">
-                        <button class="teal-background uppercase radius width-100-percent max-275 white">Get Started for 30 Days Free</button>
+                    <div class="large-12 columns text-center" id="hero-text">   
+                        <a href="./get-started.php">
+                            <button class="teal-background uppercase radius width-100-percent max-275 white">Get Started for 30 Days Free</button>
+                        </a>
                         <h6 class="small-9 columns small small-centered">a customer success teammate is ready to help</h6>
                         <div id="hero-down-arrow" class="black">
                             <img src="img/shared/down_arrow_black.png" alt="" class="padding-top-15 pointer">
@@ -51,7 +53,9 @@
                             <h4 class="white small-12 columns small-centered">
                                 <div class="small-9 columns small-centered padding-bottom-50">Learn what hardware works with Jamooz</div>
                             </h4>
-                            <h4 class="white-border white small-12 columns padding-top-8 padding-bottom-8 max-285 small-centered">See Hardware Integrations</h4>
+                            <a href="./hardware-integrations.php">
+                                <h4 class="white-border white small-12 columns padding-top-8 padding-bottom-8 max-285 small-centered">See Hardware Integrations</h4>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -77,7 +81,9 @@
                         <h4 class="white small-12 columns small-centered">
                             <div class="small-9 columns small-centered padding-bottom-50">Learn what software works with Jamooz</div>
                         </h4>
-                        <h4 class="small-12 columns medium-gray-border white padding-top-8 padding-bottom-8 max-285 small-centered">See Software Integrations</h4>
+                        <a href="./software-integrations.php">
+                            <h4 class="small-12 columns medium-gray-border white padding-top-8 padding-bottom-8 max-285 small-centered">See Software Integrations</h4>
+                        </a>
                     </div>
                 </div>
             </div><!-- #reliable -->
