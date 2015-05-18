@@ -105,7 +105,7 @@
                                     <img src="img/software/outlook_icon.png" alt="">
                                 </div>
                                 <div class="text-center">
-                                    <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
+                                    <img src="img/shared/yellow_plus_icon.png" alt="" class="relative">
                                 </div>
                                 <div class="card-details-container">
                                     <div class="absolute card-details white">
@@ -135,7 +135,7 @@
                                     <img src="img/software/outlook_icon.png" alt="">
                                 </div>
                                 <div class="text-center">
-                                    <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
+                                    <img src="img/shared/yellow_plus_icon.png" alt="" class="relative">
                                 </div>
                                 <div class="card-details-container">
                                     <div class="absolute card-details white">
@@ -164,7 +164,7 @@
                                     <img src="img/software/outlook_icon.png" alt="">
                                 </div>
                                 <div class="text-center">
-                                    <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
+                                    <img src="img/shared/yellow_plus_icon.png" alt="" class="relative">
                                 </div>
                                 <div class="card-details-container">
                                     <div class="absolute card-details white">

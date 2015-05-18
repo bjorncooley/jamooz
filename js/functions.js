@@ -143,8 +143,8 @@ $(function(){
         $(this).addClass('selected');
         $(this).siblings('.plan').removeClass('selected');
 
-        $(this).find('img').attr('src', 'img/get-started/blue-check-icon-mobile.png');
-        $(this).siblings('.plan').find('img').attr('src', 'img/get-started/yellow-plus-icon-mobile.png');
+        $(this).find('img').attr('src', 'img/shared/blue_check_icon.png');
+        $(this).siblings('.plan').find('img').attr('src', 'img/shared/yellow_plus_icon.png');
     });
 
 

@@ -8,7 +8,7 @@
                     <p>(Includes 30 Days Free)</p>
                 </div>
                 <div class="text-center">
-                    <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
+                    <img src="img/shared/yellow_plus_icon.png" alt="" class="relative">
                 </div>
                 <div class="card-details-container">
                     <div class="absolute card-details white">
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
+                    <img src="img/shared/yellow_plus_icon.png" alt="" class="relative">
                 </div>
                 <div class="card-details-container">
                     <div class="absolute card-details white">
@@ -74,7 +74,7 @@
                     <p><a href="tel:5052533451">(505) 253-3451</a></p>
                 </div>
                 <div class="text-center">
-                    <img src="img/get-started/yellow-plus-icon-mobile.png" alt="" class="relative">
+                    <img src="img/shared/yellow_plus_icon.png" alt="" class="relative">
                 </div>
                 <div class="card-details-container">
                     <div class="absolute card-details white">
