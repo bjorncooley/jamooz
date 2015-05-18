@@ -2,27 +2,22 @@
 <div id="home">
     <div id="hero">
             <div id="hero" class="hero">
-                <div class="row">
-                    <div class="large-12 columns text-center">
-                        <h1>Ease Into a Better Communication Experience For
-                        Your Office Staff</h1>
-                    </div>
+                <div class="text-center">
+                    <h1>Ease Into a Better Communication Experience For
+                    Your Office Staff</h1>
                 </div>
-                <div class="row">
-                    <div class="large-12 columns text-center">
-                        <img src="img/home/hero.jpg" alt="">
-                    </div>
+                <div class="text-center">
+                    <img src="img/home/hero.jpg" alt="">
                 </div>
-                <div class="row">
-                    <div class="large-12 columns text-center" id="hero-text">   
-                        <a href="./get-started.php">
-                            <button class="teal-background uppercase radius width-100-percent max-275 white">Get Started for 30 Days Free</button>
-                        </a>
-                        <h6 class="small-9 columns small small-centered">a customer success teammate is ready to help</h6>
-                        <div id="hero-down-arrow" class="black">
-                            <img src="img/shared/down_arrow_black.png" alt="" class="padding-top-15 pointer">
-                            <h6 class="small text-center">learn more</h6>
-                        </div>
+                <div class="text-center" id="hero-text">   
+                    <a href="./get-started.php">
+                        <button class="teal-background uppercase radius width-100-percent max-275 white">Get Started for 30 Days Free</button>
+                    </a>
+                    <h6 class="small">A customer success teammate is ready. <a href="#">Support</a></h6>
+                    <h6 class="small">Already setup? <a href="#">Login</a></h6>
+                    <div id="hero-down-arrow" class="black">
+                        <img src="img/shared/down_arrow_black.png" alt="" class="padding-top-15 pointer">
+                        <h6 class="small text-center">learn more</h6>
                     </div>
                 </div>
             </div><!-- #hero -->
@@ -43,8 +38,8 @@
                         <img src="img/home/hardware_graphic.png" alt="" class="padding-bottom-30">
                     </div>
                     <div class="small-12 medium-6 columns text-left left">
-                        <h2 class="padding-bottom-15">Manage every device like never before.</h2>
-                        <p>Ten computers, six smartphones, three office phones, two intercoms, &amp; even one door bell. Connected through the same platform.</p>
+                        <h2 class="padding-bottom-15">Better communication starts with your hardware.</h2>
+                        <p>10 computers, 20 smartphones, 12 office phones, 2 intercoms, &amp; even 1 doorbell. Tell us the devices you need or just integrate the devices you already use. Just a few clicks to view &amp; change device phone numbers &amp; extensions.</p>
                     </div>
                 </div>
                 <div class="orange-background white learn-section">
@@ -60,7 +55,7 @@
                     </div>
                 </div>
             </div><!-- #intro -->
-            <div class="row clearfix" id="reliable">
+            <div class="row clearfix full-height" id="reliable">
                 <div class="small-12 large-6 columns text-center right">
                     <img src="img/home/reliable_graphic_mobile.png" class="padding-top-30 padding-bottom-30 hide-for-large-up center" alt="">
                     <div class="padding-top-30 padding-bottom-30 show-for-large-up" alt="">
@@ -87,7 +82,7 @@
                     </div>
                 </div>
             </div><!-- #reliable -->
-            <div class="row padding-top-50 padding-bottom-50" id="analytics">
+            <div class="row padding-top-50 padding-bottom-50 full-height" id="analytics">
                 <div class="small-12 medium-6 columns">            
                     <img src="img/home/analytics_graphic.png" alt="" class="hide-for-large-up">
                     <video autoplay loop class="width-100-percent show-for-large-up">
@@ -104,7 +99,7 @@
                     of improvement.</p>
                 </div>
             </div><!-- #analytics -->
-            <div class="light-gray-background padding-top-50 padding-bottom-50" id="customer-success">
+            <div class="light-gray-background padding-top-50 padding-bottom-50 full-height" id="customer-success">
                 <div class="row clearfix">
                     <div class="text-center small-12 medium-6 columns right">
                         <img src="img/home/customer_success_graphic.png" alt="">
@@ -115,7 +110,7 @@
                     </div>
                 </div>
             </div><!-- #customer-success -->
-            <div class="row padding-top-30 padding-bottom-50" id="schmooze">
+            <div class="row padding-top-30 padding-bottom-50 full-height" id="schmooze">
                 <div class="small-12 large-6 columns text-center">
                     <img src="img/home/phone_demo.png" alt="" class="hide-for-large-up">
                     <video autoplay loop class="show-for-large-up">

@@ -28,6 +28,27 @@ $(window).load(function(){
         });
     }
 
+    // On desktop, set main home sections to window height
+
+    if ( !mobile ) {
+
+        var window_height = $(window).height();
+        $('.full-height').each(function(){
+
+            var original_height = $(this).height();
+            var difference = window_height - original_height;
+            var vertical_adjust = difference / 2;
+
+            if ( difference > 0 ) {
+
+                console.log($(this));
+                $(this).height(window_height);
+                $(this).css('padding-top', vertical_adjust + 'px');
+            }
+
+        });
+    }
+
     moveSlides();
     setUpGetStarted();
     updatePlanProfile();
@@ -203,6 +224,10 @@ $(function(){
 
         $('#plan-profile-content').css('display', 'none');
     });
+
+    /* --------------------------------------- */
+    /* -------------- HOME PAGE -------------- */
+    /* --------------------------------------- */
     
 
     /* ----------------------------------------- */

@@ -547,7 +547,10 @@ button.yellow-background {
     margin: 0 auto; }
 
 #home #hero h6 {
-  max-width: 215px; }
+  max-width: 320px;
+  margin: 0 auto 10px; }
+  #home #hero h6 a, #home #hero h6 a:visited, #home #hero h6 a:active, #home #hero h6 a:hover {
+    color: #5fb6b6; }
 #home #hero #hero-down-arrow {
   display: inline-block; }
 
@@ -1016,7 +1019,7 @@ button.yellow-background {
     margin-bottom: -30px; }
     #home #hero #hero-text button, #home #hero #hero-text > h6 {
       position: relative;
-      top: -150px; }
+      top: -125px; }
     #home #hero #hero-text #hero-down-arrow {
       position: relative;
       top: -50px; }

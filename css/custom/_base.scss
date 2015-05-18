@@ -436,7 +436,13 @@ button.yellow-background {
 
         h6 {
 
-            max-width: 215px;
+            max-width: 320px;
+            margin: 0 auto 10px;
+
+            a, a:visited, a:active, a:hover {
+
+                color: $teal;
+            }
         }
 
         #hero-down-arrow {
