@@ -56,7 +56,7 @@
                 </div>
             </div><!-- #intro -->
             <div class="row clearfix full-height" id="reliable">
-                <div class="small-12 large-6 columns text-center right">
+                <div class="small-12 large-8 columns text-center right">
                     <img src="img/home/reliable_graphic_mobile.png" class="padding-top-30 padding-bottom-30 hide-for-large-up center" alt="">
                     <div class="padding-top-30 padding-bottom-30 show-for-large-up" alt="">
                         <video id="reliable-video" autoplay loop class="width-100-percent">
@@ -65,7 +65,7 @@
                         </video>
                     </div>
                 </div>
-                <div class="small-12 large-6 columns small-centered left">
+                <div class="small-12 large-4 columns small-centered left">
                     <h2 class="padding-bottom-30">A reliable platform using battle tested technology</h2>
                     <p>We’re like a power secretary. Every call, message, file, &amp; voicemail throughout your organization is distributed and managed securely. VoIP, PBX, SIP Trunking, &amp; encryption are combined to make up our reliable platform. We then curate our platform for you, so you don’t have to.</p>
                 </div>
@@ -101,10 +101,10 @@
             </div><!-- #analytics -->
             <div class="light-gray-background padding-top-50 padding-bottom-50 full-height" id="customer-success">
                 <div class="row clearfix">
-                    <div class="text-center small-12 medium-6 columns right">
+                    <div class="text-center small-12 medium-7 columns right">
                         <img src="img/home/customer_success_graphic.png" alt="">
                     </div>
-                    <div class="small-12 medium-6 columns left">
+                    <div class="small-12 medium-5 columns left">
                         <h2 class="padding-top-50 padding-bottom-30">A customer success teammate at every step</h2>
                         <p>Your communication experience should feel lightweight from setup to adoption. Our success guide makes every step easier. Your success teammates will set you up for success. We also make ourselves available 24/7 by phone, e-mail, and text to identify and solve your problems quickly.</p>
                     </div>

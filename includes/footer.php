@@ -11,11 +11,12 @@
                                 <div class="small-6 columns">
                                     <ul class="text-center">
                                         <li class="strong">Jamooz</li>
-                                        <li>Home</li>
-                                        <li>Pricing</li>
-                                        <li>Integrations</li>
-                                        <li>Apps</li>
-                                        <li>Devices</li>
+                                        <li><a href="./index.php">Home</a></li>
+                                        <li><a href="./pricing.php">Pricing</a></li>
+                                        <li><a href="./hardware-integrations.php">Hardware</a></li>
+                                        <li><a href="./software-integrations.php">Software</a></li>
+                                        <li><a href="./schmooze.php">Schmooze</a></li>
+                                        <li><a href="./get-started.php">Get Started</a></li>
                                     </ul>
                                 </div>
                                 <div class="small-6 columns">
