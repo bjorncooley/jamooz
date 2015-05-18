@@ -198,6 +198,16 @@ $(function(){
     /* -------------- GET STARTED -------------- */
     /* ----------------------------------------- */
 
+    // Scroll user down from contact form
+
+    $('#get-started #step-1 button.yellow-background').click(function(e){
+
+        e.preventDefault();
+        var target = $('#step-2').offset()['top'];
+        $('html body').animate({ 'scrollTop' : target}, 800);
+    });
+
+
     // Record user's plan selection, move to next slide
 
     $('#get-started #plans button.yellow-background').click(function(){
@@ -270,8 +280,8 @@ $(function(){
             $('#plans').animate({ left: '-=' + width }, 400);
             $('#apps-add-ons').animate({ left: 0 }, 400);
         }       
-
     }); 
+    
 
     // Fade in devices overlay
     $('#device-slide-button').click(function(){
