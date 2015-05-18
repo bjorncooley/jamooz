@@ -1,6 +1,6 @@
 <div class="row current card-container current">
     <div class="relative">
-        <div class="small-12 medium-4 columns small-centered medium-uncentered card current" data-product="startup-plan">
+        <div class="small-12 medium-4 columns small-centered medium-uncentered card plan current" data-product="startup-plan">
             <div class="shadowed">
                 <div class="card-text">
                     <p class="padding-bottom-30">Under 3 Extensions</p>
@@ -31,7 +31,7 @@
                 <p class="white close-details-link hide">Close Details</p>
             </div>
         </div>
-        <div class="small-12 medium-4 columns small-centered card medium-uncentered" data-product="small-business-plan">
+        <div class="small-12 medium-4 columns small-centered card plan medium-uncentered" data-product="small-business-plan">
             <div class="shadowed">
                 <div class="card-text">
                     <p class="padding-bottom-30">3-40 Extensions</p>
@@ -66,7 +66,7 @@
                 <p class="white close-details-link hide">Close Details</p>
             </div>
         </div>
-        <div class="small-12 medium-4 columns small-centered card medium-uncentered" data-product="enterprise-plan">
+        <div class="small-12 medium-4 columns small-centered card plan medium-uncentered" data-product="enterprise-plan">
             <div class="shadowed">
                 <div class="card-text">
                     <p class="padding-bottom-30">41+ Extensions</p>

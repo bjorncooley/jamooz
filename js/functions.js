@@ -110,10 +110,10 @@ $(function(){
     $('.card').click(function(){
 
         $(this).addClass('selected');
-        $(this).siblings().removeClass('selected');
+        $(this).siblings('.plan').removeClass('selected');
 
         $(this).find('img').attr('src', 'img/get-started/blue-check-icon-mobile.png');
-        $(this).siblings().find('img').attr('src', 'img/get-started/yellow-plus-icon-mobile.png');
+        $(this).siblings('.plan').find('img').attr('src', 'img/get-started/yellow-plus-icon-mobile.png');
     });
 
 
