@@ -93,7 +93,7 @@
                     <button class="white bright-blue-background">Looks good! Continue</button>
                 </div>
                 <div class="hide-for-large-up text-center">
-                    <img src="img/shared/close_icon_black.png" alt="" class="profile-toggle-button">
+                    <img src="img/shared/close_icon_black.png" alt="" class="plan-profile-close-button">
                 </div>
             </div>
         </div>

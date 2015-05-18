@@ -54,6 +54,44 @@ $(function(){
         $(this).parent().fadeOut(400);
     });
 
+    // Toggle plan profile widget
+    $('.plan-profile-toggle').click(function(){
+
+        if ( $('#plan-profile-content').css('display') == 'none' ) {
+
+            $('#plan-profile-content').css('display', 'block');
+
+            // Set the widget to be absolutely positioned on mobile,
+            // so mobile users can scroll down the widget
+
+            if ( mobile ) {
+
+                var top = $('#plan-profile').offset()['top'];
+                $('#plan-profile').css({
+                    'position' : 'absolute',
+                    'top' : top,
+                    'left' : 0 ,
+                });
+            }
+            
+        } else {
+
+            $('#plan-profile-content').css('display', 'none');
+
+            // Set widget back to fixed
+            $('#plan-profile').css({
+
+                'position' : 'fixed',
+                'top' : '10%',
+            });
+        }
+    });    
+
+    $('.plan-profile-close-button').click(function(){
+
+        $('#plan-profile-content').css('display', 'none');
+    });
+
     // Down arrow for Home Page
 
     $('#hero-down-arrow').click(function(){

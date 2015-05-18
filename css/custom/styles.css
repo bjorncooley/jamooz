@@ -418,24 +418,25 @@ button.yellow-background {
 #plan-profile {
   position: fixed;
   left: 0px;
-  top: 20%; }
+  top: 10%; }
   #plan-profile .plan-profile-toggle {
     width: 70px;
     height: 56px;
     background: url(../../img/shared/plan_profile_toggle_bg.png) no-repeat;
     position: relative;
     left: -4px;
-    z-index: 499; }
+    z-index: 499;
+    cursor: pointer; }
     #plan-profile .plan-profile-toggle img {
       display: none; }
     #plan-profile .plan-profile-toggle h4 {
       padding: 12px 0 0 24px; }
   #plan-profile #plan-profile-content {
+    display: none;
     background-color: #f2f2f2;
-    padding: 0 10px 20px;
+    padding: 80px 10px 20px;
     min-width: 320px;
     max-width: 100%;
-    padding-top: 60px;
     position: relative;
     top: -60px; }
     #plan-profile #plan-profile-content #plan-profile-title {
@@ -473,7 +474,7 @@ button.yellow-background {
       min-width: 200px;
       text-align: center;
       margin-bottom: 10px; }
-    #plan-profile #plan-profile-content .profile-toggle-button {
+    #plan-profile #plan-profile-content .plan-profile-close-button {
       cursor: pointer; }
 
 /* ----------------- */

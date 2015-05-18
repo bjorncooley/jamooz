@@ -210,7 +210,7 @@ button.yellow-background {
 
     position: fixed;
     left: 0px;
-    top: 20%;
+    top: 10%;
 
     .plan-profile-toggle {
 
@@ -220,6 +220,7 @@ button.yellow-background {
         position: relative;
         left: -4px;
         z-index: 499;
+        cursor: pointer;
 
         img {
 
@@ -235,11 +236,11 @@ button.yellow-background {
 
     #plan-profile-content {
 
+        display: none;
         background-color: $light-gray;
-        padding: 0 10px 20px;
+        padding: 80px 10px 20px;
         min-width: 320px;
         max-width: 100%;
-        padding-top: 60px;
         position: relative;
         top: -60px;
 
@@ -314,7 +315,7 @@ button.yellow-background {
             margin-bottom: 10px;
         }
         
-        .profile-toggle-button {
+        .plan-profile-close-button {
 
             cursor: pointer;
         }
