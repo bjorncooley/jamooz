@@ -13,7 +13,7 @@
         <div id="schmooze-page">
 
             <header></header>
-            <div id="nav">
+            <div id="schmooze-nav">
                 <div class="row padding-bottom-30 padding-top-30">
                     <div class="large-3 columns">
                         <img src="img/shared/jamooz_small_logo.png" alt="">

@@ -131,7 +131,11 @@ $(function(){
 
     $('#hero-down-arrow').click(function(){
 
-        $('html, body').animate({ scrollTop: $('.hero').next().offset()['top']}, 600);
+        var next_top = $('.hero').next().offset()['top'];
+        var nav_size = $('#nav').height();
+        var scroll_target = next_top - nav_size;
+
+        $('html, body').animate({ scrollTop: scroll_target}, 600);
     });
 
 
@@ -617,7 +621,7 @@ function positionDesktopNav() {
     if ( $('#nav').css('display') == 'none' ) {
 
         var window_top = $(window).scrollTop();
-        var intro_top = $('#intro').offset()['top'];
+        var intro_top = $('#hero-down-arrow').offset()['top'];
 
         if ( window_top >= intro_top ) {
 
