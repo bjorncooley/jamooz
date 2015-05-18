@@ -16,6 +16,7 @@ $(window).load(function(){
 
 
         movePlanCards();  
+        setMobileNav();
 
         // Special functions for the discounts slide
         $('#discounts .card-container').height(container_height - plan_card_height * 3);
@@ -37,6 +38,7 @@ $(window).resize(function(){
     if ( $('body').css('position') == 'relative' ) {
 
         mobile = true;
+        setMobileNav();
         
     } else {
 
@@ -54,9 +56,46 @@ $(function(){
         $(this).parent().fadeOut(400);
     });
 
-    
+    // Mobile nav
+    $('#mobile-nav-toggle').click(function(){
 
-    // Down arrow for Home Page
+        var width = $(window).width();
+
+        if ( $('#mobile-nav').hasClass('closed') == true ) {
+
+            $('#mobile-nav-toggle').animate({rotate: -90}, 150);
+            $('#mobile-nav').animate({'left' : 0}, 300);
+            $('#mobile-nav').removeClass('closed').addClass('opened');
+            $('#page-content, #plan-profile, #mobile-logo-container').animate({'left' : '-' + width}, 300);
+            $('#mobile-logo-container').css('box-shadow', 'none');
+
+            //Change menu from fixed to absolute
+            var top = $('#mobile-nav').offset()['top'];
+            $('#mobile-nav').css({
+                'top' : top,
+                'position' : 'absolute',
+            });
+        } else {
+
+            $('#mobile-nav-toggle').animate({rotate: 0}, 150);
+            $('#mobile-nav').removeClass('opened').addClass('closed');
+            $('#page-content, #plan-profile, #mobile-logo-container').animate({'left' : 0}, 300);
+            $('#mobile-nav').animate({'left' : width}, 300, function(){
+                $('#mobile-nav').css({
+                    'position': 'fixed',
+                    'top' : 0,
+                });
+            });
+            $('#mobile-logo-container').css('box-shadow', '0 2px 5px #787878');
+            
+
+            
+        }
+        
+    });
+
+
+    // Down arrow for hero
 
     $('#hero-down-arrow').click(function(){
         $('html, body').animate({ scrollTop: $('#intro').offset()['top']}, 800);
@@ -132,11 +171,19 @@ $(function(){
 
             $('#plan-profile-content').css('display', 'none');
 
+            if ( mobile ) {
+
+                top = '-9px';
+            } else {
+
+                top = '10%';
+            }
+
             // Set widget back to fixed
             $('#plan-profile').css({
 
                 'position' : 'fixed',
-                'top' : '10%',
+                'top' : top,
             });
         }
     });    
@@ -490,7 +537,13 @@ function updatePlanProfile() {
         $('#plan-profile .plan-item:first .description').text($.cookie('plan'));
         $('#plan-profile .plan-item:first .price').text($.cookie('plan-cost'));
         $('#plan-profile #total').text($.cookie('total'));
-    }
+    }   
+}
 
-    
+function setMobileNav() {
+
+    var width = $(window).width();
+
+    $('#mobile-nav.closed').css('left', width);
+    $('#mobile-nav.open').css('left', 0);
 }

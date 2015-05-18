@@ -92,6 +92,37 @@ button.yellow-background {
     }
 }
 
+#home {
+
+    #support {
+
+        button {
+
+            width: 310px;
+        }
+    }
+
+    #hero {
+
+        margin-bottom: -30px;
+
+        #hero-text {
+
+            button, &>h6 {
+
+                position: relative;
+                top: -150px;
+            }
+
+            #hero-down-arrow {
+
+                position: relative;
+                top: -50px;
+            }
+        }
+    }
+}
+
 
 /* --------------------------- */
 /* --- PLAN PROFILE WIDGET --- */

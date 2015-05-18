@@ -1,4 +1,9 @@
 /* Resets */
+ul {
+
+  margin: 0;
+}
+
 li {
 
   list-style: none;
@@ -102,6 +107,11 @@ input {
 .white, .white:hover {
 
   color: white;
+
+  a, a:hover, a:active {
+
+    color: white;
+  }
 }
 
 .bright-blue {

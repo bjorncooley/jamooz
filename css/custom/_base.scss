@@ -43,6 +43,78 @@ button.yellow-background {
 /* --- SHARED --- */
 /* -------------- */
 
+#nav {
+
+    img {
+
+        margin: 0 auto;
+    }
+}
+
+#mobile-logo-container {
+
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    z-index: 99;
+    padding-bottom: 2px;
+    box-shadow:
+          0 2px 5px $medium-gray;
+    
+}
+
+#mobile-nav {
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 5000px;
+    z-index: 699;
+    display: none;
+
+    #mobile-nav-toggle {
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    &>div {
+
+        height: 44px;
+    }
+
+    ul {
+
+        text-align: center;
+
+        li {
+
+            border-top: 1px solid white;
+            padding: 20px 0;
+
+            button {
+
+                display: block;
+                margin: 20px auto;
+                background-color: inherit;
+                @include border_radius(5px);
+                width: 180px;
+            }
+        }
+    }
+}
+
+#page-content {
+
+    position: relative;
+    padding-top: 100px;
+}
+
 .close-button {
 
     position: absolute;
@@ -211,7 +283,7 @@ button.yellow-background {
 
     position: fixed;
     left: 0px;
-    top: 10%;
+    top: -9px;
     z-index: 299;
 
     .plan-profile-toggle {
@@ -347,13 +419,24 @@ button.yellow-background {
     }
 }
 
-#hero {
+#home {
 
-    h6 {
+    #hero {
 
-        max-width: 215px;
+        h6 {
+
+            max-width: 215px;
+        }
+
+        #hero-down-arrow {
+
+            cursor: pointer;
+            display: inline-block;
+        }
     }
 }
+
+
 
 #intro {
 
