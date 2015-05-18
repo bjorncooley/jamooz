@@ -93,6 +93,97 @@ button.yellow-background {
 }
 
 
+/* --------------------------- */
+/* --- PLAN PROFILE WIDGET --- */
+/* --------------------------- */
+
+#plan-profile {
+
+    min-width: 450px;
+
+    h4, #cost h4 {
+
+        font-size: 1em;
+    }
+
+    #plan-profile-title {
+
+        text-align: left;
+
+        h5 {
+
+            font-size: 120%;
+        }
+    }
+
+    #plan-items, #cost {
+
+        max-width: 80%;
+        margin: 20px auto;
+
+        .price {
+
+            text-align: right;
+        }
+
+        h4:nth-of-type(1) {
+
+            margin-left: 20px;
+        }
+    }
+
+    #plan-items {
+
+        .plan-item {
+
+            padding: 5px 0;
+            background-color: inherit;
+            position: relative;
+            margin: 0;
+
+            .item-text {
+
+                width: 100%;
+
+                .description {
+                    
+                    float: left;
+                    margin-bottom: 0;
+                }
+
+                .price {
+
+                    float: right;
+                }
+            }
+
+            .remove-item-icon {
+
+                position: absolute;
+                left: -20px;
+            }
+        }
+    }
+
+    #cost {
+
+        border-top: 1px solid black;
+        padding: 15px 0;
+        text-align: left;
+
+        h4 {
+
+            font-weight: 300;
+        }
+
+        span {
+
+            margin-left: 0;
+        }
+    }
+}
+
+
 /* ---------------------------------------- */
 /* --- HARDWARE / SOFTWARE INTEGRATIONS --- */
 /* ---------------------------------------- */

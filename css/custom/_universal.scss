@@ -77,10 +77,12 @@ button:hover {
 /* Colors */
 $dark-blue: rgb(31,40,55);
 $dark-gray: rgb(67,67,67);
+$bright-blue: rgb(1,172,215);
 $bright-green: rgb(115,190,68);
 $light-blue: rgb(56,165,221);
 $light-brown: rgb(222,204,180);
 $light-gray: rgb(242,242,242);
+$light-medium-gray: rgb(219,227,229);
 $medium-dark-gray: rgb(88,88,91);
 $medium-blue: rgb(63,85,175);
 $medium-dark-blue: rgb(46,54,142);
@@ -100,6 +102,16 @@ input {
 .white, .white:hover {
 
   color: white;
+}
+
+.bright-blue {
+
+  color: $bright-blue;
+}
+
+.bright-blue-background {
+
+  background-color: $bright-blue;
 }
 
 .bright-green-background {

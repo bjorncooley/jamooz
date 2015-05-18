@@ -46,8 +46,8 @@ button.yellow-background {
 .close-button {
 
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 30px;
+    right: 30px;
     cursor: pointer;
 }
 
@@ -201,6 +201,118 @@ button.yellow-background {
     }
 }
 
+
+/* --------------------------- */
+/* --- PLAN PROFILE TOGGLE --- */
+/* --------------------------- */
+
+#plan-profile {
+
+    position: fixed;
+    left: 0px;
+    top: 20%;
+    background-color: $light-gray;
+    padding: 0 10px 20px;
+    min-width: 320px;
+    max-width: 100%;
+
+    .plan-profile-toggle {
+
+        width: 70px;
+        height: 56px;
+        background: url(../../img/shared/plan_profile_toggle_bg.png) no-repeat;
+        position: relative;
+        left: -16px;
+
+        img {
+
+            display: none;
+        }
+
+        h4 {
+
+            padding: 12px 0 0 24px;
+        }
+
+    }
+
+    #plan-profile-title {
+
+        text-align: center;
+
+        img, h5 {
+
+            display: inline-block;
+        }
+
+        h5 {
+
+            font-size: 80%;
+        }
+    }
+
+    #plan-items {
+
+        margin-bottom: 10px;
+
+        .plan-item {
+
+            background-color: $light-medium-gray;
+            padding: 20px 10px 5px;
+            margin: 10px 0;
+
+            .item-text {
+
+                float: left;
+
+                .description {
+
+                    margin-bottom: 30px;
+                }
+            }
+
+            .remove-item-icon {
+
+                float: right;
+                padding-top: 5px;
+            }
+        }
+    }
+
+    #cost {
+
+        border-top: 1px solid black;
+        padding: 15px 0;
+        margin-top: 30px;
+        text-align: center;
+
+        h4 {
+
+            font-size: 0.9em;
+            display: inline-block;
+            font-weight: 400;
+        }
+
+        span {
+
+            margin-left: 5px;
+        }
+    }
+
+    button {
+
+        width: 70%;
+        min-width: 200px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .profile-toggle-button {
+
+        cursor: pointer;
+    }
+
+}
 
 /* ----------------- */
 /* --- HOME PAGE --- */

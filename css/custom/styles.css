@@ -35,6 +35,12 @@ input {
 .white, .white:hover {
   color: white; }
 
+.bright-blue {
+  color: #01acd7; }
+
+.bright-blue-background {
+  background-color: #01acd7; }
+
 .bright-green-background {
   background-color: #73be44; }
 
@@ -334,8 +340,8 @@ button.yellow-background {
 /* -------------- */
 .close-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 30px;
+  right: 30px;
   cursor: pointer; }
 
 .card-section .left-arrow, .card-section .right-arrow {
@@ -405,6 +411,65 @@ button.yellow-background {
 
 #software-hero h4, #hardware-hero h4, #pricing-hero h4 {
   line-height: 1.8em; }
+
+/* --------------------------- */
+/* --- PLAN PROFILE TOGGLE --- */
+/* --------------------------- */
+#plan-profile {
+  position: fixed;
+  left: 0px;
+  top: 20%;
+  background-color: #f2f2f2;
+  padding: 0 10px 20px;
+  min-width: 320px;
+  max-width: 100%; }
+  #plan-profile .plan-profile-toggle {
+    width: 70px;
+    height: 56px;
+    background: url(../../img/shared/plan_profile_toggle_bg.png) no-repeat;
+    position: relative;
+    left: -16px; }
+    #plan-profile .plan-profile-toggle img {
+      display: none; }
+    #plan-profile .plan-profile-toggle h4 {
+      padding: 12px 0 0 24px; }
+  #plan-profile #plan-profile-title {
+    text-align: center; }
+    #plan-profile #plan-profile-title img, #plan-profile #plan-profile-title h5 {
+      display: inline-block; }
+    #plan-profile #plan-profile-title h5 {
+      font-size: 80%; }
+  #plan-profile #plan-items {
+    margin-bottom: 10px; }
+    #plan-profile #plan-items .plan-item {
+      background-color: #dbe3e5;
+      padding: 20px 10px 5px;
+      margin: 10px 0; }
+      #plan-profile #plan-items .plan-item .item-text {
+        float: left; }
+        #plan-profile #plan-items .plan-item .item-text .description {
+          margin-bottom: 30px; }
+      #plan-profile #plan-items .plan-item .remove-item-icon {
+        float: right;
+        padding-top: 5px; }
+  #plan-profile #cost {
+    border-top: 1px solid black;
+    padding: 15px 0;
+    margin-top: 30px;
+    text-align: center; }
+    #plan-profile #cost h4 {
+      font-size: 0.9em;
+      display: inline-block;
+      font-weight: 400; }
+    #plan-profile #cost span {
+      margin-left: 5px; }
+  #plan-profile button {
+    width: 70%;
+    min-width: 200px;
+    text-align: center;
+    margin-bottom: 10px; }
+  #plan-profile .profile-toggle-button {
+    cursor: pointer; }
 
 /* ----------------- */
 /* --- HOME PAGE --- */
@@ -870,6 +935,48 @@ button.yellow-background {
     padding-top: 200px; }
     #hardware-hero h4, #software-hero h4, #pricing-hero h4 {
       padding-bottom: 200px; }
+
+  /* --------------------------- */
+  /* --- PLAN PROFILE WIDGET --- */
+  /* --------------------------- */
+  #plan-profile {
+    min-width: 450px; }
+    #plan-profile h4, #plan-profile #cost h4 {
+      font-size: 1em; }
+    #plan-profile #plan-profile-title {
+      text-align: left; }
+      #plan-profile #plan-profile-title h5 {
+        font-size: 120%; }
+    #plan-profile #plan-items, #plan-profile #cost {
+      max-width: 80%;
+      margin: 20px auto; }
+      #plan-profile #plan-items .price, #plan-profile #cost .price {
+        text-align: right; }
+      #plan-profile #plan-items h4:nth-of-type(1), #plan-profile #cost h4:nth-of-type(1) {
+        margin-left: 20px; }
+    #plan-profile #plan-items .plan-item {
+      padding: 5px 0;
+      background-color: inherit;
+      position: relative;
+      margin: 0; }
+      #plan-profile #plan-items .plan-item .item-text {
+        width: 100%; }
+        #plan-profile #plan-items .plan-item .item-text .description {
+          float: left;
+          margin-bottom: 0; }
+        #plan-profile #plan-items .plan-item .item-text .price {
+          float: right; }
+      #plan-profile #plan-items .plan-item .remove-item-icon {
+        position: absolute;
+        left: -20px; }
+    #plan-profile #cost {
+      border-top: 1px solid black;
+      padding: 15px 0;
+      text-align: left; }
+      #plan-profile #cost h4 {
+        font-weight: 300; }
+      #plan-profile #cost span {
+        margin-left: 0; }
 
   /* ---------------------------------------- */
   /* --- HARDWARE / SOFTWARE INTEGRATIONS --- */

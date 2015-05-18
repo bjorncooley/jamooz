@@ -57,6 +57,45 @@
                 <p class="small text-center padding-top-50">Jamooz Corp | Copyright 2015</p>
             </div>
         </div><!-- #footer -->
+
+        <!-- Plan Profile Widget -->
+        <div id="plan-profile">
+            <div class="plan-profile-toggle">
+                <img src="" alt="">
+                <h4 class="white small">1</h4>
+            </div>
+            <div id="plan-profile-title">
+                <img src="img/shared/profile_icon.png" alt="">
+                <h5 class="uppercase bright-blue">Your Plan Profile</h5>
+            </div>
+            <div id="plan-items">
+                <div class="plan-item clearfix">
+                    <div class="item-text">
+                        <h4 class="description">Startup Base Plan</h4>
+                        <h4 class="price">$17/month</h4>
+                    </div>
+                    <img src="img/shared/close_icon_black_no_border.png" alt="" class="remove-item-icon">
+                </div>
+                <div class="plan-item clearfix">
+                    <div class="item-text">
+                        <h4 class="description">Startup Base Plan</h4>
+                        <h4 class="price">$17/month</h4>
+                    </div>
+                    <img src="img/shared/close_icon_black_no_border.png" alt="" class="remove-item-icon">
+                </div>
+            </div>
+            <div id="cost">
+                <h4>Estimated Total Cost</h4>
+                <h4 class="price"><span class="cost">$37/month</span></h4>
+            </div>
+            <div class="text-center">
+                <button class="white bright-blue-background">Looks good! Continue</button>
+            </div>
+            <div class="hide-for-large-up text-center">
+                <img src="img/shared/close_icon_black.png" alt="" class="profile-toggle-button">
+            </div>
+        </div>
+
         <footer>
             <link href='http://fonts.googleapis.com/css?family=Roboto:500,400,300,100' rel='stylesheet' type='text/css'>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
