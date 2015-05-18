@@ -657,7 +657,8 @@ button.yellow-background {
   #extras .slide > .row p {
     line-height: 2em; }
 #extras .add-container {
-  padding-top: 30px; }
+  padding-top: 30px;
+  cursor: pointer; }
   #extras .add-container h5 {
     margin-bottom: 15px; }
   #extras .add-container img {

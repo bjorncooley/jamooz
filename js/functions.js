@@ -54,6 +54,60 @@ $(function(){
         $(this).parent().fadeOut(400);
     });
 
+    
+
+    // Down arrow for Home Page
+
+    $('#hero-down-arrow').click(function(){
+        $('html, body').animate({ scrollTop: $('#intro').offset()['top']}, 800);
+    });
+
+    /* --------------------------- */
+    /* ---------- CARDS ---------- */
+    /* --------------------------- */
+
+    
+    $('.card').click(function(){
+
+        $(this).addClass('selected');
+        $(this).siblings().removeClass('selected');
+
+        $(this).find('img').attr('src', 'img/get-started/blue-check-icon-mobile.png');
+        $(this).siblings().find('img').attr('src', 'img/get-started/yellow-plus-icon-mobile.png');
+    });
+
+
+    $('.add-container').click(function(){
+
+        $(this).addClass('selected');
+        $(this).find('img').attr('src', 'img/get-started/blue-check-icon-mobile.png');
+
+        var num_items = parseInt($.cookie('num_items'));
+        num_items += 1;
+        $.cookie('num_items', num_items);
+
+        updatePlanProfile();
+    });
+
+    /* ----------------------------------------- */
+    /* ---------- PLAN PROFILE WIDGET ---------- */
+    /* ----------------------------------------- */
+
+    $('.remove-item').click(function(){
+
+        var product_type = $(this).parent().data('productType');
+        var num_items = parseInt($.cookie('num_items'));
+
+        $.removeCookie(product_type);
+        $.removeCookie(product_type + '-cost');
+
+        num_items -= 1;
+        $.cookie('num_items', num_items);
+
+        updatePlanProfile();
+
+    });
+
     // Toggle plan profile widget
     $('.plan-profile-toggle').click(function(){
 
@@ -90,41 +144,6 @@ $(function(){
     $('.plan-profile-close-button').click(function(){
 
         $('#plan-profile-content').css('display', 'none');
-    });
-
-    // Down arrow for Home Page
-
-    $('#hero-down-arrow').click(function(){
-        $('html, body').animate({ scrollTop: $('#intro').offset()['top']}, 800);
-    });
-
-    // Activate plan cards when selected
-    $('#get-started .card, #pricing .card').click(function(){
-
-        $(this).addClass('selected');
-        $(this).siblings().removeClass('selected');
-
-        $(this).find('img').attr('src', 'img/get-started/blue-check-icon-mobile.png');
-        $(this).siblings().find('img').attr('src', 'img/get-started/yellow-plus-icon-mobile.png');
-    });
-
-    /* ----------------------------------------- */
-    /* ---------- PLAN PROFILE WIDGET ---------- */
-    /* ----------------------------------------- */
-
-    $('.remove-item').click(function(){
-
-        var product_type = $(this).parent().data('productType');
-        var num_items = parseInt($.cookie('num_items'));
-
-        $.removeCookie(product_type);
-        $.removeCookie(product_type + '-cost');
-
-        num_items -= 1;
-        $.cookie('num_items', num_items);
-
-        updatePlanProfile();
-
     });
     
 
