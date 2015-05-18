@@ -126,6 +126,11 @@ button.yellow-background {
 #hero-down-arrow {
 
     cursor: pointer;
+
+    img {
+
+        position: relative;
+    }
 }
 
 .card-section {
@@ -501,7 +506,7 @@ button.yellow-background {
 
     #step-3 {
 
-        display: none;
+        //display: none;
     }
 }
 

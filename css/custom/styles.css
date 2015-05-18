@@ -396,6 +396,8 @@ button.yellow-background {
 
 #hero-down-arrow {
   cursor: pointer; }
+  #hero-down-arrow img {
+    position: relative; }
 
 .card-section .left-arrow, .card-section .right-arrow {
   position: absolute;
@@ -580,8 +582,6 @@ button.yellow-background {
   position: absolute;
   top: 0;
   left: 0; }
-#get-started #step-3 {
-  display: none; }
 
 #step-1 h4, #step-1 form {
   max-width: 500px;

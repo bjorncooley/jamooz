@@ -102,6 +102,16 @@ $(function(){
         $('html, body').animate({ scrollTop: $('.hero').next().offset()['top']}, 600);
     });
 
+
+    $('#hero-down-arrow img').hover(function(){
+
+        console.log('hovered');
+        console.log($(this).css('top'));
+        $(this).animate({top: '-=5'}, 100);
+    }, function(){
+
+        $(this).animate({top: '+=5'}, 100);
+    });
     /* --------------------------- */
     /* ---------- CARDS ---------- */
     /* --------------------------- */

@@ -1,7 +1,7 @@
 <?php include('includes/header.php'); ?>
 
 <div id="pricing">
-    <div id="pricing-hero" class="padding-top-30 padding-bottom-15">
+    <div id="pricing-hero" class="padding-top-30 padding-bottom-15 hero">
         <div class="row white">
             <div class="large-12 columns">
                 <h1 class="large">Transparent Pricing<br />Customizable Plans</h1>
@@ -11,7 +11,9 @@
                 customers of all shapes and sizes. Transparency is what makes this possible.</h4>
             </div>
             <div class="large-12 columns text-center padding-top-30">
-                <img src="img/shared/white_down_arrow.png" alt="">
+                <div id="hero-down-arrow">
+                    <img src="img/shared/white_down_arrow.png" alt="">
+                </div>
             </div>
         </div>
     </div>
