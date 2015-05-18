@@ -970,6 +970,9 @@ button.yellow-background {
     width: auto;
     padding: 15px 80px; }
 
+  #page-content {
+    padding-top: 0; }
+
   #hero h1 {
     max-width: 800px;
     margin: 0 auto;
@@ -1016,7 +1019,8 @@ button.yellow-background {
   /* --- PLAN PROFILE WIDGET --- */
   /* --------------------------- */
   #plan-profile {
-    min-width: 450px; }
+    min-width: 450px;
+    top: 15%; }
     #plan-profile h4, #plan-profile #cost h4 {
       font-size: 1em; }
     #plan-profile #plan-profile-content #plan-profile-title {

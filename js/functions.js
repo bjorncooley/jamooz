@@ -176,7 +176,7 @@ $(function(){
                 top = '-9px';
             } else {
 
-                top = '10%';
+                top = '15%';
             }
 
             // Set widget back to fixed

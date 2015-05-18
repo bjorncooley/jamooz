@@ -29,6 +29,11 @@ button.yellow-background {
     padding: 15px 80px;
 }
 
+#page-content {
+
+    padding-top: 0;
+}
+
 #hero {
 
     h1 {
@@ -131,6 +136,7 @@ button.yellow-background {
 #plan-profile {
 
     min-width: 450px;
+    top: 15%;
 
     h4, #cost h4 {
 
