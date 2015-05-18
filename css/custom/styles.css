@@ -407,7 +407,8 @@ button.yellow-background {
   width: 100%; }
 
 .slide-container {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 #software-hero h4, #hardware-hero h4, #pricing-hero h4 {
   line-height: 1.8em; }
