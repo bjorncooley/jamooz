@@ -1,6 +1,6 @@
 <?php include('includes/header.php'); ?>
 
-<div id="hardware-hero" class="padding-top-30 padding-bottom-15">
+<div id="hardware-hero" class="padding-top-30 padding-bottom-15 hero">
     <div class="row white">
         <div class="large-12 columns">
             <h1 class="large">Hardware Integrations<br />One Platform.</h1>
@@ -10,7 +10,7 @@
             We simplify it. And if you have a problem, we're available to walk you through it,
             24/7.</h4>
         </div>
-        <div class="large-12 columns text-center padding-top-30">
+        <div class="large-12 columns text-center padding-top-30" id="hero-down-arrow">
             <img src="img/shared/white_down_arrow.png" alt="">
         </div>
     </div>

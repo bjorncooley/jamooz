@@ -1,7 +1,7 @@
 <?php include('includes/header.php'); ?>
 <div id="home">
     <div id="hero">
-            <div id="hero">
+            <div id="hero" class="hero">
                 <div class="row">
                     <div class="large-12 columns text-center">
                         <h1>Ease Into a Better Communication Experience For

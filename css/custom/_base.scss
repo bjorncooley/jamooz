@@ -123,6 +123,11 @@ button.yellow-background {
     cursor: pointer;
 }
 
+#hero-down-arrow {
+
+    cursor: pointer;
+}
+
 .card-section {
 
     .left-arrow, .right-arrow {
@@ -431,7 +436,6 @@ button.yellow-background {
 
         #hero-down-arrow {
 
-            cursor: pointer;
             display: inline-block;
         }
     }

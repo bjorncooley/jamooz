@@ -1,7 +1,7 @@
 <?php include('includes/header.php'); ?>
 
 <div id="software-integrations">
-    <div id="software-hero" class="padding-top-30 padding-bottom-15">
+    <div id="software-hero" class="padding-top-30 padding-bottom-15 hero">
         <div class="row white">
             <div class="large-12 columns">
                 <h1 class="large">Software Integrations<br />Apps You Already Use</h1>
@@ -10,7 +10,7 @@
                 <h4 class="light">Connecting all your devices to stay in the loop wherever
                 you go is a must these days. We make doing that easy.</h4>
             </div>
-            <div class="large-12 columns text-center padding-top-30">
+            <div class="large-12 columns text-center padding-top-30" id="hero-down-arrow">
                 <img src="img/shared/white_down_arrow.png" alt="">
             </div>
         </div>

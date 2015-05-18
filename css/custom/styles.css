@@ -394,6 +394,9 @@ button.yellow-background {
   right: 30px;
   cursor: pointer; }
 
+#hero-down-arrow {
+  cursor: pointer; }
+
 .card-section .left-arrow, .card-section .right-arrow {
   position: absolute;
   top: 345px;
@@ -544,7 +547,6 @@ button.yellow-background {
 #home #hero h6 {
   max-width: 215px; }
 #home #hero #hero-down-arrow {
-  cursor: pointer;
   display: inline-block; }
 
 #intro {
