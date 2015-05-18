@@ -418,58 +418,63 @@ button.yellow-background {
 #plan-profile {
   position: fixed;
   left: 0px;
-  top: 20%;
-  background-color: #f2f2f2;
-  padding: 0 10px 20px;
-  min-width: 320px;
-  max-width: 100%; }
+  top: 20%; }
   #plan-profile .plan-profile-toggle {
     width: 70px;
     height: 56px;
     background: url(../../img/shared/plan_profile_toggle_bg.png) no-repeat;
     position: relative;
-    left: -16px; }
+    left: -4px;
+    z-index: 499; }
     #plan-profile .plan-profile-toggle img {
       display: none; }
     #plan-profile .plan-profile-toggle h4 {
       padding: 12px 0 0 24px; }
-  #plan-profile #plan-profile-title {
-    text-align: center; }
-    #plan-profile #plan-profile-title img, #plan-profile #plan-profile-title h5 {
-      display: inline-block; }
-    #plan-profile #plan-profile-title h5 {
-      font-size: 80%; }
-  #plan-profile #plan-items {
-    margin-bottom: 10px; }
-    #plan-profile #plan-items .plan-item {
-      background-color: #dbe3e5;
-      padding: 20px 10px 5px;
-      margin: 10px 0; }
-      #plan-profile #plan-items .plan-item .item-text {
-        float: left; }
-        #plan-profile #plan-items .plan-item .item-text .description {
-          margin-bottom: 30px; }
-      #plan-profile #plan-items .plan-item .remove-item-icon {
-        float: right;
-        padding-top: 5px; }
-  #plan-profile #cost {
-    border-top: 1px solid black;
-    padding: 15px 0;
-    margin-top: 30px;
-    text-align: center; }
-    #plan-profile #cost h4 {
-      font-size: 0.9em;
-      display: inline-block;
-      font-weight: 400; }
-    #plan-profile #cost span {
-      margin-left: 5px; }
-  #plan-profile button {
-    width: 70%;
-    min-width: 200px;
-    text-align: center;
-    margin-bottom: 10px; }
-  #plan-profile .profile-toggle-button {
-    cursor: pointer; }
+  #plan-profile #plan-profile-content {
+    background-color: #f2f2f2;
+    padding: 0 10px 20px;
+    min-width: 320px;
+    max-width: 100%;
+    padding-top: 60px;
+    position: relative;
+    top: -60px; }
+    #plan-profile #plan-profile-content #plan-profile-title {
+      text-align: center; }
+      #plan-profile #plan-profile-content #plan-profile-title img, #plan-profile #plan-profile-content #plan-profile-title h5 {
+        display: inline-block; }
+      #plan-profile #plan-profile-content #plan-profile-title h5 {
+        font-size: 80%; }
+    #plan-profile #plan-profile-content #plan-items {
+      margin-bottom: 10px; }
+      #plan-profile #plan-profile-content #plan-items .plan-item {
+        background-color: #dbe3e5;
+        padding: 20px 10px 5px;
+        margin: 10px 0; }
+        #plan-profile #plan-profile-content #plan-items .plan-item .item-text {
+          float: left; }
+          #plan-profile #plan-profile-content #plan-items .plan-item .item-text .description {
+            margin-bottom: 30px; }
+        #plan-profile #plan-profile-content #plan-items .plan-item .remove-item-icon {
+          float: right;
+          padding-top: 5px; }
+    #plan-profile #plan-profile-content #cost {
+      border-top: 1px solid black;
+      padding: 15px 0;
+      margin-top: 30px;
+      text-align: center; }
+      #plan-profile #plan-profile-content #cost h4 {
+        font-size: 0.9em;
+        display: inline-block;
+        font-weight: 400; }
+      #plan-profile #plan-profile-content #cost span {
+        margin-left: 5px; }
+    #plan-profile #plan-profile-content button {
+      width: 70%;
+      min-width: 200px;
+      text-align: center;
+      margin-bottom: 10px; }
+    #plan-profile #plan-profile-content .profile-toggle-button {
+      cursor: pointer; }
 
 /* ----------------- */
 /* --- HOME PAGE --- */
@@ -943,39 +948,39 @@ button.yellow-background {
     min-width: 450px; }
     #plan-profile h4, #plan-profile #cost h4 {
       font-size: 1em; }
-    #plan-profile #plan-profile-title {
+    #plan-profile #plan-profile-content #plan-profile-title {
       text-align: left; }
-      #plan-profile #plan-profile-title h5 {
+      #plan-profile #plan-profile-content #plan-profile-title h5 {
         font-size: 120%; }
-    #plan-profile #plan-items, #plan-profile #cost {
+    #plan-profile #plan-profile-content #plan-items, #plan-profile #plan-profile-content #cost {
       max-width: 80%;
       margin: 20px auto; }
-      #plan-profile #plan-items .price, #plan-profile #cost .price {
+      #plan-profile #plan-profile-content #plan-items .price, #plan-profile #plan-profile-content #cost .price {
         text-align: right; }
-      #plan-profile #plan-items h4:nth-of-type(1), #plan-profile #cost h4:nth-of-type(1) {
+      #plan-profile #plan-profile-content #plan-items h4:nth-of-type(1), #plan-profile #plan-profile-content #cost h4:nth-of-type(1) {
         margin-left: 20px; }
-    #plan-profile #plan-items .plan-item {
+    #plan-profile #plan-profile-content #plan-items .plan-item {
       padding: 5px 0;
       background-color: inherit;
       position: relative;
       margin: 0; }
-      #plan-profile #plan-items .plan-item .item-text {
+      #plan-profile #plan-profile-content #plan-items .plan-item .item-text {
         width: 100%; }
-        #plan-profile #plan-items .plan-item .item-text .description {
+        #plan-profile #plan-profile-content #plan-items .plan-item .item-text .description {
           float: left;
           margin-bottom: 0; }
-        #plan-profile #plan-items .plan-item .item-text .price {
+        #plan-profile #plan-profile-content #plan-items .plan-item .item-text .price {
           float: right; }
-      #plan-profile #plan-items .plan-item .remove-item-icon {
+      #plan-profile #plan-profile-content #plan-items .plan-item .remove-item-icon {
         position: absolute;
         left: -20px; }
-    #plan-profile #cost {
+    #plan-profile #plan-profile-content #cost {
       border-top: 1px solid black;
       padding: 15px 0;
       text-align: left; }
-      #plan-profile #cost h4 {
+      #plan-profile #plan-profile-content #cost h4 {
         font-weight: 300; }
-      #plan-profile #cost span {
+      #plan-profile #plan-profile-content #cost span {
         margin-left: 0; }
 
   /* ---------------------------------------- */

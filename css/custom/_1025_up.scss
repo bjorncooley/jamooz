@@ -106,81 +106,86 @@ button.yellow-background {
         font-size: 1em;
     }
 
-    #plan-profile-title {
+    #plan-profile-content {
 
-        text-align: left;
+        #plan-profile-title {
 
-        h5 {
+            text-align: left;
 
-            font-size: 120%;
-        }
-    }
+            h5 {
 
-    #plan-items, #cost {
-
-        max-width: 80%;
-        margin: 20px auto;
-
-        .price {
-
-            text-align: right;
-        }
-
-        h4:nth-of-type(1) {
-
-            margin-left: 20px;
-        }
-    }
-
-    #plan-items {
-
-        .plan-item {
-
-            padding: 5px 0;
-            background-color: inherit;
-            position: relative;
-            margin: 0;
-
-            .item-text {
-
-                width: 100%;
-
-                .description {
-                    
-                    float: left;
-                    margin-bottom: 0;
-                }
-
-                .price {
-
-                    float: right;
-                }
-            }
-
-            .remove-item-icon {
-
-                position: absolute;
-                left: -20px;
+                font-size: 120%;
             }
         }
-    }
 
-    #cost {
+        #plan-items, #cost {
 
-        border-top: 1px solid black;
-        padding: 15px 0;
-        text-align: left;
+            max-width: 80%;
+            margin: 20px auto;
 
-        h4 {
+            .price {
 
-            font-weight: 300;
+                text-align: right;
+            }
+
+            h4:nth-of-type(1) {
+
+                margin-left: 20px;
+            }
         }
 
-        span {
+        #plan-items {
 
-            margin-left: 0;
+            .plan-item {
+
+                padding: 5px 0;
+                background-color: inherit;
+                position: relative;
+                margin: 0;
+
+                .item-text {
+
+                    width: 100%;
+
+                    .description {
+                        
+                        float: left;
+                        margin-bottom: 0;
+                    }
+
+                    .price {
+
+                        float: right;
+                    }
+                }
+
+                .remove-item-icon {
+
+                    position: absolute;
+                    left: -20px;
+                }
+            }
+        }
+
+        #cost {
+
+            border-top: 1px solid black;
+            padding: 15px 0;
+            text-align: left;
+
+            h4 {
+
+                font-weight: 300;
+            }
+
+            span {
+
+                margin-left: 0;
+            }
         }
     }
+
+    
 }
 
 

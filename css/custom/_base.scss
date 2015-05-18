@@ -211,10 +211,6 @@ button.yellow-background {
     position: fixed;
     left: 0px;
     top: 20%;
-    background-color: $light-gray;
-    padding: 0 10px 20px;
-    min-width: 320px;
-    max-width: 100%;
 
     .plan-profile-toggle {
 
@@ -222,7 +218,8 @@ button.yellow-background {
         height: 56px;
         background: url(../../img/shared/plan_profile_toggle_bg.png) no-repeat;
         position: relative;
-        left: -16px;
+        left: -4px;
+        z-index: 499;
 
         img {
 
@@ -236,81 +233,94 @@ button.yellow-background {
 
     }
 
-    #plan-profile-title {
+    #plan-profile-content {
 
-        text-align: center;
+        background-color: $light-gray;
+        padding: 0 10px 20px;
+        min-width: 320px;
+        max-width: 100%;
+        padding-top: 60px;
+        position: relative;
+        top: -60px;
 
-        img, h5 {
+        #plan-profile-title {
 
-            display: inline-block;
+            text-align: center;
+
+            img, h5 {
+
+                display: inline-block;
+            }
+
+            h5 {
+
+                font-size: 80%;
+            }
         }
 
-        h5 {
+        #plan-items {
 
-            font-size: 80%;
-        }
-    }
+            margin-bottom: 10px;
 
-    #plan-items {
+            .plan-item {
 
-        margin-bottom: 10px;
+                background-color: $light-medium-gray;
+                padding: 20px 10px 5px;
+                margin: 10px 0;
 
-        .plan-item {
+                .item-text {
 
-            background-color: $light-medium-gray;
-            padding: 20px 10px 5px;
-            margin: 10px 0;
+                    float: left;
 
-            .item-text {
+                    .description {
 
-                float: left;
+                        margin-bottom: 30px;
+                    }
+                }
 
-                .description {
+                .remove-item-icon {
 
-                    margin-bottom: 30px;
+                    float: right;
+                    padding-top: 5px;
                 }
             }
+        }
 
-            .remove-item-icon {
+        #cost {
 
-                float: right;
-                padding-top: 5px;
+            border-top: 1px solid black;
+            padding: 15px 0;
+            margin-top: 30px;
+            text-align: center;
+
+            h4 {
+
+                font-size: 0.9em;
+                display: inline-block;
+                font-weight: 400;
+            }
+
+            span {
+
+                margin-left: 5px;
             }
         }
-    }
 
-    #cost {
+        button {
 
-        border-top: 1px solid black;
-        padding: 15px 0;
-        margin-top: 30px;
-        text-align: center;
-
-        h4 {
-
-            font-size: 0.9em;
-            display: inline-block;
-            font-weight: 400;
+            width: 70%;
+            min-width: 200px;
+            text-align: center;
+            margin-bottom: 10px;
         }
+        
+        .profile-toggle-button {
 
-        span {
-
-            margin-left: 5px;
+            cursor: pointer;
         }
     }
 
-    button {
-
-        width: 70%;
-        min-width: 200px;
-        text-align: center;
-        margin-bottom: 10px;
-    }
     
-    .profile-toggle-button {
-
-        cursor: pointer;
-    }
 
 }
 
