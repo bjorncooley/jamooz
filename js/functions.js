@@ -108,6 +108,30 @@ $(function(){
         $(this).siblings().find('img').attr('src', 'img/get-started/yellow-plus-icon-mobile.png');
     });
 
+    /* ----------------------------------------- */
+    /* ---------- PLAN PROFILE WIDGET ---------- */
+    /* ----------------------------------------- */
+
+    $('.remove-item').click(function(){
+
+        var product_type = $(this).parent().data('productType');
+        var num_items = parseInt($.cookie('num_items'));
+
+        $.removeCookie(product_type);
+        $.removeCookie(product_type + '-cost');
+
+        num_items -= 1;
+        $.cookie('num_items', num_items);
+
+        updatePlanProfile();
+
+    });
+    
+
+    /* ----------------------------------------- */
+    /* -------------- GET STARTED -------------- */
+    /* ----------------------------------------- */
+
     // Record user's plan selection, move to next slide
 
     $('#get-started #plans button.yellow-background').click(function(){
@@ -432,7 +456,17 @@ function setUpGetStarted() {
 function updatePlanProfile() {
 
     $('#num-items').text($.cookie('num_items'));
-    $('#plan-profile .plan-item:first .description').text($.cookie('plan'));
-    $('#plan-profile .plan-item:first .price').text($.cookie('plan-cost'));
-    $('#plan-profile #total').text($.cookie('total'));
+
+    if ( $.cookie('plan') == undefined ) {
+
+        $('.plan-item[data-product-type="plan"').css('display', 'none');
+    } else {
+
+        $('.plan-item[data-product-type="plan"').css('display', 'block');
+        $('#plan-profile .plan-item:first .description').text($.cookie('plan'));
+        $('#plan-profile .plan-item:first .price').text($.cookie('plan-cost'));
+        $('#plan-profile #total').text($.cookie('total'));
+    }
+
+    
 }

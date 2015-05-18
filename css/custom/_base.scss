@@ -211,6 +211,7 @@ button.yellow-background {
     position: fixed;
     left: 0px;
     top: 10%;
+    z-index: 299;
 
     .plan-profile-toggle {
 
@@ -279,10 +280,11 @@ button.yellow-background {
                     }
                 }
 
-                .remove-item-icon {
+                .remove-item {
 
                     float: right;
                     padding-top: 5px;
+                    cursor: pointer;
                 }
             }
         }

@@ -70,19 +70,19 @@
                     <h5 class="uppercase bright-blue">Your Plan Profile</h5>
                 </div>
                 <div id="plan-items">
-                    <div class="plan-item clearfix">
+                    <div class="plan-item clearfix" data-product-type="plan">
                         <div class="item-text">
                             <h4 class="description">Description</h4>
                             <h4 class="price"></h4>
                         </div>
-                        <img src="img/shared/close_icon_black_no_border.png" alt="" class="remove-item-icon">
+                        <img src="img/shared/close_icon_black_no_border.png" alt="" class="remove-item">
                     </div>
                     <!-- <div class="plan-item clearfix">
                         <div class="item-text">
                             <h4 class="description">Startup Base Plan</h4>
                             <h4 class="price">$17/month</h4>
                         </div>
-                        <img src="img/shared/close_icon_black_no_border.png" alt="" class="remove-item-icon">
+                        <img src="img/shared/close_icon_black_no_border.png" alt="" class="remove-item">
                     </div> -->
                 </div>
                 <div id="cost">
