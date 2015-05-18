@@ -436,19 +436,24 @@ function movePlanCards() {
 
 function moveSlides() {
 
-    var slide_height = $('.slide').height();
-    $('.slide-container').height(slide_height);
-    var width = $(window).width();
-    var i=0;
+    $('.slide-container').each(function(){
 
-    $('.slide').each(function(){
+        var slide_height = $('.slide').height();
+        $('.slide-container').height(slide_height);
+        var width = $(window).width();
+        var i=0;
 
-        offset = width * i;
-        $(this).css('position', 'absolute');
-        $(this).css('left', offset + 'px');
+        $(this).find('.slide').each(function(){
 
-        i += 1;
+            offset = width * i;
+            $(this).css('position', 'absolute');
+            $(this).css('left', offset + 'px');
+
+            i += 1;
+        });
     });
+
+    
 }
 
 function setUpGetStarted() {
