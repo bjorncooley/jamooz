@@ -29,7 +29,7 @@
         <h1 class="text-center padding-bottom-30">Step 2: Pick Your Perfect Plan</h1>
         <div class="relative">
             <div class="row relative slide-container" id="plans">
-                <div class="large-12 columns relative">
+                <div class="large-12 columns relative slide">
                     <img src="img/shared/slider_left_arrow_black.png" alt="" class="left-arrow card-left-arrow">
                     <img src="img/shared/slider_right_arrow_black.png" alt="" class="right-arrow card-right-arrow">
                     <h3 class="text-center">A) Choose a Base Plan</h3>
