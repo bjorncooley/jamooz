@@ -62,7 +62,7 @@
         <div id="plan-profile">
             <div class="plan-profile-toggle">
                 <img src="" alt="">
-                <h4 class="white small">1</h4>
+                <h4 class="white small" id="num-items">0</h4>
             </div>
             <div id="plan-profile-content">
                 <div id="plan-profile-title">
@@ -72,22 +72,22 @@
                 <div id="plan-items">
                     <div class="plan-item clearfix">
                         <div class="item-text">
-                            <h4 class="description">Startup Base Plan</h4>
-                            <h4 class="price">$17/month</h4>
+                            <h4 class="description">Description</h4>
+                            <h4 class="price"></h4>
                         </div>
                         <img src="img/shared/close_icon_black_no_border.png" alt="" class="remove-item-icon">
                     </div>
-                    <div class="plan-item clearfix">
+                    <!-- <div class="plan-item clearfix">
                         <div class="item-text">
                             <h4 class="description">Startup Base Plan</h4>
                             <h4 class="price">$17/month</h4>
                         </div>
                         <img src="img/shared/close_icon_black_no_border.png" alt="" class="remove-item-icon">
-                    </div>
+                    </div> -->
                 </div>
                 <div id="cost">
                     <h4>Estimated Total Cost</h4>
-                    <h4 class="price"><span class="cost">$37/month</span></h4>
+                    <h4 class="price">$<span id="total">37</span>/month</h4>
                 </div>
                 <div class="text-center">
                     <button class="white bright-blue-background">Looks good! Continue</button>

@@ -15,7 +15,6 @@ $(window).load(function(){
         $('.card-container').height(container_height - plan_card_height * 2);
 
 
-
         movePlanCards();  
 
         // Special functions for the discounts slide
@@ -30,6 +29,7 @@ $(window).load(function(){
 
     moveSlides();
     setUpGetStarted();
+    updatePlanProfile();
 });
 
 $(window).resize(function(){
@@ -133,6 +133,9 @@ $(function(){
             if ( num_items == undefined ) {
 
                 num_items = 0;
+            } else {
+
+                num_items = parseInt(num_items);
             }
 
             switch(plan) {
@@ -163,10 +166,11 @@ $(function(){
                     $.cookie('plan', '');
             }
 
-            num_items += 1;
+            num_items = 1;
 
             $.cookie('total', total);
             $.cookie('num_items', num_items);
+            updatePlanProfile();
 
             var width = $(window).width();
 
@@ -423,4 +427,12 @@ function setUpGetStarted() {
     //     'top' : 0,
     //     'left' : 0,
     // });
+}
+
+function updatePlanProfile() {
+
+    $('#num-items').text($.cookie('num_items'));
+    $('#plan-profile .plan-item:first .description').text($.cookie('plan'));
+    $('#plan-profile .plan-item:first .price').text($.cookie('plan-cost'));
+    $('#plan-profile #total').text($.cookie('total'));
 }

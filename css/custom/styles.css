@@ -463,6 +463,8 @@ button.yellow-background {
       padding: 15px 0;
       margin-top: 30px;
       text-align: center; }
+      #plan-profile #plan-profile-content #cost .price {
+        margin-left: 8px; }
       #plan-profile #plan-profile-content #cost h4 {
         font-size: 0.9em;
         display: inline-block;
