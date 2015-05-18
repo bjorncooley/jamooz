@@ -1,5 +1,10 @@
 <?php include('includes/header.php'); ?>
 <div id="home">
+    <div class="row show-for-large-up" id="page-brand">
+        <div class="large-12 columns text-center">
+            <img src="img/shared/jamooz_logo_large.png" alt="Large Jamooz logo" class="large-centered">
+        </div>
+    </div>
     <div id="hero">
             <div id="hero" class="hero">
                 <div class="text-center">
@@ -22,17 +27,6 @@
                 </div>
             </div><!-- #hero -->
             <div id="intro">
-                <div class="row show-for-medium-up padding-bottom-30">
-                    <div class="large-3 columns">
-                        <img src="img/shared/jamooz_small_logo.png" alt="">
-                    </div>
-                    <div class="large-9 columns clearfix text-right padding-top-15">
-                            <button class="no-border no-background dark-gray radius large-3 columns small-centered uppercase max-150">Support</button>
-                            <button class="radius large-3 columns medium-dark-gray-border no-background medium-dark-gray small-centered uppercase max-150">Login</button>
-                            <button class="radius large-3 columns small-centered orange no-background orange-border uppercase max-150">Sign Up</button>
-                        
-                    </div>
-                </div>
                 <div class="row clearfix">
                     <div class="small-12 medium-6 columns text-center right">
                         <img src="img/home/hardware_graphic.png" alt="" class="padding-bottom-30">

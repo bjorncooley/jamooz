@@ -70,6 +70,17 @@ $(window).resize(function(){
     moveSlides();
 });
 
+$(window).scroll(function(){
+
+    if ( !mobile ) {
+
+        if ( $('#home').length != 0 ) {
+
+            positionDesktopNav();
+        }
+    }
+});
+
 $(function(){
 
     // Close buttons
@@ -228,7 +239,12 @@ $(function(){
     /* --------------------------------------- */
     /* -------------- HOME PAGE -------------- */
     /* --------------------------------------- */
-    
+
+    // Hide desktop nav for first section on home page
+    if ( !mobile ) {
+
+        $('#home').siblings('#nav').css('display','none');
+    }    
 
     /* ----------------------------------------- */
     /* -------------- GET STARTED -------------- */
@@ -592,4 +608,21 @@ function setMobileNav() {
 
     $('#mobile-nav.closed').css('left', width);
     $('#mobile-nav.open').css('left', 0);
+}
+
+function positionDesktopNav() {
+
+    
+
+    if ( $('#nav').css('display') == 'none' ) {
+
+        var window_top = $(window).scrollTop();
+        var intro_top = $('#intro').offset()['top'];
+
+        if ( window_top >= intro_top ) {
+
+            $('#nav').slideDown(200);
+            $('#page-brand').css('visibility', 'hidden');
+        }
+    }
 }

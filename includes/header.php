@@ -34,14 +34,15 @@
         </header>
         <div id="page-content">
             <div id="nav">
-                <div class="row">
-                    <div class="large-12 columns text-center">
-                        <img src="img/shared/jamooz_logo_large.png" alt="Large Jamooz logo" class="padding-bottom-30 padding-top-30 show-for-large-up large-centered">
-                        <div class="show-for-small-only">
-                            <button class="radius large-10 columns max-275 medium-dark-gray-border no-background medium-dark-gray small-centered uppercase">Login</button>
-                            <button class="radius large-10 columns max-275 small-centered orange no-background orange-border uppercase">Sign Up</button>
-                            <button class="no-border no-background dark-gray radius large-10 columns max-275 small-centered uppercase">Support</button>
-                        </div>
+                <div class="row show-for-large-up">
+                    <div class="large-3 columns">
+                        <img src="img/shared/jamooz_small_logo.png" alt="">
+                    </div>
+                    <div class="large-9 columns clearfix text-right padding-top-15">
+                            <button class="no-border no-background dark-gray radius large-3 columns small-centered uppercase max-150">Support</button>
+                            <button class="radius large-3 columns medium-dark-gray-border no-background medium-dark-gray small-centered uppercase max-150">Login</button>
+                            <button class="radius large-3 columns small-centered orange no-background orange-border uppercase max-150">Sign Up</button>
+                        
                     </div>
                 </div>
             </div>

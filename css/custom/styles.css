@@ -386,7 +386,7 @@ button.yellow-background {
 
 #page-content {
   position: relative;
-  padding-top: 100px; }
+  padding-top: 40px; }
 
 .close-button {
   position: absolute;
@@ -482,7 +482,7 @@ button.yellow-background {
     height: 56px;
     background: url(../../img/shared/plan_profile_toggle_bg.png) no-repeat;
     position: relative;
-    left: 0px;
+    left: -3px;
     z-index: 499;
     cursor: pointer; }
     #plan-profile .plan-profile-toggle img {
@@ -972,6 +972,15 @@ button.yellow-background {
   p {
     line-height: 2em; }
 
+  #nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    padding: 0 0 5px;
+    z-index: 199;
+    box-shadow: 0 2px 5px #787878; }
+
   .learn-section {
     padding: 80px 0 50px; }
 
@@ -980,7 +989,7 @@ button.yellow-background {
     padding: 15px 80px; }
 
   #page-content {
-    padding-top: 0; }
+    padding-top: 80px; }
 
   #hero h1 {
     max-width: 800px;
@@ -1013,8 +1022,14 @@ button.yellow-background {
     #hardware-hero h4, #software-hero h4, #pricing-hero h4 {
       padding-bottom: 200px; }
 
+  #home #intro {
+    padding-top: 110px; }
   #home #support button {
     width: 310px; }
+  #home #page-brand {
+    margin-top: -80px; }
+    #home #page-brand img {
+      margin: 0 auto; }
   #home #hero {
     margin-bottom: -30px; }
     #home #hero #hero-text button, #home #hero #hero-text > h6 {
