@@ -7,8 +7,7 @@
                 <h1 class="large">Software Integrations<br />Apps You Already Use</h1>
             </div>
             <div class="large-12 columns padding-top-30">
-                <h4 class="light">Connecting all your devices to stay in the loop wherever
-                you go is a must these days. We make doing that easy.</h4>
+                <h4 class="light">The number of different software products used today is growing to unprecedented levels. Connecting them to feel cohesive is a must for maintaining efficiency. We build &amp; continue to build integrations that make our customers lives better.</h4>
             </div>
             <div class="large-12 columns text-center padding-top-30" id="hero-down-arrow">
                 <img src="img/shared/white_down_arrow.png" alt="">

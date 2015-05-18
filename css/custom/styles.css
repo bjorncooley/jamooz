@@ -1149,6 +1149,9 @@ button.yellow-background {
   /* ----------------------------- */
   /* --- SOFTWARE INTEGRATIONS --- */
   /* ----------------------------- */
+  #software-integrations .hero h1, #software-integrations .hero h4 {
+    max-width: 620px;
+    margin-left: 20%; }
   #software-integrations #story-1 h3 {
     padding-top: 285px;
     max-width: 500px; }
