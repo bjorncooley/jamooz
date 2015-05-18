@@ -103,6 +103,7 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
             <script src="js/vendor/modernizr.js"></script>
             <script src="js/functions.js"></script>
+            <script src="js/vendor/jquery.cookie.js"></script>
         </footer>
     </body>
 </html>

@@ -108,16 +108,74 @@ $(function(){
         $(this).siblings().find('img').attr('src', 'img/get-started/yellow-plus-icon-mobile.png');
     });
 
-    // Move Get Started to next slide section
+    // Record user's plan selection, move to next slide
+
     $('#get-started #plans button.yellow-background').click(function(){
 
-        var width = $(window).width();
+        // Get data-product attribute
 
-        // Make sure next slide is in correct location
-        $('#apps-add-ons').css('left', width);
+        var plan = $('.selected').data('product');
 
-        $('#plans').animate({ left: '-=' + width }, 400);
-        $('#apps-add-ons').animate({ left: 0 }, 400);
+        if ( plan == undefined ) {
+
+            alert("Please select a plan");
+
+        } else {
+
+            var total = $.cookie('total');
+            var num_items = $.cookie('num_items');
+
+            if ( total == undefined ) {
+
+                total = 0;
+            }
+
+            if ( num_items == undefined ) {
+
+                num_items = 0;
+            }
+
+            switch(plan) {
+
+                case 'startup-plan':
+
+                    $.cookie('plan', 'Startup Base Plan');
+                    $.cookie('plan-cost', '$17/month');
+                    total = 17;
+                    break;
+
+                case 'small-business-plan':
+
+                    $.cookie('plan', 'Small Business Base Plan');
+                    $.cookie('plan-cost', '$25/month');
+                    total = 25;
+                    break;
+
+                case 'enterprise-plan':
+
+                    $.cookie('plan', 'Enterprise Base Plan');
+                    $.cookie('plan-cost', 'TBD');
+                    total = 'TBD';
+                    break;
+
+                default:
+
+                    $.cookie('plan', '');
+            }
+
+            num_items += 1;
+
+            $.cookie('total', total);
+            $.cookie('num_items', num_items);
+
+            var width = $(window).width();
+
+            // Make sure next slide is in correct location
+            $('#apps-add-ons').css('left', width);
+
+            $('#plans').animate({ left: '-=' + width }, 400);
+            $('#apps-add-ons').animate({ left: 0 }, 400);
+        }       
 
     }); 
 
@@ -130,8 +188,6 @@ $(function(){
     // Card swapping
 
     $('.card-right-arrow').click(function(){
-
-        console.log("right arrow clicked");
 
         var $current = $(this).siblings().find('.card.current');
         var $next = $current.next();
@@ -154,16 +210,10 @@ $(function(){
         // Logic for figuring out what to do if this is the last card
         if ( $next.length == 0 ) {
 
-            console.log("next length 0");
-
             if ( $nextContainer.length == 0 ) {
 
-                console.log("Next container length 0");
-
                 $nextContainer = $(this).siblings('.card-container:first');
-                console.log($nextContainer.html());
                 $next = $nextContainer.find('.card:first');
-                console.log($next.html());
 
             } else {
 
@@ -182,8 +232,6 @@ $(function(){
     });
 
     $('.card-left-arrow').click(function(){
-
-        console.log("left arrow clicked");
 
         var $current = $('.card.current');
         var $next = $current.prev();
@@ -315,13 +363,6 @@ function movePlanCards() {
 
             var padding = parseInt( $(this).find('.card.current').css('padding-left') );
             card_margin = (width - $(this).find('.card.current').width()) / 2 - padding;
-
-            console.log($(this).html());
-            console.log("Padding: " + padding);
-            console.log("Card width: " + $(this).find('.card.current').width());
-            console.log("Screen width: " + width);
-
-            console.log(card_margin);
 
             var i=0;
 
