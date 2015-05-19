@@ -19,7 +19,7 @@
                         <button class="teal-background uppercase radius width-100-percent max-275 white">Get Started for 30 Days Free</button>
                     </a>
                     <h6 class="small">A customer success teammate is ready. <a href="#">Support</a></h6>
-                    <h6 class="small">Already setup? <a href="#">Login</a></h6>
+                    <h6 class="small">Already setup? <a href="#" class="login-button">Login</a></h6>
                     <div id="hero-down-arrow" class="black">
                         <img src="img/shared/down_arrow_black.png" alt="" class="padding-top-15 pointer">
                         <h6 class="small text-center">learn more</h6>

@@ -99,6 +99,25 @@
                 </div>
             </div>
 
+            <!-- OVERLAYS -->
+
+            <div id="login-overlay">
+                <div id="login-modal" class="relative">
+                    <img src="img/shared/close_icon_black.png" alt="" class="absolute" id="login-close">
+                    <div id="login-title" class="text-center padding-top-30 padding-bottom-30">
+                        <img src="img/shared/jamooz_small_logo.png" alt="">
+                    </div>
+                    <form action="" id="login-form" class="padding-top-30 padding-bottom-30">
+                        <h4 class="uppercase text-center padding-top-30">Login</h4>
+                        <input type="text" placeholder="Email address">
+                        <input type="password" placeholder="Password">
+                        <p class="small right"><a href="#">Forgot password?</a></p>
+                        <button class="white uppercase light-blue-background" type="submit">Login</button>
+                        <p class="small text-center">Don't have an account? <a href="#">Sign Up</a>.</p>
+                    </form>
+                </div>
+            </div>
+
             <footer>
                 <link href='http://fonts.googleapis.com/css?family=Roboto:500,400,300,100' rel='stylesheet' type='text/css'>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

@@ -19,7 +19,7 @@
                         <img src="img/shared/jamooz_small_logo.png" alt="">
                     </div>
                     <div class="large-9 columns clearfix text-right padding-top-15">
-                            <button class="no-background dark-gray-border dark-gray radius large-3 columns small-centered uppercase">Login</button>
+                            <button class="no-background dark-gray-border dark-gray radius large-3 columns small-centered uppercase login-button">Login</button>
                             <button class="radius large-3 columns small-centered mint no-background mint-border uppercase">Get Early Access</button>
                         
                     </div>

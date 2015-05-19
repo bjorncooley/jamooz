@@ -149,6 +149,39 @@ $(function(){
         $(this).parent().fadeOut(400);
     });
 
+    $('.login-button').click(function(e){
+
+        e.preventDefault();
+        
+        $('#login-overlay').fadeIn(400);
+
+        if ( mobile ) {
+
+            var left = 0;
+
+            if ( $('#mobile-nav').hasClass('opened') ) {
+
+                left = $(window).width();
+            }
+
+            $('#login-overlay').css({
+                'position' : 'absolute',
+                'top' : $(window).scrollTop(),
+                'left' : left,
+                'height' : $(window).height(),
+            });
+        }
+        
+    });
+
+    $('#login-close').click(function(){
+        $('#login-overlay').fadeOut(400);
+        $('#login-overlay').css({
+            'position' : 'fixed',
+            'top' : 0,
+        });
+    });
+
     // Mobile nav
     $('#mobile-nav-toggle').click(function(){
 

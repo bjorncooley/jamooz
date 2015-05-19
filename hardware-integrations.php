@@ -115,13 +115,13 @@
                         <h4 class="white">
                             <div class="small-9 columns small-centered padding-bottom-30">First time guest?</div>
                         </h4>
-                        <a href="#" class="white-border white uppercase text-center small">Get Started</a>
+                        <a href="./get-started.php" class="white-border white uppercase text-center small">Get Started</a>
                     </div>
                     <div class="small-12 large-6 columns white medium-dark-gray-background padding-top-80 padding-bottom-80 text-center">
                         <h4 class="white text-center">
                             <div class="small-9 columns small-centered padding-bottom-30">Returning Customer</div>
                         </h4>
-                        <a href="#" class="white-border white uppercase small">Login</a>
+                        <a href="#" class="white-border white uppercase small login-button">Login</a>
                     </div>
                 </div>
             </div>
