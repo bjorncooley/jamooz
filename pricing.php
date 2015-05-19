@@ -47,13 +47,17 @@
             <h4 class="white small-12 columns small-centered">
                 <div class="padding-bottom-50">Learn what software works with Jamooz</div>
             </h4>
-            <h4 class="white-border white padding-top-8 padding-bottom-8 max-285">See Software Integrations</h4>
+            <a href="./software-integrations.php">
+                <h4 class="white-border white padding-top-8 padding-bottom-8 max-285">See Software Integrations</h4>
+            </a>
         </div>
         <div class="white orange-background padding-top-80 padding-bottom-80 text-center learn-section">
             <h4 class="white">
                 <div class="padding-bottom-50">Learn what hardware works with Jamooz</div>
             </h4>
-            <h4 class="white-border white padding-top-8 padding-bottom-8 max-285">See Hardware Integrations</h4>
+            <a href="./hardware-integrations.php">
+                <h4 class="white-border white padding-top-8 padding-bottom-8 max-285">See Hardware Integrations</h4>
+            </a>
         </div>
     </div>
 
