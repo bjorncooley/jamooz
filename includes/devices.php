@@ -9,7 +9,6 @@
                         <div class="shadowed">
                             <div class="card-text">
                                 <h5 class="text-center uppercase">Cisco IP 7960A</h5>
-                                
                             </div>
                             <div class="text-center">
                                 <img src="img/shared/yellow_plus_icon.png" alt="" class="relative">

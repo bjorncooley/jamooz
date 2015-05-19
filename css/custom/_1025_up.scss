@@ -396,15 +396,23 @@ button.yellow-background {
 
     #story-1 {
 
+        padding-bottom: 25px;
+
         h3 {
 
             padding-top: 285px;
             max-width: 500px;
         }
 
+        #first-line-sequence {
+
+            top: 519px;
+            left: 400px;
+        }
+
         #phone-icon-1 {
 
-            right: -280px;
+            left: 380px;
             bottom: 40px;
         }
     }

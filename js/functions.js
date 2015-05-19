@@ -22,8 +22,6 @@ $(window).load(function(){
 
             arrangeDiscountCards();
         }
-
-        
     }
 
     // On desktop, set main home sections to window height
@@ -88,7 +86,30 @@ $(window).scroll(function(){
         }
 
         resetVideos();
+
+        /* --------------------------------------------------- */
+        /* -------------- SOFTWARE INTEGRATIONS -------------- */
+        /* --------------------------------------------------- */
+
+        var window_top = $(window).scrollTop();
+        var window_bottom = window_top + $(window).height();
+
+        if ( window_bottom > $('#phone-icon-1').offset()['top'] + 100 ) {
+
+            if ( !($('#phone-icon-1').hasClass('animated')) ) {
+
+                $('#phone-icon-1').addClass('animated');
+
+                $('#phone-icon-1').animate({ left : 585 }, 1200, function(){
+
+                    $('#phone-icon-1').animate({ bottom : -110}, 1200);
+                });
+            }
+        }
     }
+
+
+    
 });
 
 $(function(){
@@ -156,9 +177,12 @@ $(function(){
 
         $(this).animate({top: '+=5'}, 100);
     });
-    /* --------------------------- */
-    /* ---------- CARDS ---------- */
-    /* --------------------------- */
+
+
+
+    /* ------------------------------------ */
+    /* ---------- CARDS & SLIDES ---------- */
+    /* ------------------------------------ */
 
     
     $('.card').click(function(){
@@ -181,6 +205,171 @@ $(function(){
         $.cookie('num_items', num_items);
 
         updatePlanProfile();
+    });
+
+    // Card swapping
+
+    $('.card-right-arrow').click(function(){
+
+        var $current = $(this).siblings().find('.card.current');
+        var $next = $current.next();
+
+        var $currentContainer = $(this).siblings('.card-container.current');
+        var $nextContainer = $currentContainer.next('.card-container');
+
+        var width = $(window).width();
+        var width = $(window).width();
+        var padding = parseInt( $current.css('padding-left') );
+
+        card_margin = (width - $current.width()) / 2 - padding;
+        
+        // var offset = width + card_margin;
+
+        //card_margin = (width - $(this).siblings().find('.card.current').width()) / 2;
+
+        var offset = width + card_margin;
+
+        // Logic for figuring out what to do if this is the last card
+        if ( $next.length == 0 ) {
+
+            if ( $nextContainer.length == 0 ) {
+
+                $nextContainer = $(this).siblings('.card-container:first');
+                $next = $nextContainer.find('.card:first');
+
+            } else {
+
+                $next = $nextContainer.find('.card:first');
+            }
+
+            $currentContainer.removeClass('current');
+            $nextContainer.addClass('current');
+        }
+
+        // Make sure the next card is in the correct position
+        $next.css('left', offset + 'px');
+
+        $current.animate({ left: "-=" + width,}, 500).removeClass('current');
+        $next.animate({ left: "-=" + width,}, 500).addClass('current');
+    });
+
+    $('.card-left-arrow').click(function(){
+
+        var $current = $('.card.current');
+        var $next = $current.prev();
+
+        var $currentContainer = $('.card-container.current');
+        var $nextContainer = $currentContainer.prev('.card-container');
+
+        var width = $(window).width();
+        var width = $(window).width();
+        var padding = parseInt( $current.css('padding-left') );
+
+        card_margin = (width - $current.width()) / 2 - padding;
+
+        var offset = width + card_margin;
+
+        // Check if this is the first card, if so, get the last card
+        if ( $next.length == 0 ) {
+
+            if ( $nextContainer.length == 0 ) {
+
+                $nextContainer = $('.card-container:last');
+                $next = $nextContainer.find('.card:last');
+
+            } else {
+
+                $next = $nextContainer.find('.card:last');
+            }
+
+            $currentContainer.removeClass('current');
+            $nextContainer.addClass('current');
+        }
+
+        // Make sure the next card is in the correct position
+        $next.css('left', '-' + width + 'px');
+
+        $current.animate({ left: "+=" + offset,}, 500).removeClass('current');
+        $next.animate({ left: "+=" + offset,}, 500).addClass('current');
+    });
+
+    // Slide swapping
+    $('.slide-right-arrow').click(function(){
+
+        var $current = $(this).parent('.slide.current');
+        var $next = $current.next();
+        var width = $(window).width();
+
+        // Check if this is the first card, if so, get the last card
+        if ( $next.length == 0 ) {
+
+            $next = $('.slide:first');
+        }
+
+        // Make sure the next card is in the correct position
+        $next.css('left', width + 'px');
+
+        $current.animate({ left: "-=" + width,}, 500).removeClass('current');
+        $next.animate({ left: "-=" + width,}, 500).addClass('current');
+    });
+
+    $('.slide-left-arrow').click(function(){
+
+        var $current = $(this).parent('.slide.current');
+        var $next = $current.prev();
+        var width = $(window).width();
+
+        // Check if this is the first card, if so, get the last card
+        if ( $next.length == 0 ) {
+
+            $next = $('.slide:last');
+        }
+
+        // Make sure the next card is in the correct position
+        $next.css('left', '-' + width + 'px');
+
+        $current.animate({ left: "+=" + width,}, 500).removeClass('current');
+        $next.animate({ left: "+=" + width,}, 500).addClass('current');
+    });
+
+
+    // Slide up card details
+    $('.show-details-link').click(function(e){
+
+        e.stopPropagation();
+
+        var index = $(this).parent().parent().index();
+
+        $shadowed = $(this).parent().siblings('.shadowed');
+        var container_height = $shadowed.height() + parseInt($shadowed.css('padding-top'));
+
+        $icon = $(this).parent().siblings().find('img.relative');
+        $detailsSlide = $(this).parent().siblings().find('.card-details');
+
+        card_details_icon_position[index] = parseInt($icon.css('top'));
+
+        $icon.animate({ top: '-=' + container_height}, 400);
+        $detailsSlide.animate({ top: 0}, 400);
+
+        $(this).addClass('hide');
+        $(this).siblings('.close-details-link').removeClass('hide');
+    });
+
+    $('.close-details-link').click(function(e){
+
+        e.stopPropagation();
+
+        var index = $(this).parent().parent().index();
+        var icon_position = card_details_icon_position[index];
+
+        $icon = $(this).parent().siblings().find('img.relative');
+        $icon.animate({ top: icon_position}, 400);
+
+        $detailsSlide = $(this).parent().siblings().find('.card-details');
+        $detailsSlide.animate({ top: '100%'}, 400);
+
+        $(this).addClass('hide');
+        $(this).siblings('.show-details-link').removeClass('hide');
     });
 
     /* ----------------------------------------- */
@@ -353,170 +542,13 @@ $(function(){
         $('#device-discounts').fadeIn(400);
     });
 
-    // Card swapping
-
-    $('.card-right-arrow').click(function(){
-
-        var $current = $(this).siblings().find('.card.current');
-        var $next = $current.next();
-
-        var $currentContainer = $(this).siblings('.card-container.current');
-        var $nextContainer = $currentContainer.next('.card-container');
-
-        var width = $(window).width();
-        var width = $(window).width();
-        var padding = parseInt( $current.css('padding-left') );
-
-        card_margin = (width - $current.width()) / 2 - padding;
-        
-        // var offset = width + card_margin;
-
-        //card_margin = (width - $(this).siblings().find('.card.current').width()) / 2;
-
-        var offset = width + card_margin;
-
-        // Logic for figuring out what to do if this is the last card
-        if ( $next.length == 0 ) {
-
-            if ( $nextContainer.length == 0 ) {
-
-                $nextContainer = $(this).siblings('.card-container:first');
-                $next = $nextContainer.find('.card:first');
-
-            } else {
-
-                $next = $nextContainer.find('.card:first');
-            }
-
-            $currentContainer.removeClass('current');
-            $nextContainer.addClass('current');
-        }
-
-        // Make sure the next card is in the correct position
-        $next.css('left', offset + 'px');
-
-        $current.animate({ left: "-=" + width,}, 500).removeClass('current');
-        $next.animate({ left: "-=" + width,}, 500).addClass('current');
-    });
-
-    $('.card-left-arrow').click(function(){
-
-        var $current = $('.card.current');
-        var $next = $current.prev();
-
-        var $currentContainer = $('.card-container.current');
-        var $nextContainer = $currentContainer.prev('.card-container');
-
-        var width = $(window).width();
-        var width = $(window).width();
-        var padding = parseInt( $current.css('padding-left') );
-
-        card_margin = (width - $current.width()) / 2 - padding;
-
-        var offset = width + card_margin;
-
-        // Check if this is the first card, if so, get the last card
-        if ( $next.length == 0 ) {
-
-            if ( $nextContainer.length == 0 ) {
-
-                $nextContainer = $('.card-container:last');
-                $next = $nextContainer.find('.card:last');
-
-            } else {
-
-                $next = $nextContainer.find('.card:last');
-            }
-
-            $currentContainer.removeClass('current');
-            $nextContainer.addClass('current');
-        }
-
-        // Make sure the next card is in the correct position
-        $next.css('left', '-' + width + 'px');
-
-        $current.animate({ left: "+=" + offset,}, 500).removeClass('current');
-        $next.animate({ left: "+=" + offset,}, 500).addClass('current');
-    });
-
-    // Slide swapping
-    $('.slide-right-arrow').click(function(){
-
-        var $current = $(this).parent('.slide.current');
-        var $next = $current.next();
-        var width = $(window).width();
-
-        // Check if this is the first card, if so, get the last card
-        if ( $next.length == 0 ) {
-
-            $next = $('.slide:first');
-        }
-
-        // Make sure the next card is in the correct position
-        $next.css('left', width + 'px');
-
-        $current.animate({ left: "-=" + width,}, 500).removeClass('current');
-        $next.animate({ left: "-=" + width,}, 500).addClass('current');
-    });
-
-    $('.slide-left-arrow').click(function(){
-
-        var $current = $(this).parent('.slide.current');
-        var $next = $current.prev();
-        var width = $(window).width();
-
-        // Check if this is the first card, if so, get the last card
-        if ( $next.length == 0 ) {
-
-            $next = $('.slide:last');
-        }
-
-        // Make sure the next card is in the correct position
-        $next.css('left', '-' + width + 'px');
-
-        $current.animate({ left: "+=" + width,}, 500).removeClass('current');
-        $next.animate({ left: "+=" + width,}, 500).addClass('current');
-    });
+    
 
 
-    // Slide up card details
-    $('.show-details-link').click(function(e){
 
-        e.stopPropagation();
+    
 
-        var index = $(this).parent().parent().index();
 
-        $shadowed = $(this).parent().siblings('.shadowed');
-        var container_height = $shadowed.height() + parseInt($shadowed.css('padding-top'));
-
-        $icon = $(this).parent().siblings().find('img.relative');
-        $detailsSlide = $(this).parent().siblings().find('.card-details');
-
-        card_details_icon_position[index] = parseInt($icon.css('top'));
-
-        $icon.animate({ top: '-=' + container_height}, 400);
-        $detailsSlide.animate({ top: 0}, 400);
-
-        $(this).addClass('hide');
-        $(this).siblings('.close-details-link').removeClass('hide');
-    });
-
-    $('.close-details-link').click(function(e){
-
-        e.stopPropagation();
-
-        var index = $(this).parent().parent().index();
-        var icon_position = card_details_icon_position[index];
-
-        $icon = $(this).parent().siblings().find('img.relative');
-        $icon.animate({ top: icon_position}, 400);
-
-        $detailsSlide = $(this).parent().siblings().find('.card-details');
-        $detailsSlide.animate({ top: '100%'}, 400);
-
-        $(this).addClass('hide');
-        $(this).siblings('.show-details-link').removeClass('hide');
-    });
 });
 
 function movePlanCards() {

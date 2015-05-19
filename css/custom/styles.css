@@ -1162,12 +1162,17 @@ button.yellow-background {
   #software-integrations .hero h1, #software-integrations .hero h4 {
     max-width: 620px;
     margin-left: 20%; }
-  #software-integrations #story-1 h3 {
-    padding-top: 285px;
-    max-width: 500px; }
-  #software-integrations #story-1 #phone-icon-1 {
-    right: -280px;
-    bottom: 40px; }
+  #software-integrations #story-1 {
+    padding-bottom: 25px; }
+    #software-integrations #story-1 h3 {
+      padding-top: 285px;
+      max-width: 500px; }
+    #software-integrations #story-1 #first-line-sequence {
+      top: 519px;
+      left: 400px; }
+    #software-integrations #story-1 #phone-icon-1 {
+      left: 380px;
+      bottom: 40px; }
   #software-integrations #story-2 h3 {
     padding-top: 275px;
     width: 400px; }
