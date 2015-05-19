@@ -637,6 +637,10 @@ button.yellow-background {
   position: absolute;
   top: 0;
   left: 0; }
+#get-started #next-step-button {
+  bottom: -30px;
+  position: relative;
+  display: none; }
 
 #step-1 h4, #step-1 form {
   max-width: 500px;
@@ -1137,6 +1141,12 @@ button.yellow-background {
           font-weight: 300; }
         #plan-profile #plan-profile-content #cost span {
           margin-left: 0; }
+
+  /* ------------------- */
+  /* --- GET STARTED --- */
+  /* ------------------- */
+  #get-started #step-3 {
+    display: none; }
 
   /* ---------------------------------------- */
   /* --- HARDWARE / SOFTWARE INTEGRATIONS --- */

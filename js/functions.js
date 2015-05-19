@@ -539,7 +539,7 @@ $(function(){
     $('#get-started #step-1 button.yellow-background').click(function(e){
 
         e.preventDefault();
-        var target = $('#step-2').offset()['top'];
+        var target = $('#step-2').offset()['top'] - 60;
         $('html, body').animate({ 'scrollTop' : target}, 800);
     });
 
@@ -615,8 +615,17 @@ $(function(){
 
             $('#plans').animate({ left: '-=' + width }, 400);
             $('#apps-add-ons').animate({ left: 0 }, 400);
+
+            // Display next button
+            $('#next-step-button').fadeIn(400);
         }       
     }); 
+
+    $('#get-started #next-step-button').click(function(){
+
+        $('#get-started #step-3').slideDown(400);
+        $('html, body').animate({ 'scrollTop' : $('#step-3').offset()['top'] - 60}, 800);
+    });
     
 
     // Fade in devices overlay

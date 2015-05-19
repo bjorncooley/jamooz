@@ -52,8 +52,11 @@
             </h3>
             <img src="img/shared/white_close_icon.png" alt="" class="close-button">
             <?php include('includes/devices.php'); ?>
-            
         </div>
+        <div class="text-center">
+            <button class="yellow-background" id="next-step-button">Continue to Next Step</button>
+        </div>
+        
     </div><!-- #step-2 -->
     <div class="medium-blue-background padding-top-80 padding-bottom-80" id="step-3">
         <div class="row white">
