@@ -377,6 +377,8 @@ button.yellow-background {
     z-index: 999; }
   #mobile-nav > div {
     height: 44px; }
+  #mobile-nav.closed ul {
+    visibility: hidden; }
   #mobile-nav ul {
     text-align: center; }
     #mobile-nav ul li {

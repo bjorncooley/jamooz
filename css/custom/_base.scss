@@ -88,6 +88,14 @@ button.yellow-background {
         height: 44px;
     }
 
+    &.closed {
+
+        ul {
+
+            visibility: hidden;
+        }
+    }
+
     ul {
 
         text-align: center;

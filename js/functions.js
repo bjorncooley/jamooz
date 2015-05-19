@@ -63,6 +63,7 @@ $(window).resize(function(){
 
         mobile = true;
         setMobileNav();
+        movePlanCards();  
         
     } else {
 
@@ -115,13 +116,13 @@ $(function(){
         } else {
 
             $('#mobile-nav-toggle').animate({rotate: 0}, 150);
-            $('#mobile-nav').removeClass('opened').addClass('closed');
             $('#page-content, #plan-profile, #mobile-logo-container').animate({'left' : 0}, 300);
             $('#mobile-nav').animate({'left' : width}, 300, function(){
                 $('#mobile-nav').css({
                     'position': 'fixed',
                     'top' : 0,
                 });
+                $('#mobile-nav').removeClass('opened').addClass('closed');
             });
             $('#mobile-logo-container').css('box-shadow', '0 2px 5px #787878');
             
