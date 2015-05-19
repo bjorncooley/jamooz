@@ -464,6 +464,7 @@ $(function(){
 
         num_items -= 1;
         $.cookie('num_items', num_items);
+        $.cookie('total', 0);
 
         updatePlanProfile();
 
@@ -535,7 +536,7 @@ $(function(){
 
         e.preventDefault();
         var target = $('#step-2').offset()['top'];
-        $('html body').animate({ 'scrollTop' : target}, 800);
+        $('html, body').animate({ 'scrollTop' : target}, 800);
     });
 
 
@@ -709,9 +710,10 @@ function updatePlanProfile() {
     if ( $.cookie('plan') == undefined ) {
 
         $('.plan-item[data-product-type="plan"').css('display', 'none');
+        $('#plan-profile #total').text(0);
     } else {
 
-        $('.plan-item[data-product-type="plan"').css('display', 'block');
+        $('#plan-profile .plan-item:first').css('display', 'block');
         $('#plan-profile .plan-item:first .description').text($.cookie('plan'));
         $('#plan-profile .plan-item:first .price').text($.cookie('plan-cost'));
         $('#plan-profile #total').text($.cookie('total'));
