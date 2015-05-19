@@ -32,25 +32,25 @@
                         <img src="img/home/hardware_graphic.png" alt="" class="padding-bottom-30">
                     </div>
                     <div class="small-12 medium-6 columns text-left left">
-                        <h2 class="padding-bottom-15">Better communication starts with your hardware.</h2>
+                        <h1 class="padding-bottom-30 no-text-transform large condensed">Better communication starts with your hardware.</h1>
                         <p>10 computers, 20 smartphones, 12 office phones, 2 intercoms, &amp; even 1 doorbell. Tell us the devices you need or just integrate the devices you already use. Just a few clicks to view &amp; change device phone numbers &amp; extensions.</p>
                     </div>
                 </div>
                 <div class="orange-background white learn-section">
                     <div class="row">
                         <div class="large-12 columns text-center">
-                            <h4 class="white small-12 columns small-centered">
+                            <h4 class="white small-12 columns small-centered large">
                                 <div class="small-9 columns small-centered padding-bottom-50">Learn what hardware works with Jamooz</div>
                             </h4>
                             <a href="./hardware-integrations.php">
-                                <h4 class="white-border white small-12 columns padding-top-8 padding-bottom-8 max-285 small-centered">See Hardware Integrations</h4>
+                                <h4 class="white-border white small-12 columns padding-top-8 padding-bottom-8 max-285 small-centered small">See Hardware Integrations</h4>
                             </a>
                         </div>
                     </div>
                 </div>
             </div><!-- #intro -->
             <div class="row clearfix full-height" id="reliable">
-                <div class="small-12 large-8 columns text-center right">
+                <div class="small-12 large-7 columns text-center right">
                     <img src="img/home/reliable_graphic_mobile.png" class="padding-top-30 padding-bottom-30 hide-for-large-up center" alt="">
                     <div class="padding-top-30 padding-bottom-30 show-for-large-up" alt="">
                         <video id="reliable-video" autoplay loop class="width-100-percent">
@@ -59,19 +59,19 @@
                         </video>
                     </div>
                 </div>
-                <div class="small-12 large-4 columns small-centered left">
-                    <h2 class="padding-bottom-30">A reliable platform using battle tested technology</h2>
+                <div class="small-12 large-5 columns small-centered left">
+                    <h1 class="padding-bottom-30 no-text-transform large condensed">A reliable platform using battle tested technology</h1>
                     <p>We’re like a power secretary. Every call, message, file, &amp; voicemail throughout your organization is distributed and managed securely. VoIP, PBX, SIP Trunking, &amp; encryption are combined to make up our reliable platform. We then curate our platform for you, so you don’t have to.</p>
                 </div>
             </div>
             <div class="dark-blue-background learn-section">
                 <div class="row">
                     <div class="large-12 columns text-center">
-                        <h4 class="white small-12 columns small-centered">
+                        <h4 class="white small-12 columns small-centered large">
                             <div class="small-9 columns small-centered padding-bottom-50">Learn what software works with Jamooz</div>
                         </h4>
                         <a href="./software-integrations.php">
-                            <h4 class="small-12 columns medium-gray-border white padding-top-8 padding-bottom-8 max-285 small-centered">See Software Integrations</h4>
+                            <h4 class="small-12 columns medium-gray-border white padding-top-8 padding-bottom-8 max-285 small-centered small">See Software Integrations</h4>
                         </a>
                     </div>
                 </div>
@@ -85,8 +85,8 @@
                     </video>
                 </div>
                 <div class="small-12 medium-6 columns">
-                    <h2>Phone analytics for success measurement &amp;
-                    team feedback</h2>
+                    <h1 class="padding-bottom-30 no-text-transform condensed">Phone analytics for success measurement &amp;
+                    team feedback</h1>
                     <p>Jamooz takes analytics to the next step with actions.
                     See where all of your team's efforts are being put.
                     Then share the stats with your team to highlight areas
@@ -95,11 +95,11 @@
             </div><!-- #analytics -->
             <div class="light-gray-background padding-top-50 padding-bottom-50 full-height" id="customer-success">
                 <div class="row clearfix">
-                    <div class="text-center small-12 medium-7 columns right">
+                    <div class="text-center small-12 medium-6 columns right">
                         <img src="img/home/customer_success_graphic.png" alt="">
                     </div>
-                    <div class="small-12 medium-5 columns left">
-                        <h2 class="padding-top-50 padding-bottom-30">A customer success teammate at every step</h2>
+                    <div class="small-12 medium-6 columns left">
+                        <h1 class="padding-bottom-30 no-text-transform condensed">A customer success teammate at every step</h1>
                         <p>Your communication experience should feel lightweight from setup to adoption. Our success guide makes every step easier. Your success teammates will set you up for success. We also make ourselves available 24/7 by phone, e-mail, and text to identify and solve your problems quickly.</p>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                     </video>
                 </div>
                 <div class="small-12 large-6 columns text-center">
-                    <h2 class="text-left mint light condensed">
+                    <h1 class="text-left mint light condensed no-text-transform padding-bottom-30">
                         <div class="row">
                             <div class="hide-for-large-up">
                                 <div class="small-12 columns">Coming in 2015:</div>
@@ -123,7 +123,7 @@
                                 <div class="large-12 columns">Coming in 2015: Schmooze by Jamooz</div>
                             </div>
                         </div>
-                    </h2>
+                    </h1>
                     <h3 class="text-left padding-bottom-15">Jamooz technology, curated. Phone, messaging,
                     voicemail, &amp; file sharing redesigned for personal
                     use &amp; collaboration.</h3>
@@ -167,28 +167,33 @@
                     <p>We’ve simplified things for you so it reduces headache and increases your productivity and effectiveness.</p>
                 </div>
                 <div class="row">
-                    <div class="small-12 large-4 columns text-center">
-                        <img src="img/shared/plan_icon.png" alt="">
-                        <p class="uppercase tiny normal padding-top-15">Select Base Plan</p>
+                    <div class="large-8 large-offset-2 large-centered">
+                        <div class="row">
+                            <div class="small-12 large-4 columns text-center">
+                                <img src="img/shared/plan_icon.png" alt="">
+                                <p class="uppercase small normal padding-top-15">Select Base Plan</p>
+                            </div>
+                            <div class="small-12 large-4 columns text-center">
+                                <img src="img/shared/app_icon.png" alt="">
+                                <p class="uppercase small normal padding-top-15">Add Apps &amp; Add-Ons</p>
+                            </div>
+                            <div class="small-12 large-4 columns text-center">
+                                <img src="img/shared/support_icon.png" alt="">
+                                <p class="uppercase small normal padding-top-15">24/7 Personal Support</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="small-12 large-4 columns text-center">
-                        <img src="img/shared/app_icon.png" alt="">
-                        <p class="uppercase tiny normal padding-top-15">Add Apps &amp; Add-Ons</p>
-                    </div>
-                    <div class="small-12 large-4 columns text-center">
-                        <img src="img/shared/support_icon.png" alt="">
-                        <p class="uppercase tiny normal padding-top-15">24/7 Personal Support</p>
-                    </div>
+                    
                 </div>
             </div><!-- #process -->
             <div class="padding-top-50" id="support">
                 <div class="row text-center">
                     <button class="red-orange-background small-10 large-4 radius-7 padding-15">
                         <div class="show-for-small-only">
-                            <div class="small-12 columns uppercase normal">
+                            <div class="small-12 columns uppercase normal white">
                                 Need Support?
                             </div>
-                            <div class="small-12 columns uppercase normal">
+                            <div class="small-12 columns uppercase normal white">
                                 Contact Us Here
                             </div>
                         </div>
