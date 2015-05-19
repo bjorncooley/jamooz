@@ -50,7 +50,7 @@
             <h3 class="white text-center padding-top-80 padding-top-30">
                 Our Device Discounts
             </h3>
-            <img src="img/shared/close_icon_black.png" alt="" class="close-button">
+            <img src="img/shared/white_close_icon.png" alt="" class="close-button">
             <?php include('includes/devices.php'); ?>
             
         </div>
