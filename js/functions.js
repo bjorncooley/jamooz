@@ -476,6 +476,8 @@ $(function(){
         if ( $('#plan-profile-content').css('display') == 'none' ) {
 
             $('#plan-profile-content').css('display', 'block');
+            $(this).find('img').css('display', 'block');
+            $(this).find('h4').css('display', 'none');
 
             // Set the widget to be absolutely positioned on mobile,
             // so mobile users can scroll down the widget
@@ -493,6 +495,8 @@ $(function(){
         } else {
 
             $('#plan-profile-content').css('display', 'none');
+            $(this).find('img').css('display', 'none');
+            $(this).find('h4').css('display', 'block');
 
             if ( mobile ) {
 

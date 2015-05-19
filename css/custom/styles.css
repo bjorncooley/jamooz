@@ -532,10 +532,15 @@ button.yellow-background {
     left: -3px;
     z-index: 499;
     cursor: pointer; }
+    #plan-profile .plan-profile-toggle img, #plan-profile .plan-profile-toggle h4 {
+      position: absolute; }
     #plan-profile .plan-profile-toggle img {
-      display: none; }
+      display: none;
+      left: 7px;
+      top: 8px; }
     #plan-profile .plan-profile-toggle h4 {
-      padding: 15px 0 0 20px; }
+      left: 20px;
+      top: 10px; }
   #plan-profile #plan-profile-content {
     display: none;
     background-color: #f2f2f2;

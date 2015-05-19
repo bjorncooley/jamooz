@@ -62,7 +62,7 @@
             <!-- Plan Profile Widget -->
             <div id="plan-profile">
                 <div class="plan-profile-toggle">
-                    <img src="" alt="">
+                    <img src="img/shared/white_close_icon_small.png" alt="">
                     <h4 class="white small" id="num-items">0</h4>
                 </div>
                 <div id="plan-profile-content">

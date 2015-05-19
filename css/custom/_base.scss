@@ -375,14 +375,22 @@ button.yellow-background {
         z-index: 499;
         cursor: pointer;
 
+        img, h4 {
+
+            position: absolute;
+        }
+
         img {
 
             display: none;
+            left: 7px;
+            top: 8px;
         }
 
         h4 {
 
-            padding: 15px 0 0 20px;
+            left: 20px;
+            top: 10px;
         }
 
     }
