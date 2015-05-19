@@ -12,8 +12,6 @@ $(window).load(function(){
 
         mobile = true;
 
-        
-
         movePlanCards();  
         setMobileNav();
         setCardContainer();
@@ -622,13 +620,6 @@ $(function(){
         $('#device-discounts').fadeIn(400);
     });
 
-    
-
-
-
-    
-
-
 });
 
 function movePlanCards() {
@@ -661,6 +652,7 @@ function movePlanCards() {
 
         $('.card').each(function(){
             $(this).css('position', 'static');
+            $(this).css('left', 'auto');
         });
 
         cards_moved = false;
@@ -795,19 +787,39 @@ function resetVideos() {
 
 function arrangeDiscountCards() {
 
-    // Special functions for the discounts slide
-    $('#discounts .card-container').height(plan_card_height);
-    $('#discounts .device-container.current').height($('#discounts .card-container').height());
-    $('#devices .row.current').next().css({
-        'position': 'absolute',
-        'top' : 0,
-        'left' : 0,
-    });
+    if ( mobile ) {
+
+        var plan_card_height = $('#devices .card').innerHeight();
+        var container_padding = parseInt($('#devices .card-container').css('padding-top'));
+        $('#devices .card-container').height(plan_card_height + container_padding);
+        $('#devices .device-container.current').height($('#devices .card-container').height());
+        $('#devices .row.current').next().css({
+            'position': 'absolute',
+            'top' : 0,
+            'left' : 0,
+        });
+
+        $('#devices .right-arrow').css('top', '165px');
+        $('#devices .left-arrow').css('top', '165px');
+
+    } else {
+
+        $('#devices .card-container').height('auto');
+        $('#devices .device-container.current').height('auto');
+        $('#devices .row.current').next().css({
+            'position': 'static',
+            'top' : 'auto',
+            'left' : 'auto',
+        });
+    }
+
+    
 }
 
 function setCardContainer() {
 
     var plan_card_height = $('.card').height();
-    var container_height = $('.card-container').height();
+    var container_padding = parseInt($('#devices .card-container').css('padding-top'));
+    $('#devices .card-container').height(plan_card_height + container_padding);
     $('.card-container').height(plan_card_height);
 }

@@ -412,6 +412,8 @@ button.yellow-background {
   top: 345px;
   cursor: pointer;
   z-index: 99; }
+.card-section .card-left-arrow, .card-section .card-right-arrow {
+  top: 280px; }
 .card-section .left-arrow {
   left: 0; }
 .card-section .right-arrow {
