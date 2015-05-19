@@ -2,6 +2,9 @@ var card_margin=0;
 var cards_moved = false;
 var mobile = false;
 var card_details_icon_position = [];
+var video_positions = [];
+var videos = [];
+var num_videos;
 
 $(window).load(function(){
 
@@ -41,7 +44,6 @@ $(window).load(function(){
 
             if ( difference > 0 ) {
 
-                console.log($(this));
                 $(this).height(window_height);
                 $(this).css('padding-top', vertical_adjust + 'px');
             }
@@ -52,6 +54,7 @@ $(window).load(function(){
     moveSlides();
     setUpGetStarted();
     updatePlanProfile();
+    getVideoPositions();
 });
 
 $(window).resize(function(){
@@ -78,6 +81,8 @@ $(window).scroll(function(){
 
             positionDesktopNav();
         }
+
+        resetVideos();
     }
 });
 
@@ -141,8 +146,6 @@ $(function(){
 
     $('#hero-down-arrow img').hover(function(){
 
-        console.log('hovered');
-        console.log($(this).css('top'));
         $(this).animate({top: '-=5'}, 100);
     }, function(){
 
@@ -614,9 +617,7 @@ function setMobileNav() {
     $('#mobile-nav.open').css('left', 0);
 }
 
-function positionDesktopNav() {
-
-    
+function positionDesktopNav() {    
 
     if ( $('#nav').css('display') == 'none' ) {
 
@@ -628,5 +629,49 @@ function positionDesktopNav() {
             $('#nav').slideDown(200);
             $('#page-brand').css('visibility', 'hidden');
         }
+    }
+}
+
+function getVideoPositions() {
+
+    var i = 0;
+
+    // Get the top positions of all videos
+    $('video').each(function(){
+
+        video_positions[i] = $(this).offset()['top'];
+        videos[i] = $(this);
+
+        // Pause video
+        $(this)[0].pause();
+
+        i += 1;
+    });
+
+    num_videos = i;
+}
+
+function resetVideos() {
+
+    var window_top = $(window).scrollTop();
+    var window_bottom = window_top + $(window).height();
+    var i = 0;
+
+    while ( i < num_videos ) {
+
+        var video_bottom = video_positions[i] + videos[i].height();
+
+        if ( window_bottom >= video_positions[i] && window_top < video_bottom ) {
+
+            videos[i][0].play();
+
+        } else {
+
+            // Pause and reset
+            videos[i][0].currentTime = 0;
+            videos[i][0].pause();
+        }
+
+        i += 1;
     }
 }
