@@ -421,7 +421,8 @@ button.yellow-background {
   padding-top: 50px; }
 .card-section .card {
   max-width: 80%;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-top: 5px; }
   .card-section .card .caption {
     background-color: #e25736;
     padding: 25px 0 20px; }

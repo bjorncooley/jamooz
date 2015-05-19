@@ -12,23 +12,18 @@ $(window).load(function(){
 
         mobile = true;
 
-        var plan_card_height = $('.card').height();
-        var container_height = $('.card-container').height();
-
-        $('.card-container').height(container_height - plan_card_height * 2);
-
+        
 
         movePlanCards();  
         setMobileNav();
+        setCardContainer();
 
-        // Special functions for the discounts slide
-        $('#discounts .card-container').height(container_height - plan_card_height * 3);
-        $('#discounts .device-container.current').height($('#discounts .card-container').height());
-        $('#devices .row.current').next().css({
-            'position': 'absolute',
-            'top' : 0,
-            'left' : 0,
-        });
+        if ( $('#devices').length != 0 ) {
+
+            arrangeDiscountCards();
+        }
+
+        
     }
 
     // On desktop, set main home sections to window height
@@ -63,15 +58,24 @@ $(window).resize(function(){
 
         mobile = true;
         setMobileNav();
-        movePlanCards();  
+         
         
     } else {
 
         mobile = false;
     }
 
-    movePlanCards();
+    if ( $('#discounts').length != 0 ) {
+
+        arrangeDiscountCards();
+    }
+
+    movePlanCards(); 
+    setCardContainer();
     moveSlides();
+    setUpGetStarted();
+    updatePlanProfile();
+    getVideoPositions();
 });
 
 $(window).scroll(function(){
@@ -675,4 +679,23 @@ function resetVideos() {
 
         i += 1;
     }
+}
+
+function arrangeDiscountCards() {
+
+    // Special functions for the discounts slide
+    $('#discounts .card-container').height(plan_card_height);
+    $('#discounts .device-container.current').height($('#discounts .card-container').height());
+    $('#devices .row.current').next().css({
+        'position': 'absolute',
+        'top' : 0,
+        'left' : 0,
+    });
+}
+
+function setCardContainer() {
+
+    var plan_card_height = $('.card').height();
+    var container_height = $('.card-container').height();
+    $('.card-container').height(plan_card_height);
 }

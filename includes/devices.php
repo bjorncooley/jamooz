@@ -20,7 +20,6 @@
                                 </div>
                             </div>
                         </div>
-                        
                         <div class="red-orange-background white text-center caption inline-block">
                             <p class="show-details-link">See Details</p>
                             <p class="close-details-link hide">Close Details</p>
