@@ -81,7 +81,9 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis illum, dolore, ipsam unde sint qui illo quam numquam, quos aspernatur nostrum ratione assumenda cum! Voluptatem corporis sequi, neque illum veritatis.
                 </p>
                 <div class="clear button-container">
-                    <button class="left white red-orange-background">Get Started</button>
+                    <a href="./get-started.php">
+                        <button class="left white red-orange-background">Get Started</button>
+                    </a>
                     <div class="red-orange-background left">
                         <img src="img/shared/white_right_arrow.png" alt="">
                     </div>

@@ -276,7 +276,7 @@ $(function(){
     $('.add-container').click(function(){
 
         $(this).addClass('selected');
-        $(this).find('img').attr('src', 'img/get-started/blue-check-icon-mobile.png');
+        $(this).find('img').attr('src', 'img/shared/blue_check_icon.png');
 
         var num_items = parseInt($.cookie('num_items'));
         num_items += 1;
