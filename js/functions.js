@@ -149,6 +149,8 @@ $(function(){
         $(this).parent().fadeOut(400);
     });
 
+    // Login
+
     $('.login-button').click(function(e){
 
         e.preventDefault();
@@ -255,11 +257,21 @@ $(function(){
     
     $('.card').click(function(){
 
-        $(this).addClass('selected');
-        $(this).siblings('.plan').removeClass('selected');
+        if ( $(this).hasClass('selected') ) {
 
-        $(this).find('img').attr('src', 'img/shared/blue_check_icon.png');
-        $(this).siblings('.plan').find('img').attr('src', 'img/shared/yellow_plus_icon.png');
+            $(this).removeClass('selected');
+            $(this).find('img').attr('src', 'img/shared/yellow_plus_icon.png');
+
+        } else {
+
+            $(this).addClass('selected');
+            $(this).siblings('.plan').removeClass('selected');
+
+            $(this).find('img').attr('src', 'img/shared/blue_check_icon.png');
+            $(this).siblings('.plan').find('img').attr('src', 'img/shared/yellow_plus_icon.png');
+        }
+
+        
     });
 
 
