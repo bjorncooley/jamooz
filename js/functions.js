@@ -94,18 +94,48 @@ $(window).scroll(function(){
         var window_top = $(window).scrollTop();
         var window_bottom = window_top + $(window).height();
 
-        if ( window_bottom > $('#phone-icon-1').offset()['top'] + 100 ) {
+        if ( $('#software-integrations').length != 0 ) {
 
-            if ( !($('#phone-icon-1').hasClass('animated')) ) {
+            if ( window_bottom > $('#phone-icon-1').offset()['top'] + 100 ) {
 
-                $('#phone-icon-1').addClass('animated');
+                if ( !($('#phone-icon-1').hasClass('animated')) ) {
 
-                $('#phone-icon-1').animate({ left : 585 }, 1200, function(){
+                    $('#phone-icon-1').addClass('animated');
 
-                    $('#phone-icon-1').animate({ bottom : -110}, 1200);
-                });
+                    $('#phone-icon-1').animate({ left : 585 }, 1200, function(){
+
+                        $('#phone-icon-1').animate({ bottom : -110}, 1200);
+                    });
+                }
             }
         }
+
+        
+
+        /* --------------------------------------------------- */
+        /* -------------- HARDWARE INTEGRATIONS -------------- */
+        /* --------------------------------------------------- */
+
+        if ( $('#hardware-integrations').length != 0 ) {
+
+            if ( window_bottom > $('#story-1-phone-icon').offset()['top'] + 100 ) {
+
+                if ( !($('#story-1-phone-icon').hasClass('animated')) ) {
+
+                    $('#story-1-phone-icon').addClass('animated');
+
+                    $('#story-1-phone-icon').animate({ left : -30 }, 800 , function() {
+
+                        $('#story-1-phone-icon').animate({ top : 568 }, 2800, function(){
+
+                            $('#story-1-phone-icon').animate({ left : 32 }, 800);
+                        });
+                    });
+                }
+            }
+        }
+
+        
     }
 
 
