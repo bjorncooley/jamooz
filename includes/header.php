@@ -26,7 +26,9 @@
                     <li><a href="./pricing.php">Pricing</a></li>
                     <li>
                         <button class="white-border login-button">Login</button>
-                        <button class="white-border">Signup</button>
+                        <a href="./index.php#trial">
+                            <button class="white-border signup-button">Signup</button>
+                        </a>
                         <button class="no-border">Support</button>
                     </li>
                 </ul>
@@ -41,7 +43,9 @@
                     <div class="large-9 columns clearfix text-right padding-top-15">
                             <button class="no-border no-background dark-gray radius large-3 columns small-centered uppercase max-150">Support</button>
                             <button class="radius large-3 columns medium-dark-gray-border no-background medium-dark-gray small-centered uppercase max-150 login-button">Login</button>
-                            <button class="radius large-3 columns small-centered orange no-background orange-border uppercase max-150">Sign Up</button>
+                            <a href="./index.php#trial">
+                                <button class="radius large-3 columns small-centered orange no-background orange-border uppercase max-150">Sign Up</button>
+                            </a>
                         
                     </div>
                 </div>

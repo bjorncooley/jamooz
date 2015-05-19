@@ -152,7 +152,7 @@ $(function(){
     $('.login-button').click(function(e){
 
         e.preventDefault();
-        
+
         $('#login-overlay').fadeIn(400);
 
         if ( mobile ) {
@@ -180,6 +180,11 @@ $(function(){
             'position' : 'fixed',
             'top' : 0,
         });
+    });
+
+    $('.signup-button').click(function(){
+
+        $(window).location.href('http://doorstepstudios.com/jamooz/index.php#trial');
     });
 
     // Mobile nav
