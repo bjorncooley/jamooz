@@ -38,7 +38,9 @@
             <div id="nav">
                 <div class="row show-for-large-up">
                     <div class="large-3 columns">
-                        <img src="img/shared/jamooz_small_logo.png" alt="">
+                        <a href="./index.php">
+                            <img src="img/shared/jamooz_small_logo.png" alt="">
+                        </a>
                     </div>
                     <div class="large-9 columns clearfix text-right padding-top-15">
                             <button class="no-border no-background dark-gray radius large-3 columns small-centered uppercase max-150">Support</button>
