@@ -106,7 +106,13 @@ $(window).scroll(function(){
 
                     $('#phone-icon-1').animate({ left : 585 }, 1200, function(){
 
-                        $('#phone-icon-1').animate({ bottom : -110}, 1200);
+                        $('#phone-icon-1').animate({ bottom : -250}, 1600);
+
+
+                        setTimeout(function(){
+
+                            $('#phone-icon-1').fadeOut({ queue: false, duration: 800 });
+                        }, 800);
                     });
                 }
             }
