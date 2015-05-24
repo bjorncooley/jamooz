@@ -31,7 +31,6 @@
             <div class="small-12 large-5 columns relative left clearfix">
                 <img src="img/software/amy_mobile.png" alt="" class="hide-for-large-up">
                 <img src="img/software/amy_desktop.png" alt="" class="show-for-large-up right">
-                <img src="img/software/first_line_sequence.png" alt="" class="show-for-large-up absolute" id="first-line-sequence">
                 <img src="img/software/phone_icon_1.png" alt="" class="show-for-large-up absolute" id="phone-icon-1">
             </div>
         </div>
