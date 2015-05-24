@@ -477,46 +477,7 @@ $(function(){
     // Toggle plan profile widget
     $('.plan-profile-toggle').click(function(){
 
-        if ( $('#plan-profile-content').css('display') == 'none' ) {
-
-            $('#plan-profile-content').css('display', 'block');
-            $(this).find('img').css('display', 'block');
-            $(this).find('h4').css('display', 'none');
-
-            // Set the widget to be absolutely positioned on mobile,
-            // so mobile users can scroll down the widget
-
-            if ( mobile ) {
-
-                var top = $('#plan-profile').offset()['top'];
-                $('#plan-profile').css({
-                    'position' : 'absolute',
-                    'top' : top,
-                    'left' : 0 ,
-                });
-            }
-            
-        } else {
-
-            $('#plan-profile-content').css('display', 'none');
-            $(this).find('img').css('display', 'none');
-            $(this).find('h4').css('display', 'block');
-
-            if ( mobile ) {
-
-                top = '-9px';
-            } else {
-
-                top = '15%';
-            }
-
-            // Set widget back to fixed
-            $('#plan-profile').css({
-
-                'position' : 'fixed',
-                'top' : top,
-            });
-        }
+        togglePlanProfile();
     });    
 
     $('.plan-profile-close-button').click(function(){
@@ -722,6 +683,8 @@ function setUpGetStarted() {
 
 function updatePlanProfile() {
 
+    
+    var previous_num_items = $('#num-items').text();
     $('#num-items').text($.cookie('num_items'));
 
     if ( $.cookie('plan') == undefined ) {
@@ -735,7 +698,58 @@ function updatePlanProfile() {
         $('#plan-profile .plan-item:first .price').text($.cookie('plan-cost'));
         $('#plan-profile #total').text($.cookie('total'));
     }   
+
+    if ( previous_num_items == '0' && $.cookie('num_items') == 1 ) {
+
+        togglePlanProfile();
+    }
 }
+
+
+function togglePlanProfile() {
+
+    if ( $('#plan-profile-content').css('display') == 'none' ) {
+
+        $('#plan-profile-content').css('display', 'block');
+        $(this).find('img').css('display', 'block');
+        $(this).find('h4').css('display', 'none');
+
+        // Set the widget to be absolutely positioned on mobile,
+        // so mobile users can scroll down the widget
+
+        if ( mobile ) {
+
+            var top = $('#plan-profile').offset()['top'];
+            $('#plan-profile').css({
+                'position' : 'absolute',
+                'top' : top,
+                'left' : 0 ,
+            });
+        }
+        
+    } else {
+
+        $('#plan-profile-content').css('display', 'none');
+        $(this).find('img').css('display', 'none');
+        $(this).find('h4').css('display', 'block');
+
+        if ( mobile ) {
+
+            top = '-9px';
+        } else {
+
+            top = '15%';
+        }
+
+        // Set widget back to fixed
+        $('#plan-profile').css({
+
+            'position' : 'fixed',
+            'top' : top,
+        });
+    }
+}
+
 
 function setMobileNav() {
 
