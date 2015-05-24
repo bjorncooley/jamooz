@@ -26,7 +26,7 @@
                     </div>
                 </div>
             </div><!-- #hero -->
-            <div id="intro">
+            <div id="intro" class="full-height">
                 <div class="row clearfix">
                     <div class="small-12 medium-6 columns text-center right">
                         <img src="img/home/hardware_graphic.png" alt="" class="padding-bottom-30">
@@ -36,19 +36,19 @@
                         <p>10 computers, 20 smartphones, 12 office phones, 2 intercoms, &amp; even 1 doorbell. Tell us the devices you need or just integrate the devices you already use. Just a few clicks to view &amp; change device phone numbers &amp; extensions.</p>
                     </div>
                 </div>
-                <div class="orange-background white learn-section">
-                    <div class="row">
-                        <div class="large-12 columns text-center">
-                            <h4 class="white small-12 columns small-centered large">
-                                <div class="small-9 columns small-centered padding-bottom-50">Learn what hardware works with Jamooz</div>
-                            </h4>
-                            <a href="./hardware-integrations.php">
-                                <h4 class="white-border white small-12 columns padding-top-8 padding-bottom-8 max-285 small-centered small">See Hardware Integrations</h4>
-                            </a>
-                        </div>
+            </div>
+            <div class="orange-background white learn-section">
+                <div class="row">
+                    <div class="large-12 columns text-center">
+                        <h4 class="white small-12 columns small-centered large">
+                            <div class="small-9 columns small-centered padding-bottom-50">Learn what hardware works with Jamooz</div>
+                        </h4>
+                        <a href="./hardware-integrations.php">
+                            <h4 class="white-border white small-12 columns padding-top-8 padding-bottom-8 max-285 small-centered small">See Hardware Integrations</h4>
+                        </a>
                     </div>
                 </div>
-            </div><!-- #intro -->
+            </div>
             <div class="row clearfix full-height" id="reliable">
                 <div class="small-12 large-7 columns text-center right">
                     <img src="img/home/reliable_graphic_mobile.png" class="padding-top-30 padding-bottom-30 hide-for-large-up center" alt="">

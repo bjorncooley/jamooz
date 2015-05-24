@@ -116,7 +116,11 @@ button.yellow-background {
 
     #intro {
 
-        padding-top: 110px;
+        .row {
+            padding-top: 110px;
+        }
+
+        
     }
 
     #support {

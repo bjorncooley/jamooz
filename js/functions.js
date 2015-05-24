@@ -1,3 +1,7 @@
+/* -- Scrolling -- */
+/* https://github.com/peachananr/onepage-scroll */
+
+
 var card_margin=0;
 var cards_moved = false;
 var mobile = false;
