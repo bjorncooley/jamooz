@@ -683,8 +683,11 @@ function setUpGetStarted() {
 
 function updatePlanProfile() {
 
+    if ( $('#num-items').text() == '0' && $.cookie('num_items') == 1 ) {
+
+        togglePlanProfile();
+    }
     
-    var previous_num_items = $('#num-items').text();
     $('#num-items').text($.cookie('num_items'));
 
     if ( $.cookie('plan') == undefined ) {
@@ -699,10 +702,7 @@ function updatePlanProfile() {
         $('#plan-profile #total').text($.cookie('total'));
     }   
 
-    if ( previous_num_items == '0' && $.cookie('num_items') == 1 ) {
-
-        togglePlanProfile();
-    }
+    
 }
 
 
@@ -711,8 +711,8 @@ function togglePlanProfile() {
     if ( $('#plan-profile-content').css('display') == 'none' ) {
 
         $('#plan-profile-content').css('display', 'block');
-        $(this).find('img').css('display', 'block');
-        $(this).find('h4').css('display', 'none');
+        $('.plan-profile-toggle').find('img').css('display', 'block');
+        $('.plan-profile-toggle').find('h4').css('display', 'none');
 
         // Set the widget to be absolutely positioned on mobile,
         // so mobile users can scroll down the widget
@@ -730,8 +730,8 @@ function togglePlanProfile() {
     } else {
 
         $('#plan-profile-content').css('display', 'none');
-        $(this).find('img').css('display', 'none');
-        $(this).find('h4').css('display', 'block');
+        $('.plan-profile-toggle').find('img').css('display', 'none');
+        $('.plan-profile-toggle').find('h4').css('display', 'block');
 
         if ( mobile ) {
 
