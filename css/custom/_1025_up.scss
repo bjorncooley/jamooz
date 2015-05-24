@@ -325,11 +325,20 @@ button.yellow-background {
         max-width: 310px;
     }
 
+    img {
+
+        &:nth-of-type(1) {
+
+            z-index: 2;
+            position: relative;
+        }
+    }
+
     #story-1-phone-icon {
 
         position: absolute;
         top: 108px;
-        left: -8px;
+        left: 110px;
     }
 }
 
@@ -337,6 +346,15 @@ button.yellow-background {
 
     background-color: $light-gray;
     padding: 40px 0 20px;
+
+    img {
+
+        &:nth-of-type(3) {
+
+            z-index: 2;
+            position: relative;
+        }
+    }
 
     h3 {
 

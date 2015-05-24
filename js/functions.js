@@ -134,9 +134,10 @@ $(window).scroll(function(){
 
                     $('#story-1-phone-icon').animate({ left : -30 }, 800 , function() {
 
-                        $('#story-1-phone-icon').animate({ top : 568 }, 2800, function(){
+                        $('#story-1-phone-icon').animate({ top : 580 }, 2800, function(){
 
-                            $('#story-1-phone-icon').animate({ left : 32 }, 800);
+                            $('#story-1-phone-icon').animate({ left : 160 }, 800);
+                            $('#story-1-phone-icon').fadeOut({ queue: false, duration: 800 });
                         });
                     });
                 }
