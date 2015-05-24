@@ -282,11 +282,7 @@ $(function(){
         $(this).addClass('selected');
         $(this).find('img').attr('src', 'img/shared/blue_check_icon.png');
 
-        var num_items = parseInt($.cookie('num_items'));
-        num_items += 1;
-        $.cookie('num_items', num_items);
-
-        updatePlanProfile();
+        addItemToCookie();
     });
 
     // Card swapping
@@ -571,6 +567,7 @@ $(function(){
 
             $.cookie('total', total);
             $.cookie('num_items', num_items);
+            togglePlanProfile();
             updatePlanProfile();
 
             var width = $(window).width();
@@ -683,11 +680,6 @@ function setUpGetStarted() {
 
 function updatePlanProfile() {
 
-    if ( $('#num-items').text() == '0' && $.cookie('num_items') == 1 ) {
-
-        togglePlanProfile();
-    }
-    
     $('#num-items').text($.cookie('num_items'));
 
     if ( $.cookie('plan') == undefined ) {
@@ -748,6 +740,21 @@ function togglePlanProfile() {
             'top' : top,
         });
     }
+}
+
+function addItemToCookie() {
+
+    var num_items = parseInt($.cookie('num_items'));
+
+    if ( num_items == 0 ) {
+
+        togglePlanProfile();
+    }
+    
+    num_items += 1;
+    $.cookie('num_items', num_items);
+
+    updatePlanProfile();
 }
 
 
