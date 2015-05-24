@@ -57,7 +57,7 @@
                 <img src="img/hardware/david_desktop_1.png" alt="">
                 <img src="img/shared/walking_icon.png" alt="" id="walking-icon-1">
                 <img src="img/hardware/david_desktop_3.png" alt="">
-                <img src="img/hardware/walking_icon_2.png" alt="" id="walking-icon-2">
+                <img src="img/shared/walking_icon.png" alt="" id="walking-icon-2">
             </div>
         </div>
     </div>

@@ -1221,6 +1221,11 @@ button.yellow-background {
         position: absolute;
         right: 50px;
         z-index: 2; }
+      #story-2 .row:nth-child(2) img#walking-icon-2 {
+        position: absolute;
+        top: 170px;
+        right: 160px;
+        opacity: 0; }
 
   #story-3 h3 {
     padding-top: 300px; }

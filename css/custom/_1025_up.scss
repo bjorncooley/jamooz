@@ -400,6 +400,14 @@ button.yellow-background {
                     right: 50px;
                     z-index: 2;
                 }
+
+                &#walking-icon-2 {
+
+                    position: absolute;
+                    top: 170px;
+                    right: 160px;
+                    opacity: 0;
+                }
             }
         }
     }
