@@ -7,7 +7,7 @@
     </div>
     <div id="hero" class="hero">
         <div class="text-center">
-            <h1>Ease Into a Better Communication Experience For
+            <h1 class="large">Ease Into a Better Communication Experience For
             Your Office Staff</h1>
         </div>
         <div class="text-center">
@@ -15,10 +15,10 @@
         </div>
         <div class="text-center" id="hero-text">   
             <a href="./get-started.php">
-                <button class="teal-background uppercase radius width-100-percent max-275 white">Get Started for 30 Days Free</button>
+                <button class="teal-background uppercase radius width-100-percent white">Get Started for 30 Days Free</button>
             </a>
-            <h6 class="small">A customer success teammate is ready. <a href="#">Support</a></h6>
-            <h6 class="small">Already setup? <a href="#" class="login-button">Login</a></h6>
+            <h6>A customer success teammate is ready. <a href="#">Support</a></h6>
+            <h6>Already setup? <a href="#" class="login-button">Login</a></h6>
             <div id="hero-down-arrow" class="black">
                 <img src="img/shared/down_arrow_black.png" alt="" class="padding-top-15 pointer">
                 <h6 class="small text-center">learn more</h6>

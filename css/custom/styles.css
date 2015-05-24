@@ -218,8 +218,8 @@ input.large {
   font-size: 1em; }
 
 h1.large {
-  font-size: 2.2em;
-  line-height: 1.7em; }
+  font-size: 2.4em;
+  line-height: 1.6em; }
 
 h1.expanded {
   line-height: 2.1em; }
@@ -598,12 +598,17 @@ button.yellow-background {
   .learn-section h4 {
     margin: 0 auto; }
 
-#home #hero h6 {
+#home #hero #hero-text a {
+  display: inline-block; }
+#home #hero #hero-text button {
+  max-width: 280px; }
+#home #hero #hero-text h6 {
   max-width: 320px;
-  margin: 0 auto 10px; }
-  #home #hero h6 a, #home #hero h6 a:visited, #home #hero h6 a:active, #home #hero h6 a:hover {
+  margin: 0 auto 10px;
+  font-size: 0.9em; }
+  #home #hero #hero-text h6 a, #home #hero #hero-text h6 a:visited, #home #hero #hero-text h6 a:active, #home #hero #hero-text h6 a:hover {
     color: #5fb6b6; }
-#home #hero #hero-down-arrow {
+#home #hero #hero-text #hero-down-arrow {
   display: inline-block; }
 
 #intro {
@@ -1052,7 +1057,7 @@ button.yellow-background {
   #hero h1 {
     max-width: 800px;
     margin: 0 auto;
-    padding-top: 30px; }
+    padding: 30px 0 15px; }
   #hero h6 {
     max-width: none; }
 
@@ -1080,23 +1085,28 @@ button.yellow-background {
     #hardware-hero h4, #software-hero h4, #pricing-hero h4 {
       padding-bottom: 200px; }
 
+  #home #page-brand {
+    margin-top: -80px; }
+    #home #page-brand img {
+      margin: 0 auto;
+      padding-top: 50px; }
+  #home #hero {
+    margin-bottom: -80px;
+    padding-top: 50px; }
+    #home #hero #hero-text button {
+      max-width: 340px;
+      padding: 20px 30px; }
+    #home #hero #hero-text > a, #home #hero #hero-text > h6 {
+      position: relative;
+      top: -160px; }
+    #home #hero #hero-text #hero-down-arrow {
+      position: relative;
+      top: -100px; }
   #home #intro .row {
     padding-top: 110px; }
   #home #support button {
     width: 480px;
     font-size: 1.4em; }
-  #home #page-brand {
-    margin-top: -80px; }
-    #home #page-brand img {
-      margin: 0 auto; }
-  #home #hero {
-    margin-bottom: -30px; }
-    #home #hero #hero-text button, #home #hero #hero-text > h6 {
-      position: relative;
-      top: -125px; }
-    #home #hero #hero-text #hero-down-arrow {
-      position: relative;
-      top: -50px; }
 
   /* --------------------------- */
   /* --- PLAN PROFILE WIDGET --- */
