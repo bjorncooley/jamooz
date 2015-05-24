@@ -750,7 +750,7 @@ function addItemToCookie() {
 
         togglePlanProfile();
     }
-    
+
     num_items += 1;
     $.cookie('num_items', num_items);
 
@@ -766,19 +766,29 @@ function setMobileNav() {
     $('#mobile-nav.open').css('left', 0);
 }
 
-function positionDesktopNav() {    
+function positionDesktopNav() {  
 
-    if ( $('#nav').css('display') == 'none' ) {
+    var window_top = $(window).scrollTop();
+    var intro_top = $('#hero-down-arrow').offset()['top']; 
+    console.log("Checking desktop position");
+    console.log("Nav: " + $('#nav').css('display'));
 
-        var window_top = $(window).scrollTop();
-        var intro_top = $('#hero-down-arrow').offset()['top'];
+    if ( window_top >= intro_top ) {
 
-        if ( window_top >= intro_top ) {
+        $('#nav').slideDown(200);
 
-            $('#nav').slideDown(200);
-            $('#page-brand').css('visibility', 'hidden');
+    } else {
+
+        if ( $('#nav').css('display') == 'block' ) {
+
+            console.log("Nav display block");
+
+            $('#nav').slideUp(200);
         }
     }
+
+
+          
 }
 
 function getVideoPositions() {
