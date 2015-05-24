@@ -372,6 +372,8 @@ button.yellow-background {
 
     .row {
 
+        position: relative;
+
         &:nth-child(2) {
 
             img {
@@ -384,12 +386,12 @@ button.yellow-background {
                     z-index: 2;
                 }
 
-                &:nth-of-type(2) {
+                &#walking-icon-1 {
 
                     position: absolute;
                     top: 130px;
                     left: 80px;
-                    display: none;
+                    opacity: 0;
                 }
 
                 &:nth-of-type(3) {

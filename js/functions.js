@@ -98,7 +98,7 @@ $(window).scroll(function(){
 
         if ( $('#software-integrations').length != 0 ) {
 
-            if ( window_bottom > $('#phone-icon-1').offset()['top'] + 100 ) {
+            if ( window_bottom > $('#phone-icon-1').offset().top + 100 ) {
 
                 if ( !($('#phone-icon-1').hasClass('animated')) ) {
 
@@ -126,7 +126,7 @@ $(window).scroll(function(){
 
         if ( $('#hardware-integrations').length != 0 ) {
 
-            if ( window_bottom > $('#story-1-phone-icon').offset()['top'] + 100 ) {
+            if ( window_bottom > $('#story-1-phone-icon').offset().top + 100 ) {
 
                 if ( !($('#story-1-phone-icon').hasClass('animated')) ) {
 
@@ -140,6 +140,23 @@ $(window).scroll(function(){
                             $('#story-1-phone-icon').fadeOut({ queue: false, duration: 800 });
                         });
                     });
+                }
+            }
+
+            if ( window_bottom > $('#walking-icon-1').offset().top) {
+
+                if ( !($('#walking-icon-1').hasClass('animated')) ) {
+
+                    $('#walking-icon-1').addClass('animated');
+
+                    $('#walking-icon-1').animate({ opacity: 1 },
+                                                 { queue: false,
+                                                   duration: 800});
+                    $('#walking-icon-1').animate({ left : 640 }, 2400);
+
+                    setTimeout(function(){
+                        $('#walking-icon-1').fadeOut({ queue: false, duration: 1200 });
+                    }, 1200);
                 }
             }
         }
