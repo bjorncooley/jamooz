@@ -91,7 +91,7 @@
                         <h4 class="price">$<span id="total"></span></h4>
                     </div>
                     <div class="text-center">
-                        <button class="white bright-blue-background">Looks good! Continue</button>
+                        <button class="white bright-blue-background" id="continue">Looks good! Continue</button>
                     </div>
                     <div class="hide-for-large-up text-center">
                         <img src="img/shared/close_icon_black.png" alt="" class="plan-profile-close-button">

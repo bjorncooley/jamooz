@@ -475,7 +475,7 @@ $(function(){
     });
 
     // Toggle plan profile widget
-    $('.plan-profile-toggle').click(function(){
+    $('.plan-profile-toggle, #continue').click(function(){
 
         togglePlanProfile();
     });    
