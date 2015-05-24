@@ -1232,12 +1232,12 @@ button.yellow-background {
     #software-integrations #story-1 h3 {
       padding-top: 285px;
       max-width: 500px; }
-    #software-integrations #story-1 #first-line-sequence {
-      top: 461px;
-      left: 370px; }
     #software-integrations #story-1 #phone-icon-1 {
-      left: 380px;
-      bottom: 40px; }
+      left: 260px;
+      bottom: 60px; }
+    #software-integrations #story-1 img:nth-of-type(2) {
+      z-index: 99;
+      position: relative; }
   #software-integrations #story-2 h3 {
     padding-top: 275px;
     width: 400px; }

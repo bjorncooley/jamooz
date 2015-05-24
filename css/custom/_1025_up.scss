@@ -430,16 +430,19 @@ button.yellow-background {
             max-width: 500px;
         }
 
-        #first-line-sequence {
-
-            top: 461px;
-            left: 370px;
-        }
-
         #phone-icon-1 {
 
-            left: 380px;
-            bottom: 40px;
+            left: 260px;
+            bottom: 60px;
+        }
+
+        img {
+
+            &:nth-of-type(2) {
+
+                z-index: 99;
+                position: relative;
+            }
         }
     }
 
