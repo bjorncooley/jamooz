@@ -325,28 +325,12 @@ button.yellow-background {
         max-width: 310px;
     }
 
-    img {
-
-        &:nth-of-type(1) {
-
-            z-index: 2;
-            position: relative;
-        }
-    }
-
-    #story-1-phone-icon {
-
-        position: absolute;
-        top: 108px;
-        left: 110px;
-    }
 }
 
 #story-2 {
 
     background-color: $light-gray;
     padding: 40px 0 20px;
-    height: 780px;
 
     img {
 
@@ -362,55 +346,84 @@ button.yellow-background {
         padding-top: 80px;
         width: 270px;
     }
+}
 
-    #walking-icon-2 {
+#hardware-integrations {
 
-        position: absolute;
-        bottom: -300px;
-        right: 100px;
+    #story-1 {
+
+        img {
+
+            &:nth-of-type(1) {
+
+                z-index: 2;
+                position: relative;
+            }
+        }
+
+        #story-1-phone-icon {
+
+            position: absolute;
+            top: 108px;
+            left: 110px;
+        }
     }
 
-    .row {
+    #story-2 {
 
-        position: relative;
+        height: 780px;
 
-        &:nth-child(2) {
+        #walking-icon-2 {
 
-            img {
+            position: absolute;
+            bottom: -300px;
+            right: 100px;
+        }
 
-                &:nth-of-type(1) {
+        .row {
 
-                    position: absolute;
-                    left: 0;
-                    top: 7px;
-                    z-index: 2;
-                }
+            position: relative;
 
-                &#walking-icon-1 {
+            &:nth-child(2) {
 
-                    position: absolute;
-                    top: 130px;
-                    left: 80px;
-                    opacity: 0;
-                }
+                img {
 
-                &:nth-of-type(3) {
+                    &:nth-of-type(1) {
 
-                    position: absolute;
-                    right: 50px;
-                    z-index: 2;
-                }
+                        position: absolute;
+                        left: 0;
+                        top: 7px;
+                        z-index: 2;
+                    }
 
-                &#walking-icon-2 {
+                    &#walking-icon-1 {
 
-                    position: absolute;
-                    top: 170px;
-                    right: 160px;
-                    opacity: 0;
+                        position: absolute;
+                        top: 130px;
+                        left: 80px;
+                        opacity: 0;
+                    }
+
+                    &:nth-of-type(3) {
+
+                        position: absolute;
+                        right: 50px;
+                        z-index: 2;
+                    }
+
+                    &#walking-icon-2 {
+
+                        position: absolute;
+                        top: 170px;
+                        right: 160px;
+                        opacity: 0;
+                    }
                 }
             }
         }
     }
+
+    
 }
 
 #story-3 {
