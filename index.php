@@ -1,3 +1,25 @@
+<?php if( $_POST ) {
+
+    if ( isset($_POST['name']) ) {
+
+        $name = $_POST['name'];
+        $separated = explode(" ", $name);
+        $firstName = $separated[0];
+        $lastName = $separated[1];
+
+        setcookie("firstName", $firstName);
+        setcookie("lastName", $lastName);
+    }
+
+    if ( isset($_POST['email']) ) {
+
+        $email = $_POST['email'];
+        setcookie("email", $email);
+    }
+}
+
+?>
+
 <?php include('includes/header.php'); ?>
 <div id="home">
     <div class="row show-for-large-up" id="page-brand">
@@ -138,18 +160,18 @@
             </div>
         </div>
         <div class="row">
-            <form action="">
+            <form action="" method="post"> 
                 <div class="row">
                     <div class="large-6 small-10 columns small-centered text-center">
-                        <input type="text" placeholder="Your Full Name" class="placeholder-medium-gray  radius large padding-15">
+                        <input type="text" placeholder="Your Full Name" class="placeholder-medium-gray  radius large padding-15" name="name">
                     </div>
                     <div class="large-6 small-10 columns small-centered">
-                        <input type="text" placeholder="Email Address" class="placeholder-medium-gray radius large padding-15">
+                        <input type="text" placeholder="Email Address" class="placeholder-medium-gray radius large padding-15" name="email">
                     </div>
                 </div>
                 <div class="row">
                     <div class="large-12 columns text-center">
-                        <button class="red-orange-background radius width-100-percent max-285 uppercase white">Get Started For 30 Days Free</button>
+                        <button class="red-orange-background radius width-100-percent max-285 uppercase white" type="submit">Get Started For 30 Days Free</button>
                         <div class="row">
                             <p class="tiny white small-6 columns small-centered">a customer success teammate is ready to help</p>
                         </div>
