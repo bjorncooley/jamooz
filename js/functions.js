@@ -19,9 +19,7 @@ $(window).load(function(){
 
     if ( $('body').css('position') == 'relative' ) {
 
-        mobile = true;
-
-        movePlanCards();  
+        mobile = true; 
         setMobileNav();
         setCardContainer();
 
@@ -52,6 +50,7 @@ $(window).load(function(){
     }
 
     moveSlides();
+    movePlanCards(); 
     setUpGetStarted();
     updatePlanProfile();
     getVideoPositions();
@@ -442,54 +441,9 @@ $(function(){
 
 
     // Slide up card details
-    $('.show-details-link').click(function(e){
+    showCardDetails();
 
-        e.stopPropagation();
-
-        // Move card caption above to mask shadow
-        $(this).parent().css({
-            position: 'relative',
-            'z-index' : 2,
-        });
-
-        var index = $(this).parent().parent().index();
-
-        $shadowed = $(this).parent().siblings('.shadowed');
-        var container_height = $shadowed.height() + parseInt($shadowed.css('padding-top'));
-
-        $icon = $(this).parent().siblings().find('img.relative');
-        $detailsSlide = $(this).parent().siblings().find('.card-details');
-
-        card_details_icon_position[index] = parseInt($icon.css('top'));
-
-        $icon.animate({ top: '-=' + container_height}, 400);
-        $detailsSlide.animate({ top: 0}, 400);
-
-        $(this).addClass('hide');
-        $(this).siblings('.close-details-link').removeClass('hide');
-    });
-
-    $('.close-details-link').click(function(e){
-
-        e.stopPropagation();
-
-        var index = $(this).parent().parent().index();
-        var icon_position = card_details_icon_position[index];
-
-        $icon = $(this).parent().siblings().find('img.relative');
-        $icon.animate({ top: icon_position}, 400, function(){
-            // Move card caption below shadow
-            $(this).parent().parent().siblings('.caption').css({
-                position: 'static',
-            });
-        });
-
-        $detailsSlide = $(this).parent().siblings().find('.card-details');
-        $detailsSlide.animate({ top: '100%'}, 400);
-
-        $(this).addClass('hide');
-        $(this).siblings('.show-details-link').removeClass('hide');
-    });
+    hideCardDetails();
 
     /* ----------------------------------------- */
     /* ---------- PLAN PROFILE WIDGET ---------- */
@@ -737,6 +691,61 @@ function slideRightArrow() {
     });
 }
 
+function showCardDetails() {
+
+    $('.show-details-link').click(function(e){
+
+        e.stopPropagation();
+
+        // Move card caption above to mask shadow
+        $(this).parent().css({
+            position: 'relative',
+            'z-index' : 2,
+        });
+
+        var index = $(this).parent().parent().index();
+
+        $shadowed = $(this).parent().siblings('.shadowed');
+        var container_height = $shadowed.height() + parseInt($shadowed.css('padding-top'));
+
+        $icon = $(this).parent().siblings().find('img.relative');
+        $textSlide = $(this).parent().siblings().find('.card-text');
+
+        card_details_icon_position[index] = parseInt($icon.css('top'));
+
+        $icon.animate({ top: '-=' + container_height}, 400);
+        $textSlide.animate({ top: -380}, 400);
+
+        $(this).addClass('hide');
+        $(this).siblings('.close-details-link').removeClass('hide');
+    });
+}
+
+
+function hideCardDetails() {
+
+    $('.close-details-link').click(function(e){
+
+        e.stopPropagation();
+
+        var index = $(this).parent().parent().index();
+        var icon_position = card_details_icon_position[index];
+
+        $icon = $(this).parent().siblings().find('img.relative');
+        $icon.animate({ top: icon_position}, 400, function(){
+            // Move card caption below shadow
+            $(this).parent().parent().siblings('.caption').css({
+                position: 'static',
+            });
+        });
+
+        $textSlide = $(this).parent().siblings().find('.card-text');
+        $textSlide.animate({ top: 0}, 400);
+
+        $(this).addClass('hide');
+        $(this).siblings('.show-details-link').removeClass('hide');
+    });
+}
 
 
 /* --------------------------------------------------------------- */
@@ -744,7 +753,6 @@ function slideRightArrow() {
 /* ---------------------- LAYOUT FUNCTIONS ----------------------- */
 /* --------------------------------------------------------------- */
 /* --------------------------------------------------------------- */
-
 
 function movePlanCards() {
 
@@ -1033,10 +1041,6 @@ function setCardContainer() {
 
 function postUserData() {
 
-    console.log("Hit post");
-    console.log("hasData" + $.cookie('hasData'));
-    console.log("update" + $.cookie('update'));
-
     if ( $.cookie('hasData') == 'true' && $.cookie('update') == 'true' ) {
 
         // Set cookie to not update again until data is changed
@@ -1050,9 +1054,6 @@ function postUserData() {
 
         var planObject = JSON.parse($.cookie('plan'));
         var plan = planObject.item_name;
-
-        console.log("Values set");
-
 
         $.ajax({
                 url: "https://docs.google.com/forms/d/1cWrFUE6pOP6LmI5EeUtljFF_wsc7REQBv2BlCyGAESY/formResponse",
