@@ -190,6 +190,7 @@ $(window).scroll(function(){
     
 });
 
+
 $(function(){
 
     // Close buttons
@@ -326,12 +327,14 @@ $(function(){
 
             $(this).addClass('selected');
             $(this).find('img').attr('src', 'img/shared/blue_check_icon.png');
+            $(this).find('p').text('Added');
 
             addItemToCookie();
         } else {
 
             $(this).find('img').attr('src', 'img/shared/yellow_plus_icon.png');
             $(this).removeClass('selected');
+            $(this).find('p').text('Add to Plan');
         }
 
         
