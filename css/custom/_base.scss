@@ -434,6 +434,9 @@ button.yellow-background {
         position: relative;
         top: -60px;
 
+        box-shadow:
+              2px 2px 20px $shadow-gray;
+
         #plan-profile-title {
 
             text-align: center;

@@ -559,7 +559,8 @@ button.yellow-background {
     min-width: 320px;
     max-width: 100%;
     position: relative;
-    top: -60px; }
+    top: -60px;
+    box-shadow: 2px 2px 20px #b4b4b4; }
     #plan-profile #plan-profile-content #plan-profile-title {
       text-align: center; }
       #plan-profile #plan-profile-content #plan-profile-title img, #plan-profile #plan-profile-content #plan-profile-title h5 {
