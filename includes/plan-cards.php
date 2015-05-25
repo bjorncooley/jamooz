@@ -4,8 +4,8 @@
             <div class="shadowed">
                 <div class="card-text">
                     <p class="padding-bottom-30">Under 3 Extensions</p>
-                    <h4>$17 / Extension / Month</h4>
-                    <p>(Includes 30 Days Free)</p>
+                    <h4>$17/Extension/Month</h4>
+                    <p class="sub-text">(Includes 30 Days Free)</p>
                 </div>
                 <div class="text-center">
                     <img src="img/shared/yellow_plus_icon.png" alt="" class="relative">
@@ -35,10 +35,10 @@
             <div class="shadowed">
                 <div class="card-text">
                     <p class="padding-bottom-30">3-40 Extensions</p>
-                    <h4>$35 / Month</h4>
+                    <h4>$35/Month</h4>
                     <div class="inline-block">
-                        <h4>$25 / Month</h4>
-                        <p>(1 yr. Prepaid)</p>
+                        <h4>$25/Month</h4>
+                        <p class="sub-text">(1 yr. Prepaid)</p>
                     </div>
                 </div>
                 <div class="text-center">
@@ -71,7 +71,7 @@
                 <div class="card-text">
                     <p class="padding-bottom-30">41+ Extensions</p>
                     <h4>Call Us!</h4>
-                    <p><a href="tel:5052533451">(505) 253-3451</a></p>
+                    <h4><a href="tel:5052533451">(505) 253-3451</a></h4>
                 </div>
                 <div class="text-center">
                     <img src="img/shared/yellow_plus_icon.png" alt="" class="relative">

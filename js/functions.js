@@ -624,7 +624,6 @@ function slideLeftArrow() {
     $('.slide-left-arrow').click(function(){
 
         var $current = $(this).parent('.slide.current');
-        console.log($current);
         var $next = $current.prev();
         var width = $(window).width();
 
@@ -665,6 +664,12 @@ function slideRightArrow() {
 }
 
 
+
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* ---------------------- LAYOUT FUNCTIONS ----------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
 
 
 function movePlanCards() {
@@ -733,7 +738,6 @@ function setUpGetStarted() {
     // If apps-add-ons is not already being viewed, move off-screen
     if ( !($('#get-started #apps-add-ons').hasClass('active'))) {
 
-        console.log("Set apps-add-ons");
         $('#get-started #apps-add-ons').css('left', width);
     }
 
@@ -832,8 +836,6 @@ function positionDesktopNav() {
 
     var window_top = $(window).scrollTop();
     var intro_top = $('#hero-down-arrow').offset()['top']; 
-    console.log("Checking desktop position");
-    console.log("Nav: " + $('#nav').css('display'));
 
     if ( window_top >= intro_top ) {
 
@@ -842,8 +844,6 @@ function positionDesktopNav() {
     } else {
 
         if ( $('#nav').css('display') == 'block' ) {
-
-            console.log("Nav display block");
 
             $('#nav').slideUp(200);
         }

@@ -223,10 +223,39 @@ button.yellow-background {
             .card-text {
 
                 height: 250px;
+                padding: 30px 0 0 35px;
 
-                h5 {
+                p {
 
-                    padding-bottom: 30px;
+                    &:nth-of-type(1) {
+
+                        font-size: 1.1em;
+                        padding-bottom: 30px;
+                    }
+
+                    &.sub-text {
+
+                        font-size: 1em;
+                    }
+                }
+
+                h4, h4 a {
+
+                    font-weight: 400;
+                }
+
+                .inline-block {
+
+                    p {
+
+                        padding-left: 0;
+                        vertical-align: top;
+                    }
+
+                    h4 {
+
+                        padding-right: 5px;
+                    }
                 }
             }   
 
