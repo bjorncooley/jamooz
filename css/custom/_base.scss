@@ -667,6 +667,11 @@ button.yellow-background {
         height: 100%;
         padding-top: 80px;
         position: relative;
+
+        .slide {
+
+            min-height: 700px;
+        }
     }
 
     #next-step-button {

@@ -25,7 +25,7 @@
                 <img src="img/pricing/efax_icon.png" alt="">
             </div>
             <div class="small-12 large-6 columns">
-                <h1 class="no-text-transform light">Call Center Queue &amp; Reporting (ACD)</h1>
+                <h1 class="no-text-transform light">Call Center Queue &amp; Reporting</h1>
                 <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi libero sed, facere a ipsam. Eveniet iure, recusandae eligendi, ex magni aperiam ipsa provident quam dicta quae temporibus voluptate porro eos?</p>
             </div>
             <div class="small-12 columns text-center add-container">

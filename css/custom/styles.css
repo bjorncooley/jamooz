@@ -670,6 +670,8 @@ button.yellow-background {
   height: 100%;
   padding-top: 80px;
   position: relative; }
+  #get-started #apps-add-ons .slide {
+    min-height: 700px; }
 #get-started #next-step-button {
   position: relative; }
 

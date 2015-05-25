@@ -907,7 +907,7 @@ function addItemToCookie() {
 
     if ( num_items == 0 ) {
 
-        togglePlanProfile();
+        //togglePlanProfile();
     }
 
     num_items += 1;
