@@ -43,10 +43,15 @@
                         </a>
                     </div>
                     <div class="large-9 columns clearfix text-right padding-top-15">
-                            <button class="no-border no-background dark-gray radius large-3 columns small-centered uppercase max-150">Support</button>
-                            <button class="radius large-3 columns medium-dark-gray-border no-background medium-dark-gray small-centered uppercase max-150 login-button">Login</button>
+                            <a href="./success.php">
+                                <button class="no-border no-background dark-gray radius large-3 columns small-centered uppercase">Support</button>
+                            </a>
+                            <a href="./pricing.php">
+                                <button class="no-border no-background dark-gray radius large-3 columns small-centered uppercase">Pricing</button>
+                            </a>
+                            <button class="radius large-3 columns medium-dark-gray-border no-background medium-dark-gray small-centered uppercase login-button">Login</button>
                             <a href="./index.php#trial">
-                                <button class="radius large-3 columns small-centered orange no-background orange-border uppercase max-150">Sign Up</button>
+                                <button class="radius large-3 columns small-centered orange no-background orange-border uppercase">Sign Up</button>
                             </a>
                         
                     </div>

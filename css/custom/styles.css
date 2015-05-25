@@ -1043,6 +1043,10 @@ button.yellow-background {
     box-shadow: 0 2px 5px #787878; }
     #nav .large-9 {
       padding-top: 25px; }
+      #nav .large-9 a button {
+        max-width: 150px; }
+      #nav .large-9 a:nth-of-type(1) button {
+        max-width: 85px; }
 
   .learn-section {
     padding: 80px 0 50px; }

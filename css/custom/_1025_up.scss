@@ -30,6 +30,22 @@ p {
 
     .large-9 {
         padding-top: 25px;
+
+        a {
+
+            button {
+
+                max-width: 150px;
+            }
+
+            &:nth-of-type(1) {
+
+                button {
+
+                    max-width: 85px;
+                }
+            }
+        }
     }
 }
 
