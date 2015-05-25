@@ -39,10 +39,11 @@
     </div>
     <div id="story-2">
         <div class="row">
-            <div class="small-12 large-6 large-offset-1 columns">
+            <div class="small-12 large-6 large-offset-1 columns clearfix">
                 <img src="img/hardware/alex_mobile.png" alt="" class="hide-for-large-up">
                 <img src="img/hardware/alex_mobile_2.png" alt="" class="hide-for-large-up">
-                <img src="img/hardware/alex_desktop.png" alt="" class="show-for-large-up">
+                <img src="img/hardware/alex_desktop.png" alt="" class="show-for-large-up left">
+                <img src="img/hardware/incoming_call.png" alt="" class="show-for-large-up left">
             </div>
             <div class="small-12 large-5 columns">
                 <h3>Alex sees on his cell phone that there's a call from David, a hot lead.

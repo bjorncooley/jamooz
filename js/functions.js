@@ -136,12 +136,14 @@ $(window).scroll(function(){
 
                         $('#story-1-phone-icon').animate({ top : 580 }, 2800, function(){
 
-                            $('#story-1-phone-icon').fadeOut({ queue: false, duration: 800 });
-                            $('#story-1-phone-icon').animate({ left : 160 }, 800, function(){
+                            setTimeout( function(){
+                                $('#story-2 .row:nth-child(1) img:nth-of-type(4)').attr(
+                                    'src', 'img/hardware/on_call.png');
+                            }, 600);
+                            
 
-                                $('#story-2 .row:nth-child(1) img:nth-of-type(3)').attr(
-                                    'src', 'img/hardware/alex_on_call.png');
-                            });
+                            $('#story-1-phone-icon').fadeOut({ queue: false, duration: 800 });
+                            $('#story-1-phone-icon').animate({ left : 160 }, 800);
                             
                         });
                     });

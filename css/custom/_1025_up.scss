@@ -420,6 +420,19 @@ button.yellow-background {
 
             position: relative;
 
+            &:nth-child(1) {
+
+                img {
+
+                    &:nth-of-type(4) {
+
+                        position: relative;
+                        top: 75px;
+                        left: 55px;
+                    }
+                }
+            }
+
             &:nth-child(2) {
 
                 img {
