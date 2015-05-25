@@ -982,9 +982,6 @@ button.yellow-background {
   border-left: 5px solid #38a5dd; }
 
 @media only screen and (min-width: 640px) {
-  body {
-    position: static; }
-
   h2 {
     line-height: 1.3em;
     padding-bottom: 40px; }
@@ -1022,6 +1019,9 @@ button.yellow-background {
   #support #support-hero {
     background: url(../../img/support/support_hero_tablet.png) no-repeat center; } }
 @media only screen and (min-width: 1025px) {
+  body {
+    position: static; }
+
   h1 {
     font-size: 2em; }
     h1.no-text-transform.large {

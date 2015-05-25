@@ -263,9 +263,6 @@ $(function(){
                 $('#mobile-nav').removeClass('opened').addClass('closed');
             });
             $('#mobile-logo-container').css('box-shadow', '0 2px 5px #787878');
-            
-
-            
         }
         
     });
@@ -413,43 +410,9 @@ $(function(){
     });
 
     // Slide swapping
-    $('.slide-right-arrow').click(function(){
-
-        var $current = $(this).parent('.slide.current');
-        var $next = $current.next();
-        var width = $(window).width();
-
-        // Check if this is the first card, if so, get the last card
-        if ( $next.length == 0 ) {
-
-            $next = $('.slide:first');
-        }
-
-        // Make sure the next card is in the correct position
-        $next.css('left', width + 'px');
-
-        $current.animate({ left: "-=" + width,}, 500).removeClass('current');
-        $next.animate({ left: "-=" + width,}, 500).addClass('current');
-    });
-
-    $('.slide-left-arrow').click(function(){
-
-        var $current = $(this).parent('.slide.current');
-        var $next = $current.prev();
-        var width = $(window).width();
-
-        // Check if this is the first card, if so, get the last card
-        if ( $next.length == 0 ) {
-
-            $next = $('.slide:last');
-        }
-
-        // Make sure the next card is in the correct position
-        $next.css('left', '-' + width + 'px');
-
-        $current.animate({ left: "+=" + width,}, 500).removeClass('current');
-        $next.animate({ left: "+=" + width,}, 500).addClass('current');
-    });
+    
+    slideRightArrow();
+    slideLeftArrow();
 
 
     // Slide up card details
@@ -625,7 +588,7 @@ $(function(){
             var width = $(window).width();
 
             // Make sure next slide is in correct location
-            $('#apps-add-ons').css('left', width);
+            $('#apps-add-ons').css('left', width).addClass('active');
 
             $('#plans').animate({ left: '-=' + width }, 400);
             $('#apps-add-ons').animate({ left: 0 }, 400);
@@ -649,6 +612,60 @@ $(function(){
     });
 
 });
+
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* ------------------------ CLICK EVENTS ------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+
+function slideLeftArrow() {
+
+    $('.slide-left-arrow').click(function(){
+
+        var $current = $(this).parent('.slide.current');
+        console.log($current);
+        var $next = $current.prev();
+        var width = $(window).width();
+
+        // Check if this is the first card, if so, get the last card
+        if ( $next.length == 0 ) {
+
+            $next = $('.slide:last');
+        }
+
+        // Make sure the next card is in the correct position
+        $next.css('left', '-' + width + 'px');
+
+        $current.animate({ left: "+=" + width,}, 500).removeClass('current');
+        $next.animate({ left: "+=" + width,}, 500).addClass('current').addClass('active');
+    });
+}
+
+function slideRightArrow() {
+
+    $('.slide-right-arrow').click(function(){
+
+        var $current = $(this).parent('.slide.current');
+        var $next = $current.next();
+        var width = $(window).width();
+
+        // Check if this is the first card, if so, get the last card
+        if ( $next.length == 0 ) {
+
+            $next = $('.slide:first');
+        }
+
+        // Make sure the next card is in the correct position
+        $next.css('left', width + 'px');
+
+        $current.animate({ left: "-=" + width,}, 500).removeClass('current').removeClass('active');
+        $next.animate({ left: "-=" + width,}, 500).addClass('current').removeClass('active');
+    });
+}
+
+
+
 
 function movePlanCards() {
 
@@ -696,7 +713,7 @@ function moveSlides() {
         var width = $(window).width();
         var i=0;
 
-        $(this).find('.slide').each(function(){
+        $(this).find('.slide').not('.active').each(function(){
 
             offset = width * i;
             $(this).css('position', 'absolute');
@@ -705,8 +722,6 @@ function moveSlides() {
             i += 1;
         });
     });
-
-    
 }
 
 function setUpGetStarted() {
@@ -715,19 +730,14 @@ function setUpGetStarted() {
 
     var container_height = $('#devices .card-container').height();
 
-    $('#get-started #apps-add-ons').css('left', width);
+    // If apps-add-ons is not already being viewed, move off-screen
+    if ( !($('#get-started #apps-add-ons').hasClass('active'))) {
+
+        console.log("Set apps-add-ons");
+        $('#get-started #apps-add-ons').css('left', width);
+    }
 
     $('#get-started #device-discounts').css('display', 'none');
-
-    // Special functions for the discounts slide
-    // $('#devices .card-container').height(container_height - plan_card_height * 3);
-    // console.log($('#devices .card-container').height());
-    // $('#devices .device-container.current').height($('#devices .card-container').height());
-    // $('#devices .row.current').next().css({
-    //     'position': 'absolute',
-    //     'top' : 0,
-    //     'left' : 0,
-    // });
 }
 
 function updatePlanProfile() {
