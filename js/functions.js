@@ -711,7 +711,7 @@ function showCardDetails() {
         card_details_icon_position[index] = parseInt($icon.css('top'));
 
         $icon.animate({ top: '-=' + container_height}, 400);
-        $textSlide.animate({ top: -380}, 400);
+        $textSlide.animate({ top: '-=' + container_height}, 400);
 
         $(this).addClass('hide');
         $(this).siblings('.close-details-link').removeClass('hide');
