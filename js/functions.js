@@ -500,6 +500,7 @@ $(function(){
             var quantity = $(this).val();
             var previousTotal = $.cookie('total');
 
+            $.cookie('update', true);
             planObject = JSON.parse($.cookie('plan'));
             planObject.quantity = quantity;
             $.cookie('plan', JSON.stringify(planObject));
@@ -594,6 +595,7 @@ $(function(){
 
         } else {
 
+            $.cookie('update', true);
             var total = $.cookie('total');
             var num_items = $.cookie('num_items');
 
@@ -1028,14 +1030,16 @@ function postUserData() {
     if ( $.cookie('hasData') == 'true' && $.cookie('update') == 'true' ) {
 
         // Set cookie to not update again until data is changed
-
+        $.cookie('update', false);
         var firstName = $.cookie('firstName');
         var lastName = $.cookie('lastName');
         var email = $.cookie('email');
         var phone = $.cookie('phone');
         var location = $.cookie('location');
         var organization = $.cookie('organization');
-        var plan = $.cookie('plan');
+
+        var planObject = JSON.parse($.cookie('plan'));
+        var plan = planObject.item_name;
 
         console.log("Values set");
 
