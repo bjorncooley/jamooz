@@ -67,6 +67,7 @@
                             <div class="item-text">
                                 <h4 class="description">Description</h4>
                                 <h4 class="price"></h4>
+                                <input type="text" class="quantity">
                             </div>
                             <img src="img/shared/close_icon_black_no_border.png" alt="" class="remove-item">
                         </div>

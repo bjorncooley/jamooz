@@ -217,7 +217,7 @@ button.yellow-background {
     #plan-profile-content {
 
 
-        min-width: 450px;
+        min-width: 500px;
 
         #plan-profile-title {
 
@@ -265,6 +265,11 @@ button.yellow-background {
                     }
 
                     .price {
+
+                        padding-left: 15px;
+                    }
+
+                    .quantity, .price {
 
                         float: right;
                     }

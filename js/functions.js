@@ -486,6 +486,30 @@ $(function(){
     /* ---------- PLAN PROFILE WIDGET ---------- */
     /* ----------------------------------------- */
 
+    $('.plan-item .quantity').change(function(){
+
+        if ( $(this).parents('.plan-item').data('productType') == 'plan' ) {
+
+            var quantity = $(this).val();
+            var previousTotal = $.cookie('total');
+
+            planObject = JSON.parse($.cookie('plan'));
+            planObject.quantity = quantity;
+            $.cookie('plan', JSON.stringify(planObject));
+
+            if ( $.isNumeric(planObject.cost) ) {
+
+                $.cookie('total', quantity * planObject.cost);
+            }
+            
+        }
+
+        updatePlanProfile();
+
+       
+
+    });
+
     $('.remove-item').click(function(){
 
         var product_type = $(this).parent().data('productType');
@@ -506,7 +530,7 @@ $(function(){
     $('.plan-profile-toggle, #continue').click(function(){
 
         togglePlanProfile();
-    });    
+    });
 
     $('.plan-profile-close-button').click(function(){
 
@@ -567,26 +591,34 @@ $(function(){
                 num_items = parseInt(num_items);
             }
 
+            var planObject = new Object();
+
             switch(plan) {
 
                 case 'startup-plan':
 
-                    $.cookie('plan', 'Startup Base Plan');
-                    $.cookie('plan-cost', '$17/month');
+                    planObject.item_name = 'Startup Base Plan';
+                    planObject.cost = 17
+                    planObject.quantity = 1;
+
                     total = 17;
                     break;
 
                 case 'small-business-plan':
 
-                    $.cookie('plan', 'Small Business Base Plan');
-                    $.cookie('plan-cost', '$25/month');
+                    planObject.item_name = 'Small Business Plan';
+                    planObject.cost = 25;
+                    planObject.quantity = 1;
+
                     total = 25;
                     break;
 
                 case 'enterprise-plan':
 
-                    $.cookie('plan', 'Enterprise Base Plan');
-                    $.cookie('plan-cost', 'TBD');
+                    planObject.item_name = 'Enterprise Base Plan';
+                    planObject.cost = 'TBD';
+                    planObject.quantity = 1;
+
                     total = 'TBD';
                     break;
 
@@ -594,6 +626,8 @@ $(function(){
 
                     $.cookie('plan', '');
             }
+
+            $.cookie('plan', JSON.stringify(planObject));
 
             num_items = 1;
 
@@ -771,9 +805,14 @@ function updatePlanProfile() {
         $('#plan-profile #total').text(0);
     } else {
 
+        planObject = JSON.parse($.cookie('plan'));
+
         $('#plan-profile .plan-item:first').css('display', 'block');
-        $('#plan-profile .plan-item:first .description').text($.cookie('plan'));
-        $('#plan-profile .plan-item:first .price').text($.cookie('plan-cost'));
+        $('#plan-profile .plan-item:first .description').text(planObject.item_name);
+        $('#plan-profile .plan-item:first .price').text(
+            '$' + planObject.cost + '/ext./mo.');
+        $('#plan-profile .plan-item:first .price').data('price', planObject.cost);
+        $('#plan-profile .plan-item:first .quantity').val(planObject.quantity);
         $('#plan-profile #total').text($.cookie('total'));
     }   
 
@@ -864,10 +903,7 @@ function positionDesktopNav() {
 
             $('#nav').slideUp(200);
         }
-    }
-
-
-          
+    }          
 }
 
 function getVideoPositions() {

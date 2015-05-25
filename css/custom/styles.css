@@ -553,7 +553,6 @@ button.yellow-background {
       left: 20px;
       top: 10px; }
   #plan-profile #plan-profile-content {
-    display: none;
     background-color: #f2f2f2;
     padding: 80px 10px 20px;
     min-width: 320px;
@@ -576,6 +575,10 @@ button.yellow-background {
           float: left; }
           #plan-profile #plan-profile-content #plan-items .plan-item .item-text .description {
             margin-bottom: 30px; }
+          #plan-profile #plan-profile-content #plan-items .plan-item .item-text .quantity {
+            width: 30px;
+            padding: 3px;
+            text-align: center; }
         #plan-profile #plan-profile-content #plan-items .plan-item .remove-item {
           float: right;
           padding-top: 5px;
@@ -1134,7 +1137,7 @@ button.yellow-background {
     #plan-profile h4, #plan-profile #cost h4 {
       font-size: 1em; }
     #plan-profile #plan-profile-content {
-      min-width: 450px; }
+      min-width: 500px; }
       #plan-profile #plan-profile-content #plan-profile-title {
         text-align: left; }
         #plan-profile #plan-profile-content #plan-profile-title h5 {
@@ -1157,6 +1160,8 @@ button.yellow-background {
             float: left;
             margin-bottom: 0; }
           #plan-profile #plan-profile-content #plan-items .plan-item .item-text .price {
+            padding-left: 15px; }
+          #plan-profile #plan-profile-content #plan-items .plan-item .item-text .quantity, #plan-profile #plan-profile-content #plan-items .plan-item .item-text .price {
             float: right; }
         #plan-profile #plan-profile-content #plan-items .plan-item .remove-item {
           position: absolute;
