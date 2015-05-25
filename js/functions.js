@@ -734,9 +734,7 @@ function checkMobile() {
 function universalSetup() {
     
     getVideoPositions();
-    moveSlides();
     movePlanCards(); 
-    setCardContainer();
     setUpGetStarted();
     updatePlanProfile();
 
@@ -744,6 +742,8 @@ function universalSetup() {
 
         arrangeDiscountCards();
     }
+
+    moveSlides();
 }
 
 function mobileSetupFunctions() {
@@ -1010,17 +1010,12 @@ function arrangeDiscountCards() {
 
         var plan_card_height = $('#devices .card').innerHeight();
         var container_padding = parseInt($('#devices .card-container').css('padding-top'));
-        $('#devices .card-container').height(plan_card_height + container_padding);
-        $('#devices .device-container.current').height($('#devices .card-container').height());
         $('#devices .row.current').next().css({
             'position': 'absolute',
             'top' : 0,
             'left' : 0,
         });
-
-        $('#devices .right-arrow').css('top', '165px');
-        $('#devices .left-arrow').css('top', '165px');
-
+        
     } else {
 
         $('#devices .card-container').height('auto');
@@ -1037,10 +1032,18 @@ function arrangeDiscountCards() {
 
 function setCardContainer() {
 
-    var plan_card_height = $('.card').height();
+    
     var container_padding = parseInt($('#devices .card-container').css('padding-top'));
-    $('#devices .card-container').height(plan_card_height + container_padding);
-    $('.card-container').height(plan_card_height);
+    
+
+    $('.card-container').each(function(){
+
+        var plan_card_height = $(this).find('.card').height();
+        console.log("Card height: " + plan_card_height);
+        $(this).height(plan_card_height);
+        console.log($(this).height());
+    }); 
+    //$('#devices .card-container').height(plan_card_height + container_padding);
 }
 
 
