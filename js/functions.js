@@ -598,7 +598,10 @@ $(function(){
     $('#device-slide-button').click(function(){
 
         
-        $('#device-discounts').fadeIn(400);
+        $('#device-discounts').fadeIn(400, function(){
+            $('html, body').animate({ scrollTop : 
+                $('#device-discounts').offset().top })
+        });
 
         if ( mobile ) {
             var extras_top = $('#extras').offset().top;
