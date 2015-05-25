@@ -631,7 +631,7 @@ function slideLeftArrow() {
         // Check if this is the first card, if so, get the last card
         if ( $next.length == 0 ) {
 
-            $next = $('.slide:last');
+            $next = $(this).parents('.slide-container').find('.slide:last');
         }
 
         // Make sure the next card is in the correct position
@@ -653,7 +653,7 @@ function slideRightArrow() {
         // Check if this is the first card, if so, get the last card
         if ( $next.length == 0 ) {
 
-            $next = $('.slide:first');
+            $next = $(this).parents('.slide-container').find('.slide:first');
         }
 
         // Make sure the next card is in the correct position
