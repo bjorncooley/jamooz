@@ -303,14 +303,22 @@ button.yellow-background {
 
             .shadowed {
 
+                .card-text-container {
+
+                    overflow: hidden;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                }
+
                 .card-text {
+
+                    padding-top: 40px;
 
                     h5 {
 
                         padding-bottom: 0;
                     }
-
-                    height: 100px;
                 }
             }
         }
@@ -661,10 +669,7 @@ button.yellow-background {
     }
 
     #next-step-button {
-
-        bottom: -30px;
         position: relative;
-        display: none;
     }
 
     #step-3 {

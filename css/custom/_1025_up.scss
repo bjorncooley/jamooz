@@ -33,6 +33,22 @@ p {
     }
 }
 
+#devices {
+
+    .device {
+
+        .shadowed {
+
+            height: 200px;
+        }
+
+        img.relative {
+
+            top: 150px;
+        }
+    }
+}
+
 #nav {
 
     position: fixed;

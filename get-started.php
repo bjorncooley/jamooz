@@ -55,6 +55,9 @@
         <div id="apps-add-ons">
             <h3 class="text-center padding-bottom-30">B) Choose Extras</h3>
             <?php include('includes/apps-add-ons.php'); ?>
+            <div class="text-center">
+                <button class="yellow-background" id="next-step-button">Continue to Next Step</button>
+            </div>
         </div>
         </div>
         <div id="device-discounts">
@@ -64,9 +67,7 @@
             <img src="img/shared/white_close_icon.png" alt="" class="close-button">
             <?php include('includes/devices.php'); ?>
         </div>
-        <div class="text-center">
-            <button class="yellow-background" id="next-step-button">Continue to Next Step</button>
-        </div>
+        
         
     </div><!-- #step-2 -->
     <div class="medium-blue-background padding-top-80 padding-bottom-80" id="step-3">

@@ -481,8 +481,13 @@ button.yellow-background {
             background: url(../../img/shared/white_check_mark.png) no-repeat left 6px;
             padding: 5px 0 5px 27px;
             font-size: 0.8em; }
+  .card-section .card.device .shadowed .card-text-container {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
   .card-section .card.device .shadowed .card-text {
-    height: 100px; }
+    padding-top: 40px; }
     .card-section .card.device .shadowed .card-text h5 {
       padding-bottom: 0; }
 .card-section .card.plan .shadowed .card-text {
@@ -665,9 +670,7 @@ button.yellow-background {
   height: 100%;
   padding-top: 80px; }
 #get-started #next-step-button {
-  bottom: -30px;
-  position: relative;
-  display: none; }
+  position: relative; }
 
 #step-1 h4, #step-1 form {
   max-width: 500px;
@@ -1057,6 +1060,11 @@ button.yellow-background {
 
   #plans .card-left-arrow, #plans .card-right-arrow {
     display: none; }
+
+  #devices .device .shadowed {
+    height: 200px; }
+  #devices .device img.relative {
+    top: 150px; }
 
   #nav {
     position: fixed;
