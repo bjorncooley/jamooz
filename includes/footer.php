@@ -8,7 +8,7 @@
                     <div class="row">
                         <div class="small-12 large-4 columns small-centered large-uncentered">
                             <div class="row">
-                                <div class="small-6 columns">
+                                <div class="small-6 columns small-centered">
                                     <ul class="text-center">
                                         <li class="strong">Jamooz</li>
                                         <li><a href="./index.php">Home</a></li>
@@ -17,14 +17,6 @@
                                         <li><a href="./software-integrations.php">Software</a></li>
                                         <li><a href="./schmooze.php">Schmooze</a></li>
                                         <li><a href="./get-started.php">Get Started</a></li>
-                                    </ul>
-                                </div>
-                                <div class="small-6 columns">
-                                    <ul class="text-center">
-                                        <li class="strong">About Us</li>
-                                        <li>Company</li>
-                                        <li>Our Team</li>
-                                        <li>Jobs</li>
                                     </ul>
                                 </div>
                             </div>

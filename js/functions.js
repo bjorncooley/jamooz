@@ -457,6 +457,12 @@ $(function(){
 
         e.stopPropagation();
 
+        // Move card caption above to mask shadow
+        $(this).parent().css({
+            position: 'relative',
+            'z-index' : 2,
+        });
+
         var index = $(this).parent().parent().index();
 
         $shadowed = $(this).parent().siblings('.shadowed');
@@ -482,7 +488,12 @@ $(function(){
         var icon_position = card_details_icon_position[index];
 
         $icon = $(this).parent().siblings().find('img.relative');
-        $icon.animate({ top: icon_position}, 400);
+        $icon.animate({ top: icon_position}, 400, function(){
+            // Move card caption below shadow
+            $(this).parent().parent().siblings('.caption').css({
+                position: 'static',
+            });
+        });
 
         $detailsSlide = $(this).parent().siblings().find('.card-details');
         $detailsSlide.animate({ top: '100%'}, 400);
