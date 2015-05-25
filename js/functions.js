@@ -276,8 +276,6 @@ $(function(){
     
     $('.card').click(function(){
 
-        console.log("clicked card");
-
         if ( $(this).hasClass('selected') ) {
 
             $(this).removeClass('selected');
@@ -500,7 +498,6 @@ $(function(){
         $.cookie('location', $('#location').val());
         $.cookie('organization', $('#organization').val());
 
-        console.log("cookie data recorded");
     });
 
 
@@ -600,8 +597,14 @@ $(function(){
     // Fade in devices overlay
     $('#device-slide-button').click(function(){
 
-        $('#device-discounts').offset().top = $(window).scrollTop();
+        
         $('#device-discounts').fadeIn(400);
+
+        if ( mobile ) {
+            var extras_top = $('#extras').offset().top;
+            $('#device-discounts').offset({ top: extras_top });
+        }
+        
     });
 
 });
@@ -810,8 +813,9 @@ function moveSlides() {
 
     $('.slide-container').each(function(){
 
-        var slide_height = $('.slide').height();
-        $('.slide-container').height(slide_height);
+        var slide_height = $(this).find('.slide').height();
+        $(this).height(slide_height);
+
         var width = $(window).width();
         var i=0;
 
@@ -824,6 +828,12 @@ function moveSlides() {
             i += 1;
         });
     });
+
+    if ( mobile ) {
+        $('#devices .slide-container').height($('#devices .card-container').height() + 100);
+    }
+
+    
 }
 
 function setUpGetStarted() {
@@ -1008,14 +1018,15 @@ function arrangeDiscountCards() {
 
     if ( mobile ) {
 
-        var plan_card_height = $('#devices .card').innerHeight();
-        var container_padding = parseInt($('#devices .card-container').css('padding-top'));
+        var plan_card_height = $('#devices .card').height();
+        $('#devices .slide-container').height(plan_card_height);
+
         $('#devices .row.current').next().css({
             'position': 'absolute',
             'top' : 0,
             'left' : 0,
         });
-        
+
     } else {
 
         $('#devices .card-container').height('auto');
@@ -1039,9 +1050,7 @@ function setCardContainer() {
     $('.card-container').each(function(){
 
         var plan_card_height = $(this).find('.card').height();
-        console.log("Card height: " + plan_card_height);
         $(this).height(plan_card_height);
-        console.log($(this).height());
     }); 
     //$('#devices .card-container').height(plan_card_height + container_padding);
 }
@@ -1089,10 +1098,10 @@ function postUserData() {
                 statusCode: {
                     0: function (){
         
-                        console.log("success");
+                        // success
                     },
                     200: function (){
-                        console.log("success");
+                        // success
                     }
                 }
             });
