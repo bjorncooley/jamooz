@@ -633,6 +633,7 @@ $(function(){
     // Fade in devices overlay
     $('#device-slide-button').click(function(){
 
+        $('#device-discounts').offset().top = $(window).scrollTop();
         $('#device-discounts').fadeIn(400);
     });
 
