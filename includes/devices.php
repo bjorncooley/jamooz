@@ -50,9 +50,10 @@
                     </div>
                     <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
                         <div class="shadowed">
-                            <div class="card-text">
-                                <h5 class="text-center uppercase">Cisco IP 7960C</h5>
-                                
+                            <div class="card-text-container">
+                                <div class="card-text">
+                                    <h5 class="text-center uppercase">Cisco IP 7960A</h5>
+                                </div>
                             </div>
                             <div class="text-center">
                                 <img src="img/shared/yellow_plus_icon.png" alt="" class="relative">
@@ -71,9 +72,10 @@
                     </div><!-- .card -->
                     <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
                         <div class="shadowed">
-                            <div class="card-text">
-                                <h5 class="text-center uppercase">Cisco IP 7960D</h5>
-                                
+                            <div class="card-text-container">
+                                <div class="card-text">
+                                    <h5 class="text-center uppercase">Cisco IP 7960A</h5>
+                                </div>
                             </div>
                             <div class="text-center">
                                 <img src="img/shared/yellow_plus_icon.png" alt="" class="relative">
@@ -96,9 +98,10 @@
                 <div class="relative">
                     <div class="small-12 medium-3 columns small-centered medium-uncentered device card">
                         <div class="shadowed">
-                            <div class="card-text">
-                                <h5 class="text-center uppercase">Cisco IP 7960E</h5>
-                                
+                            <div class="card-text-container">
+                                <div class="card-text">
+                                    <h5 class="text-center uppercase">Cisco IP 7960A</h5>
+                                </div>
                             </div>
                             <div class="text-center">
                                 <img src="img/shared/yellow_plus_icon.png" alt="" class="relative">
@@ -117,9 +120,10 @@
                     </div>
                     <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
                         <div class="shadowed">
-                            <div class="card-text">
-                                <h5 class="text-center uppercase">Cisco IP 7960F</h5>
-                                
+                            <div class="card-text-container">
+                                <div class="card-text">
+                                    <h5 class="text-center uppercase">Cisco IP 7960A</h5>
+                                </div>
                             </div>
                             <div class="text-center">
                                 <img src="img/shared/yellow_plus_icon.png" alt="" class="relative">
@@ -138,9 +142,10 @@
                     </div>
                     <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
                         <div class="shadowed">
-                            <div class="card-text">
-                                <h5 class="text-center uppercase">Cisco IP 7960G</h5>
-                                
+                            <div class="card-text-container">
+                                <div class="card-text">
+                                    <h5 class="text-center uppercase">Cisco IP 7960A</h5>
+                                </div>
                             </div>
                             <div class="text-center">
                                 <img src="img/shared/yellow_plus_icon.png" alt="" class="relative">
@@ -159,9 +164,10 @@
                     </div><!-- .card -->
                     <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
                         <div class="shadowed">
-                            <div class="card-text">
-                                <h5 class="text-center uppercase">Cisco IP 7960H</h5>
-                                
+                            <div class="card-text-container">
+                                <div class="card-text">
+                                    <h5 class="text-center uppercase">Cisco IP 7960A</h5>
+                                </div>
                             </div>
                             <div class="text-center">
                                 <img src="img/shared/yellow_plus_icon.png" alt="" class="relative">
