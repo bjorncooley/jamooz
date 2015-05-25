@@ -663,9 +663,7 @@ button.yellow-background {
 #get-started #apps-add-ons {
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0; }
+  padding-top: 80px; }
 #get-started #next-step-button {
   bottom: -30px;
   position: relative;
@@ -1188,7 +1186,7 @@ button.yellow-background {
   /* ------------------- */
   /* --- GET STARTED --- */
   /* ------------------- */
-  #get-started #step-3 {
+  #get-started #apps-add-ons, #get-started #step-3 {
     display: none; }
 
   /* ---------------------------------------- */

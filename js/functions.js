@@ -615,14 +615,11 @@ $(function(){
 
             var width = $(window).width();
 
-            // Make sure next slide is in correct location
-            $('#apps-add-ons').css('left', width).addClass('active');
+            $('#apps-add-ons').slideDown(800);
+            $('html, body').animate({
+                scrollTop : $('#apps-add-ons').offset().top - 50,
+            }, 800);
 
-            $('#plans').animate({ left: '-=' + width }, 400);
-            $('#apps-add-ons').animate({ left: 0 }, 400);
-
-            // Display next button
-            $('#next-step-button').fadeIn(400);
         }       
     }); 
 
@@ -818,10 +815,10 @@ function setUpGetStarted() {
     var container_height = $('#devices .card-container').height();
 
     // If apps-add-ons is not already being viewed, move off-screen
-    if ( !($('#get-started #apps-add-ons').hasClass('active'))) {
+    // if ( !($('#get-started #apps-add-ons').hasClass('active'))) {
 
-        $('#get-started #apps-add-ons').css('left', width);
-    }
+    //     $('#get-started #apps-add-ons').css('left', width);
+    // }
 
     $('#get-started #device-discounts').css('display', 'none');
 }

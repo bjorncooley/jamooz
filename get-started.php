@@ -52,10 +52,10 @@
                     </div>
                 </div>
             </div>
-            <div class="absolute" id="apps-add-ons">
-                <h3 class="text-center padding-bottom-30">B) Choose Extras</h3>
-                <?php include('includes/apps-add-ons.php'); ?>
-            </div>
+        <div id="apps-add-ons">
+            <h3 class="text-center padding-bottom-30">B) Choose Extras</h3>
+            <?php include('includes/apps-add-ons.php'); ?>
+        </div>
         </div>
         <div id="device-discounts">
             <h3 class="white text-center padding-top-80 padding-top-30">
