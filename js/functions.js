@@ -17,69 +17,36 @@ $(window).unload(function(){
 
 $(window).load(function(){
 
-    if ( $('body').css('position') == 'relative' ) {
+    checkMobile();
 
-        mobile = true; 
-        setMobileNav();
-        setCardContainer();
-
-        if ( $('#devices').length != 0 ) {
-
-            arrangeDiscountCards();
-        }
+    if ( mobile ) {
+        
+        mobileSetupFunctions();
     }
-
-    // On desktop, set main home sections to window height
 
     if ( !mobile ) {
 
-        var window_height = $(window).height();
-        $('.full-height').each(function(){
-
-            var original_height = $(this).height();
-            var difference = window_height - original_height;
-            var vertical_adjust = difference / 2;
-
-            if ( difference > 0 ) {
-
-                $(this).height(window_height);
-                $(this).css('padding-top', vertical_adjust + 'px');
-            }
-
-        });
+        desktopSetupFunctions();
     }
 
-    moveSlides();
-    movePlanCards(); 
-    setUpGetStarted();
-    updatePlanProfile();
-    getVideoPositions();
+    universalSetup();
 });
 
 $(window).resize(function(){
 
-    if ( $('body').css('position') == 'relative' ) {
+    checkMobile();
 
-        mobile = true;
-        setMobileNav();
-         
-        
-    } else {
+    if ( mobile ) {
 
-        mobile = false;
+        mobileSetupFunctions();
     }
 
-    if ( $('#discounts').length != 0 ) {
+    if ( !mobile ) {
 
-        arrangeDiscountCards();
+        desktopSetupFunctions();
     }
 
-    movePlanCards(); 
-    setCardContainer();
-    moveSlides();
-    setUpGetStarted();
-    updatePlanProfile();
-    getVideoPositions();
+    universalSetup();
 });
 
 $(window).scroll(function(){
@@ -751,6 +718,56 @@ function hideCardDetails() {
 /* ---------------------- LAYOUT FUNCTIONS ----------------------- */
 /* --------------------------------------------------------------- */
 /* --------------------------------------------------------------- */
+
+function checkMobile() {
+
+    if ( $('body').css('position') == 'relative' ) {
+
+        mobile = true;
+
+    } else {
+
+        mobile = false;
+    }
+}
+
+function universalSetup() {
+    
+    getVideoPositions();
+    moveSlides();
+    movePlanCards(); 
+    setCardContainer();
+    setUpGetStarted();
+    updatePlanProfile();
+}
+
+function mobileSetupFunctions() {
+
+    setMobileNav();
+    setCardContainer();
+
+    if ( $('#devices').length != 0 ) {
+
+        arrangeDiscountCards();
+    }
+}
+
+function desktopSetupFunctions() {
+
+    var window_height = $(window).height();
+    $('.full-height').each(function(){
+
+        var original_height = $(this).height();
+        var difference = window_height - original_height;
+        var vertical_adjust = difference / 2;
+
+        if ( difference > 0 ) {
+
+            $(this).height(window_height);
+            $(this).css('padding-top', vertical_adjust + 'px');
+        }
+    });
+}
 
 function movePlanCards() {
 
