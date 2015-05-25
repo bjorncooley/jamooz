@@ -211,10 +211,10 @@ button.yellow-background {
             
             // To get connected faded shadows all the way around, need redundant shadows
             box-shadow:
-                  2px 2px 5px $medium-gray,
-                  2px -2px 5px $medium-gray,
-                  -2px -2px 5px $medium-gray,
-                  -2px 2px 5px $medium-gray;
+                  2px 2px 2px $shadow-gray,
+                  2px -2px 2px $shadow-gray,
+                  -2px -2px 2px $shadow-gray,
+                  -2px 2px 2px $shadow-gray;
 
             position: relative;
             padding: 30px 0 0 0;

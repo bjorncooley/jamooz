@@ -169,15 +169,15 @@
             <div class="large-8 large-offset-2 large-centered">
                 <div class="row">
                     <div class="small-12 large-4 columns text-center">
-                        <img src="img/shared/plan_icon.png" alt="">
+                        <img src="img/home/base_plan.png" alt="">
                         <p class="uppercase small normal padding-top-15">Select Base Plan</p>
                     </div>
                     <div class="small-12 large-4 columns text-center">
-                        <img src="img/shared/app_icon.png" alt="">
+                        <img src="img/home/apps_add_ons.png" alt="">
                         <p class="uppercase small normal padding-top-15">Add Apps &amp; Add-Ons</p>
                     </div>
                     <div class="small-12 large-4 columns text-center">
-                        <img src="img/shared/support_icon.png" alt="">
+                        <img src="img/home/personal_support.png" alt="">
                         <p class="uppercase small normal padding-top-15">24/7 Personal Support</p>
                     </div>
                 </div>
