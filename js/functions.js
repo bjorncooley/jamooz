@@ -739,17 +739,17 @@ function universalSetup() {
     setCardContainer();
     setUpGetStarted();
     updatePlanProfile();
+
+    if ( $('#devices').length != 0 ) {
+
+        arrangeDiscountCards();
+    }
 }
 
 function mobileSetupFunctions() {
 
     setMobileNav();
     setCardContainer();
-
-    if ( $('#devices').length != 0 ) {
-
-        arrangeDiscountCards();
-    }
 }
 
 function desktopSetupFunctions() {
