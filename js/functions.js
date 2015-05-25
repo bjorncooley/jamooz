@@ -310,17 +310,19 @@ $(function(){
     
     $('.card').click(function(){
 
+        console.log("clicked card");
+
         if ( $(this).hasClass('selected') ) {
 
             $(this).removeClass('selected');
-            $(this).find('img').attr('src', 'img/shared/yellow_plus_icon.png');
+            $(this).find('img[src="img/shared/blue_check_icon.png"]').attr('src', 'img/shared/yellow_plus_icon.png');
 
         } else {
 
             $(this).addClass('selected');
             $(this).siblings('.plan').removeClass('selected');
 
-            $(this).find('img').attr('src', 'img/shared/blue_check_icon.png');
+            $(this).find('img[src="img/shared/yellow_plus_icon.png"]').attr('src', 'img/shared/blue_check_icon.png');
             $(this).siblings('.plan').find('img').attr('src', 'img/shared/yellow_plus_icon.png');
         }
 
