@@ -16,10 +16,34 @@
         $email = $_POST['email'];
         setcookie("email", $email);
     }
+
+    header('Location: ./get-started.php');
+} else {
+
+    if ( !isset($_COOKIE['hasData'])) {
+
+        setcookie('hasData', false);
+    }
+
+    if ( !isset($_COOKIE['update'])) {
+
+        setcookie('update', false);
+    }
+
+    if ( !isset($_COOKIE['firstName'])) {
+
+        setcookie("firstName", '');
+    }
+    if ( !isset($_COOKIE['lastName'])) {
+
+        setcookie("lastName", '');
+    }
+    if ( !isset($_COOKIE['email'])) {
+
+        setcookie("email", '');
+    }
 }
-
 ?>
-
 <?php include('includes/header.php'); ?>
 <div id="home">
     <div class="row show-for-large-up" id="page-brand">

@@ -10,6 +10,11 @@ var video_positions = [];
 var videos = [];
 var num_videos;
 
+$(window).unload(function(){
+
+    postUserData();
+}); 
+
 $(window).load(function(){
 
     if ( $('body').css('position') == 'relative' ) {
@@ -560,6 +565,18 @@ $(function(){
         e.preventDefault();
         var target = $('#step-2').offset()['top'] - 60;
         $('html, body').animate({ 'scrollTop' : target}, 800);
+
+        // Record user data in cookie, 
+        $.cookie('hasData', true);
+        $.cookie('update', true);
+        $.cookie('firstName', $('#first-name').val());
+        $.cookie('lastName', $('#last-name').val());
+        $.cookie('email', $('#email').val());
+        $.cookie('phone', $('#phone').val());
+        $.cookie('location', $('#location').val());
+        $.cookie('organization', $('#organization').val());
+
+        console.log("cookie data recorded");
     });
 
 
@@ -803,7 +820,7 @@ function updatePlanProfile() {
 
     if ( $.cookie('plan') == undefined ) {
 
-        $('.plan-item[data-product-type="plan"').css('display', 'none');
+        $('.plan-item[data-product-type="plan"]').css('display', 'none');
         $('#plan-profile #total').text(0);
     } else {
 
@@ -989,4 +1006,62 @@ function setCardContainer() {
     var container_padding = parseInt($('#devices .card-container').css('padding-top'));
     $('#devices .card-container').height(plan_card_height + container_padding);
     $('.card-container').height(plan_card_height);
+}
+
+
+
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* ------------------ THIRD PARTY INTEGRATIONS ------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+
+
+
+
+function postUserData() {
+
+    console.log("Hit post");
+    console.log("hasData" + $.cookie('hasData'));
+    console.log("update" + $.cookie('update'));
+
+    if ( $.cookie('hasData') == 'true' && $.cookie('update') == 'true' ) {
+
+        // Set cookie to not update again until data is changed
+
+        var firstName = $.cookie('firstName');
+        var lastName = $.cookie('lastName');
+        var email = $.cookie('email');
+        var phone = $.cookie('phone');
+        var location = $.cookie('location');
+        var organization = $.cookie('organization');
+        var plan = $.cookie('plan');
+
+        console.log("Values set");
+
+
+        $.ajax({
+                url: "https://docs.google.com/forms/d/1cWrFUE6pOP6LmI5EeUtljFF_wsc7REQBv2BlCyGAESY/formResponse",
+                data: {
+                    "entry.2104773484" : firstName, 
+                    "entry.726039950" : lastName, 
+                    "entry.1879287637" : email,
+                    "entry.1090203698" : phone,
+                    "entry.1788896219" : location,
+                    "entry.1554689900" : organization,
+                    "entry.2051865047" : plan},
+                type: "POST",
+                dataType: "xml",
+                async: false,
+                statusCode: {
+                    0: function (){
+        
+                        console.log("success");
+                    },
+                    200: function (){
+                        console.log("success");
+                    }
+                }
+            });
+    }
 }
