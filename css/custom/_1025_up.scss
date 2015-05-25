@@ -18,6 +18,14 @@ p {
     line-height: 2em;
 }
 
+#plans {
+
+    .card-left-arrow, .card-right-arrow {
+
+        display: none;
+    }
+}
+
 #nav {
 
     position: fixed;
