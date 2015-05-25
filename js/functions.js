@@ -317,10 +317,19 @@ $(function(){
 
     $('.add-container').click(function(){
 
-        $(this).addClass('selected');
-        $(this).find('img').attr('src', 'img/shared/blue_check_icon.png');
+        if ( !$(this).hasClass('selected') ) {
 
-        addItemToCookie();
+            $(this).addClass('selected');
+            $(this).find('img').attr('src', 'img/shared/blue_check_icon.png');
+
+            addItemToCookie();
+        } else {
+
+            $(this).find('img').attr('src', 'img/shared/yellow_plus_icon.png');
+            $(this).removeClass('selected');
+        }
+
+        
     });
 
     // Card swapping
