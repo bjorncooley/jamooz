@@ -820,7 +820,15 @@ function setUpGetStarted() {
 
 function updatePlanProfile() {
 
-    $('#num-items').text($.cookie('num_items'));
+    if ( $.cookie('num_items') != 'NaN' ) {
+
+        $('#num-items').text($.cookie('num_items'));
+    } else {
+
+        $('#num-items').text('0');
+    }
+
+    
 
     if ( $.cookie('plan') == undefined ) {
 
