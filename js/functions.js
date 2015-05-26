@@ -95,6 +95,28 @@ $(window).scroll(function(){
                     });
                 }
             }
+
+            if ( window_bottom > $('#phone-icon-2').offset().top + 100 ) {
+
+                if ( !($('#phone-icon-2').hasClass('animated')) ) {
+
+                    $('#phone-icon-2').addClass('animated');
+
+                    $('#phone-icon-2').animate({ left : -235 }, 800, function(){
+
+                        $('#phone-icon-2').animate({ top : 480 }, 2400);
+
+
+                        setTimeout(function(){
+
+                            $('#phone-icon-2').fadeOut({ queue: false, duration: 600 }, function(){
+
+                                $('#phone-icon-2').css('display', 'none !important');
+                            });
+                        }, 1200);
+                    });
+                }
+            }
         }
 
         
@@ -980,6 +1002,7 @@ function homeMobileNav() {
         $('#page-content').css('padding-top', '220px');
         $('#mobile-nav-toggle').css('top', 150);
         $('#plan-profile').css('top', 145);
+
     } else {
 
         $('#mobile-logo-container').find('img').attr('src',

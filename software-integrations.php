@@ -36,15 +36,16 @@
         </div>
     </div>
     <div id="story-2">
-        <div class="row">
+        <div class="row relative">
             <div class="small-12 large-6 columns clearfix">
                 <h3 class="right">Amy answers the call, and her CRM Pointer opens Salesforce to log
                 the customer data. Greg, a new lead, wants to buy.</h3>
             </div>
             <div class="small-12 large-6 columns">
                 <img src="img/software/crm_mobile.png" alt="" class="hide-for-large-up">
-                <img src="img/software/crm_desktop.png" alt="" class="show-for-large-up">            
+                <img src="img/software/crm_desktop.png" alt="" class="show-for-large-up">
             </div>
+            <img src="img/software/fax_graphic.png" alt="" class="show-for-large-up" id="fax-graphic">
         </div>
     </div>
     <div id="story-3">
@@ -55,14 +56,13 @@
                 <h3>Amy uses efax to send the customer billing information. The customer
                 then sends back a signed bill through fax and Amy sees it in her email.
                 (Saving paper!)</h3>
-                <img src="img/software/phone_icon_2.png" alt="" class="show-for-large-up absolute" id="phone-icon-2">
+                <img src="img/software/phone_icon_2.png" alt="" class="absolute" id="phone-icon-2">
             </div>
             <div class="small-12 large-6 columns left">
                 <img src="img/software/efax_mobile.png" alt="" class="hide-for-large-up">
-                <img src="img/software/efax_desktop.png" alt="" class="show-for-large-up">
             </div>
             <div class="large-12 columns show-for-large-up">
-                <img src="img/software/efax_desktop_2.png" alt="">
+                <img src="img/software/monitor_graphic.png" alt="" class="monitor-graphic">
             </div>
         </div>
     </div>

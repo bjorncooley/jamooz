@@ -597,9 +597,25 @@ button.yellow-background {
             padding-top: 275px;
             width: 400px;
         }
+
+        #fax-graphic {
+
+            position: absolute;
+            top: 653px;
+        }
+
+        img {
+
+            #phone-icon-2 {
+
+                display: block;
+            }
+        }
     }
 
     #story-3 {
+
+        height: 1500px;
 
         h3 {
 
@@ -617,12 +633,19 @@ button.yellow-background {
 
                 padding-top: 250px;
             }
+
+            &.monitor-graphic {
+
+                position: absolute;
+                top: 540px;
+                left: 643px;
+            }
         }
 
         #phone-icon-2 {
 
-            top: 135px;
-            left: -249px;
+            top: -175px;
+            left: -165px;
         }
     }
 }
