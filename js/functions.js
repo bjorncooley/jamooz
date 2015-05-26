@@ -51,6 +51,14 @@ $(window).resize(function(){
 
 $(window).scroll(function(){
 
+    if ( mobile ) {
+
+        if ( $('#home').length != 0 ) {
+
+            homeMobileNav();
+        }
+    }
+
     if ( !mobile ) {
 
         if ( $('#home').length != 0 ) {
@@ -756,6 +764,11 @@ function mobileSetupFunctions() {
 
     setMobileNav();
     setCardContainer();
+
+    if ( $('#home').length != 0 ) {
+
+        homeMobileNav();
+    }
 }
 
 function desktopSetupFunctions() {
@@ -953,6 +966,29 @@ function setMobileNav() {
 
     $('#mobile-nav.closed').css('left', width);
     $('#mobile-nav.open').css('left', 0);
+}
+
+function homeMobileNav() {
+
+    var window_top = $(window).scrollTop();
+
+    if ( window_top == 0 ) {
+
+        $('#mobile-logo-container').find('img').attr('src',
+            'img/shared/jamooz_logo_large.png');
+        $('#mobile-logo-container').css('padding-bottom', '90px');
+        $('#page-content').css('padding-top', '220px');
+        $('#mobile-nav-toggle').css('top', 150);
+        $('#plan-profile').css('top', 145);
+    } else {
+
+        $('#mobile-logo-container').find('img').attr('src',
+            'img/shared/jamooz_logo_mobile.jpg');
+        $('#mobile-logo-container').css('padding-bottom', '0px');
+        $('#page-content').css('padding-top', '80px');
+        $('#mobile-nav-toggle').css('top', 6);
+        $('#plan-profile').css('top', 1);
+    }
 }
 
 function positionDesktopNav() {  
