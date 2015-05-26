@@ -463,7 +463,7 @@ $(function(){
 
     $('.plan-profile-close-button').click(function(){
 
-        $('#plan-profile-content').css('display', 'none');
+        togglePlanProfile();
     });
 
     /* --------------------------------------- */
@@ -916,7 +916,7 @@ function togglePlanProfile() {
 
         if ( mobile ) {
 
-            top = '-9px';
+            top = '1px';
         } else {
 
             top = '15%';
