@@ -11,6 +11,9 @@ button:hover {
 .hide {
   display: none !important; }
 
+.row .row {
+  max-width: 100%; }
+
 /*Mixins*/
 /* Radii */
 .radius-7 {

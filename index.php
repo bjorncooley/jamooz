@@ -185,20 +185,16 @@
         </div>
         <div class="row">
             <form action="" method="post"> 
-                <div class="row">
-                    <div class="large-6 small-10 columns small-centered text-center">
-                        <input type="text" placeholder="Your Full Name" class="placeholder-medium-gray  radius large padding-15" name="name">
-                    </div>
-                    <div class="large-6 small-10 columns small-centered">
-                        <input type="text" placeholder="Email Address" class="placeholder-medium-gray radius large padding-15" name="email">
-                    </div>
+                <div class="large-6 small-10 columns small-centered text-center">
+                    <input type="text" placeholder="Your Full Name" class="placeholder-medium-gray  radius large padding-15" name="name">
                 </div>
-                <div class="row">
-                    <div class="large-12 columns text-center">
-                        <button class="red-orange-background radius width-100-percent max-285 uppercase white" type="submit">Get Started For 30 Days Free</button>
-                        <div class="row">
-                            <p class="tiny white small-6 columns small-centered">a customer success teammate is ready to help</p>
-                        </div>
+                <div class="large-6 small-10 columns small-centered">
+                    <input type="text" placeholder="Email Address" class="placeholder-medium-gray radius large padding-15" name="email">
+                </div>
+                <div class="large-12 columns text-center">
+                    <button class="red-orange-background radius width-100-percent max-285 uppercase white" type="submit">Get Started For 30 Days Free</button>
+                    <div class="row">
+                        <p class="tiny white small-6 columns small-centered">a customer success teammate is ready to help</p>
                     </div>
                 </div>
             </form>
@@ -211,25 +207,23 @@
         <div class="large-12 columns text-center">
             <p>We’ve simplified things for you so it reduces headache and increases your productivity and effectiveness.</p>
         </div>
-        <div class="row">
-            <div class="large-8 large-offset-2 large-centered">
-                <div class="row">
-                    <div class="small-12 large-4 columns text-center">
-                        <img src="img/home/base_plan.png" alt="">
-                        <p class="uppercase small normal padding-top-15">Select Base Plan</p>
-                    </div>
-                    <div class="small-12 large-4 columns text-center">
-                        <img src="img/home/apps_add_ons.png" alt="">
-                        <p class="uppercase small normal padding-top-15">Add Apps &amp; Add-Ons</p>
-                    </div>
-                    <div class="small-12 large-4 columns text-center">
-                        <img src="img/home/personal_support.png" alt="">
-                        <p class="uppercase small normal padding-top-15">24/7 Personal Support</p>
-                    </div>
+        <div class="large-8 large-offset-2 large-centered">
+            <div class="row">
+                <div class="small-12 large-4 columns text-center">
+                    <img src="img/home/base_plan.png" alt="">
+                    <p class="uppercase small normal padding-top-15">Select Base Plan</p>
+                </div>
+                <div class="small-12 large-4 columns text-center">
+                    <img src="img/home/apps_add_ons.png" alt="">
+                    <p class="uppercase small normal padding-top-15">Add Apps &amp; Add-Ons</p>
+                </div>
+                <div class="small-12 large-4 columns text-center">
+                    <img src="img/home/personal_support.png" alt="">
+                    <p class="uppercase small normal padding-top-15">24/7 Personal Support</p>
                 </div>
             </div>
-            
         </div>
+            
     </div><!-- #process -->
     <div class="padding-top-50" id="support">
         <div class="row text-center">

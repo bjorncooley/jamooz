@@ -19,6 +19,11 @@ button:hover {
   display: none !important;
 }
 
+.row .row {
+
+  max-width: 100%;
+}
+
 
 /*Mixins*/
 @mixin border_box {
