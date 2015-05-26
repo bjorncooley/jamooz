@@ -675,20 +675,23 @@ button.yellow-background {
 #intro {
   border-top: 1px solid #434343; }
 
-#schmooze {
-  padding: 80px 0 60px; }
-  #schmooze h2 {
-    padding-bottom: 50px; }
-  #schmooze video {
-    width: 65%; }
-
 #home #support {
   background: #91cc8b url("../../img/home/support_background_mobile.png") no-repeat center;
   min-height: 512px; }
+#home #schmooze {
+  padding: 80px 0 60px; }
+  #home #schmooze img {
+    margin: 0 auto; }
+  #home #schmooze h2 {
+    padding-bottom: 50px; }
+  #home #schmooze video {
+    width: 65%; }
 
 /* ------------------- */
 /* --- GET STARTED --- */
 /* ------------------- */
+#get-started .hero {
+  padding-left: 20px; }
 #get-started #device-discounts {
   position: absolute;
   top: 0;

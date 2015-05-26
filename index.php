@@ -16,7 +16,7 @@
         $email = $_POST['email'];
         setcookie("email", $email);
     }
-
+    
     header('Location: ./get-started.php');
 } else {
 

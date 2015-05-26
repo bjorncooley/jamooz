@@ -1,6 +1,6 @@
 <?php include('includes/header.php'); ?>
 <div id="get-started">
-    <div class="red-orange-background padding-top-80 padding-bottom-60">
+    <div class="red-orange-background padding-top-80 padding-bottom-60 hero">
         <div class="row">
             <div class="large-12 columns white">
                 <h1 class="large normal">Get Started Today</h1>
