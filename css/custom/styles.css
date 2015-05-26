@@ -142,6 +142,34 @@ input {
   /* Internet Explorer 10+ */
   color: #787878; }
 
+button.medium-dark-gray-border:hover {
+  background-color: #58585b;
+  -webkit-transition: background-color 200ms linear;
+  -moz-transition: background-color 200ms linear;
+  -o-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+  color: white;
+  -webkit-transition: color 200ms linear;
+  -moz-transition: color 200ms linear;
+  -o-transition: color 200ms linear;
+  -ms-transition: color 200ms linear;
+  transition: color 200ms linear; }
+
+button.orange-border:hover {
+  background-color: #f89f31;
+  -webkit-transition: background-color 200ms linear;
+  -moz-transition: background-color 200ms linear;
+  -o-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+  color: white;
+  -webkit-transition: color 200ms linear;
+  -moz-transition: color 200ms linear;
+  -o-transition: color 200ms linear;
+  -ms-transition: color 200ms linear;
+  transition: color 200ms linear; }
+
 /* Containers */
 div, nav, form, textarea, input, a {
   box-sizing: border-box;

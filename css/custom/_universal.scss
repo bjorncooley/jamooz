@@ -73,6 +73,27 @@ button:hover {
   }
 }
 
+@mixin animate_background_color($color) {
+  
+  background-color: $color;
+
+  -webkit-transition: background-color 200ms linear;
+  -moz-transition: background-color 200ms linear;
+  -o-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+@mixin animate_color($color) {
+
+  color: $color;
+  -webkit-transition: color 200ms linear;
+  -moz-transition: color 200ms linear;
+  -o-transition: color 200ms linear;
+  -ms-transition: color 200ms linear;
+  transition: color 200ms linear;
+}
+
 /* Radii */
 .radius-7 {
 
@@ -263,6 +284,18 @@ input {
 .placeholder-medium-gray {
 
   @include placeholder_color($medium-gray);
+}
+
+button.medium-dark-gray-border:hover {
+
+  @include animate_background_color($medium-dark-gray);
+  @include animate_color(white);
+}
+
+button.orange-border:hover {
+
+  @include animate_background_color($orange);
+  @include animate_color(white);
 }
 
 /* Containers */
