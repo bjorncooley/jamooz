@@ -117,7 +117,6 @@
                 <script src="js/vendor/modernizr.js"></script>
                 <script src="js/vendor/jquery.cookie.js"></script>
                 <script src="js/vendor/jquery.rotate.js"></script>
-                <script src="js/custom/jquery.scroll-on-scroll.js"></script>
                 <script src="js/functions.js"></script>
             </footer>
         </div><!-- #page-content -->

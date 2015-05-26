@@ -612,8 +612,6 @@ button.yellow-background {
     }
 }
 
-
-
 #intro {
 
     border-top: 1px solid $dark-gray;
@@ -623,8 +621,13 @@ button.yellow-background {
 
     #support {
 
-        background: $mint url('../../img/home/support_background_mobile.png') no-repeat center;
+        background: url('../../img/home/support_background.png') no-repeat center;
         min-height: 512px;
+
+        button {
+
+            @include border_radius(0);
+        }
 
     }
 

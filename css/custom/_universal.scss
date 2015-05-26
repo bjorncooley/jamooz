@@ -105,6 +105,11 @@ button:hover {
   @include border_radius(7px);
 }
 
+.no-radius {
+
+  @include border_radius(0);
+}
+
 /* Colors */
 $dark-blue: rgb(31,40,55);
 $dark-gray: rgb(67,67,67);

@@ -16,7 +16,7 @@
         $email = $_POST['email'];
         setcookie("email", $email);
     }
-    
+
     header('Location: ./get-started.php');
 } else {
 
@@ -59,7 +59,7 @@
         <div class="text-center">
             <img src="img/home/hero.jpg" alt="">
         </div>
-        <div class="text-center" id="hero-text">   
+        <div class="text-center" id="hero-text">
             <a href="./get-started.php">
                 <button class="teal-background uppercase radius width-100-percent white">Get Started for 30 Days Free</button>
             </a>
@@ -227,7 +227,7 @@
     </div><!-- #process -->
     <div class="padding-top-50" id="support">
         <div class="row text-center">
-            <button class="red-orange-background small-10 large-4 radius-7 padding-15">
+            <button class="no-background white-border small-10 large-4 padding-15">
                 <div class="show-for-small-only">
                     <div class="small-12 columns uppercase normal white">
                         Need Support?
