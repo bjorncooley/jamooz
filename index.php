@@ -116,7 +116,7 @@
                     <div class="small-9 columns small-centered padding-bottom-50">Learn what software works with Jamooz</div>
                 </h4>
                 <a href="./software-integrations.php">
-                    <h4 class="small-12 columns medium-gray-border white padding-top-8 padding-bottom-8 max-285 small-centered small">See Software Integrations</h4>
+                    <h4 class="small-12 columns white-border white padding-top-8 padding-bottom-8 max-285 small-centered small">See Software Integrations</h4>
                 </a>
             </div>
         </div>

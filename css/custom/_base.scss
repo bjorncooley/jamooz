@@ -412,6 +412,43 @@ button.yellow-background {
 }
 
 
+.teal-background {
+    
+    h4.white-border:hover, a.white-border:hover {
+
+        @include animate_background_color(white);
+        @include animate_color($teal);
+    }
+}
+
+.orange-background {
+
+    h4.white-border:hover {
+
+        @include animate_background_color(white);
+        @include animate_color($orange);
+    }
+}
+
+.dark-blue-background {
+
+    h4.white-border:hover {
+
+        @include animate_background_color(white);
+        @include animate_color($dark-blue);
+    }
+}
+
+.medium-dark-gray-background {
+
+    a.white-border:hover {
+
+        @include animate_background_color(white);
+        @include animate_color($medium-dark-gray);
+    }
+}
+
+
 /* --------------------------- */
 /* --- PLAN PROFILE TOGGLE --- */
 /* --------------------------- */
@@ -1012,7 +1049,7 @@ button.yellow-background {
     .learn-section {
 
         padding: 70px 0;
-    }
+    }    
 }
 
 
