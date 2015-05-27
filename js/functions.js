@@ -22,11 +22,6 @@ $(window).load(function(){
         mobileSetupFunctions();
     }
 
-    if ( !mobile ) {
-
-        desktopSetupFunctions();
-    }
-
     universalSetup();
 
     /* ---------------------------------------------- */
@@ -54,12 +49,8 @@ $(window).resize(function(){
         mobileSetupFunctions();
     }
 
-    if ( !mobile ) {
-
-        desktopSetupFunctions();
-    }
-
     universalSetup();
+    setFullHeightSections();
 });
 
 $(window).scroll(function(){
@@ -813,6 +804,7 @@ function universalSetup() {
     movePlanCards(); 
     setUpGetStarted();
     updatePlanProfile();
+    setFullHeightSections();
 
     if ( $('#devices').length != 0 ) {
 
@@ -833,7 +825,7 @@ function mobileSetupFunctions() {
     }
 }
 
-function desktopSetupFunctions() {
+function setFullHeightSections() {
 
     var window_height = $(window).height();
     $('.full-height').each(function(){
