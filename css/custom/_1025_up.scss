@@ -606,9 +606,31 @@ button.yellow-background {
 
         img {
 
-            #phone-icon-2 {
+            &#phone-icon-2 {
 
                 display: block;
+            }
+
+            &#signal-1 {
+
+                position: absolute;
+                top: 332px;
+                left: 57px;
+            }
+
+            &#signal-2 {
+
+                position: absolute;
+                top: 341px;
+                left: 32px;
+                
+            }
+
+            &#signal-3 {
+
+                position: absolute;
+                top: 372px;
+                left: 4px;
             }
         }
     }

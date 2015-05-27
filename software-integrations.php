@@ -44,6 +44,9 @@
             <div class="small-12 large-6 columns">
                 <img src="img/software/crm_mobile.png" alt="" class="hide-for-large-up">
                 <img src="img/software/crm_desktop.png" alt="" class="show-for-large-up">
+                <img src="img/shared/signal_1.png" alt="" class="show-for-large-up signal-graphic" id="signal-1">
+                <img src="img/shared/signal_2.png" alt="" class="show-for-large-up signal-graphic" id="signal-2">
+                <img src="img/shared/signal_3.png" alt="" class="show-for-large-up signal-graphic" id="signal-3">
             </div>
             <img src="img/software/fax_graphic.png" alt="" class="show-for-large-up" id="fax-graphic">
         </div>

@@ -1366,8 +1366,20 @@ button.yellow-background {
   #software-integrations #story-2 #fax-graphic {
     position: absolute;
     top: 653px; }
-  #software-integrations #story-2 img #phone-icon-2 {
+  #software-integrations #story-2 img#phone-icon-2 {
     display: block; }
+  #software-integrations #story-2 img#signal-1 {
+    position: absolute;
+    top: 332px;
+    left: 57px; }
+  #software-integrations #story-2 img#signal-2 {
+    position: absolute;
+    top: 341px;
+    left: 32px; }
+  #software-integrations #story-2 img#signal-3 {
+    position: absolute;
+    top: 372px;
+    left: 4px; }
   #software-integrations #story-3 {
     height: 1500px; }
     #software-integrations #story-3 h3 {
