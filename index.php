@@ -126,7 +126,6 @@
             <img src="img/home/analytics_graphic.png" alt="" class="hide-for-large-up">
             <video autoplay loop class="width-100-percent show-for-large-up">
               <source src="video/analytics.mp4" type="video/mp4">
-              <!--<source src="video/campfire_1.webm" type="video/webm">-->
             </video>
         </div>
         <div class="small-12 medium-6 columns">
@@ -154,7 +153,6 @@
             <img src="img/home/phone_demo.png" alt="" class="hide-for-large-up">
             <video autoplay loop class="show-for-large-up">
               <source src="video/schmooze.mp4" type="video/mp4">
-              <!--<source src="video/campfire_1.webm" type="video/webm">-->
             </video>
         </div>
         <div class="small-12 large-6 columns text-center">
