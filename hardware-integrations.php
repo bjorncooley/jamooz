@@ -71,6 +71,9 @@
             <div class="small-12 large-6 large-offset-1 columns">
                 <img src="img/hardware/david_intercom_mobile.png" alt="" class="hide-for-large-up">
                 <img src="img/hardware/david_intercom_desktop.png" alt="" class="show-for-large-up">
+                <img src="img/shared/signal_1.png" alt="" class="show-for-large-up signal-graphic" id="signal-1">
+                <img src="img/shared/signal_2.png" alt="" class="show-for-large-up signal-graphic" id="signal-2">
+                <img src="img/shared/signal_3.png" alt="" class="show-for-large-up signal-graphic" id="signal-3">
             </div>
         </div>
     </div>

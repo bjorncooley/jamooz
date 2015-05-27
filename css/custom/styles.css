@@ -1325,6 +1325,18 @@ button.yellow-background {
     padding-top: 300px; }
   #story-3 img {
     padding-top: 80px; }
+    #story-3 img#signal-1 {
+      position: absolute;
+      top: 283px;
+      left: 300px; }
+    #story-3 img#signal-2 {
+      position: absolute;
+      top: 292px;
+      left: 275px; }
+    #story-3 img#signal-3 {
+      position: absolute;
+      top: 323px;
+      left: 248px; }
 
   #all-in-one {
     background-color: #f2f2f2;

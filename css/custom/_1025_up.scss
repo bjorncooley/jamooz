@@ -506,6 +506,28 @@ button.yellow-background {
     img {
 
         padding-top: 80px;
+
+        &#signal-1 {
+
+            position: absolute;
+            top: 283px;
+            left: 300px;
+        }
+
+        &#signal-2 {
+
+            position: absolute;
+            top: 292px;
+            left: 275px;
+            
+        }
+
+        &#signal-3 {
+
+            position: absolute;
+            top: 323px;
+            left: 248px;
+        }
     }
 }
 
