@@ -264,6 +264,13 @@ $(function(){
                 'top' : top,
                 'position' : 'absolute',
             });
+
+            console.log($('#mobile-nav').height());
+
+            // Set html height to mobile nav height
+            $('html').height($('#mobile-nav').height());
+            $('html').css('overflow', 'hidden');
+
         } else {
 
             $('#mobile-nav-toggle').animate({rotate: 0}, 150);
@@ -276,6 +283,10 @@ $(function(){
                 $('#mobile-nav').removeClass('opened').addClass('closed');
             });
             $('#mobile-logo-container').css('box-shadow', '0 2px 5px #787878');
+
+            // Reset html height to mobile nav height
+            $('html').height('auto');
+            $('html').css('overflow', 'visible');
         }
         
     });
