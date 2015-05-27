@@ -661,10 +661,18 @@ button.yellow-background {
 
         background: url('../../img/home/support_background.png') no-repeat center;
         min-height: 512px;
+        padding-top: 100px;
 
         button {
 
             @include border_radius(0);
+        }
+
+        h4 {
+            
+            padding: 20px 60px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
     }
@@ -1190,20 +1198,6 @@ button.yellow-background {
 
             max-width: 310px;
         }
-    }
-}
-
-#support {
-
-    background: $dark-blue url(../../img/schmooze/support.png) no-repeat center bottom;
-    height: 550px;
-    padding-top: 100px;
-
-    h4 {
-        
-        padding: 20px 60px;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 

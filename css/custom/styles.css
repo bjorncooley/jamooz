@@ -738,10 +738,15 @@ button.yellow-background {
 
 #home #support {
   background: url("../../img/home/support_background.png") no-repeat center;
-  min-height: 512px; }
+  min-height: 512px;
+  padding-top: 100px; }
   #home #support button {
     border-radius: 0;
     -moz-border-radius: 0; }
+  #home #support h4 {
+    padding: 20px 60px;
+    margin-left: auto;
+    margin-right: auto; }
 #home #schmooze {
   padding: 80px 0 60px; }
   #home #schmooze img {
@@ -994,15 +999,6 @@ button.yellow-background {
     height: 50px; }
   #schmooze-intro form input {
     max-width: 310px; }
-
-#support {
-  background: #1f2837 url(../../img/schmooze/support.png) no-repeat center bottom;
-  height: 550px;
-  padding-top: 100px; }
-  #support h4 {
-    padding: 20px 60px;
-    margin-left: auto;
-    margin-right: auto; }
 
 /* --------------- */
 /* --- SUCCESS --- */
@@ -1498,7 +1494,8 @@ button.yellow-background {
   #support .image-container {
     text-align: left; }
   #support #support-hero {
-    background: url(../../img/support/support_hero_desktop.png) no-repeat center; }
+    background: url(../../img/support/support_hero_desktop.png) no-repeat center;
+    height: 496px; }
 
   /* -------------- */
   /* --- FOOTER --- */
