@@ -743,6 +743,8 @@ button.yellow-background {
     margin: 0 auto; }
   #story-1 h3, #story-2 h3, #story-3 h3, #hardware-intro h3, #software-intro h3 {
     font-weight: 100; }
+  #story-1 .signal-graphic, #story-2 .signal-graphic, #story-3 .signal-graphic, #hardware-intro .signal-graphic, #software-intro .signal-graphic {
+    display: none; }
 
 #apps .card .card-text, #devices .card .card-text {
   text-align: center; }

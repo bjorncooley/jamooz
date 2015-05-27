@@ -1,7 +1,3 @@
-/* -- Scrolling -- */
-/* https://github.com/peachananr/onepage-scroll */
-
-
 var card_margin=0;
 var cards_moved = false;
 var mobile = false;
@@ -32,7 +28,22 @@ $(window).load(function(){
     }
 
     universalSetup();
+
+    /* ---------------------------------------------- */
+    /* -------------- SOFTARE/HARDWARE -------------- */
+    /* ---------------------------------------------- */
+
+    if ( $('#software-integrations').length != 0 ||
+         $('#hardware-integrations').length != 0 ) {
+            
+        setInterval(animateSignalGraphics, 900);
+    }
 });
+
+function hereFunction() {
+
+    console.log('here');
+}
 
 $(window).resize(function(){
 
@@ -623,12 +634,10 @@ $(function(){
 
         $('#get-started #step-3').slideDown(400);
         $('html, body').animate({ 'scrollTop' : $('#step-3').offset()['top'] - 60}, 800);
-    });
-    
+    });    
 
     // Fade in devices overlay
     $('#device-slide-button').click(function(){
-
         
         $('#device-discounts').fadeIn(400, function(){
             $('html, body').animate({ scrollTop : 
@@ -639,8 +648,8 @@ $(function(){
             var extras_top = $('#extras').offset().top;
             $('#device-discounts').offset({ top: extras_top });
         }
-        
-    });
+    });  
+    
 
 });
 
@@ -748,6 +757,35 @@ function hideCardDetails() {
         $(this).addClass('hide');
         $(this).siblings('.show-details-link').removeClass('hide');
     });
+}
+
+
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* ------------------------ TIMED EVENTS ------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+
+function animateSignalGraphics() {
+
+    if ( $('.signal-graphic.current').length == 0 ) {
+        console.log('no graphic');
+        $('#signal-1').addClass('current');
+        $('.signal-graphic').each(function(){
+
+            $(this).css('display', 'none');
+        });
+    } else {
+
+        $currentGraphic = $('.signal-graphic.current');
+        $nextGraphic = $currentGraphic.next('.signal-graphic');
+
+        $currentGraphic.css('display', 'block');
+        $currentGraphic.removeClass('current');
+        $nextGraphic.addClass('current');
+    }
+
+    
 }
 
 
