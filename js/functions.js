@@ -17,6 +17,8 @@ $(window).unload(function(){
 
 $(window).load(function(){
 
+    $('body').css('display', 'block');
+
     checkMobile();
 
     if ( mobile ) {

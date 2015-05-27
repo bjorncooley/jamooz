@@ -357,7 +357,8 @@ p.tiny {
   margin-top: 15px; }
 
 body {
-  position: relative; }
+  position: relative;
+  display: none; }
 
 button {
   font-size: 0.9em;
