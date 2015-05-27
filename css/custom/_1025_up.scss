@@ -111,45 +111,6 @@ button.yellow-background {
     }
 }
 
-#analytics, #reliable {
-
-    h2 {
-
-        padding-top: 100px;
-    }
-}
-
-#schmooze {
-
-    h2 {
-
-        padding: 100px 0 20px;
-    }
-}
-
-#trial {
-
-    padding: 70px 0 20px;
-
-    h4 {
-
-        max-width: 760px;
-        margin: 0 auto;
-    }
-}
-
-#process {
-
-    padding: 30px 0 20px;
-
-    p {
-
-        max-width: 400px;
-        margin: 0 auto;
-        padding-bottom: 60px;
-    }
-}
-
 #hardware-hero, #software-hero, #pricing-hero {
 
     padding-top: 200px;
@@ -204,6 +165,65 @@ button.yellow-background {
         .row {
             padding-top: 110px;
         }        
+    }
+
+    #analytics, #reliable {
+
+        h2 {
+
+            padding-top: 100px;
+        }
+    }
+
+    #schmooze {
+
+        video {
+
+            padding: 100px 0 80px;
+            position: relative;
+            z-index: 99;
+        }
+
+        #phone-mask {
+
+            position: absolute;
+            z-index: 1;
+            top: 23px;
+            left: -9px;
+        }
+
+        h1 {
+
+            padding-top: 200px;
+        }
+
+        h2 {
+
+            padding: 100px 0 20px;
+        }
+    }
+
+    #trial {
+
+        padding: 70px 0 20px;
+
+        h4 {
+
+            max-width: 760px;
+            margin: 0 auto;
+        }
+    }
+
+    #process {
+
+        padding: 30px 0 20px;
+
+        p {
+
+            max-width: 400px;
+            margin: 0 auto;
+            padding-bottom: 60px;
+        }
     }
 
     #support {

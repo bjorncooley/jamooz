@@ -811,8 +811,7 @@ function checkMobile() {
 
 function universalSetup() {
     
-    getVideoPositions();
-    movePlanCards(); 
+    movePlanCards();
     setUpGetStarted();
     updatePlanProfile();
     setFullHeightSections();
@@ -823,6 +822,7 @@ function universalSetup() {
     }
 
     moveSlides();
+    getVideoPositions();
 }
 
 function mobileSetupFunctions() {
@@ -1072,7 +1072,7 @@ function positionDesktopNav() {
 
             $('#nav').slideUp(200);
         }
-    }          
+    }
 }
 
 function getVideoPositions() {
@@ -1104,13 +1104,14 @@ function resetVideos() {
 
         var video_bottom = video_positions[i] + videos[i].height();
 
-        if ( window_bottom >= video_positions[i] && window_top < video_bottom ) {
+        if ( window_bottom >= video_positions[i] && window_top < video_bottom  ) {
 
             videos[i][0].play();
 
         } else {
 
             // Pause and reset
+
             videos[i][0].currentTime = 0;
             videos[i][0].pause();
         }

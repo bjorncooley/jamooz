@@ -154,6 +154,7 @@
             <video autoplay loop class="show-for-large-up">
               <source src="video/schmooze.mp4" type="video/mp4">
             </video>
+            <img src="img/home/phone_mask.png" alt="" class="show-for-large-up" id="phone-mask">
         </div>
         <div class="small-12 large-6 columns text-center">
             <h1 class="text-left mint light condensed no-text-transform padding-bottom-30">
