@@ -1132,7 +1132,7 @@ button.yellow-background {
     line-height: 1.3em;
     padding-bottom: 40px; }
 
-  #base-plan .card-left-arrow, #base-plan .card-right-arrow, #devices .card-left-arrow, #devices .card-right-arrow {
+  #base-plan .card-left-arrow, #base-plan .card-right-arrow {
     display: none; }
 
   #discounts.row > .left-arrow, #discounts.row > .right-arrow {
@@ -1187,7 +1187,7 @@ button.yellow-background {
   p {
     line-height: 2em; }
 
-  #apps .card-left-arrow, #apps .card-right-arrow, #plans .card-left-arrow, #plans .card-right-arrow {
+  #apps .card-left-arrow, #apps .card-right-arrow, #plans .card-left-arrow, #plans .card-right-arrow, #devices .card-left-arrow, #devices .card-right-arrow {
     display: none; }
 
   #devices .device .shadowed {
