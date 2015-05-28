@@ -1171,6 +1171,26 @@ button.yellow-background {
             @include border_radius(5px);
         }
     }
+
+    #support {
+
+        min-height: 512px;
+        padding-top: 100px;
+
+        background: $dark-blue url('../../img/schmooze/support.png') no-repeat center bottom;
+
+        button {
+
+            @include border_radius(0);
+        }
+
+        h4 {
+                    
+                    padding: 20px 60px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+    }
 }
 
 #schmooze-intro {

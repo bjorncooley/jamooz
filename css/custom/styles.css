@@ -988,6 +988,17 @@ button.yellow-background {
     padding: 15px 0;
     border-radius: 5px;
     -moz-border-radius: 5px; }
+#schmooze-page #support {
+  min-height: 512px;
+  padding-top: 100px;
+  background: #1f2837 url("../../img/schmooze/support.png") no-repeat center bottom; }
+  #schmooze-page #support button {
+    border-radius: 0;
+    -moz-border-radius: 0; }
+  #schmooze-page #support h4 {
+    padding: 20px 60px;
+    margin-left: auto;
+    margin-right: auto; }
 
 #schmooze-intro {
   padding-top: 80px; }
@@ -1227,19 +1238,21 @@ button.yellow-background {
     padding-top: 110px; }
   #home #analytics h2, #home #reliable h2 {
     padding-top: 100px; }
-  #home #schmooze video {
-    padding: 100px 0 80px;
-    position: relative;
-    z-index: 99; }
-  #home #schmooze #phone-mask {
-    position: absolute;
-    z-index: 1;
-    top: 23px;
-    left: -9px; }
-  #home #schmooze h1 {
-    padding-top: 200px; }
-  #home #schmooze h2 {
-    padding: 100px 0 20px; }
+  #home #schmooze {
+    min-height: 900px; }
+    #home #schmooze video {
+      padding: 100px 0 80px;
+      position: relative;
+      z-index: 99; }
+    #home #schmooze #phone-mask {
+      position: absolute;
+      z-index: 1;
+      top: 23px;
+      left: -9px; }
+    #home #schmooze h1 {
+      padding-top: 200px; }
+    #home #schmooze h2 {
+      padding: 100px 0 20px; }
   #home #trial {
     padding: 70px 0 20px; }
     #home #trial h4 {
