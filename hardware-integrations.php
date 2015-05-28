@@ -1,3 +1,9 @@
+<?php if( $_POST ) {
+
+    include('./includes/get-started-post.php');
+}
+
+?>
 <?php include('includes/header.php'); ?>
 
 <div id="hardware-integrations">
