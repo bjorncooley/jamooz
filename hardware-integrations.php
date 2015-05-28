@@ -93,10 +93,11 @@
                 <div class="clear button-container">
                     <a href="./get-started.php">
                         <button class="left white red-orange-background">Get Started</button>
+                        <div class="red-orange-background left">
+                            <img src="img/shared/white_right_arrow.png" alt="">
+                        </div>
                     </a>
-                    <div class="red-orange-background left">
-                        <img src="img/shared/white_right_arrow.png" alt="">
-                    </div>
+                    
                 </div>
             </div>
             <div class="large-6 columns show-for-large-up">

@@ -87,7 +87,6 @@
             <div class="padding-bottom-30 show-for-large-up" alt="">
                 <video id="reliable-video" autoplay loop class="width-100-percent">
                   <source src="video/reliable.mp4" type="video/mp4">
-                  <!--<source src="video/campfire_1.webm" type="video/webm">-->
                 </video>
             </div>
         </div>
