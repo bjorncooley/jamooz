@@ -28,11 +28,15 @@ $(window).load(function(){
     /* -------------- SOFTARE/HARDWARE -------------- */
     /* ---------------------------------------------- */
 
-    if ( $('#software-integrations').length != 0 ||
-         $('#hardware-integrations').length != 0 ) {
-            
-        setInterval(animateSignalGraphics, 900);
+    if ( !mobile ) {
+        if ( $('#software-integrations').length != 0 ||
+             $('#hardware-integrations').length != 0 ) {
+                
+            setInterval(animateSignalGraphics, 900);
+        }
     }
+
+    
 });
 
 function hereFunction() {
