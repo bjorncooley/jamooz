@@ -74,7 +74,10 @@
     <div id="intro" class="full-height">
         <div class="row clearfix">
             <div class="small-12 medium-6 columns text-center right">
-                <img src="img/home/hardware_graphic.png" alt="" class="padding-bottom-30">
+                <img src="img/home/hardware_graphic.png" alt="" class="padding-bottom-30 hide-for-large-up">
+                <video autoplay loop class="show-for-large-up">
+                  <source src="video/hardware.mp4" type="video/mp4">
+                </video>
             </div>
             <div class="small-12 medium-6 columns text-left left">
                 <h1 class="padding-bottom-30 no-text-transform large condensed">Better communication starts with your hardware.</h1>

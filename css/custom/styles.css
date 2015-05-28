@@ -1202,6 +1202,8 @@ button.yellow-background {
     #hardware-hero h4, #software-hero h4, #pricing-hero h4 {
       padding-bottom: 200px; }
 
+  #home video {
+    max-width: 100%; }
   #home #page-brand {
     margin-top: -80px; }
     #home #page-brand img {
@@ -1219,6 +1221,8 @@ button.yellow-background {
     #home #hero #hero-text #hero-down-arrow {
       position: relative;
       top: -100px; }
+  #home #intro video {
+    padding-left: 40px; }
   #home #intro .row {
     padding-top: 110px; }
   #home #analytics h2, #home #reliable h2 {

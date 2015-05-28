@@ -122,6 +122,11 @@ button.yellow-background {
 
 #home {
 
+    video {
+
+        max-width: 100%;
+    }
+
     #page-brand {
 
         margin-top: -80px;
@@ -161,6 +166,11 @@ button.yellow-background {
     }
 
     #intro {
+
+        video {
+
+            padding-left: 40px;
+        }
 
         .row {
             padding-top: 110px;
