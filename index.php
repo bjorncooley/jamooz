@@ -1,7 +1,7 @@
 <?php if( $_POST ) {
 
     include('./includes/get-started-post.php');
-    
+
 } else {
 
     if ( !isset($_COOKIE['hasData'])) {
@@ -84,7 +84,7 @@
     <div class="row clearfix full-height" id="reliable">
         <div class="small-12 large-7 columns text-center right">
             <img src="img/home/reliable_graphic_mobile.png" class="padding-top-30 padding-bottom-30 hide-for-large-up center" alt="">
-            <div class="padding-top-30 padding-bottom-30 show-for-large-up" alt="">
+            <div class="padding-bottom-30 show-for-large-up" alt="">
                 <video id="reliable-video" autoplay loop class="width-100-percent">
                   <source src="video/reliable.mp4" type="video/mp4">
                   <!--<source src="video/campfire_1.webm" type="video/webm">-->
