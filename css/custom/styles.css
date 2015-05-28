@@ -372,6 +372,12 @@ button.yellow-background {
   padding: 15px 0;
   margin-top: 30px; }
 
+.small-full-width {
+  padding: 0; }
+  .small-full-width > .row {
+    margin-left: auto;
+    margin-right: auto; }
+
 /* --------------------- */
 /* --- HEADER/FOOTER --- */
 /* --------------------- */
@@ -1162,6 +1168,13 @@ button.yellow-background {
 @media only screen and (min-width: 1025px) {
   body {
     position: static; }
+
+  .small-full-width {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem; }
+    .small-full-width > .row {
+      margin-left: -0.9375rem;
+      margin-right: -0.9375rem; }
 
   h1 {
     font-size: 2em; }

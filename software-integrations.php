@@ -204,7 +204,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="small-12 large-10 columns large-centered">
+            <div class="small-12 large-10 columns large-centered small-full-width">
                 <div class="row">
                     <div class="small-12 large-6 columns white teal-background padding-top-80 padding-bottom-80 text-center">
                         <h4 class="white">

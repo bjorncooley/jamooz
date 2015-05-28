@@ -5,6 +5,18 @@ body {
     position: static;
 }
 
+.small-full-width {
+
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+
+    &>.row {
+
+        margin-left: -0.9375rem;
+        margin-right: -0.9375rem;
+    }
+}
+
 h1 {
 
     font-size: 2em;
