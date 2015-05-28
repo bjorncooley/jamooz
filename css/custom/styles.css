@@ -378,6 +378,10 @@ button.yellow-background {
     margin-left: auto;
     margin-right: auto; }
 
+.centered-row {
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
 /* --------------------- */
 /* --- HEADER/FOOTER --- */
 /* --------------------- */

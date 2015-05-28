@@ -26,7 +26,7 @@
 
                     <?php include('includes/plan-cards.php'); ?>
 
-                <div class="row">
+                <div class="row centered-row">
                     <div class="large-12 columns text-center">
                         <button class="yellow-background">Continue with a Customer Success Teammate</button>
                     </div>
