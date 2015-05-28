@@ -459,7 +459,7 @@ button.yellow-background {
   cursor: pointer;
   z-index: 99; }
 .card-section .card-left-arrow, .card-section .card-right-arrow {
-  top: 280px; }
+  top: 360px; }
 .card-section .left-arrow {
   left: 0; }
 .card-section .right-arrow {
@@ -537,7 +537,7 @@ button.yellow-background {
     .card-section .card.device .shadowed .card-text h5 {
       padding-bottom: 0; }
 .card-section .card.plan .shadowed .card-text {
-  padding: 60px 0 0 35px; }
+  padding: 60px 0; }
 
 .slide {
   width: 100%; }
@@ -1229,6 +1229,9 @@ button.yellow-background {
     padding: 30px 0 15px; }
   #hero h6 {
     max-width: none; }
+
+  .card.plan .shadowed .card-text {
+    padding: 60px 0 0 35px; }
 
   #hardware-hero, #software-hero, #pricing-hero {
     padding-top: 200px; }
