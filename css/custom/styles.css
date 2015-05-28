@@ -888,6 +888,8 @@ button.yellow-background {
     display: none; }
 #software-integrations #story-3 img {
   padding-top: 0; }
+  #software-integrations #story-3 img#phone-icon-2 {
+    display: none; }
 
 /* --------------- */
 /* --- PRICING --- */
@@ -1458,8 +1460,6 @@ button.yellow-background {
   #software-integrations #story-2 #fax-graphic {
     position: absolute;
     top: 653px; }
-  #software-integrations #story-2 img#phone-icon-2 {
-    display: block; }
   #software-integrations #story-2 img#signal-1 {
     position: absolute;
     top: 332px;
@@ -1484,7 +1484,8 @@ button.yellow-background {
       position: absolute;
       top: 540px;
       left: 643px; }
-    #software-integrations #story-3 #phone-icon-2 {
+    #software-integrations #story-3 img#phone-icon-2 {
+      display: block;
       top: -175px;
       left: -165px; }
 

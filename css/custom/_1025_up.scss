@@ -660,11 +660,6 @@ button.yellow-background {
 
         img {
 
-            &#phone-icon-2 {
-
-                display: block;
-            }
-
             &#signal-1 {
 
                 position: absolute;
@@ -716,13 +711,16 @@ button.yellow-background {
                 top: 540px;
                 left: 643px;
             }
+
+            &#phone-icon-2 {
+
+                display: block;
+                top: -175px;
+                left: -165px;
+            }
         }
 
-        #phone-icon-2 {
-
-            top: -175px;
-            left: -165px;
-        }
+        
     }
 }
 
