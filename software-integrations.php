@@ -100,7 +100,7 @@
                 <img src="img/shared/slider_right_arrow_black.png" alt="" class="right-arrow card-right-arrow">
                 <div class="row card-container">
                     <div class="relative">
-                        <div class="small-12 medium-4 columns small-centered medium-uncentered card current">
+                        <div class="small-12 large-4 columns small-centered large-uncentered card current">
                             <div class="shadowed">
                                 <div class="card-text">
                                     <h5 class="text-center uppercase">Outlook</h5>
@@ -130,7 +130,7 @@
                                 <h4 class="close-details-link hide">Close Details</h4>
                             </div>
                         </div>
-                        <div class="small-12 medium-4 columns small-centered medium-uncentered card">
+                        <div class="small-12 large-4 columns small-centered large-uncentered card">
                             <div class="shadowed">
                                 <div class="card-text">
                                     <h5 class="text-center uppercase">Outlook</h5>
@@ -159,7 +159,7 @@
                                 <h4 class="close-details-link hide">Close Details</h4>
                             </div>
                         </div>
-                        <div class="small-12 medium-4 columns small-centered medium-uncentered card">
+                        <div class="small-12 large-4 columns small-centered large-uncentered card">
                             <div class="shadowed">
                                 <div class="card-text">
                                     <h5 class="text-center uppercase">Outlook</h5>
