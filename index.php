@@ -4,11 +4,17 @@
 
         $name = $_POST['name'];
         $separated = explode(" ", $name);
-        $firstName = $separated[0];
-        $lastName = $separated[1];
 
-        setcookie("firstName", $firstName);
-        setcookie("lastName", $lastName);
+        if ( isset($separated[0]) ) {
+            $firstName = $separated[0];
+            setcookie("firstName", $firstName);
+        }
+
+        if ( isset($separated[1]) ) {
+            $lastName = $separated[1];
+            setcookie("lastName", $lastName);
+        }
+        
     }
 
     if ( isset($_POST['email']) ) {
