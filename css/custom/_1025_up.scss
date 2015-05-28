@@ -123,16 +123,21 @@ button.yellow-background {
     }
 }
 
-.card.plan {
+.card-section {
 
-    .shadowed {
+    .card.plan {
 
-        .card-text {
+        .shadowed {
 
-            padding: 60px 0 0 35px;
+            .card-text {
+
+                padding: 60px 0 0 35px;
+            }
         }
     }
 }
+
+
 
 #hardware-hero, #software-hero, #pricing-hero {
 

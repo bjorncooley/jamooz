@@ -1234,7 +1234,7 @@ button.yellow-background {
   #hero h6 {
     max-width: none; }
 
-  .card.plan .shadowed .card-text {
+  .card-section .card.plan .shadowed .card-text {
     padding: 60px 0 0 35px; }
 
   #hardware-hero, #software-hero, #pricing-hero {
