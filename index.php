@@ -149,7 +149,10 @@
     <div class="light-gray-background padding-top-50 padding-bottom-50 full-height" id="customer-success">
         <div class="row clearfix">
             <div class="text-center small-12 medium-6 columns right">
-                <img src="img/home/customer_success_graphic.png" alt="">
+                <img src="img/home/customer_success_graphic.png" alt="" class="hide-for-large-up">
+                <video autoplay loop class="show-for-large-up">
+                  <source src="video/success.mp4" type="video/mp4">
+                </video>
             </div>
             <div class="small-12 medium-6 columns left">
                 <h1 class="padding-bottom-30 no-text-transform condensed">A customer success teammate at every step</h1>
