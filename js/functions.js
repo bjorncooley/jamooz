@@ -28,15 +28,11 @@ $(window).load(function(){
     /* -------------- SOFTARE/HARDWARE -------------- */
     /* ---------------------------------------------- */
 
-    if ( !mobile ) {
-        if ( $('#software-integrations').length != 0 ||
-             $('#hardware-integrations').length != 0 ) {
-                
-            setInterval(animateSignalGraphics, 900);
-        }
+    if ( $('#software-integrations').length != 0 ||
+         $('#hardware-integrations').length != 0 ) {
+            
+        setInterval(animateSignalGraphics, 900);
     }
-
-    
 });
 
 function hereFunction() {
@@ -774,23 +770,25 @@ function hideCardDetails() {
 
 function animateSignalGraphics() {
 
-    if ( $('.signal-graphic.current').length == 0 ) {
-        console.log('no graphic');
-        $('#signal-1').addClass('current');
-        $('.signal-graphic').each(function(){
+    if ( !mobile ) {
 
-            $(this).css('display', 'none');
-        });
-    } else {
+        if ( $('.signal-graphic.current').length == 0 ) {
+            console.log('no graphic');
+            $('#signal-1').addClass('current');
+            $('.signal-graphic').each(function(){
 
-        $currentGraphic = $('.signal-graphic.current');
-        $nextGraphic = $currentGraphic.next('.signal-graphic');
+                $(this).css('display', 'none');
+            });
+        } else {
 
-        $currentGraphic.css('display', 'block');
-        $currentGraphic.removeClass('current');
-        $nextGraphic.addClass('current');
+            $currentGraphic = $('.signal-graphic.current');
+            $nextGraphic = $currentGraphic.next('.signal-graphic');
+
+            $currentGraphic.css('display', 'block');
+            $currentGraphic.removeClass('current');
+            $nextGraphic.addClass('current');
+        }
     }
-
     
 }
 
@@ -833,11 +831,19 @@ function mobileSetupFunctions() {
 
     setMobileNav();
     setCardContainer();
+    hideDesktopGraphics();
 
     if ( $('#home').length != 0 ) {
 
         homeMobileNav();
     }
+}
+
+function hideDesktopGraphics() {
+
+    $('.signal-graphic').each(function(){
+        $(this).css('display', 'none');
+    });
 }
 
 function setFullHeightSections() {
