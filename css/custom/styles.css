@@ -720,6 +720,8 @@ button.yellow-background {
   .learn-section h4 {
     margin: 0 auto; }
 
+#home #hero h1 {
+  font-size: 2.2em; }
 #home #hero #hero-text a {
   display: inline-block; }
 #home #hero #hero-text button {
@@ -1133,6 +1135,8 @@ button.yellow-background {
     #intro h2 {
       padding-top: 60px; }
 
+  #home #hero h1 {
+    font-size: 2.4em; }
   #home #support {
     min-height: 552px; }
 
