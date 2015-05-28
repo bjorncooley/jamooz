@@ -5,7 +5,7 @@
             <img src="img/shared/slider_left_arrow_black.png" alt="" class="left-arrow card-left-arrow">
             <div class="row current card-container">
                 <div class="relative">
-                    <div class="small-12 medium-3 columns small-centered medium-uncentered device card current">
+                    <div class="small-12 large-3 columns small-centered large-uncentered device card current">
                         <div class="shadowed">
                             <div class="card-text-container">
                                 <div class="card-text">
@@ -26,7 +26,7 @@
                             <p class="close-details-link hide">Close Details</p>
                         </div>
                     </div>
-                    <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
+                    <div class="small-12 large-3 columns small-centered large-uncentered card device">
                         <div class="shadowed">
                             <div class="card-text-container">
                                 <div class="card-text">
@@ -48,7 +48,7 @@
                             <p class="close-details-link hide">Close Details</p>
                         </div>
                     </div>
-                    <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
+                    <div class="small-12 large-3 columns small-centered large-uncentered card device">
                         <div class="shadowed">
                             <div class="card-text-container">
                                 <div class="card-text">
@@ -70,7 +70,7 @@
                             <p class="close-details-link hide">Close Details</p>
                         </div>
                     </div><!-- .card -->
-                    <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
+                    <div class="small-12 large-3 columns small-centered large-uncentered card device">
                         <div class="shadowed">
                             <div class="card-text-container">
                                 <div class="card-text">
@@ -96,7 +96,7 @@
             </div><!-- .card-container -->
             <div class="row card-container">
                 <div class="relative">
-                    <div class="small-12 medium-3 columns small-centered medium-uncentered device card">
+                    <div class="small-12 large-3 columns small-centered large-uncentered device card">
                         <div class="shadowed">
                             <div class="card-text-container">
                                 <div class="card-text">
@@ -118,7 +118,7 @@
                             <p class="close-details-link hide">Close Details</p>
                         </div>
                     </div>
-                    <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
+                    <div class="small-12 large-3 columns small-centered large-uncentered card device">
                         <div class="shadowed">
                             <div class="card-text-container">
                                 <div class="card-text">
@@ -140,7 +140,7 @@
                             <p class="close-details-link hide">Close Details</p>
                         </div>
                     </div>
-                    <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
+                    <div class="small-12 large-3 columns small-centered large-uncentered card device">
                         <div class="shadowed">
                             <div class="card-text-container">
                                 <div class="card-text">
@@ -162,7 +162,7 @@
                             <p class="close-details-link hide">Close Details</p>
                         </div>
                     </div><!-- .card -->
-                    <div class="small-12 medium-3 columns small-centered medium-uncentered card device">
+                    <div class="small-12 large-3 columns small-centered large-uncentered card device">
                         <div class="shadowed">
                             <div class="card-text-container">
                                 <div class="card-text">
