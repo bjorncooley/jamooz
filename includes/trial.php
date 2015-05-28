@@ -8,7 +8,7 @@
             <form action="" method="post">
                 <div class="row">
                     <div class="small-12 large-6 columns">
-                        <input type="text" name="full_name" placeholder="Your Full Name">
+                        <input type="text" name="name" placeholder="Your Full Name">
                     </div>
                     <div class="small-12 large-6 columns">
                         <input type="email" name="email" placeholder="Email address">
