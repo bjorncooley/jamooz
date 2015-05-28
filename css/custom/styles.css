@@ -823,7 +823,7 @@ button.yellow-background {
 #apps .card .card-text, #devices .card .card-text {
   text-align: center; }
   #apps .card .card-text h5, #devices .card .card-text h5 {
-    padding-bottom: 15px;
+    padding: 30px 0 15px;
     font-weight: 400; }
   #apps .card .card-text img, #devices .card .card-text img {
     padding-bottom: 30px; }
