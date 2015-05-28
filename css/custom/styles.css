@@ -450,6 +450,9 @@ button.yellow-background {
   #hero-down-arrow img {
     position: relative; }
 
+#intro, #hardware-intro, #software-intro {
+  padding-top: 70px; }
+
 .card-section .left-arrow, .card-section .right-arrow {
   position: absolute;
   top: 345px;
