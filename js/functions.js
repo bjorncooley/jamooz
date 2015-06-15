@@ -189,12 +189,7 @@ $(window).scroll(function(){
                 }
             }
         }
-
-        
     }
-
-
-    
 });
 
 
