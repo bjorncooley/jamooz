@@ -2677,3 +2677,7 @@ body {
   -moz-border-radius: 0;
   padding: 40px 0 40px 100px;
 }
+/* line 81, ../scss/custom.scss */
+.archive .hentry header {
+  border-bottom: none;
+}

@@ -77,5 +77,10 @@ body {
         border-radius: 0;
         -moz-border-radius: 0;
         padding: 40px 0 40px 100px;
+
+        header {
+
+            border-bottom: none;
+        }
     }
 }
