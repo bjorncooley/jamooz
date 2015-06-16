@@ -54,7 +54,7 @@
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
 
-                    <?php include (TEMPLATEPATH.'/searchform.php'); ?>
+                    <?php include (TEMPLATEPATH . '/searchform.php'); ?>
 
                     <?php $url = get_site_url(); ?>
                     <?php $link = $url . '/../index.php#trial' ?>

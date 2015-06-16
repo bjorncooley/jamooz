@@ -1,6 +1,42 @@
 /* Colors */
 $light-blue: rgb(56,165,221);
+$light-brown: rgb(222,204,180);
 $light-gray: rgb(230,230,230);
+$red-orange: rgb(226,87,54);
+$teal: rgb(95,183,183);
+
+@mixin border_radius($radius) {
+
+    border-radius: $radius;
+    -moz-border-radius: $radius; 
+}
+
+@mixin placeholder_color($color){
+  &::-webkit-input-placeholder { /* WebKit browsers */
+      color:    $color;
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color:    $color;
+      opacity:  1;
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color:    $color;
+      opacity:  1;
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10+ */
+      color:    $color;
+  }
+}
+
+.red-orange-background {
+
+    background-color: $red-orange;
+}
+
+.white {
+
+    color: white;
+}
 
 body {
 
@@ -17,10 +53,20 @@ body {
     width: 100%;
 }
 
+#home, #main {
+
+    width: 81%;
+}
+
+/* ---------------------------- */
+/* ---    SIDEBAR STYLES    --- */
+/* ---------------------------- */
+
 .sidebar {
 
     margin-top: 0;
     height: 100%;
+    width: 19%;
 
     .widget {
 
@@ -46,6 +92,83 @@ body {
         }
     }
 }
+
+
+/* ---------------------------- */
+/* ---     LANDING PAGE     --- */
+/* ---------------------------- */
+
+#home {
+
+    background: $light-brown url(../images/success-bg.png) no-repeat 80% 20%;
+    padding: 80px 0 0 0;
+
+    .text {
+
+        max-width: 300px;
+        margin: 0 0 100px 100px;
+
+        h1, p {
+
+            margin-bottom: 40px;
+        }
+
+        h1 {
+
+            text-transform: uppercase;
+            font-size: 30px;
+            color: $red-orange;
+            font-weight: bold;
+        }
+
+        p {
+
+            font-size: 17px;
+            color: black;
+        }
+
+        button {
+
+            padding: 20px 40px;
+            border: none;
+            text-transform: uppercase;
+            font-size: 17px;
+            font-weight: bold;
+            @include border_radius(5px);
+        }
+    }
+
+    #search-section {
+
+        text-align: center;
+        background-color: $teal;
+
+        form {
+
+            padding: 40px;
+            color: white;
+
+            input {
+
+                background: none;
+                padding: 5px 0 5px 60px;
+                border: 1px solid white;
+                color: white;
+                @include placeholder_color(white);
+                @include border_radius(5px);
+                width: 60%;
+                min-width: 300px;
+                max-width: none;
+                margin: 0 auto;
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+/* ---------------------------- */
+/* ---     CATEGORY PAGE    --- */
+/* ---------------------------- */
 
 .archive {
 

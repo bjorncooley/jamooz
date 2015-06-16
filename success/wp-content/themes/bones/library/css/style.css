@@ -2610,40 +2610,59 @@ be set to display none.
 /* ---    CUSTOM CSS       --- */
 /* --------------------------- */
 /* Colors */
-/* line 5, ../scss/custom.scss */
+/* line 31, ../scss/custom.scss */
+.red-orange-background {
+  background-color: #e25736;
+}
+
+/* line 36, ../scss/custom.scss */
+.white {
+  color: white;
+}
+
+/* line 41, ../scss/custom.scss */
 body {
   background-color: #e6e6e6;
 }
 
-/* line 10, ../scss/custom.scss */
+/* line 46, ../scss/custom.scss */
 #content {
   margin-top: 0;
 }
 
-/* line 15, ../scss/custom.scss */
+/* line 51, ../scss/custom.scss */
 .wrap {
   width: 100%;
 }
 
-/* line 20, ../scss/custom.scss */
+/* line 56, ../scss/custom.scss */
+#home, #main {
+  width: 81%;
+}
+
+/* ---------------------------- */
+/* ---    SIDEBAR STYLES    --- */
+/* ---------------------------- */
+/* line 65, ../scss/custom.scss */
 .sidebar {
   margin-top: 0;
   height: 100%;
+  width: 19%;
 }
-/* line 25, ../scss/custom.scss */
+/* line 71, ../scss/custom.scss */
 .sidebar .widget {
   padding: 0;
 }
-/* line 29, ../scss/custom.scss */
+/* line 75, ../scss/custom.scss */
 .sidebar .widget .widgettitle {
   display: none;
 }
-/* line 34, ../scss/custom.scss */
+/* line 80, ../scss/custom.scss */
 .sidebar .widget li {
   padding: 40px;
   border-bottom: 1px solid black;
 }
-/* line 39, ../scss/custom.scss */
+/* line 85, ../scss/custom.scss */
 .sidebar .widget li a {
   text-decoration: none;
   text-transform: uppercase;
@@ -2651,7 +2670,96 @@ body {
   color: black;
 }
 
-/* line 52, ../scss/custom.scss */
+/* ---------------------------- */
+/* ---     LANDING PAGE     --- */
+/* ---------------------------- */
+/* line 101, ../scss/custom.scss */
+#home {
+  background: #deccb4 url(../images/success-bg.png) no-repeat 80% 20%;
+  padding: 80px 0 0 0;
+}
+/* line 106, ../scss/custom.scss */
+#home .text {
+  max-width: 300px;
+  margin: 0 0 100px 100px;
+}
+/* line 111, ../scss/custom.scss */
+#home .text h1, #home .text p {
+  margin-bottom: 40px;
+}
+/* line 116, ../scss/custom.scss */
+#home .text h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #e25736;
+  font-weight: bold;
+}
+/* line 124, ../scss/custom.scss */
+#home .text p {
+  font-size: 17px;
+  color: black;
+}
+/* line 130, ../scss/custom.scss */
+#home .text button {
+  padding: 20px 40px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 141, ../scss/custom.scss */
+#home #search-section {
+  text-align: center;
+  background-color: #5fb7b7;
+}
+/* line 146, ../scss/custom.scss */
+#home #search-section form {
+  padding: 40px;
+  color: white;
+}
+/* line 151, ../scss/custom.scss */
+#home #search-section form input {
+  background: none;
+  padding: 5px 0 5px 60px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  width: 60%;
+  min-width: 300px;
+  max-width: none;
+  margin: 0 auto;
+  font-size: 17px;
+}
+/* line 15, ../scss/custom.scss */
+#home #search-section form input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: white;
+}
+/* line 18, ../scss/custom.scss */
+#home #search-section form input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: white;
+  opacity: 1;
+}
+/* line 22, ../scss/custom.scss */
+#home #search-section form input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: white;
+  opacity: 1;
+}
+/* line 26, ../scss/custom.scss */
+#home #search-section form input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: white;
+}
+
+/* ---------------------------- */
+/* ---     CATEGORY PAGE    --- */
+/* ---------------------------- */
+/* line 175, ../scss/custom.scss */
 .archive .page-title {
   padding: 120px 0 120px 100px;
   text-transform: uppercase;
@@ -2659,17 +2767,17 @@ body {
   background-color: #38a5dd;
   color: white;
 }
-/* line 61, ../scss/custom.scss */
+/* line 184, ../scss/custom.scss */
 .archive .entry-title {
   color: black;
   text-transform: uppercase;
   font-size: 26px;
 }
-/* line 67, ../scss/custom.scss */
+/* line 190, ../scss/custom.scss */
 .archive .entry-title a {
   color: black;
 }
-/* line 73, ../scss/custom.scss */
+/* line 196, ../scss/custom.scss */
 .archive .hentry {
   margin-bottom: 0;
   border: none;
@@ -2677,7 +2785,7 @@ body {
   -moz-border-radius: 0;
   padding: 40px 0 40px 100px;
 }
-/* line 81, ../scss/custom.scss */
+/* line 204, ../scss/custom.scss */
 .archive .hentry header {
   border-bottom: none;
 }
