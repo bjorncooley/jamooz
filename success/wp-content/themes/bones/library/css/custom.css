@@ -1,0 +1,68 @@
+/* Colors */
+/* line 5, ../scss/custom.scss */
+body {
+  background-color: #e6e6e6;
+}
+
+/* line 10, ../scss/custom.scss */
+#content {
+  margin-top: 0;
+}
+
+/* line 15, ../scss/custom.scss */
+.wrap {
+  width: 100%;
+}
+
+/* line 20, ../scss/custom.scss */
+.sidebar {
+  margin-top: 0;
+  height: 100%;
+}
+/* line 25, ../scss/custom.scss */
+.sidebar .widget {
+  padding: 0;
+}
+/* line 29, ../scss/custom.scss */
+.sidebar .widget .widgettitle {
+  display: none;
+}
+/* line 34, ../scss/custom.scss */
+.sidebar .widget li {
+  padding: 40px;
+  border-bottom: 1px solid black;
+}
+/* line 39, ../scss/custom.scss */
+.sidebar .widget li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+}
+
+/* line 52, ../scss/custom.scss */
+.archive .page-title {
+  padding: 120px 0 120px 100px;
+  text-transform: uppercase;
+  font-size: 30px;
+  background-color: #38a5dd;
+  color: white;
+}
+/* line 61, ../scss/custom.scss */
+.archive .entry-title {
+  color: black;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+/* line 67, ../scss/custom.scss */
+.archive .entry-title a {
+  color: black;
+}
+/* line 73, ../scss/custom.scss */
+.archive .hentry {
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  padding: 40px 0 40px 100px;
+}
