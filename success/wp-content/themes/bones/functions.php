@@ -244,4 +244,22 @@ function bones_fonts() {
 
 add_action('wp_enqueue_scripts', 'bones_fonts');
 
+
+/* ----------------------------------------------- */
+/* ---             CUSTOM FUNCTIONS            --- */   
+/* ----------------------------------------------- */
+
+
+add_filter( 'get_the_archive_title', function ( $title ) {
+
+    if( is_category() ) {
+
+        $title = single_cat_title( '', false );
+
+    }
+
+    return $title;
+
+});
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
