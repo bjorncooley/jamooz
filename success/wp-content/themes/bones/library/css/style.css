@@ -2737,58 +2737,66 @@ body {
   width: 19%;
 }
 /* line 148, ../scss/custom.scss */
-.sidebar .widget {
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-/* line 154, ../scss/custom.scss */
-.sidebar .widget .widgettitle {
-  display: none;
-}
-/* line 161, ../scss/custom.scss */
-.sidebar .widget .category h2 {
-  padding: 30px;
+.sidebar .category {
+  padding: 30px 0;
   border-bottom: 1px solid black;
 }
-/* line 166, ../scss/custom.scss */
-.sidebar .widget .category h2 a {
+/* line 153, ../scss/custom.scss */
+.sidebar .category h4 {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   color: black;
+  margin: 0;
+  padding: 30px;
+}
+/* line 163, ../scss/custom.scss */
+.sidebar .category .category-posts {
+  padding: 0 30px;
+}
+/* line 167, ../scss/custom.scss */
+.sidebar .category .category-posts h5 {
+  margin-top: 0;
+}
+/* line 172, ../scss/custom.scss */
+.sidebar .category .category-posts a {
+  color: black;
+}
+/* line 177, ../scss/custom.scss */
+.sidebar .category .category-posts a:hover {
+  color: #38a5dd;
 }
 
 /* ---------------------------- */
 /* ---     LANDING PAGE     --- */
 /* ---------------------------- */
-/* line 185, ../scss/custom.scss */
+/* line 190, ../scss/custom.scss */
 #home {
   background: #deccb4 url(../images/success-bg.png) no-repeat 80% 20%;
   padding: 80px 0 0 0;
 }
-/* line 190, ../scss/custom.scss */
+/* line 195, ../scss/custom.scss */
 #home .text {
   max-width: 300px;
   margin: 0 0 100px 100px;
 }
-/* line 195, ../scss/custom.scss */
+/* line 200, ../scss/custom.scss */
 #home .text h1, #home .text p {
   margin-bottom: 40px;
 }
-/* line 200, ../scss/custom.scss */
+/* line 205, ../scss/custom.scss */
 #home .text h1 {
   text-transform: uppercase;
   font-size: 30px;
   color: #e25736;
   font-weight: bold;
 }
-/* line 208, ../scss/custom.scss */
+/* line 213, ../scss/custom.scss */
 #home .text p {
   font-size: 17px;
   color: black;
 }
-/* line 214, ../scss/custom.scss */
+/* line 219, ../scss/custom.scss */
 #home .text button {
   padding: 20px 40px;
   border: none;
@@ -2798,17 +2806,17 @@ body {
   border-radius: 5px;
   -moz-border-radius: 5px;
 }
-/* line 225, ../scss/custom.scss */
+/* line 230, ../scss/custom.scss */
 #home #search-section {
   text-align: center;
   background-color: #5fb7b7;
 }
-/* line 230, ../scss/custom.scss */
+/* line 235, ../scss/custom.scss */
 #home #search-section form {
   padding: 40px;
   color: white;
 }
-/* line 235, ../scss/custom.scss */
+/* line 240, ../scss/custom.scss */
 #home #search-section form input {
   background: none;
   padding: 5px 0 5px 60px;
@@ -2848,7 +2856,7 @@ body {
 /* ---------------------------- */
 /* ---     CATEGORY PAGE    --- */
 /* ---------------------------- */
-/* line 259, ../scss/custom.scss */
+/* line 264, ../scss/custom.scss */
 .archive .page-title {
   padding: 120px 0 120px 100px;
   text-transform: uppercase;
@@ -2856,17 +2864,17 @@ body {
   background-color: #38a5dd;
   color: white;
 }
-/* line 268, ../scss/custom.scss */
+/* line 273, ../scss/custom.scss */
 .archive .entry-title {
   color: black;
   text-transform: uppercase;
   font-size: 26px;
 }
-/* line 274, ../scss/custom.scss */
+/* line 279, ../scss/custom.scss */
 .archive .entry-title a {
   color: black;
 }
-/* line 280, ../scss/custom.scss */
+/* line 285, ../scss/custom.scss */
 .archive .hentry {
   margin-bottom: 0;
   border: none;
@@ -2874,7 +2882,7 @@ body {
   -moz-border-radius: 0;
   padding: 40px 0 40px 100px;
 }
-/* line 288, ../scss/custom.scss */
+/* line 293, ../scss/custom.scss */
 .archive .hentry header {
   border-bottom: none;
 }

@@ -8,19 +8,22 @@
 							'category' => $category->cat_ID,
 						);
 
-						$posts_array = get_posts($post_args);
+						$posts_array = get_posts($post_args); ?>
 
-						echo '<div class="category">';
+						<div class="category">
 						
-						echo '<h2>' . $category->name . '</h2>';
+							<h4><?php echo $category->name; ?></h4>
 
-						foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
-							<h5>
-								<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-							</h5>
-						<?php endforeach; 
+							<div class="category-posts">
 
-						echo '</div>';
-					} ?>
+								<?php foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
+									<h5>
+										<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+									</h5>
+								<?php endforeach; ?>
+							</div>
+
+						</div>
+					<?php } ?>
 
 				</div>
