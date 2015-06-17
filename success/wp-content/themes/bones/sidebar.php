@@ -11,8 +11,10 @@
 						$posts_array = get_posts($post_args); ?>
 
 						<div class="category">
-						
-							<h4><?php echo $category->name; ?></h4>
+							
+							<a href="<?php echo get_category_link($category->cat_ID); ?>">
+								<h4><?php echo $category->name; ?></h4>
+							</a>
 
 							<div class="category-posts">
 
