@@ -14,6 +14,15 @@ var viewport = updateViewportDimensions();
 
 jQuery(document).ready(function($) {
 
+  updateSidebarNavStyles();
+  
+
+  //jQuery('a[title="Category 2"]').offset().top
+}); /* end of as page load scripts */
+
+
+function updateSidebarNavStyles() {
+
   var page_title = jQuery('.page-title').text();
 
   jQuery('.category h4').each(function(){
@@ -34,5 +43,4 @@ jQuery(document).ready(function($) {
       jQuery(this).parents('.category').prev('.category').css('border-bottom', 'none');
     }
   });
-  //jQuery('a[title="Category 2"]').offset().top
-}); /* end of as page load scripts */
+}
