@@ -15,7 +15,7 @@ var viewport = updateViewportDimensions();
 jQuery(document).ready(function($) {
 
   updateSidebarNavStyles();
-  
+  scrollToPost();
 
   //jQuery('a[title="Category 2"]').offset().top
 }); /* end of as page load scripts */
@@ -42,5 +42,22 @@ function updateSidebarNavStyles() {
 
       jQuery(this).parents('.category').prev('.category').css('border-bottom', 'none');
     }
+  });
+}
+
+
+function scrollToPost() {
+
+  jQuery('.category-posts a').click(function(e){
+
+    e.preventDefault();
+    console.log(jQuery(this));
+
+    var post_title = jQuery(this).text();
+    var scroll_target = jQuery('a[title="' + post_title + '"]').offset().top
+
+    console.log(scroll_target);
+
+    jQuery('html, body').animate({ 'scrollTop' : scroll_target });
   });
 }

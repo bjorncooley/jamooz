@@ -274,4 +274,10 @@ body {
 /* line 293, ../scss/custom.scss */
 .archive .hentry header {
   border-bottom: none;
+  padding-top: 0;
+}
+/* line 298, ../scss/custom.scss */
+.archive .hentry header a {
+  padding-top: 1.5em;
+  display: inline-block;
 }

@@ -293,6 +293,13 @@ body {
         header {
 
             border-bottom: none;
+            padding-top: 0;
+
+            a {
+
+                padding-top: 1.5em;
+                display: inline-block;
+            }
         }
     }
 }
