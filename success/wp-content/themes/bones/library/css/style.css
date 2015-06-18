@@ -2866,7 +2866,7 @@ body {
 }
 /* line 297, ../scss/custom.scss */
 #home #search-section form input {
-  background: none;
+  background: url(../images/search_icon_white.png) no-repeat 2%;
   padding: 5px 0 5px 60px;
   border: 1px solid white;
   color: white;
