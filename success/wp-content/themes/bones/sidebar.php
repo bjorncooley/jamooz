@@ -2,7 +2,6 @@
 
 					<?php $cat_args = array(
 						'orderby' => 'ID',
-						'order' => 'DESC',
 					); ?>
 					<?php $categories = get_categories($cat_args); ?>
 					<?php foreach( $categories as $category ) {
