@@ -1,6 +1,10 @@
 				<div id="sidebar1" class="sidebar m-all t-1of3 d-2of7 last-col cf" role="complementary">
 
-					<?php $categories = get_categories(); ?>
+					<?php $cat_args = array(
+						'orderby' => 'ID',
+						'order' => 'DESC',
+					); ?>
+					<?php $categories = get_categories($cat_args); ?>
 					<?php foreach( $categories as $category ) {
 
 						$post_args = array(

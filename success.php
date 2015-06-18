@@ -89,7 +89,6 @@
                             <p class="small">next</p>
                             <p>Getting Started</p>
                         </div>
-                        
                         <img src="img/success/white_right_arrow.png" alt="">
                     </div>
                     
