@@ -49,11 +49,15 @@
 				<div id="inner-header" class="wrap cf group">
 
                     <div class="brand">
-                        <img src="../images/logo.png" alt="">
+                        <a href="<?php echo get_site_url(); ?>">
+                            <img src="<?php bloginfo('template_directory'); ?>/library/images/success-logo.png" alt="">
+                        </a>
                     </div>
 
                     <div class="main-header">
-                        <?php include (TEMPLATEPATH . '/searchform.php'); ?>
+                        <div id="header-search" <?php if (is_home()) { echo "class=hidden"; } ?>>
+                            <?php include (TEMPLATEPATH . '/searchform.php'); ?>
+                        </div>
 
                         <?php $url = get_site_url(); ?>
                         <?php $link = $url . '/../index.php#trial' ?>

@@ -2,6 +2,7 @@
 $light-blue: rgb(56,165,221);
 $light-brown: rgb(222,204,180);
 $light-gray: rgb(230,230,230);
+$lighter-gray: rgb(242,242,242);
 $medium-dark-gray: rgb(88,88,91);
 $red-orange: rgb(226,87,54);
 $teal: rgb(95,183,183);
@@ -34,6 +35,11 @@ $teal: rgb(95,183,183);
   content: "";
   display: table;
   clear: both;
+}
+
+.hidden {
+
+    visibility: hidden;
 }
 
 .medium-dark-gray-border {
@@ -89,6 +95,7 @@ body {
 
         width: 19%;
         float: left;
+        background-color: $lighter-gray;
     }
 
     .main-header {
@@ -103,22 +110,30 @@ body {
             @include border_radius(5px);
         }
 
-        form {
+        #header-search {
 
             width: 50%;
             min-width: 300px;
             margin-right: 50px;
+            display: inline-block;
 
-            input {
+            form {
 
-                @include placeholder_color(black);
-                margin-bottom: 0;
-                max-width: 90%;
-                background: none;
-                border: 1px solid black;
-                padding-left: 50px;
+                width: 100%;
+
+                input {
+
+                    @include placeholder_color(black);
+                    margin-bottom: 0;
+                    max-width: 90%;
+                    background: none;
+                    border: 1px solid black;
+                    padding-left: 50px;
+                }
             }
         }
+
+        
 
         button {
 

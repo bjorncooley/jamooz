@@ -2611,49 +2611,54 @@ be set to display none.
 /* --------------------------- */
 /* Colors */
 /* Clearfix */
-/* line 33, ../scss/custom.scss */
+/* line 34, ../scss/custom.scss */
 .group:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 39, ../scss/custom.scss */
+/* line 40, ../scss/custom.scss */
+.hidden {
+  visibility: hidden;
+}
+
+/* line 45, ../scss/custom.scss */
 .medium-dark-gray-border {
   border: 1px solid #58585b;
 }
 
-/* line 44, ../scss/custom.scss */
+/* line 50, ../scss/custom.scss */
 .red-orange-background {
   background-color: #e25736;
 }
 
-/* line 49, ../scss/custom.scss */
+/* line 55, ../scss/custom.scss */
 .red-orange-border {
   border: 1px solid #e25736;
 }
 
-/* line 55, ../scss/custom.scss */
+/* line 61, ../scss/custom.scss */
 .white {
   color: white;
 }
 
-/* line 60, ../scss/custom.scss */
+/* line 66, ../scss/custom.scss */
 body {
   background-color: #e6e6e6;
 }
 
-/* line 65, ../scss/custom.scss */
+/* line 71, ../scss/custom.scss */
 #content {
   margin-top: 0;
 }
 
-/* line 70, ../scss/custom.scss */
+/* line 76, ../scss/custom.scss */
 .wrap {
   width: 100%;
 }
 
-/* line 75, ../scss/custom.scss */
+/* line 81, ../scss/custom.scss */
 #home, #main {
   width: 81%;
 }
@@ -2661,64 +2666,70 @@ body {
 /* --------------------------- */
 /* ---    HEADER STYLES    --- */
 /* --------------------------- */
-/* line 84, ../scss/custom.scss */
+/* line 90, ../scss/custom.scss */
 .header {
   background-color: white;
 }
-/* line 88, ../scss/custom.scss */
+/* line 94, ../scss/custom.scss */
 .header .brand {
   width: 19%;
   float: left;
+  background-color: #f2f2f2;
 }
-/* line 94, ../scss/custom.scss */
+/* line 101, ../scss/custom.scss */
 .header .main-header {
   width: 81%;
   float: right;
   padding: 30px 0 30px 60px;
 }
-/* line 100, ../scss/custom.scss */
+/* line 107, ../scss/custom.scss */
 .header .main-header form, .header .main-header button {
   display: inline-block;
   border-radius: 5px;
   -moz-border-radius: 5px;
 }
-/* line 106, ../scss/custom.scss */
-.header .main-header form {
+/* line 113, ../scss/custom.scss */
+.header .main-header #header-search {
   width: 50%;
   min-width: 300px;
   margin-right: 50px;
+  display: inline-block;
 }
-/* line 112, ../scss/custom.scss */
-.header .main-header form input {
+/* line 120, ../scss/custom.scss */
+.header .main-header #header-search form {
+  width: 100%;
+}
+/* line 124, ../scss/custom.scss */
+.header .main-header #header-search form input {
   margin-bottom: 0;
   max-width: 90%;
   background: none;
   border: 1px solid black;
   padding-left: 50px;
 }
-/* line 16, ../scss/custom.scss */
-.header .main-header form input::-webkit-input-placeholder {
+/* line 17, ../scss/custom.scss */
+.header .main-header #header-search form input::-webkit-input-placeholder {
   /* WebKit browsers */
   color: black;
 }
-/* line 19, ../scss/custom.scss */
-.header .main-header form input:-moz-placeholder {
+/* line 20, ../scss/custom.scss */
+.header .main-header #header-search form input:-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: black;
   opacity: 1;
 }
-/* line 23, ../scss/custom.scss */
-.header .main-header form input::-moz-placeholder {
+/* line 24, ../scss/custom.scss */
+.header .main-header #header-search form input::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: black;
   opacity: 1;
 }
-/* line 27, ../scss/custom.scss */
-.header .main-header form input:-ms-input-placeholder {
+/* line 28, ../scss/custom.scss */
+.header .main-header #header-search form input:-ms-input-placeholder {
   /* Internet Explorer 10+ */
   color: black;
 }
-/* line 123, ../scss/custom.scss */
+/* line 138, ../scss/custom.scss */
 .header .main-header button {
   padding: 10px 30px;
   width: 150px;
@@ -2730,21 +2741,21 @@ body {
 /* ---------------------------- */
 /* ---    SIDEBAR STYLES    --- */
 /* ---------------------------- */
-/* line 142, ../scss/custom.scss */
+/* line 157, ../scss/custom.scss */
 .sidebar {
   margin-top: 0;
   height: 100%;
   width: 19%;
 }
-/* line 148, ../scss/custom.scss */
+/* line 163, ../scss/custom.scss */
 .sidebar .category {
   border-bottom: 1px solid black;
 }
-/* line 152, ../scss/custom.scss */
+/* line 167, ../scss/custom.scss */
 .sidebar .category a {
   text-decoration: none;
 }
-/* line 157, ../scss/custom.scss */
+/* line 172, ../scss/custom.scss */
 .sidebar .category h4 {
   text-decoration: none;
   text-transform: uppercase;
@@ -2753,16 +2764,16 @@ body {
   margin: 0;
   padding: 40px 30px;
 }
-/* line 167, ../scss/custom.scss */
+/* line 182, ../scss/custom.scss */
 .sidebar .category .category-posts {
   display: none;
   padding: 0 30px;
 }
-/* line 172, ../scss/custom.scss */
+/* line 187, ../scss/custom.scss */
 .sidebar .category .category-posts a {
   color: black;
 }
-/* line 177, ../scss/custom.scss */
+/* line 192, ../scss/custom.scss */
 .sidebar .category .category-posts a:hover {
   color: #38a5dd;
 }
@@ -2770,33 +2781,33 @@ body {
 /* ---------------------------- */
 /* ---     LANDING PAGE     --- */
 /* ---------------------------- */
-/* line 190, ../scss/custom.scss */
+/* line 205, ../scss/custom.scss */
 #home {
   background: #deccb4 url(../images/success-bg.png) no-repeat 80% 20%;
   padding: 80px 0 0 0;
 }
-/* line 195, ../scss/custom.scss */
+/* line 210, ../scss/custom.scss */
 #home .text {
   max-width: 300px;
   margin: 0 0 100px 100px;
 }
-/* line 200, ../scss/custom.scss */
+/* line 215, ../scss/custom.scss */
 #home .text h1, #home .text p {
   margin-bottom: 40px;
 }
-/* line 205, ../scss/custom.scss */
+/* line 220, ../scss/custom.scss */
 #home .text h1 {
   text-transform: uppercase;
   font-size: 30px;
   color: #e25736;
   font-weight: bold;
 }
-/* line 213, ../scss/custom.scss */
+/* line 228, ../scss/custom.scss */
 #home .text p {
   font-size: 17px;
   color: black;
 }
-/* line 219, ../scss/custom.scss */
+/* line 234, ../scss/custom.scss */
 #home .text button {
   padding: 20px 40px;
   border: none;
@@ -2806,17 +2817,17 @@ body {
   border-radius: 5px;
   -moz-border-radius: 5px;
 }
-/* line 230, ../scss/custom.scss */
+/* line 245, ../scss/custom.scss */
 #home #search-section {
   text-align: center;
   background-color: #5fb7b7;
 }
-/* line 235, ../scss/custom.scss */
+/* line 250, ../scss/custom.scss */
 #home #search-section form {
   padding: 40px;
   color: white;
 }
-/* line 240, ../scss/custom.scss */
+/* line 255, ../scss/custom.scss */
 #home #search-section form input {
   background: none;
   padding: 5px 0 5px 60px;
@@ -2830,24 +2841,24 @@ body {
   margin: 0 auto;
   font-size: 17px;
 }
-/* line 16, ../scss/custom.scss */
+/* line 17, ../scss/custom.scss */
 #home #search-section form input::-webkit-input-placeholder {
   /* WebKit browsers */
   color: white;
 }
-/* line 19, ../scss/custom.scss */
+/* line 20, ../scss/custom.scss */
 #home #search-section form input:-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: white;
   opacity: 1;
 }
-/* line 23, ../scss/custom.scss */
+/* line 24, ../scss/custom.scss */
 #home #search-section form input::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: white;
   opacity: 1;
 }
-/* line 27, ../scss/custom.scss */
+/* line 28, ../scss/custom.scss */
 #home #search-section form input:-ms-input-placeholder {
   /* Internet Explorer 10+ */
   color: white;
@@ -2856,7 +2867,7 @@ body {
 /* ---------------------------- */
 /* ---     CATEGORY PAGE    --- */
 /* ---------------------------- */
-/* line 264, ../scss/custom.scss */
+/* line 279, ../scss/custom.scss */
 .archive .page-title {
   padding: 120px 0 120px 100px;
   text-transform: uppercase;
@@ -2864,17 +2875,17 @@ body {
   background-color: #38a5dd;
   color: white;
 }
-/* line 273, ../scss/custom.scss */
+/* line 288, ../scss/custom.scss */
 .archive .entry-title {
   color: black;
   text-transform: uppercase;
   font-size: 26px;
 }
-/* line 279, ../scss/custom.scss */
+/* line 294, ../scss/custom.scss */
 .archive .entry-title a {
   color: black;
 }
-/* line 285, ../scss/custom.scss */
+/* line 300, ../scss/custom.scss */
 .archive .hentry {
   margin-bottom: 0;
   border: none;
@@ -2882,12 +2893,12 @@ body {
   -moz-border-radius: 0;
   padding: 40px 0 40px 100px;
 }
-/* line 293, ../scss/custom.scss */
+/* line 308, ../scss/custom.scss */
 .archive .hentry header {
   border-bottom: none;
   padding-top: 0;
 }
-/* line 298, ../scss/custom.scss */
+/* line 313, ../scss/custom.scss */
 .archive .hentry header a {
   padding-top: 1.5em;
   display: inline-block;
