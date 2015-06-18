@@ -168,9 +168,9 @@ body {
                     @include placeholder_color(black);
                     margin-bottom: 0;
                     max-width: 90%;
-                    background: none;
                     border: 1px solid black;
                     padding-left: 50px;
+                    background: url(../images/search_icon_black.png) no-repeat 2%;
                 }
             }
         }

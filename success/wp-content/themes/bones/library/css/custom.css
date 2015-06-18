@@ -129,9 +129,9 @@ body {
 .header .main-header #header-search form input {
   margin-bottom: 0;
   max-width: 90%;
-  background: none;
   border: 1px solid black;
   padding-left: 50px;
+  background: url(../images/search_icon_black.png) no-repeat 2%;
 }
 /* line 19, ../scss/custom.scss */
 .header .main-header #header-search form input::-webkit-input-placeholder {
