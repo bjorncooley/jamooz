@@ -11,12 +11,15 @@
 
                         <div class="inline-block text-center max-960">
                             <a href="<?php echo get_site_url() ?>/category/setup-basics/">
+                                <img src="<?php bloginfo('template_directory'); ?>/library/images/master_basics.png" alt="">
                                 <h4>Master the Basics</h4>
                             </a>
                             <a href="<?php echo get_site_url() ?>/category/do-more/">
+                                <img src="<?php bloginfo('template_directory'); ?>/library/images/get_more_done.png" alt="">
                                 <h4>Get More Done</h4>
                             </a>
                             <a href="<?php echo get_site_url() ?>/category/troubleshooting/">
+                                <img src="<?php bloginfo('template_directory'); ?>/library/images/troubleshooting.png" alt="">
                                 <h4>Troubleshooting</h4>
                             </a>
                         </div>
