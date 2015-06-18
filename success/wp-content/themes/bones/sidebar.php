@@ -9,6 +9,7 @@
 						$post_args = array(
 
 							'category' => $category->cat_ID,
+							'orderby' => 'date',
 						);
 
 						$posts_array = get_posts($post_args); ?>
