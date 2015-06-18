@@ -2925,63 +2925,70 @@ img {
 /* ---------------------------- */
 /* ---     CATEGORY PAGE    --- */
 /* ---------------------------- */
-/* line 345, ../scss/custom.scss */
-.archive .page-title {
+/* line 343, ../scss/custom.scss */
+.page-title, .archive-title {
   padding: 120px 0 120px 100px;
   text-transform: uppercase;
   font-size: 30px;
   background-color: #38a5dd;
   color: white;
+  margin: 0;
 }
-/* line 354, ../scss/custom.scss */
-.archive .entry-title {
+
+/* line 353, ../scss/custom.scss */
+.entry-title {
   color: black;
   text-transform: uppercase;
   font-size: 26px;
 }
-/* line 360, ../scss/custom.scss */
-.archive .entry-title a {
+/* line 359, ../scss/custom.scss */
+.entry-title a {
   color: black;
 }
-/* line 366, ../scss/custom.scss */
-.archive .hentry {
+
+/* line 365, ../scss/custom.scss */
+.hentry {
   margin-bottom: 0;
   border: none;
   border-radius: 0;
   -moz-border-radius: 0;
   padding: 40px 0 40px 100px;
 }
-/* line 374, ../scss/custom.scss */
-.archive .hentry header {
+/* line 373, ../scss/custom.scss */
+.hentry header {
   border-bottom: none;
   padding-top: 0;
 }
-/* line 379, ../scss/custom.scss */
-.archive .hentry header a {
+/* line 378, ../scss/custom.scss */
+.hentry header a {
   padding-top: 1.5em;
   display: inline-block;
+}
+/* line 385, ../scss/custom.scss */
+.hentry a, .hentry a:hover {
+  color: #38a5dd;
 }
 
 /* ---------------------------- */
 /* ---    FOOTER STYLES     --- */
 /* ---------------------------- */
-/* line 394, ../scss/custom.scss */
+/* line 397, ../scss/custom.scss */
 .footer {
   background-color: white;
   color: black;
   position: relative;
 }
-/* line 400, ../scss/custom.scss */
+/* line 403, ../scss/custom.scss */
 .footer a {
   color: black;
   text-decoration: none;
   display: inline-block;
 }
-/* line 406, ../scss/custom.scss */
+/* line 409, ../scss/custom.scss */
 .footer a:hover {
   color: #38a5dd;
 }
-/* line 412, ../scss/custom.scss */
+/* line 415, ../scss/custom.scss */
 .footer #footer-left {
   background-color: #f2f2f2;
   position: absolute;
@@ -2990,41 +2997,41 @@ img {
   height: 100%;
   width: 19%;
 }
-/* line 421, ../scss/custom.scss */
+/* line 424, ../scss/custom.scss */
 .footer #footer-left .content {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
 }
-/* line 428, ../scss/custom.scss */
+/* line 431, ../scss/custom.scss */
 .footer #footer-left .content p {
   margin-top: 0;
 }
-/* line 435, ../scss/custom.scss */
+/* line 438, ../scss/custom.scss */
 .footer #footer-right {
   width: 81%;
   float: right;
   padding-top: 20px;
 }
-/* line 443, ../scss/custom.scss */
+/* line 446, ../scss/custom.scss */
 .footer #footer-right div.max-960 a {
   font-weight: 300;
   margin: 30px 6%;
   text-transform: uppercase;
 }
-/* line 451, ../scss/custom.scss */
+/* line 454, ../scss/custom.scss */
 .footer #footer-right div.half {
   width: 50%;
   float: left;
   padding: 20px 100px;
 }
-/* line 457, ../scss/custom.scss */
+/* line 460, ../scss/custom.scss */
 .footer #footer-right div.half p {
   margin-bottom: 0;
   margin-top: 0;
 }
-/* line 463, ../scss/custom.scss */
+/* line 466, ../scss/custom.scss */
 .footer #footer-right div.half a, .footer #footer-right div.half a:hover {
   color: white;
 }

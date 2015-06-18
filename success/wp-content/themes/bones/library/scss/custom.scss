@@ -340,48 +340,51 @@ img {
 /* ---     CATEGORY PAGE    --- */
 /* ---------------------------- */
 
-.archive {
+.page-title, .archive-title {
 
-    .page-title {
+    padding: 120px 0 120px 100px;
+    text-transform: uppercase;
+    font-size: 30px;
+    background-color: $light-blue;
+    color: white;
+    margin: 0;
+}
 
-        padding: 120px 0 120px 100px;
-        text-transform: uppercase;
-        font-size: 30px;
-        background-color: $light-blue;
-        color: white;
-    }
+.entry-title {
 
-    .entry-title {
+    color: black;
+    text-transform: uppercase;
+    font-size: 26px;
+
+    a {
 
         color: black;
-        text-transform: uppercase;
-        font-size: 26px;
+    }
+}
+
+.hentry {
+
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    padding: 40px 0 40px 100px;
+
+    header {
+
+        border-bottom: none;
+        padding-top: 0;
 
         a {
 
-            color: black;
+            padding-top: 1.5em;
+            display: inline-block;
         }
     }
 
-    .hentry {
+    a, a:hover {
 
-        margin-bottom: 0;
-        border: none;
-        border-radius: 0;
-        -moz-border-radius: 0;
-        padding: 40px 0 40px 100px;
-
-        header {
-
-            border-bottom: none;
-            padding-top: 0;
-
-            a {
-
-                padding-top: 1.5em;
-                display: inline-block;
-            }
-        }
+        color: $light-blue;
     }
 }
 
