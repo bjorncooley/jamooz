@@ -2689,26 +2689,31 @@ h4 {
 }
 
 /* line 116, ../scss/custom.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 121, ../scss/custom.scss */
 #content {
   margin-top: 0;
 }
 
-/* line 121, ../scss/custom.scss */
+/* line 126, ../scss/custom.scss */
 .wrap {
   width: 100%;
 }
 
-/* line 126, ../scss/custom.scss */
+/* line 131, ../scss/custom.scss */
 #home, #main {
   width: 81%;
 }
 
-/* line 131, ../scss/custom.scss */
+/* line 136, ../scss/custom.scss */
 #main {
   padding-right: 0;
 }
 
-/* line 138, ../scss/custom.scss */
+/* line 143, ../scss/custom.scss */
 .entry-content p {
   font-size: 19px;
   font-weight: 300;
@@ -2718,40 +2723,41 @@ h4 {
 /* --------------------------- */
 /* ---    HEADER STYLES    --- */
 /* --------------------------- */
-/* line 150, ../scss/custom.scss */
+/* line 155, ../scss/custom.scss */
 .header {
   background-color: white;
 }
-/* line 154, ../scss/custom.scss */
+/* line 159, ../scss/custom.scss */
 .header .brand {
   width: 19%;
   float: left;
   background-color: #f2f2f2;
+  min-height: 103px;
 }
-/* line 161, ../scss/custom.scss */
+/* line 167, ../scss/custom.scss */
 .header .main-header {
   width: 81%;
   float: right;
   padding: 30px 0 30px 60px;
 }
-/* line 167, ../scss/custom.scss */
+/* line 173, ../scss/custom.scss */
 .header .main-header form, .header .main-header button {
   display: inline-block;
   border-radius: 5px;
   -moz-border-radius: 5px;
 }
-/* line 173, ../scss/custom.scss */
+/* line 179, ../scss/custom.scss */
 .header .main-header #header-search {
   width: 50%;
   min-width: 300px;
   margin-right: 50px;
   display: inline-block;
 }
-/* line 180, ../scss/custom.scss */
+/* line 186, ../scss/custom.scss */
 .header .main-header #header-search form {
   width: 100%;
 }
-/* line 184, ../scss/custom.scss */
+/* line 190, ../scss/custom.scss */
 .header .main-header #header-search form input {
   margin-bottom: 0;
   max-width: 90%;
@@ -2781,7 +2787,7 @@ h4 {
   /* Internet Explorer 10+ */
   color: black;
 }
-/* line 198, ../scss/custom.scss */
+/* line 204, ../scss/custom.scss */
 .header .main-header button {
   padding: 10px 30px;
   width: 150px;
@@ -2793,21 +2799,21 @@ h4 {
 /* ---------------------------- */
 /* ---    SIDEBAR STYLES    --- */
 /* ---------------------------- */
-/* line 217, ../scss/custom.scss */
+/* line 223, ../scss/custom.scss */
 .sidebar {
   margin-top: 0;
   height: 100%;
   width: 19%;
 }
-/* line 223, ../scss/custom.scss */
+/* line 229, ../scss/custom.scss */
 .sidebar .category {
   border-bottom: 1px solid black;
 }
-/* line 227, ../scss/custom.scss */
+/* line 233, ../scss/custom.scss */
 .sidebar .category a {
   text-decoration: none;
 }
-/* line 232, ../scss/custom.scss */
+/* line 238, ../scss/custom.scss */
 .sidebar .category h4 {
   text-decoration: none;
   text-transform: uppercase;
@@ -2816,16 +2822,16 @@ h4 {
   margin: 0;
   padding: 40px 30px;
 }
-/* line 242, ../scss/custom.scss */
+/* line 248, ../scss/custom.scss */
 .sidebar .category .category-posts {
   display: none;
   padding: 0 30px;
 }
-/* line 247, ../scss/custom.scss */
+/* line 253, ../scss/custom.scss */
 .sidebar .category .category-posts a {
   color: black;
 }
-/* line 252, ../scss/custom.scss */
+/* line 258, ../scss/custom.scss */
 .sidebar .category .category-posts a:hover {
   color: #38a5dd;
 }
@@ -2833,33 +2839,33 @@ h4 {
 /* ---------------------------- */
 /* ---     LANDING PAGE     --- */
 /* ---------------------------- */
-/* line 265, ../scss/custom.scss */
+/* line 271, ../scss/custom.scss */
 #home {
   background: #deccb4 url(../images/success-bg.png) no-repeat 80% 20%;
   padding: 80px 0 0 0;
 }
-/* line 270, ../scss/custom.scss */
+/* line 276, ../scss/custom.scss */
 #home .text {
   max-width: 300px;
   margin: 0 0 100px 100px;
 }
-/* line 275, ../scss/custom.scss */
+/* line 281, ../scss/custom.scss */
 #home .text h1, #home .text p {
   margin-bottom: 40px;
 }
-/* line 280, ../scss/custom.scss */
+/* line 286, ../scss/custom.scss */
 #home .text h1 {
   text-transform: uppercase;
   font-size: 30px;
   color: #e25736;
   font-weight: 500;
 }
-/* line 288, ../scss/custom.scss */
+/* line 294, ../scss/custom.scss */
 #home .text p {
   font-size: 17px;
   color: black;
 }
-/* line 294, ../scss/custom.scss */
+/* line 300, ../scss/custom.scss */
 #home .text button {
   padding: 20px 40px;
   border: none;
@@ -2869,17 +2875,17 @@ h4 {
   border-radius: 5px;
   -moz-border-radius: 5px;
 }
-/* line 305, ../scss/custom.scss */
+/* line 311, ../scss/custom.scss */
 #home #search-section {
   text-align: center;
   background-color: #5fb7b7;
 }
-/* line 310, ../scss/custom.scss */
+/* line 316, ../scss/custom.scss */
 #home #search-section form {
   padding: 40px;
   color: white;
 }
-/* line 315, ../scss/custom.scss */
+/* line 321, ../scss/custom.scss */
 #home #search-section form input {
   background: url(../images/search_icon_white.png) no-repeat 2%;
   padding: 5px 0 5px 60px;
@@ -2919,7 +2925,7 @@ h4 {
 /* ---------------------------- */
 /* ---     CATEGORY PAGE    --- */
 /* ---------------------------- */
-/* line 339, ../scss/custom.scss */
+/* line 345, ../scss/custom.scss */
 .archive .page-title {
   padding: 120px 0 120px 100px;
   text-transform: uppercase;
@@ -2927,17 +2933,17 @@ h4 {
   background-color: #38a5dd;
   color: white;
 }
-/* line 348, ../scss/custom.scss */
+/* line 354, ../scss/custom.scss */
 .archive .entry-title {
   color: black;
   text-transform: uppercase;
   font-size: 26px;
 }
-/* line 354, ../scss/custom.scss */
+/* line 360, ../scss/custom.scss */
 .archive .entry-title a {
   color: black;
 }
-/* line 360, ../scss/custom.scss */
+/* line 366, ../scss/custom.scss */
 .archive .hentry {
   margin-bottom: 0;
   border: none;
@@ -2945,12 +2951,12 @@ h4 {
   -moz-border-radius: 0;
   padding: 40px 0 40px 100px;
 }
-/* line 368, ../scss/custom.scss */
+/* line 374, ../scss/custom.scss */
 .archive .hentry header {
   border-bottom: none;
   padding-top: 0;
 }
-/* line 373, ../scss/custom.scss */
+/* line 379, ../scss/custom.scss */
 .archive .hentry header a {
   padding-top: 1.5em;
   display: inline-block;
@@ -2959,23 +2965,23 @@ h4 {
 /* ---------------------------- */
 /* ---    FOOTER STYLES     --- */
 /* ---------------------------- */
-/* line 388, ../scss/custom.scss */
+/* line 394, ../scss/custom.scss */
 .footer {
   background-color: white;
   color: black;
   position: relative;
 }
-/* line 394, ../scss/custom.scss */
+/* line 400, ../scss/custom.scss */
 .footer a {
   color: black;
   text-decoration: none;
   display: inline-block;
 }
-/* line 400, ../scss/custom.scss */
+/* line 406, ../scss/custom.scss */
 .footer a:hover {
   color: #38a5dd;
 }
-/* line 406, ../scss/custom.scss */
+/* line 412, ../scss/custom.scss */
 .footer #footer-left {
   background-color: #f2f2f2;
   position: absolute;
@@ -2984,41 +2990,41 @@ h4 {
   height: 100%;
   width: 19%;
 }
-/* line 415, ../scss/custom.scss */
+/* line 421, ../scss/custom.scss */
 .footer #footer-left .content {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
 }
-/* line 422, ../scss/custom.scss */
+/* line 428, ../scss/custom.scss */
 .footer #footer-left .content p {
   margin-top: 0;
 }
-/* line 429, ../scss/custom.scss */
+/* line 435, ../scss/custom.scss */
 .footer #footer-right {
   width: 81%;
   float: right;
   padding-top: 20px;
 }
-/* line 437, ../scss/custom.scss */
+/* line 443, ../scss/custom.scss */
 .footer #footer-right div.max-960 a {
   font-weight: 300;
   margin: 30px 6%;
   text-transform: uppercase;
 }
-/* line 445, ../scss/custom.scss */
+/* line 451, ../scss/custom.scss */
 .footer #footer-right div.half {
   width: 50%;
   float: left;
   padding: 20px 100px;
 }
-/* line 451, ../scss/custom.scss */
+/* line 457, ../scss/custom.scss */
 .footer #footer-right div.half p {
   margin-bottom: 0;
   margin-top: 0;
 }
-/* line 457, ../scss/custom.scss */
+/* line 463, ../scss/custom.scss */
 .footer #footer-right div.half a, .footer #footer-right div.half a:hover {
   color: white;
 }

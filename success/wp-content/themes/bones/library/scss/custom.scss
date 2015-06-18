@@ -113,6 +113,11 @@ h4 {
     font-weight: 400;
 }
 
+img {
+
+    max-width: 100%;
+}
+
 #content {
 
     margin-top: 0;
@@ -156,6 +161,7 @@ h4 {
         width: 19%;
         float: left;
         background-color: $lighter-gray;
+        min-height: 103px;
     }
 
     .main-header {
