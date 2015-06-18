@@ -2678,24 +2678,25 @@ be set to display none.
 /* line 103, ../scss/custom.scss */
 body {
   background-color: #e6e6e6;
+  font-family: 'Roboto', Arial, sans-serif;
 }
 
-/* line 108, ../scss/custom.scss */
+/* line 109, ../scss/custom.scss */
 #content {
   margin-top: 0;
 }
 
-/* line 113, ../scss/custom.scss */
+/* line 114, ../scss/custom.scss */
 .wrap {
   width: 100%;
 }
 
-/* line 118, ../scss/custom.scss */
+/* line 119, ../scss/custom.scss */
 #home, #main {
   width: 81%;
 }
 
-/* line 123, ../scss/custom.scss */
+/* line 124, ../scss/custom.scss */
 #main {
   padding-right: 0;
 }
@@ -2703,40 +2704,40 @@ body {
 /* --------------------------- */
 /* ---    HEADER STYLES    --- */
 /* --------------------------- */
-/* line 132, ../scss/custom.scss */
+/* line 133, ../scss/custom.scss */
 .header {
   background-color: white;
 }
-/* line 136, ../scss/custom.scss */
+/* line 137, ../scss/custom.scss */
 .header .brand {
   width: 19%;
   float: left;
   background-color: #f2f2f2;
 }
-/* line 143, ../scss/custom.scss */
+/* line 144, ../scss/custom.scss */
 .header .main-header {
   width: 81%;
   float: right;
   padding: 30px 0 30px 60px;
 }
-/* line 149, ../scss/custom.scss */
+/* line 150, ../scss/custom.scss */
 .header .main-header form, .header .main-header button {
   display: inline-block;
   border-radius: 5px;
   -moz-border-radius: 5px;
 }
-/* line 155, ../scss/custom.scss */
+/* line 156, ../scss/custom.scss */
 .header .main-header #header-search {
   width: 50%;
   min-width: 300px;
   margin-right: 50px;
   display: inline-block;
 }
-/* line 162, ../scss/custom.scss */
+/* line 163, ../scss/custom.scss */
 .header .main-header #header-search form {
   width: 100%;
 }
-/* line 166, ../scss/custom.scss */
+/* line 167, ../scss/custom.scss */
 .header .main-header #header-search form input {
   margin-bottom: 0;
   max-width: 90%;
@@ -2766,7 +2767,7 @@ body {
   /* Internet Explorer 10+ */
   color: black;
 }
-/* line 180, ../scss/custom.scss */
+/* line 181, ../scss/custom.scss */
 .header .main-header button {
   padding: 10px 30px;
   width: 150px;
@@ -2778,21 +2779,21 @@ body {
 /* ---------------------------- */
 /* ---    SIDEBAR STYLES    --- */
 /* ---------------------------- */
-/* line 199, ../scss/custom.scss */
+/* line 200, ../scss/custom.scss */
 .sidebar {
   margin-top: 0;
   height: 100%;
   width: 19%;
 }
-/* line 205, ../scss/custom.scss */
+/* line 206, ../scss/custom.scss */
 .sidebar .category {
   border-bottom: 1px solid black;
 }
-/* line 209, ../scss/custom.scss */
+/* line 210, ../scss/custom.scss */
 .sidebar .category a {
   text-decoration: none;
 }
-/* line 214, ../scss/custom.scss */
+/* line 215, ../scss/custom.scss */
 .sidebar .category h4 {
   text-decoration: none;
   text-transform: uppercase;
@@ -2801,16 +2802,16 @@ body {
   margin: 0;
   padding: 40px 30px;
 }
-/* line 224, ../scss/custom.scss */
+/* line 225, ../scss/custom.scss */
 .sidebar .category .category-posts {
   display: none;
   padding: 0 30px;
 }
-/* line 229, ../scss/custom.scss */
+/* line 230, ../scss/custom.scss */
 .sidebar .category .category-posts a {
   color: black;
 }
-/* line 234, ../scss/custom.scss */
+/* line 235, ../scss/custom.scss */
 .sidebar .category .category-posts a:hover {
   color: #38a5dd;
 }
@@ -2818,33 +2819,33 @@ body {
 /* ---------------------------- */
 /* ---     LANDING PAGE     --- */
 /* ---------------------------- */
-/* line 247, ../scss/custom.scss */
+/* line 248, ../scss/custom.scss */
 #home {
   background: #deccb4 url(../images/success-bg.png) no-repeat 80% 20%;
   padding: 80px 0 0 0;
 }
-/* line 252, ../scss/custom.scss */
+/* line 253, ../scss/custom.scss */
 #home .text {
   max-width: 300px;
   margin: 0 0 100px 100px;
 }
-/* line 257, ../scss/custom.scss */
+/* line 258, ../scss/custom.scss */
 #home .text h1, #home .text p {
   margin-bottom: 40px;
 }
-/* line 262, ../scss/custom.scss */
+/* line 263, ../scss/custom.scss */
 #home .text h1 {
   text-transform: uppercase;
   font-size: 30px;
   color: #e25736;
   font-weight: bold;
 }
-/* line 270, ../scss/custom.scss */
+/* line 271, ../scss/custom.scss */
 #home .text p {
   font-size: 17px;
   color: black;
 }
-/* line 276, ../scss/custom.scss */
+/* line 277, ../scss/custom.scss */
 #home .text button {
   padding: 20px 40px;
   border: none;
@@ -2854,17 +2855,17 @@ body {
   border-radius: 5px;
   -moz-border-radius: 5px;
 }
-/* line 287, ../scss/custom.scss */
+/* line 288, ../scss/custom.scss */
 #home #search-section {
   text-align: center;
   background-color: #5fb7b7;
 }
-/* line 292, ../scss/custom.scss */
+/* line 293, ../scss/custom.scss */
 #home #search-section form {
   padding: 40px;
   color: white;
 }
-/* line 297, ../scss/custom.scss */
+/* line 298, ../scss/custom.scss */
 #home #search-section form input {
   background: url(../images/search_icon_white.png) no-repeat 2%;
   padding: 5px 0 5px 60px;
@@ -2904,7 +2905,7 @@ body {
 /* ---------------------------- */
 /* ---     CATEGORY PAGE    --- */
 /* ---------------------------- */
-/* line 321, ../scss/custom.scss */
+/* line 322, ../scss/custom.scss */
 .archive .page-title {
   padding: 120px 0 120px 100px;
   text-transform: uppercase;
@@ -2912,17 +2913,17 @@ body {
   background-color: #38a5dd;
   color: white;
 }
-/* line 330, ../scss/custom.scss */
+/* line 331, ../scss/custom.scss */
 .archive .entry-title {
   color: black;
   text-transform: uppercase;
   font-size: 26px;
 }
-/* line 336, ../scss/custom.scss */
+/* line 337, ../scss/custom.scss */
 .archive .entry-title a {
   color: black;
 }
-/* line 342, ../scss/custom.scss */
+/* line 343, ../scss/custom.scss */
 .archive .hentry {
   margin-bottom: 0;
   border: none;
@@ -2930,12 +2931,12 @@ body {
   -moz-border-radius: 0;
   padding: 40px 0 40px 100px;
 }
-/* line 350, ../scss/custom.scss */
+/* line 351, ../scss/custom.scss */
 .archive .hentry header {
   border-bottom: none;
   padding-top: 0;
 }
-/* line 355, ../scss/custom.scss */
+/* line 356, ../scss/custom.scss */
 .archive .hentry header a {
   padding-top: 1.5em;
   display: inline-block;
@@ -2944,23 +2945,23 @@ body {
 /* ---------------------------- */
 /* ---    FOOTER STYLES     --- */
 /* ---------------------------- */
-/* line 370, ../scss/custom.scss */
+/* line 371, ../scss/custom.scss */
 .footer {
   background-color: white;
   color: black;
   position: relative;
 }
-/* line 376, ../scss/custom.scss */
+/* line 377, ../scss/custom.scss */
 .footer a {
   color: black;
   text-decoration: none;
   display: inline-block;
 }
-/* line 382, ../scss/custom.scss */
+/* line 383, ../scss/custom.scss */
 .footer a:hover {
   color: #38a5dd;
 }
-/* line 388, ../scss/custom.scss */
+/* line 389, ../scss/custom.scss */
 .footer #footer-left {
   background-color: #f2f2f2;
   position: absolute;
@@ -2969,40 +2970,40 @@ body {
   height: 100%;
   width: 19%;
 }
-/* line 397, ../scss/custom.scss */
+/* line 398, ../scss/custom.scss */
 .footer #footer-left .content {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
 }
-/* line 404, ../scss/custom.scss */
+/* line 405, ../scss/custom.scss */
 .footer #footer-left .content p {
   margin-top: 0;
 }
-/* line 411, ../scss/custom.scss */
+/* line 412, ../scss/custom.scss */
 .footer #footer-right {
   width: 81%;
   float: right;
 }
-/* line 418, ../scss/custom.scss */
+/* line 419, ../scss/custom.scss */
 .footer #footer-right div.max-960 a {
   font-weight: 300;
   margin: 30px 6%;
   text-transform: uppercase;
 }
-/* line 426, ../scss/custom.scss */
+/* line 427, ../scss/custom.scss */
 .footer #footer-right div.half {
   width: 50%;
   float: left;
   padding: 20px 100px;
 }
-/* line 432, ../scss/custom.scss */
+/* line 433, ../scss/custom.scss */
 .footer #footer-right div.half p {
   margin-bottom: 0;
   margin-top: 0;
 }
-/* line 438, ../scss/custom.scss */
+/* line 439, ../scss/custom.scss */
 .footer #footer-right div.half a, .footer #footer-right div.half a:hover {
   color: white;
 }
