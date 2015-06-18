@@ -3,7 +3,9 @@ $light-blue: rgb(56,165,221);
 $light-brown: rgb(222,204,180);
 $light-gray: rgb(230,230,230);
 $lighter-gray: rgb(242,242,242);
+$medium-blue: rgb(63,85,175);
 $medium-dark-gray: rgb(88,88,91);
+$orange: rgb(248,159,49);
 $red-orange: rgb(226,87,54);
 $teal: rgb(95,183,183);
 
@@ -42,9 +44,44 @@ $teal: rgb(95,183,183);
     visibility: hidden;
 }
 
+.inline-block {
+
+  &>div, &>h1, &>h2, &>h3, &>h4, &>h5, &>img, &>a, &>p, &>input, &>button {
+
+    display: inline-block;
+  }
+}
+
+.text-right {
+
+    text-align: right;
+}
+
+.text-center {
+
+    text-align: center;
+}
+
+.max-960 {
+
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.medium-blue-background {
+
+    background-color: $medium-blue;
+}
+
 .medium-dark-gray-border {
 
     border: 1px solid $medium-dark-gray;
+}
+
+.orange-background {
+
+    background-color: $orange;
 }
 
 .red-orange-background {
@@ -81,6 +118,11 @@ body {
 #home, #main {
 
     width: 81%;
+}
+
+#main {
+
+    padding-right: 0;
 }
 
 /* --------------------------- */
@@ -314,6 +356,63 @@ body {
 
                 padding-top: 1.5em;
                 display: inline-block;
+            }
+        }
+    }
+}
+
+
+
+/* ---------------------------- */
+/* ---    FOOTER STYLES     --- */
+/* ---------------------------- */
+
+.footer {
+
+    background-color: white;
+    color: black;
+    position: relative;
+
+    #footer-left {
+
+        background-color: $lighter-gray;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 19%;
+    }
+
+    #footer-right {
+
+        width: 81%;
+        float: right;
+
+        div.max-960 {
+
+            h4 {
+
+                font-weight: 400;
+                margin: 30px 6%;
+                text-transform: uppercase;
+            }
+        }
+
+        div.half {
+
+            width: 50%;
+            float: left;
+            padding: 20px 100px;
+
+            p {
+
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+
+            &:nth-child(2) {
+
+
             }
         }
     }

@@ -1,25 +1,30 @@
-			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+			<footer class="footer clearfix" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
-				<div id="inner-footer" class="wrap cf">
-
-					<nav role="navigation">
-						<?php wp_nav_menu(array(
-    					'container' => 'div',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
-    					'container_class' => 'footer-links cf',         // class of container (should you choose to use it)
-    					'menu' => __( 'Footer Links', 'bonestheme' ),   // nav name
-    					'menu_class' => 'nav footer-nav cf',            // adding custom nav class
-    					'theme_location' => 'footer-links',             // where it's located in the theme
-    					'before' => '',                                 // before the menu
-    					'after' => '',                                  // after the menu
-    					'link_before' => '',                            // before each link
-    					'link_after' => '',                             // after each link
-    					'depth' => 0,                                   // limit the depth of the nav
-    					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
-						)); ?>
-					</nav>
-
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
-
+				<div id="footer-left" class="text-center">
+                    <img src="" alt="">
+                    <p>&copy; Copyright <?php echo date('Y'); ?></p>            
+                </div>
+                <div id="footer-right" class="clearfix">
+                    <div class="inline-block text-center max-960">
+                        <h4>Master the Basics</h4>
+                        <h4>Get More Done</h4>
+                        <h4>Troubleshooting</h4>
+                    </div>
+                    <div class="inline-block medium-blue-background white half">
+                        <img src="<?php bloginfo('template_directory'); ?>/library/images/white_left_arrow.png" alt="">
+                        <div class="block">
+                            <p class="small">previous</p>
+                            <p>Jamooz Home</p>
+                        </div>
+                    </div>
+                    <div class="text-right orange-background white inline-block half">
+                        <div class="block">
+                            <p class="small">next</p>
+                            <p>Getting Started</p>
+                        </div>
+                        
+                        <img src="<?php bloginfo('template_directory'); ?>/library/images/white_right_arrow.png" alt="">
+                    </div>
 				</div>
 
 			</footer>
