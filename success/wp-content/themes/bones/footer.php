@@ -1,8 +1,10 @@
 			<footer class="footer clearfix" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
 				<div id="footer-left" class="text-center">
-                    <img src="" alt="">
-                    <p>&copy; Copyright <?php echo date('Y'); ?></p>            
+                    <div class="content">
+                        <img src="<?php bloginfo('template_directory'); ?>/library/images/large_jamooz_logo.png" alt="">
+                        <p class="small">&copy; Copyright <?php echo date('Y'); ?></p>
+                    </div>      
                 </div>
                 <div id="footer-right" class="clearfix">
                     <?php if (is_home()) { ?>

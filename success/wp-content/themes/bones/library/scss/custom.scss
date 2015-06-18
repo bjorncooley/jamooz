@@ -393,6 +393,19 @@ body {
         left: 0;
         height: 100%;
         width: 19%;
+
+        .content {
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            p {
+
+                margin-top: 0;
+            }
+        }
     }
 
     #footer-right {
