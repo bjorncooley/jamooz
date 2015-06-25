@@ -141,7 +141,7 @@
         <div class="small-12 large-6 columns text-center">
             <img src="img/home/phone_demo.png" alt="" class="hide-for-large-up">
             <video autoplay loop class="show-for-large-up">
-              <source src="video/schmooze.mp4" type="video/mp4">
+              <source src="video/schmooze_540.mp4" type="video/mp4">
             </video>
             <img src="img/home/phone_mask.png" alt="" class="show-for-large-up" id="phone-mask">
         </div>
