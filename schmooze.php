@@ -123,6 +123,29 @@
                 
                 <p class="tiny white">a customer success teammate will be in touch</p>
             </div>
+
+            <div class="dark-gray-background white" id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="large-12 columns text-center">
+                            <img src="img/shared/jamooz_logo_white.png" alt="">
+                        </div>
+                    </div>
+                    <p class="small text-center">Jamooz Corp | Copyright 2015</p>
+                </div>
+            </div><!-- #footer -->
+
+            <footer>
+                <link href='http://fonts.googleapis.com/css?family=Roboto:500,400,300,100' rel='stylesheet' type='text/css'>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+                <script src="js/vendor/modernizr.js"></script>
+                <script src="js/vendor/jquery.cookie.js"></script>
+                <script src="js/vendor/jquery.rotate.js"></script>
+                <script src="js/functions.js"></script>
+            </footer>
         </div>
 
-<?php include('includes/footer.php'); ?>
+        
+    </div><!-- #page-content -->
+</body>
+</html>
