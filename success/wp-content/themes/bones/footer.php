@@ -41,25 +41,79 @@
                             </a>
                         </div>
                     <?php } ?>
+
+                    <?php 
+
+                        // Bit of logic to figure out where we are on the site,
+                        // dynamically update these links accordingly
+
+                        if ( is_home()) {
+
+                            $previous_title = 'Jamooz Home';
+                            $previous_url = get_site_url() . '/../index.php';
+
+                            $next_title = 'Getting Started';
+                            $next_url = get_site_url() . '/../get-started.php';
+                        } else {
+
+                            // Otherwise, a category page. Figure out which
+                            // category we're in, get previous and next.
+                            // This uses the Wordpress $cat variable, which
+                            // gives the ID of the current category page
+
+                            $categories = get_categories($cat_args);
+                            $index = 0;
+
+                            foreach( $categories as $category ) {
+
+                                if ( $category->cat_ID == $cat ) {
+
+                                    if ( isset($categories[$index + 1]) ) {
+
+                                        $previous_cat = $categories[$index + 1];
+                                        $previous_title = $previous_cat->name;
+                                        $previous_url = get_category_link($previous_cat->cat_ID);
+                                    } else {
+
+                                        $previous_title = 'Success Center';
+                                        $previous_url = get_site_url();
+                                    }
+
+                                    if ( isset($categories[$index - 1]) ) {
+
+                                        $next_cat = $categories[$index - 1];
+                                        $next_title = $next_cat->name;
+                                        $next_url = get_category_link($next_cat->cat_ID);
+                                    } else {
+
+                                        $next_title = 'Get Started';
+                                        $next_url = get_site_url() . '/../get-started.php';
+                                    }                                    
+                                }
+
+                                $index += 1;
+                            }                            
+                        }
+                    ?>
                     
                     <div class="medium-blue-background white half">
-                        <a href="<?php echo get_site_url(); ?>/../index.php" 
+                        <a href="<?php echo $previous_url ?>" 
                         class="inline-block">
                             <img src="<?php bloginfo('template_directory'); ?>/library/images/white_left_arrow.png" alt="">
                             <div class="block">
                                 <p class="small">previous</p>
-                                <p>Jamooz Home</p>
+                                <p><?php echo $previous_title ?></p>
                             </div>
                         </a>
                     </div>
                     
                     
                     <div class="text-right orange-background white inline-block half">
-                        <a href="<?php echo get_site_url(); ?>/../get-started.php"
+                        <a href="<?php echo $next_url; ?>"
                         class="inline-block">
                             <div class="block">
                                 <p class="small">next</p>
-                                <p>Getting Started</p>
+                                <p><?php echo $next_title ?></p>
                             </div>
                             <img src="<?php bloginfo('template_directory'); ?>/library/images/white_right_arrow.png" alt="">
                         </a>
