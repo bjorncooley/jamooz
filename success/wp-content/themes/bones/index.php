@@ -13,9 +13,11 @@
 								<p>From getting a solid foundation of the basics
 								to mastering the advanced capabilities of 
 								Jamooz products, we’re here to help</p>
-								<button class="red-orange-background white">
-									Get Started
-								</button>
+								<a href="<?php echo get_site_url() ?>/category/setup-basics/">
+									<button class="red-orange-background white">
+										Get Started
+									</button>
+								</a>
 							</div>
 							
 							<div id="search-section">
