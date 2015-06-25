@@ -551,8 +551,11 @@ img {
   margin: 30px auto 10px;
   width: 100%;
   font-size: 14px;
+  line-height: 14px;
+  font-family: 'Roboto', sans-serif;
+  height: auto;
 }
-/* line 562, ../scss/custom.scss */
+/* line 565, ../scss/custom.scss */
 #login-overlay #login-modal form button {
   margin: 10px auto;
   border-radius: 10px;
