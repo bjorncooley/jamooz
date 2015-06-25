@@ -72,7 +72,7 @@
 
                                 if ( $category->cat_ID == $cat ) {
 
-                                    if ( isset($categories[$index + 1]) ) {
+                                    if ( isset($categories[$index - 1]) ) {
 
                                         $previous_cat = $categories[$index - 1];
                                         $previous_title = $previous_cat->name;
@@ -83,7 +83,7 @@
                                         $previous_url = get_site_url();
                                     }
 
-                                    if ( isset($categories[$index - 1]) ) {
+                                    if ( isset($categories[$index + 1]) ) {
 
                                         $next_cat = $categories[$index + 1];
                                         $next_title = $next_cat->name;
