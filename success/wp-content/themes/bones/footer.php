@@ -61,6 +61,10 @@
                             // This uses the Wordpress $cat variable, which
                             // gives the ID of the current category page
 
+                            $cat_args = array(
+                                'orderby' => 'ID',
+                            );
+
                             $categories = get_categories($cat_args);
                             $index = 0;
 
@@ -70,7 +74,7 @@
 
                                     if ( isset($categories[$index + 1]) ) {
 
-                                        $previous_cat = $categories[$index + 1];
+                                        $previous_cat = $categories[$index - 1];
                                         $previous_title = $previous_cat->name;
                                         $previous_url = get_category_link($previous_cat->cat_ID);
                                     } else {
@@ -81,7 +85,7 @@
 
                                     if ( isset($categories[$index - 1]) ) {
 
-                                        $next_cat = $categories[$index - 1];
+                                        $next_cat = $categories[$index + 1];
                                         $next_title = $next_cat->name;
                                         $next_url = get_category_link($next_cat->cat_ID);
                                     } else {

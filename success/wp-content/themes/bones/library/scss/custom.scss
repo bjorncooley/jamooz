@@ -6,6 +6,7 @@ $lighter-gray: rgb(242,242,242);
 $medium-blue: rgb(63,85,175);
 $medium-dark-gray: rgb(88,88,91);
 $medium-gray: rgb(120,120,120);
+$medium-light-gray: rgb(188,188,188);
 $orange: rgb(248,159,49);
 $red-orange: rgb(226,87,54);
 $teal: rgb(95,183,183);
@@ -261,7 +262,7 @@ img {
 
     .category {
 
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid $medium-light-gray;
 
         a {
 
