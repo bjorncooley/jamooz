@@ -13,6 +13,7 @@
 							the_archive_description( '<div class="taxonomy-description">', '</div>' );
 							?>
 							
+							<?php query_posts($query_string . "&order=ASC"); ?>
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
