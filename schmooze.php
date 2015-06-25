@@ -123,9 +123,6 @@
                 
                 <p class="tiny white">a customer success teammate will be in touch</p>
             </div>
-            <div id="support" class="dark-blue-background text-center inline-block">
-                <h4 class="uppercase white-border white">Need Support? Contact Us Here</h4>
-            </div>
         </div>
 
 <?php include('includes/footer.php'); ?>
