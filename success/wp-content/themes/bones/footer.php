@@ -1,4 +1,21 @@
-			<footer class="footer clearfix" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+			<div id="login-overlay">
+                <div id="login-modal" class="relative">
+                    <img src="<?php bloginfo('template_directory'); ?>/library/images/close_icon_black.png" alt="" class="absolute" id="login-close">
+                    <div id="login-title" class="text-center padding-top-30 padding-bottom-30">
+                        <img src="<?php bloginfo('template_directory'); ?>/library/images/jamooz_small_logo.png" alt="">
+                    </div>
+                    <form action="" id="login-form" class="padding-top-30 padding-bottom-30">
+                        <h4 class="uppercase text-center padding-top-30">Login</h4>
+                        <input type="text" placeholder="Email address">
+                        <input type="password" placeholder="Password">
+                        <p class="small right"><a href="#">Forgot password?</a></p>
+                        <button class="white uppercase light-blue-background" type="submit">Login</button>
+                        <p class="small text-center">Don't have an account? <a href="#">Sign Up</a>.</p>
+                    </form>
+                </div>
+            </div>
+
+            <footer class="footer clearfix" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
 				<div id="footer-left" class="text-center">
                     <div class="content">
