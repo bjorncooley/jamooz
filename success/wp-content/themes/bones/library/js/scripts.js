@@ -16,10 +16,71 @@ jQuery(document).ready(function($) {
 
   updateSidebarNavStyles();
   scrollToPost();
+  loginModal();
 
   //jQuery('a[title="Category 2"]').offset().top
 }); /* end of as page load scripts */
 
+
+function loginModal() {
+
+  // Close buttons
+  jQuery('.close-button').click(function(){
+      jQuery(this).parent().fadeOut(400);
+  });
+
+  // Login
+
+  jQuery('.login-button').click(function(e){
+
+      e.preventDefault();
+
+      jQuery('#login-overlay').fadeIn(400);
+
+      if ( mobile ) {
+
+          var left = 0;
+
+          if ( jQuery('#mobile-nav').hasClass('opened') ) {
+
+              left = jQuery(window).width();
+          }
+
+          jQuery('#login-overlay').css({
+              'position' : 'absolute',
+              'top' : jQuery(window).scrollTop(),
+              'left' : left,
+              'height' : jQuery(window).height(),
+          });
+      }
+      
+  });
+
+  jQuery('#login-close').click(function(){
+      jQuery('#login-overlay').fadeOut(400);
+      jQuery('#login-overlay').css({
+          'position' : 'fixed',
+          'top' : 0,
+      });
+  });
+}
+
+
+function scrollToPost() {
+
+  jQuery('.category-posts a').click(function(e){
+
+    e.preventDefault();
+    console.log(jQuery(this));
+
+    var post_title = jQuery(this).text();
+    var scroll_target = jQuery('a[title="' + post_title + '"]').offset().top
+
+    console.log(scroll_target);
+
+    jQuery('html, body').animate({ 'scrollTop' : scroll_target });
+  });
+}
 
 function updateSidebarNavStyles() {
 
@@ -42,22 +103,5 @@ function updateSidebarNavStyles() {
 
       jQuery(this).parents('.category').prev('.category').css('border-bottom', 'none');
     }
-  });
-}
-
-
-function scrollToPost() {
-
-  jQuery('.category-posts a').click(function(e){
-
-    e.preventDefault();
-    console.log(jQuery(this));
-
-    var post_title = jQuery(this).text();
-    var scroll_target = jQuery('a[title="' + post_title + '"]').offset().top
-
-    console.log(scroll_target);
-
-    jQuery('html, body').animate({ 'scrollTop' : scroll_target });
   });
 }

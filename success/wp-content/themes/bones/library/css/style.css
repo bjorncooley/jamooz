@@ -3099,6 +3099,7 @@ img {
   background: url(../images/login_bg.png) no-repeat center;
   text-align: center;
   z-index: 999;
+  display: none;
 }
 /* line 519, ../scss/custom.scss */
 #login-overlay #login-modal {
