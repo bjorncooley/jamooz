@@ -19,8 +19,10 @@
 
 				<div id="footer-left" class="text-center">
                     <div class="content">
-                        <img src="<?php bloginfo('template_directory'); ?>/library/images/large_jamooz_logo.png" alt="">
-                        <p class="small">&copy; Copyright <?php echo date('Y'); ?></p>
+                        <a href="<?php echo get_site_url() . '/../index.php'; ?>">
+                            <img src="<?php bloginfo('template_directory'); ?>/library/images/large_jamooz_logo.png" alt="">
+                            <p class="small">&copy; Copyright <?php echo date('Y'); ?></p>
+                        </a>
                     </div>      
                 </div>
                 <div id="footer-right" class="clearfix">
