@@ -28,7 +28,7 @@
                 <div id="footer-right" class="clearfix">
                     <?php if (is_home()) { ?>
 
-                        <div class="inline-block text-center max-960">
+                        <div class="topics text-center max-960 clearfix">
                             <a href="<?php echo get_site_url() ?>/category/setup-basics/">
                                 <img src="<?php bloginfo('template_directory'); ?>/library/images/master_basics.png" alt="">
                                 <h4>Master the Basics</h4>
@@ -101,29 +101,33 @@
                             }                            
                         }
                     ?>
-                    
-                    <div class="medium-blue-background white half">
-                        <a href="<?php echo $previous_url ?>" 
-                        class="inline-block">
-                            <img src="<?php bloginfo('template_directory'); ?>/library/images/white_left_arrow.png" alt="">
-                            <div class="block">
-                                <p class="small">previous</p>
-                                <p><?php echo $previous_title ?></p>
-                            </div>
-                        </a>
+
+                    <div class="footer-nav clearfix">
+                        <div class="medium-blue-background white half">
+                            <a href="<?php echo $previous_url ?>" 
+                            class="inline-block">
+                                <img src="<?php bloginfo('template_directory'); ?>/library/images/white_left_arrow.png" alt="">
+                                <div class="block">
+                                    <p class="small">previous</p>
+                                    <p><?php echo $previous_title ?></p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        
+                        <div class="text-right orange-background white inline-block half">
+                            <a href="<?php echo $next_url; ?>"
+                            class="inline-block">
+                                <div class="block">
+                                    <p class="small">next</p>
+                                    <p><?php echo $next_title ?></p>
+                                </div>
+                                <img src="<?php bloginfo('template_directory'); ?>/library/images/white_right_arrow.png" alt="">
+                            </a>
+                        </div>
                     </div>
                     
                     
-                    <div class="text-right orange-background white inline-block half">
-                        <a href="<?php echo $next_url; ?>"
-                        class="inline-block">
-                            <div class="block">
-                                <p class="small">next</p>
-                                <p><?php echo $next_title ?></p>
-                            </div>
-                            <img src="<?php bloginfo('template_directory'); ?>/library/images/white_right_arrow.png" alt="">
-                        </a>
-                    </div>
 				</div>
 
 			</footer>

@@ -531,7 +531,7 @@ img {
 
             width: 50%;
             float: left;
-            padding: 20px 100px;
+            padding: 20px;
 
             p {
 
@@ -543,6 +543,11 @@ img {
 
                 color: white;
             }        
+        }
+
+        .topics, .footer-nav {
+
+            display: block;
         }
     }
 }
@@ -698,6 +703,11 @@ img {
         #footer-right {
 
             width: 81%;
+
+            div.half {
+
+                padding: 20px 100px;
+            }
         }
     }
 }
