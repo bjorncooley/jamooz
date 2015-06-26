@@ -364,13 +364,13 @@ img {
 
 #home {
 
-    background: $light-brown url(../images/success-bg.png) no-repeat 80% 20%;
+    background-color: $light-brown;
     padding: 80px 0 0 0;
 
     .text {
 
-        max-width: 300px;
-        margin: 0 0 100px 100px;
+        max-width: 80%;
+        margin: 0 auto 100px;
 
         h1, p {
 
@@ -379,7 +379,6 @@ img {
 
         h1 {
 
-            text-transform: uppercase;
             font-size: 30px;
             color: $red-orange;
             font-weight: 500;
@@ -640,6 +639,22 @@ img {
     .brand, .sidebar {
 
         position: static;
+    }
+
+    #home {
+
+        background: $light-brown url(../images/success-bg.png) no-repeat 80% 20%;
+        
+        .text {
+
+            max-width: 300px;
+            margin: 0 0 100px 100px;
+
+            h1 {
+
+                text-transform: uppercase;
+            }
+        }
     }
 
     .header {
