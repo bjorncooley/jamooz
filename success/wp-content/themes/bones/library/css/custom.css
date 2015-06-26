@@ -7,6 +7,8 @@
 /* line 42, ../scss/custom.scss */
 input {
   padding: 15px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 /* line 26, ../scss/custom.scss */
 input::-webkit-input-placeholder {
@@ -32,129 +34,139 @@ input:-ms-input-placeholder {
 }
 
 /* Clearfix */
-/* line 49, ../scss/custom.scss */
+/* line 51, ../scss/custom.scss */
 .group:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 55, ../scss/custom.scss */
+/* line 57, ../scss/custom.scss */
 .hidden {
   visibility: hidden;
 }
 
-/* line 60, ../scss/custom.scss */
+/* line 62, ../scss/custom.scss */
 .relative {
   position: relative;
 }
 
-/* line 65, ../scss/custom.scss */
+/* line 67, ../scss/custom.scss */
 .absolute {
   position: absolute;
 }
 
 /* line 72, ../scss/custom.scss */
+.left {
+  float: left;
+}
+
+/* line 77, ../scss/custom.scss */
+.right {
+  float: right;
+}
+
+/* line 84, ../scss/custom.scss */
 .inline-block > div, .inline-block > h1, .inline-block > h2, .inline-block > h3, .inline-block > h4, .inline-block > h5, .inline-block > img, .inline-block > a, .inline-block > p, .inline-block > input, .inline-block > button {
   display: inline-block;
 }
 
-/* line 78, ../scss/custom.scss */
+/* line 90, ../scss/custom.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 83, ../scss/custom.scss */
+/* line 95, ../scss/custom.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 88, ../scss/custom.scss */
+/* line 100, ../scss/custom.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 93, ../scss/custom.scss */
+/* line 105, ../scss/custom.scss */
 .max-960 {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 100, ../scss/custom.scss */
+/* line 112, ../scss/custom.scss */
 .medium-blue-background {
   background-color: #3f55af;
 }
 
-/* line 105, ../scss/custom.scss */
+/* line 117, ../scss/custom.scss */
 .medium-dark-gray-border {
   border: 1px solid #58585b;
 }
 
-/* line 110, ../scss/custom.scss */
+/* line 122, ../scss/custom.scss */
 .orange-background {
   background-color: #f89f31;
 }
 
-/* line 115, ../scss/custom.scss */
+/* line 127, ../scss/custom.scss */
 .red-orange-background {
   background-color: #e25736;
 }
 
-/* line 120, ../scss/custom.scss */
+/* line 132, ../scss/custom.scss */
 .red-orange-border {
   border: 1px solid #e25736;
 }
 
-/* line 126, ../scss/custom.scss */
+/* line 138, ../scss/custom.scss */
 .white {
   color: white;
 }
 
-/* line 131, ../scss/custom.scss */
+/* line 143, ../scss/custom.scss */
 body {
   background-color: #e6e6e6;
   font-weight: 300;
 }
 
-/* line 137, ../scss/custom.scss */
+/* line 149, ../scss/custom.scss */
 html, body, h1, h2, h3, h4, h5, p, a, input, button {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: inherit;
 }
 
-/* line 144, ../scss/custom.scss */
+/* line 156, ../scss/custom.scss */
 h4 {
   font-weight: 400;
 }
 
-/* line 149, ../scss/custom.scss */
+/* line 161, ../scss/custom.scss */
 img {
   max-width: 100%;
 }
 
-/* line 154, ../scss/custom.scss */
+/* line 166, ../scss/custom.scss */
 #content {
   margin-top: 0;
 }
 
-/* line 159, ../scss/custom.scss */
+/* line 171, ../scss/custom.scss */
 .wrap {
   width: 100%;
 }
 
-/* line 164, ../scss/custom.scss */
+/* line 176, ../scss/custom.scss */
 #home, #main {
   width: 81%;
 }
 
-/* line 169, ../scss/custom.scss */
+/* line 181, ../scss/custom.scss */
 #main {
   padding-right: 0;
 }
 
-/* line 176, ../scss/custom.scss */
+/* line 188, ../scss/custom.scss */
 .entry-content p {
   font-size: 19px;
   font-weight: 300;
@@ -164,44 +176,77 @@ img {
 /* --------------------------- */
 /* ---    HEADER STYLES    --- */
 /* --------------------------- */
-/* line 188, ../scss/custom.scss */
+/* line 200, ../scss/custom.scss */
 .header {
   background-color: white;
 }
-/* line 192, ../scss/custom.scss */
+/* line 204, ../scss/custom.scss */
 .header .brand {
   width: 19%;
   float: left;
   background-color: #f2f2f2;
   min-height: 103px;
 }
-/* line 200, ../scss/custom.scss */
+/* line 212, ../scss/custom.scss */
 .header .main-header {
-  width: 81%;
+  width: 100%;
   float: right;
-  padding: 30px 0 30px 60px;
+  padding: 15px;
 }
-/* line 206, ../scss/custom.scss */
+/* line 218, ../scss/custom.scss */
 .header .main-header form, .header .main-header button {
-  display: inline-block;
   border-radius: 5px;
   -moz-border-radius: 5px;
 }
-/* line 212, ../scss/custom.scss */
+/* line 223, ../scss/custom.scss */
+.header .main-header form {
+  display: block;
+}
+/* line 227, ../scss/custom.scss */
+.header .main-header form input {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* line 234, ../scss/custom.scss */
+.header .main-header button {
+  display: none;
+}
+/* line 239, ../scss/custom.scss */
+.header .main-header #mobile-menu {
+  padding-bottom: 15px;
+}
+/* line 243, ../scss/custom.scss */
+.header .main-header #mobile-menu .container {
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 251, ../scss/custom.scss */
+.header .main-header #mobile-menu .container .right img {
+  padding-right: 30px;
+}
+/* line 255, ../scss/custom.scss */
+.header .main-header #mobile-menu .container .right img:last-child {
+  padding-right: 0;
+}
+/* line 264, ../scss/custom.scss */
 .header .main-header #header-search {
-  width: 50%;
+  width: 100%;
   min-width: 300px;
-  margin-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
   display: inline-block;
 }
-/* line 219, ../scss/custom.scss */
+/* line 272, ../scss/custom.scss */
 .header .main-header #header-search form {
   width: 100%;
 }
-/* line 223, ../scss/custom.scss */
+/* line 276, ../scss/custom.scss */
 .header .main-header #header-search form input {
   margin-bottom: 0;
-  max-width: 90%;
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid black;
   padding-left: 50px;
   background: url(../images/search_icon_black.png) no-repeat 2%;
@@ -228,7 +273,7 @@ img {
   /* Internet Explorer 10+ */
   color: black;
 }
-/* line 237, ../scss/custom.scss */
+/* line 292, ../scss/custom.scss */
 .header .main-header button {
   padding: 10px 30px;
   width: 150px;
@@ -240,21 +285,21 @@ img {
 /* ---------------------------- */
 /* ---    SIDEBAR STYLES    --- */
 /* ---------------------------- */
-/* line 256, ../scss/custom.scss */
+/* line 311, ../scss/custom.scss */
 .sidebar {
   margin-top: 0;
   height: 100%;
   width: 19%;
 }
-/* line 262, ../scss/custom.scss */
+/* line 317, ../scss/custom.scss */
 .sidebar .category {
   border-bottom: 1px solid #bcbcbc;
 }
-/* line 266, ../scss/custom.scss */
+/* line 321, ../scss/custom.scss */
 .sidebar .category a {
   text-decoration: none;
 }
-/* line 271, ../scss/custom.scss */
+/* line 326, ../scss/custom.scss */
 .sidebar .category h4 {
   text-decoration: none;
   text-transform: uppercase;
@@ -263,16 +308,16 @@ img {
   margin: 0;
   padding: 40px 30px;
 }
-/* line 281, ../scss/custom.scss */
+/* line 336, ../scss/custom.scss */
 .sidebar .category .category-posts {
   display: none;
   padding: 0 30px;
 }
-/* line 286, ../scss/custom.scss */
+/* line 341, ../scss/custom.scss */
 .sidebar .category .category-posts a {
   color: black;
 }
-/* line 291, ../scss/custom.scss */
+/* line 346, ../scss/custom.scss */
 .sidebar .category .category-posts a:hover {
   color: #38a5dd;
 }
@@ -280,33 +325,33 @@ img {
 /* ---------------------------- */
 /* ---     LANDING PAGE     --- */
 /* ---------------------------- */
-/* line 304, ../scss/custom.scss */
+/* line 359, ../scss/custom.scss */
 #home {
   background: #deccb4 url(../images/success-bg.png) no-repeat 80% 20%;
   padding: 80px 0 0 0;
 }
-/* line 309, ../scss/custom.scss */
+/* line 364, ../scss/custom.scss */
 #home .text {
   max-width: 300px;
   margin: 0 0 100px 100px;
 }
-/* line 314, ../scss/custom.scss */
+/* line 369, ../scss/custom.scss */
 #home .text h1, #home .text p {
   margin-bottom: 40px;
 }
-/* line 319, ../scss/custom.scss */
+/* line 374, ../scss/custom.scss */
 #home .text h1 {
   text-transform: uppercase;
   font-size: 30px;
   color: #e25736;
   font-weight: 500;
 }
-/* line 327, ../scss/custom.scss */
+/* line 382, ../scss/custom.scss */
 #home .text p {
   font-size: 17px;
   color: black;
 }
-/* line 333, ../scss/custom.scss */
+/* line 388, ../scss/custom.scss */
 #home .text button {
   padding: 20px 40px;
   border: none;
@@ -316,17 +361,17 @@ img {
   border-radius: 5px;
   -moz-border-radius: 5px;
 }
-/* line 344, ../scss/custom.scss */
+/* line 399, ../scss/custom.scss */
 #home #search-section {
   text-align: center;
   background-color: #5fb7b7;
 }
-/* line 349, ../scss/custom.scss */
+/* line 404, ../scss/custom.scss */
 #home #search-section form {
   padding: 40px;
   color: white;
 }
-/* line 354, ../scss/custom.scss */
+/* line 409, ../scss/custom.scss */
 #home #search-section form input {
   background: url(../images/search_icon_white.png) no-repeat 2%;
   padding: 5px 0 5px 60px;
@@ -366,7 +411,7 @@ img {
 /* ---------------------------- */
 /* ---     CATEGORY PAGE    --- */
 /* ---------------------------- */
-/* line 376, ../scss/custom.scss */
+/* line 431, ../scss/custom.scss */
 .page-title, .archive-title {
   padding: 120px 0 120px 100px;
   text-transform: uppercase;
@@ -376,18 +421,18 @@ img {
   margin: 0;
 }
 
-/* line 386, ../scss/custom.scss */
+/* line 441, ../scss/custom.scss */
 .entry-title {
   color: black;
   text-transform: uppercase;
   font-size: 26px;
 }
-/* line 392, ../scss/custom.scss */
+/* line 447, ../scss/custom.scss */
 .entry-title a {
   color: black;
 }
 
-/* line 398, ../scss/custom.scss */
+/* line 453, ../scss/custom.scss */
 .hentry {
   margin-bottom: 0;
   border: none;
@@ -395,17 +440,17 @@ img {
   -moz-border-radius: 0;
   padding: 40px 0 40px 100px;
 }
-/* line 406, ../scss/custom.scss */
+/* line 461, ../scss/custom.scss */
 .hentry header {
   border-bottom: none;
   padding-top: 0;
 }
-/* line 411, ../scss/custom.scss */
+/* line 466, ../scss/custom.scss */
 .hentry header a {
   padding-top: 1.5em;
   display: inline-block;
 }
-/* line 418, ../scss/custom.scss */
+/* line 473, ../scss/custom.scss */
 .hentry a, .hentry a:hover {
   color: #38a5dd;
 }
@@ -413,23 +458,23 @@ img {
 /* ---------------------------- */
 /* ---    FOOTER STYLES     --- */
 /* ---------------------------- */
-/* line 430, ../scss/custom.scss */
+/* line 485, ../scss/custom.scss */
 .footer {
   background-color: white;
   color: black;
   position: relative;
 }
-/* line 436, ../scss/custom.scss */
+/* line 491, ../scss/custom.scss */
 .footer a {
   color: black;
   text-decoration: none;
   display: inline-block;
 }
-/* line 442, ../scss/custom.scss */
+/* line 497, ../scss/custom.scss */
 .footer a:hover {
   color: #38a5dd;
 }
-/* line 448, ../scss/custom.scss */
+/* line 503, ../scss/custom.scss */
 .footer #footer-left {
   background-color: #f2f2f2;
   position: absolute;
@@ -438,50 +483,50 @@ img {
   height: 100%;
   width: 19%;
 }
-/* line 457, ../scss/custom.scss */
+/* line 512, ../scss/custom.scss */
 .footer #footer-left .content {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
 }
-/* line 464, ../scss/custom.scss */
+/* line 519, ../scss/custom.scss */
 .footer #footer-left .content p {
   margin-top: 0;
 }
-/* line 469, ../scss/custom.scss */
+/* line 524, ../scss/custom.scss */
 .footer #footer-left .content a:hover {
   color: inherit;
 }
-/* line 476, ../scss/custom.scss */
+/* line 531, ../scss/custom.scss */
 .footer #footer-right {
   width: 81%;
   float: right;
   padding-top: 20px;
 }
-/* line 484, ../scss/custom.scss */
+/* line 539, ../scss/custom.scss */
 .footer #footer-right div.max-960 a {
   font-weight: 300;
   margin: 30px 6%;
   text-transform: uppercase;
 }
-/* line 492, ../scss/custom.scss */
+/* line 547, ../scss/custom.scss */
 .footer #footer-right div.half {
   width: 50%;
   float: left;
   padding: 20px 100px;
 }
-/* line 498, ../scss/custom.scss */
+/* line 553, ../scss/custom.scss */
 .footer #footer-right div.half p {
   margin-bottom: 0;
   margin-top: 0;
 }
-/* line 504, ../scss/custom.scss */
+/* line 559, ../scss/custom.scss */
 .footer #footer-right div.half a, .footer #footer-right div.half a:hover {
   color: white;
 }
 
-/* line 512, ../scss/custom.scss */
+/* line 567, ../scss/custom.scss */
 #login-overlay {
   position: fixed;
   top: 0;
@@ -493,7 +538,7 @@ img {
   z-index: 999;
   display: none;
 }
-/* line 524, ../scss/custom.scss */
+/* line 579, ../scss/custom.scss */
 #login-overlay #login-modal {
   max-width: 550px;
   background-color: white;
@@ -502,23 +547,23 @@ img {
   border-radius: 10px;
   -moz-border-radius: 10px;
 }
-/* line 532, ../scss/custom.scss */
+/* line 587, ../scss/custom.scss */
 #login-overlay #login-modal #login-close {
   top: 5px;
   right: 5px;
   cursor: pointer;
 }
-/* line 539, ../scss/custom.scss */
+/* line 594, ../scss/custom.scss */
 #login-overlay #login-modal #login-title {
   border-bottom: 1px solid #787878;
 }
-/* line 544, ../scss/custom.scss */
+/* line 599, ../scss/custom.scss */
 #login-overlay #login-modal form {
   padding: 0 3%;
   max-width: 400px;
   margin: 0 auto;
 }
-/* line 550, ../scss/custom.scss */
+/* line 605, ../scss/custom.scss */
 #login-overlay #login-modal form input {
   background: none;
   border: 1px solid #e6e6e6;
@@ -549,7 +594,7 @@ img {
   /* Internet Explorer 10+ */
   color: black;
 }
-/* line 560, ../scss/custom.scss */
+/* line 615, ../scss/custom.scss */
 #login-overlay #login-modal form input, #login-overlay #login-modal form button {
   margin: 30px auto 10px;
   width: 100%;
@@ -558,11 +603,37 @@ img {
   font-family: 'Roboto', sans-serif;
   height: auto;
 }
-/* line 570, ../scss/custom.scss */
+/* line 625, ../scss/custom.scss */
 #login-overlay #login-modal form button {
   margin: 10px auto;
   border-radius: 10px;
   -moz-border-radius: 10px;
   padding: 20px 0;
   border: none;
+}
+
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+/* ------------------------    DESKTOP STYLES     ------------------------ */
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+@media only screen and (min-width: 992px) {
+  /* line 649, ../scss/custom.scss */
+  .header .main-header {
+    padding: 30px 0 30px 60px;
+    width: 81%;
+  }
+  /* line 654, ../scss/custom.scss */
+  .header .main-header button {
+    display: inline-block;
+  }
+  /* line 659, ../scss/custom.scss */
+  .header .main-header #mobile-menu {
+    display: none;
+  }
+  /* line 664, ../scss/custom.scss */
+  .header .main-header #header-search {
+    margin-right: 50px;
+    width: 50%;
+  }
 }

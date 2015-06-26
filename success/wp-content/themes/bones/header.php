@@ -53,23 +53,30 @@
                             <img src="<?php bloginfo('template_directory'); ?>/library/images/success-logo.png" alt="">
                         </a>
                     </div>
-                    <div class="hidden-xs hidden-sm clearfix">
 
-                        <div class="main-header">
-                            <div id="header-search" <?php if (is_home()) { echo "class=hidden"; } ?>>
-                                <?php include (TEMPLATEPATH . '/searchform.php'); ?>
+                    <div class="main-header">
+                        <div id="mobile-menu">
+                            <div class="container clearfix">
+                                <img src="<?php bloginfo('template_directory'); ?>/library/images/mobile-menu.png" alt="" class="left">
+                                <div class="right inline-block">
+                                    <img src="<?php bloginfo('template_directory'); ?>/library/images/jamooz_logo_mobile.jpg" alt="Jamooz Logo">
+                                    <img src="<?php bloginfo('template_directory'); ?>/library/images/mobile_previous.png" alt="Arrow for previous page">
+                                    <img src="<?php bloginfo('template_directory'); ?>/library/images/mobile_next.png" alt="Arrow for next page">
+                                </div>
                             </div>
-
-                            <?php $url = get_site_url(); ?>
-                            <?php $link = $url . '/../index.php#trial' ?>
-                            <button class="radius large-3 columns medium-dark-gray-border no-background medium-dark-gray small-centered uppercase login-button">Login</button>
-                            <a href="<?php echo $link ?>">
-                                <button class="radius large-3 columns small-centered orange no-background red-orange-border uppercase">Sign Up</button>
-                            </a>
+                            
                         </div>
-                    </div>
+                        <div id="header-search" <?php if (is_home()) { echo "class=hidden"; } ?>>
+                            <?php include (TEMPLATEPATH . '/searchform.php'); ?>
+                        </div>
 
-                    
+                        <?php $url = get_site_url(); ?>
+                        <?php $link = $url . '/../index.php#trial' ?>
+                        <button class="radius large-3 columns medium-dark-gray-border no-background medium-dark-gray small-centered uppercase login-button">Login</button>
+                        <a href="<?php echo $link ?>">
+                            <button class="radius large-3 columns small-centered orange no-background red-orange-border uppercase">Sign Up</button>
+                        </a>
+                    </div>
 				</div>
 
 			</header>

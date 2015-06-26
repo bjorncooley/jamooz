@@ -43,6 +43,8 @@ input {
 
   @include placeholder_color(inherit);
   padding: 15px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 /* Clearfix */
@@ -65,6 +67,16 @@ input {
 .absolute {
 
     position: absolute;
+}
+
+.left {
+
+    float: left;
+}
+
+.right {
+
+    float: right;
 }
 
 .inline-block {
@@ -199,21 +211,62 @@ img {
 
     .main-header {
 
-        width: 81%;
+        width: 100%;
         float: right;
-        padding: 30px 0 30px 60px;
+        padding: 15px;
 
         form, button {
 
-            display: inline-block;
             @include border_radius(5px);
+        }
+
+        form {
+
+            display: block;
+
+            input {
+
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+        }
+
+        button {
+
+            display: none;
+        }
+
+        #mobile-menu {
+
+            padding-bottom: 15px;
+
+            .container {
+
+               max-width: 85%;
+               margin-left: auto;
+               margin-right: auto; 
+
+               .right {
+
+                   img {
+
+                       padding-right: 30px;
+
+                       &:last-child {
+
+                           padding-right: 0;
+                       }
+                   }
+               }
+            }
         }
 
         #header-search {
 
-            width: 50%;
+            width: 100%;
             min-width: 300px;
-            margin-right: 50px;
+            margin-left: auto;
+            margin-right: auto;
             display: inline-block;
 
             form {
@@ -224,7 +277,9 @@ img {
 
                     @include placeholder_color(black);
                     margin-bottom: 0;
-                    max-width: 90%;
+                    max-width: 85%;
+                    margin-left: auto;
+                    margin-right: auto;
                     border: 1px solid black;
                     padding-left: 50px;
                     background: url(../images/search_icon_black.png) no-repeat 2%;
@@ -575,5 +630,44 @@ img {
                 border: none;
             }
         }
+    }
+}
+
+
+
+
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+/* ------------------------    DESKTOP STYLES     ------------------------ */
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+
+@media only screen and (min-width: 992px) {
+
+    .header {
+
+        .main-header {
+
+            padding: 30px 0 30px 60px;
+            width: 81%;
+
+            button {
+
+                display: inline-block;
+            }
+
+            #mobile-menu {
+
+                display: none;
+            }
+
+            #header-search {
+
+                margin-right: 50px;
+                width: 50%;
+            }
+        }
+
+        
     }
 }
