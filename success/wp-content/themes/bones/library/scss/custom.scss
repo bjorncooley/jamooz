@@ -193,6 +193,12 @@ img {
     }
 }
 
+.brand, .sidebar {
+
+    position: absolute;
+    left: -300px;
+}
+
 /* --------------------------- */
 /* ---    HEADER STYLES    --- */
 /* --------------------------- */
@@ -643,6 +649,11 @@ img {
 /* ----------------------------------------------------------------------- */
 
 @media only screen and (min-width: 992px) {
+
+    .brand, .sidebar {
+
+        position: static;
+    }
 
     .header {
 
