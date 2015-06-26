@@ -3093,57 +3093,37 @@ img {
 }
 /* line 509, ../scss/custom.scss */
 .footer #footer-left {
-  background-color: #f2f2f2;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 19%;
+  display: none;
 }
-/* line 518, ../scss/custom.scss */
-.footer #footer-left .content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-/* line 525, ../scss/custom.scss */
-.footer #footer-left .content p {
-  margin-top: 0;
-}
-/* line 530, ../scss/custom.scss */
-.footer #footer-left .content a:hover {
-  color: inherit;
-}
-/* line 537, ../scss/custom.scss */
+/* line 514, ../scss/custom.scss */
 .footer #footer-right {
-  width: 81%;
+  width: 100%;
   float: right;
   padding-top: 20px;
 }
-/* line 545, ../scss/custom.scss */
+/* line 522, ../scss/custom.scss */
 .footer #footer-right div.max-960 a {
   font-weight: 300;
   margin: 30px 6%;
   text-transform: uppercase;
 }
-/* line 553, ../scss/custom.scss */
+/* line 530, ../scss/custom.scss */
 .footer #footer-right div.half {
   width: 50%;
   float: left;
   padding: 20px 100px;
 }
-/* line 559, ../scss/custom.scss */
+/* line 536, ../scss/custom.scss */
 .footer #footer-right div.half p {
   margin-bottom: 0;
   margin-top: 0;
 }
-/* line 565, ../scss/custom.scss */
+/* line 542, ../scss/custom.scss */
 .footer #footer-right div.half a, .footer #footer-right div.half a:hover {
   color: white;
 }
 
-/* line 573, ../scss/custom.scss */
+/* line 550, ../scss/custom.scss */
 #login-overlay {
   position: fixed;
   top: 0;
@@ -3155,7 +3135,7 @@ img {
   z-index: 999;
   display: none;
 }
-/* line 585, ../scss/custom.scss */
+/* line 562, ../scss/custom.scss */
 #login-overlay #login-modal {
   max-width: 550px;
   background-color: white;
@@ -3164,23 +3144,23 @@ img {
   border-radius: 10px;
   -moz-border-radius: 10px;
 }
-/* line 593, ../scss/custom.scss */
+/* line 570, ../scss/custom.scss */
 #login-overlay #login-modal #login-close {
   top: 5px;
   right: 5px;
   cursor: pointer;
 }
-/* line 600, ../scss/custom.scss */
+/* line 577, ../scss/custom.scss */
 #login-overlay #login-modal #login-title {
   border-bottom: 1px solid #787878;
 }
-/* line 605, ../scss/custom.scss */
+/* line 582, ../scss/custom.scss */
 #login-overlay #login-modal form {
   padding: 0 3%;
   max-width: 400px;
   margin: 0 auto;
 }
-/* line 611, ../scss/custom.scss */
+/* line 588, ../scss/custom.scss */
 #login-overlay #login-modal form input {
   background: none;
   border: 1px solid #e6e6e6;
@@ -3211,7 +3191,7 @@ img {
   /* Internet Explorer 10+ */
   color: black;
 }
-/* line 621, ../scss/custom.scss */
+/* line 598, ../scss/custom.scss */
 #login-overlay #login-modal form input, #login-overlay #login-modal form button {
   margin: 30px auto 10px;
   width: 100%;
@@ -3220,7 +3200,7 @@ img {
   font-family: 'Roboto', sans-serif;
   height: auto;
 }
-/* line 631, ../scss/custom.scss */
+/* line 608, ../scss/custom.scss */
 #login-overlay #login-modal form button {
   margin: 10px auto;
   border-radius: 10px;
@@ -3235,37 +3215,67 @@ img {
 /* ----------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------- */
 @media only screen and (min-width: 992px) {
-  /* line 653, ../scss/custom.scss */
+  /* line 630, ../scss/custom.scss */
   #home, #main {
     width: 81%;
   }
 
-  /* line 658, ../scss/custom.scss */
+  /* line 635, ../scss/custom.scss */
   .brand, .sidebar {
     position: static;
   }
 
-  /* line 665, ../scss/custom.scss */
+  /* line 642, ../scss/custom.scss */
   .header .main-header {
     padding: 30px 0 30px 60px;
     width: 81%;
   }
-  /* line 670, ../scss/custom.scss */
+  /* line 647, ../scss/custom.scss */
   .header .main-header button {
     display: inline-block;
   }
-  /* line 675, ../scss/custom.scss */
+  /* line 652, ../scss/custom.scss */
   .header .main-header #mobile-menu {
     display: none;
   }
-  /* line 680, ../scss/custom.scss */
+  /* line 657, ../scss/custom.scss */
   .header .main-header #header-search {
     margin-right: 30px;
     width: 50%;
   }
+
+  /* line 669, ../scss/custom.scss */
+  .footer #footer-left {
+    display: block;
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 19%;
+  }
+  /* line 679, ../scss/custom.scss */
+  .footer #footer-left .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  /* line 686, ../scss/custom.scss */
+  .footer #footer-left .content p {
+    margin-top: 0;
+  }
+  /* line 691, ../scss/custom.scss */
+  .footer #footer-left .content a:hover {
+    color: inherit;
+  }
+  /* line 698, ../scss/custom.scss */
+  .footer #footer-right {
+    width: 81%;
+  }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 697, ../scss/custom.scss */
+  /* line 711, ../scss/custom.scss */
   .sidebar .category h4 {
     padding: 30px 40px;
   }
