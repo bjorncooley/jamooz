@@ -2769,7 +2769,7 @@ img {
 
 /* line 176, ../scss/custom.scss */
 #home, #main {
-  width: 81%;
+  width: 100%;
 }
 
 /* line 181, ../scss/custom.scss */
@@ -3236,31 +3236,36 @@ img {
 /* ----------------------------------------------------------------------- */
 @media only screen and (min-width: 992px) {
   /* line 653, ../scss/custom.scss */
+  #home, #main {
+    width: 81%;
+  }
+
+  /* line 658, ../scss/custom.scss */
   .brand, .sidebar {
     position: static;
   }
 
-  /* line 660, ../scss/custom.scss */
+  /* line 665, ../scss/custom.scss */
   .header .main-header {
     padding: 30px 0 30px 60px;
     width: 81%;
   }
-  /* line 665, ../scss/custom.scss */
+  /* line 670, ../scss/custom.scss */
   .header .main-header button {
     display: inline-block;
   }
-  /* line 670, ../scss/custom.scss */
+  /* line 675, ../scss/custom.scss */
   .header .main-header #mobile-menu {
     display: none;
   }
-  /* line 675, ../scss/custom.scss */
+  /* line 680, ../scss/custom.scss */
   .header .main-header #header-search {
     margin-right: 30px;
     width: 50%;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 692, ../scss/custom.scss */
+  /* line 697, ../scss/custom.scss */
   .sidebar .category h4 {
     padding: 30px 40px;
   }

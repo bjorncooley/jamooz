@@ -175,7 +175,7 @@ img {
 
 #home, #main {
 
-    width: 81%;
+    width: 100%;
 }
 
 #main {
@@ -649,6 +649,11 @@ img {
 /* ----------------------------------------------------------------------- */
 
 @media only screen and (min-width: 992px) {
+
+    #home, #main {
+
+        width: 81%;
+    }
 
     .brand, .sidebar {
 
