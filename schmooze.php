@@ -80,7 +80,7 @@
             </div>
             <div class="row">
                 <div class="large-12 columns text-center">
-                    <h3 class="small mint padding-bottom-50">Simple to set up with typical office hardware</h3>
+                    <h3 class="small mint padding-top-50 padding-bottom-50">Simple to set up with typical office hardware</h3>
                     <img src="img/schmooze/hardware.png" alt="" class="padding-bottom-30">
                     <p>Jamooz takes analytics to the next step with actions. See where all of your team's efforts are being put. Then share the stats with your team to
                     highlight areas of improvement.</p>
