@@ -440,7 +440,7 @@ img {
 
 .page-title, .archive-title {
 
-    padding: 120px 0 120px 100px;
+    padding: 120px 20px 120px;
     text-transform: uppercase;
     font-size: 30px;
     background-color: $light-blue;
@@ -460,18 +460,23 @@ img {
     }
 }
 
+.entry-content {
+    
+    padding: 20px;
+}
+
 .hentry {
 
     margin-bottom: 0;
     border: none;
     border-radius: 0;
     -moz-border-radius: 0;
-    padding: 40px 0 40px 100px;
+    padding: 40px 0 40px;
 
     header {
 
         border-bottom: none;
-        padding-top: 0;
+        padding: 0 20px 20px 20px;
 
         a {
 
@@ -644,6 +649,16 @@ img {
     .brand, .sidebar {
 
         position: static;
+    }
+
+    .page-title, .archive-title {
+
+        padding: 120px 0 120px 100px;
+    }
+
+    .hentry {
+
+        padding: 40px 0 40px 100px;
     }
 
     #home {
