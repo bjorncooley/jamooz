@@ -2726,47 +2726,46 @@ input:-ms-input-placeholder {
 body {
   background-color: #e6e6e6;
   font-weight: 300;
-  min-width: 1100px;
 }
 
-/* line 138, ../scss/custom.scss */
+/* line 137, ../scss/custom.scss */
 html, body, h1, h2, h3, h4, h5, p, a, input, button {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: inherit;
 }
 
-/* line 145, ../scss/custom.scss */
+/* line 144, ../scss/custom.scss */
 h4 {
   font-weight: 400;
 }
 
-/* line 150, ../scss/custom.scss */
+/* line 149, ../scss/custom.scss */
 img {
   max-width: 100%;
 }
 
-/* line 155, ../scss/custom.scss */
+/* line 154, ../scss/custom.scss */
 #content {
   margin-top: 0;
 }
 
-/* line 160, ../scss/custom.scss */
+/* line 159, ../scss/custom.scss */
 .wrap {
   width: 100%;
 }
 
-/* line 165, ../scss/custom.scss */
+/* line 164, ../scss/custom.scss */
 #home, #main {
   width: 81%;
 }
 
-/* line 170, ../scss/custom.scss */
+/* line 169, ../scss/custom.scss */
 #main {
   padding-right: 0;
 }
 
-/* line 177, ../scss/custom.scss */
+/* line 176, ../scss/custom.scss */
 .entry-content p {
   font-size: 19px;
   font-weight: 300;
@@ -2776,41 +2775,41 @@ img {
 /* --------------------------- */
 /* ---    HEADER STYLES    --- */
 /* --------------------------- */
-/* line 189, ../scss/custom.scss */
+/* line 188, ../scss/custom.scss */
 .header {
   background-color: white;
 }
-/* line 193, ../scss/custom.scss */
+/* line 192, ../scss/custom.scss */
 .header .brand {
   width: 19%;
   float: left;
   background-color: #f2f2f2;
   min-height: 103px;
 }
-/* line 201, ../scss/custom.scss */
+/* line 200, ../scss/custom.scss */
 .header .main-header {
   width: 81%;
   float: right;
   padding: 30px 0 30px 60px;
 }
-/* line 207, ../scss/custom.scss */
+/* line 206, ../scss/custom.scss */
 .header .main-header form, .header .main-header button {
   display: inline-block;
   border-radius: 5px;
   -moz-border-radius: 5px;
 }
-/* line 213, ../scss/custom.scss */
+/* line 212, ../scss/custom.scss */
 .header .main-header #header-search {
   width: 50%;
   min-width: 300px;
   margin-right: 50px;
   display: inline-block;
 }
-/* line 220, ../scss/custom.scss */
+/* line 219, ../scss/custom.scss */
 .header .main-header #header-search form {
   width: 100%;
 }
-/* line 224, ../scss/custom.scss */
+/* line 223, ../scss/custom.scss */
 .header .main-header #header-search form input {
   margin-bottom: 0;
   max-width: 90%;
@@ -2840,7 +2839,7 @@ img {
   /* Internet Explorer 10+ */
   color: black;
 }
-/* line 238, ../scss/custom.scss */
+/* line 237, ../scss/custom.scss */
 .header .main-header button {
   padding: 10px 30px;
   width: 150px;
@@ -2852,21 +2851,21 @@ img {
 /* ---------------------------- */
 /* ---    SIDEBAR STYLES    --- */
 /* ---------------------------- */
-/* line 257, ../scss/custom.scss */
+/* line 256, ../scss/custom.scss */
 .sidebar {
   margin-top: 0;
   height: 100%;
   width: 19%;
 }
-/* line 263, ../scss/custom.scss */
+/* line 262, ../scss/custom.scss */
 .sidebar .category {
   border-bottom: 1px solid #bcbcbc;
 }
-/* line 267, ../scss/custom.scss */
+/* line 266, ../scss/custom.scss */
 .sidebar .category a {
   text-decoration: none;
 }
-/* line 272, ../scss/custom.scss */
+/* line 271, ../scss/custom.scss */
 .sidebar .category h4 {
   text-decoration: none;
   text-transform: uppercase;
@@ -2875,16 +2874,16 @@ img {
   margin: 0;
   padding: 40px 30px;
 }
-/* line 282, ../scss/custom.scss */
+/* line 281, ../scss/custom.scss */
 .sidebar .category .category-posts {
   display: none;
   padding: 0 30px;
 }
-/* line 287, ../scss/custom.scss */
+/* line 286, ../scss/custom.scss */
 .sidebar .category .category-posts a {
   color: black;
 }
-/* line 292, ../scss/custom.scss */
+/* line 291, ../scss/custom.scss */
 .sidebar .category .category-posts a:hover {
   color: #38a5dd;
 }
@@ -2892,33 +2891,33 @@ img {
 /* ---------------------------- */
 /* ---     LANDING PAGE     --- */
 /* ---------------------------- */
-/* line 305, ../scss/custom.scss */
+/* line 304, ../scss/custom.scss */
 #home {
   background: #deccb4 url(../images/success-bg.png) no-repeat 80% 20%;
   padding: 80px 0 0 0;
 }
-/* line 310, ../scss/custom.scss */
+/* line 309, ../scss/custom.scss */
 #home .text {
   max-width: 300px;
   margin: 0 0 100px 100px;
 }
-/* line 315, ../scss/custom.scss */
+/* line 314, ../scss/custom.scss */
 #home .text h1, #home .text p {
   margin-bottom: 40px;
 }
-/* line 320, ../scss/custom.scss */
+/* line 319, ../scss/custom.scss */
 #home .text h1 {
   text-transform: uppercase;
   font-size: 30px;
   color: #e25736;
   font-weight: 500;
 }
-/* line 328, ../scss/custom.scss */
+/* line 327, ../scss/custom.scss */
 #home .text p {
   font-size: 17px;
   color: black;
 }
-/* line 334, ../scss/custom.scss */
+/* line 333, ../scss/custom.scss */
 #home .text button {
   padding: 20px 40px;
   border: none;
@@ -2928,17 +2927,17 @@ img {
   border-radius: 5px;
   -moz-border-radius: 5px;
 }
-/* line 345, ../scss/custom.scss */
+/* line 344, ../scss/custom.scss */
 #home #search-section {
   text-align: center;
   background-color: #5fb7b7;
 }
-/* line 350, ../scss/custom.scss */
+/* line 349, ../scss/custom.scss */
 #home #search-section form {
   padding: 40px;
   color: white;
 }
-/* line 355, ../scss/custom.scss */
+/* line 354, ../scss/custom.scss */
 #home #search-section form input {
   background: url(../images/search_icon_white.png) no-repeat 2%;
   padding: 5px 0 5px 60px;
@@ -2978,7 +2977,7 @@ img {
 /* ---------------------------- */
 /* ---     CATEGORY PAGE    --- */
 /* ---------------------------- */
-/* line 377, ../scss/custom.scss */
+/* line 376, ../scss/custom.scss */
 .page-title, .archive-title {
   padding: 120px 0 120px 100px;
   text-transform: uppercase;
@@ -2988,18 +2987,18 @@ img {
   margin: 0;
 }
 
-/* line 387, ../scss/custom.scss */
+/* line 386, ../scss/custom.scss */
 .entry-title {
   color: black;
   text-transform: uppercase;
   font-size: 26px;
 }
-/* line 393, ../scss/custom.scss */
+/* line 392, ../scss/custom.scss */
 .entry-title a {
   color: black;
 }
 
-/* line 399, ../scss/custom.scss */
+/* line 398, ../scss/custom.scss */
 .hentry {
   margin-bottom: 0;
   border: none;
@@ -3007,17 +3006,17 @@ img {
   -moz-border-radius: 0;
   padding: 40px 0 40px 100px;
 }
-/* line 407, ../scss/custom.scss */
+/* line 406, ../scss/custom.scss */
 .hentry header {
   border-bottom: none;
   padding-top: 0;
 }
-/* line 412, ../scss/custom.scss */
+/* line 411, ../scss/custom.scss */
 .hentry header a {
   padding-top: 1.5em;
   display: inline-block;
 }
-/* line 419, ../scss/custom.scss */
+/* line 418, ../scss/custom.scss */
 .hentry a, .hentry a:hover {
   color: #38a5dd;
 }
@@ -3025,23 +3024,23 @@ img {
 /* ---------------------------- */
 /* ---    FOOTER STYLES     --- */
 /* ---------------------------- */
-/* line 431, ../scss/custom.scss */
+/* line 430, ../scss/custom.scss */
 .footer {
   background-color: white;
   color: black;
   position: relative;
 }
-/* line 437, ../scss/custom.scss */
+/* line 436, ../scss/custom.scss */
 .footer a {
   color: black;
   text-decoration: none;
   display: inline-block;
 }
-/* line 443, ../scss/custom.scss */
+/* line 442, ../scss/custom.scss */
 .footer a:hover {
   color: #38a5dd;
 }
-/* line 449, ../scss/custom.scss */
+/* line 448, ../scss/custom.scss */
 .footer #footer-left {
   background-color: #f2f2f2;
   position: absolute;
@@ -3050,50 +3049,50 @@ img {
   height: 100%;
   width: 19%;
 }
-/* line 458, ../scss/custom.scss */
+/* line 457, ../scss/custom.scss */
 .footer #footer-left .content {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
 }
-/* line 465, ../scss/custom.scss */
+/* line 464, ../scss/custom.scss */
 .footer #footer-left .content p {
   margin-top: 0;
 }
-/* line 470, ../scss/custom.scss */
+/* line 469, ../scss/custom.scss */
 .footer #footer-left .content a:hover {
   color: inherit;
 }
-/* line 477, ../scss/custom.scss */
+/* line 476, ../scss/custom.scss */
 .footer #footer-right {
   width: 81%;
   float: right;
   padding-top: 20px;
 }
-/* line 485, ../scss/custom.scss */
+/* line 484, ../scss/custom.scss */
 .footer #footer-right div.max-960 a {
   font-weight: 300;
   margin: 30px 6%;
   text-transform: uppercase;
 }
-/* line 493, ../scss/custom.scss */
+/* line 492, ../scss/custom.scss */
 .footer #footer-right div.half {
   width: 50%;
   float: left;
   padding: 20px 100px;
 }
-/* line 499, ../scss/custom.scss */
+/* line 498, ../scss/custom.scss */
 .footer #footer-right div.half p {
   margin-bottom: 0;
   margin-top: 0;
 }
-/* line 505, ../scss/custom.scss */
+/* line 504, ../scss/custom.scss */
 .footer #footer-right div.half a, .footer #footer-right div.half a:hover {
   color: white;
 }
 
-/* line 513, ../scss/custom.scss */
+/* line 512, ../scss/custom.scss */
 #login-overlay {
   position: fixed;
   top: 0;
@@ -3105,7 +3104,7 @@ img {
   z-index: 999;
   display: none;
 }
-/* line 525, ../scss/custom.scss */
+/* line 524, ../scss/custom.scss */
 #login-overlay #login-modal {
   max-width: 550px;
   background-color: white;
@@ -3114,23 +3113,23 @@ img {
   border-radius: 10px;
   -moz-border-radius: 10px;
 }
-/* line 533, ../scss/custom.scss */
+/* line 532, ../scss/custom.scss */
 #login-overlay #login-modal #login-close {
   top: 5px;
   right: 5px;
   cursor: pointer;
 }
-/* line 540, ../scss/custom.scss */
+/* line 539, ../scss/custom.scss */
 #login-overlay #login-modal #login-title {
   border-bottom: 1px solid #787878;
 }
-/* line 545, ../scss/custom.scss */
+/* line 544, ../scss/custom.scss */
 #login-overlay #login-modal form {
   padding: 0 3%;
   max-width: 400px;
   margin: 0 auto;
 }
-/* line 551, ../scss/custom.scss */
+/* line 550, ../scss/custom.scss */
 #login-overlay #login-modal form input {
   background: none;
   border: 1px solid #e6e6e6;
@@ -3161,7 +3160,7 @@ img {
   /* Internet Explorer 10+ */
   color: black;
 }
-/* line 561, ../scss/custom.scss */
+/* line 560, ../scss/custom.scss */
 #login-overlay #login-modal form input, #login-overlay #login-modal form button {
   margin: 30px auto 10px;
   width: 100%;
@@ -3170,7 +3169,7 @@ img {
   font-family: 'Roboto', sans-serif;
   height: auto;
 }
-/* line 571, ../scss/custom.scss */
+/* line 570, ../scss/custom.scss */
 #login-overlay #login-modal form button {
   margin: 10px auto;
   border-radius: 10px;
