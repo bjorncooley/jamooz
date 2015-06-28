@@ -53,7 +53,7 @@
                             <div class="container clearfix">
                                 <img src="<?php bloginfo('template_directory'); ?>/library/images/mobile-menu.png" alt="" class="left" id="menu-toggle">
                                 <div class="right inline-block">
-                                    <img src="<?php bloginfo('template_directory'); ?>/library/images/jamooz_logo_mobile.jpg" alt="Jamooz Logo">
+                                    <img src="<?php bloginfo('template_directory'); ?>/library/images/jamooz_logo_mobile.png" alt="Jamooz Logo">
                                     <img src="<?php bloginfo('template_directory'); ?>/library/images/mobile_previous.png" alt="Arrow for previous page">
                                     <img src="<?php bloginfo('template_directory'); ?>/library/images/mobile_next.png" alt="Arrow for next page">
                                 </div>

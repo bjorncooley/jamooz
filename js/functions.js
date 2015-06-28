@@ -1054,7 +1054,7 @@ function homeMobileNav() {
     } else {
 
         $('#mobile-logo-container').find('img').attr('src',
-            'img/shared/jamooz_logo_mobile.jpg');
+            'img/shared/jamooz_logo_mobile.png');
         $('#mobile-logo-container').css('padding-bottom', '0px');
         $('#page-content').css('padding-top', '80px');
         $('#mobile-nav-toggle').css('top', 6);

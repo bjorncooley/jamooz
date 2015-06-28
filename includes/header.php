@@ -11,7 +11,7 @@
     <body>
         <header>
             <div id="mobile-logo-container" class="hide-for-large-up">
-                <img src="img/shared/jamooz_logo_mobile.jpg" alt="Small Jamooz logo">
+                <img src="img/shared/jamooz_logo_mobile.png" alt="Small Jamooz logo">
             </div>
             <nav class="hide-for-large-up closed" id="mobile-nav">
                 <div class="text-right">
