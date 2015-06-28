@@ -14,9 +14,10 @@ var viewport = updateViewportDimensions();
 
 jQuery(document).ready(function($) {
 
-  updateSidebarNavStyles();
-  scrollToPost();
   loginModal();
+  scrollToPost();
+  toggleMenu();
+  updateSidebarNavStyles();
 
   //jQuery('a[title="Category 2"]').offset().top
 }); /* end of as page load scripts */
@@ -79,6 +80,24 @@ function scrollToPost() {
     console.log(scroll_target);
 
     jQuery('html, body').animate({ 'scrollTop' : scroll_target });
+  });
+}
+
+
+function toggleMenu() {
+
+  jQuery('html, body').click(function(){
+
+    if ( jQuery('.sidebar').css('left') == '0px' ) {
+
+      jQuery('.sidebar, .brand').animate({ 'left' : -900 }, 500);
+    }
+  });
+
+  jQuery('#menu-toggle').click(function(e){
+
+      e.stopPropagation();
+      jQuery('.sidebar, .brand').animate({ 'left' : 0 }, 500);
   });
 }
 

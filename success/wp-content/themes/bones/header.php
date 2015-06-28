@@ -46,18 +46,12 @@
 
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
-				<div id="inner-header" class="wrap cf group">
-
-                    <div class="brand">
-                        <a href="<?php echo get_site_url(); ?>">
-                            <img src="<?php bloginfo('template_directory'); ?>/library/images/success-logo.png" alt="">
-                        </a>
-                    </div>
+				<div id="inner-header" class="cf group">
 
                     <div class="main-header">
                         <div id="mobile-menu">
                             <div class="container clearfix">
-                                <img src="<?php bloginfo('template_directory'); ?>/library/images/mobile-menu.png" alt="" class="left">
+                                <img src="<?php bloginfo('template_directory'); ?>/library/images/mobile-menu.png" alt="" class="left" id="menu-toggle">
                                 <div class="right inline-block">
                                     <img src="<?php bloginfo('template_directory'); ?>/library/images/jamooz_logo_mobile.jpg" alt="Jamooz Logo">
                                     <img src="<?php bloginfo('template_directory'); ?>/library/images/mobile_previous.png" alt="Arrow for previous page">

@@ -142,8 +142,12 @@ input {
 
 body {
 
-    background-color: $light-gray;
     font-weight: 300;
+}
+
+body, .sidebar {
+
+    background-color: $light-gray;
 }
 
 html, body, h1, h2, h3, h4, h5, p, a, input, button {
@@ -193,10 +197,18 @@ img {
     }
 }
 
-.brand, .sidebar {
+.sidebar {
 
     position: absolute;
-    left: -300px;
+    left: -900px;
+    top: 0;
+}
+
+.brand {
+
+    background-color: $lighter-gray;
+    min-height: 103px;
+    padding: 50px 0;
 }
 
 /* --------------------------- */
@@ -206,14 +218,6 @@ img {
 .header {
 
     background-color: white;
-
-    .brand {
-
-        width: 19%;
-        float: left;
-        background-color: $lighter-gray;
-        min-height: 103px;
-    }
 
     .main-header {
 
@@ -323,7 +327,8 @@ img {
 
     margin-top: 0;
     height: 100%;
-    width: 19%;
+    width: 80%;
+    min-width: 280px;
 
     .category {
 
@@ -646,10 +651,28 @@ img {
         width: 81%;
     }
 
-    .brand, .sidebar {
+    #inner-header {
+
+        width: 81%;
+        float: right;
+        background-color: white;
+    }
+
+    .brand {
+
+        padding: 0;
+    }
+
+    .sidebar {
 
         position: static;
+        width: 19%;
     }
+
+    .sidebar {
+
+        min-width: auto;
+    }    
 
     .page-title, .archive-title {
 

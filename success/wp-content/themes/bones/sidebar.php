@@ -1,5 +1,11 @@
 				<div id="sidebar1" class="sidebar m-all t-1of3 d-2of7 last-col cf" role="complementary">
 
+					<div class="brand">
+					    <a href="<?php echo get_site_url(); ?>">
+					        <img src="<?php bloginfo('template_directory'); ?>/library/images/success-logo.png" alt="">
+					    </a>
+					</div>
+
 					<?php $cat_args = array(
 						'orderby' => 'ID',
 					); ?>
