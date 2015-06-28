@@ -716,7 +716,6 @@ img {
         .main-header {
 
             padding: 30px 0 30px 60px;
-            width: 81%;
 
             button {
 
@@ -732,6 +731,11 @@ img {
 
                 margin-right: 30px;
                 width: 50%;
+
+                &.hidden {
+
+                    display: inline-block;
+                }
             }
         }
 
