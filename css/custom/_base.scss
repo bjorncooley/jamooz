@@ -1155,6 +1155,13 @@ button.yellow-background {
     #schmooze-nav {
 
         border-bottom: 1px solid $light-medium-gray;
+
+        img {
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     #communications {
@@ -1193,7 +1200,8 @@ button.yellow-background {
         padding: 100px 0 80px;
 
         input {
-
+            
+            width: 90%;
             max-width: 500px;
             margin: 0 auto;
         }
@@ -1201,6 +1209,7 @@ button.yellow-background {
         button {
 
             width: 400px;
+            max-width: 90%;
             padding: 15px 0;
             @include border_radius(5px);
         }
