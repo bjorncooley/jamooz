@@ -642,70 +642,71 @@ img {
   /* line 667, ../scss/custom.scss */
   .brand {
     padding: 0;
+    height: 103px;
   }
 
-  /* line 672, ../scss/custom.scss */
+  /* line 673, ../scss/custom.scss */
   .sidebar {
     position: static;
     width: 19%;
   }
 
-  /* line 678, ../scss/custom.scss */
+  /* line 679, ../scss/custom.scss */
   .sidebar {
     min-width: auto;
   }
 
-  /* line 683, ../scss/custom.scss */
+  /* line 684, ../scss/custom.scss */
   .page-title, .archive-title {
     padding: 120px 0 120px 100px;
   }
 
-  /* line 688, ../scss/custom.scss */
+  /* line 689, ../scss/custom.scss */
   .hentry {
     padding: 40px 0 40px 100px;
   }
 
-  /* line 693, ../scss/custom.scss */
+  /* line 694, ../scss/custom.scss */
   #home {
     background: #deccb4 url(../images/success-bg.png) no-repeat 80% 20%;
   }
-  /* line 697, ../scss/custom.scss */
+  /* line 698, ../scss/custom.scss */
   #home .text {
     max-width: 300px;
     margin: 0 0 100px 100px;
   }
-  /* line 702, ../scss/custom.scss */
+  /* line 703, ../scss/custom.scss */
   #home .text h1 {
     text-transform: uppercase;
   }
-  /* line 712, ../scss/custom.scss */
+  /* line 713, ../scss/custom.scss */
   #home #search-section form input {
     min-width: 300px;
   }
 
-  /* line 722, ../scss/custom.scss */
+  /* line 723, ../scss/custom.scss */
   .header .main-header {
     padding: 30px 0 30px 60px;
   }
-  /* line 726, ../scss/custom.scss */
+  /* line 727, ../scss/custom.scss */
   .header .main-header button {
     display: inline-block;
   }
-  /* line 731, ../scss/custom.scss */
+  /* line 732, ../scss/custom.scss */
   .header .main-header #mobile-menu {
     display: none;
   }
-  /* line 736, ../scss/custom.scss */
+  /* line 737, ../scss/custom.scss */
   .header .main-header #header-search {
     margin-right: 30px;
     width: 50%;
   }
-  /* line 741, ../scss/custom.scss */
+  /* line 742, ../scss/custom.scss */
   .header .main-header #header-search.hidden {
     display: inline-block;
   }
 
-  /* line 753, ../scss/custom.scss */
+  /* line 754, ../scss/custom.scss */
   .footer #footer-left {
     display: block;
     background-color: #f2f2f2;
@@ -715,32 +716,32 @@ img {
     height: 100%;
     width: 19%;
   }
-  /* line 763, ../scss/custom.scss */
+  /* line 764, ../scss/custom.scss */
   .footer #footer-left .content {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
   }
-  /* line 770, ../scss/custom.scss */
+  /* line 771, ../scss/custom.scss */
   .footer #footer-left .content p {
     margin-top: 0;
   }
-  /* line 775, ../scss/custom.scss */
+  /* line 776, ../scss/custom.scss */
   .footer #footer-left .content a:hover {
     color: inherit;
   }
-  /* line 782, ../scss/custom.scss */
+  /* line 783, ../scss/custom.scss */
   .footer #footer-right {
     width: 81%;
   }
-  /* line 786, ../scss/custom.scss */
+  /* line 787, ../scss/custom.scss */
   .footer #footer-right div.half {
     padding: 20px 100px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 800, ../scss/custom.scss */
+  /* line 801, ../scss/custom.scss */
   .sidebar .category h4 {
     padding: 30px 40px;
   }
