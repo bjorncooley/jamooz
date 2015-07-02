@@ -1002,7 +1002,6 @@ function updatePlanProfile() {
 
         $('#num-items').text($.cookie('num_items'));
     } else {
-
         
         $('#num-items').text('0');
     }
@@ -1015,7 +1014,7 @@ function updatePlanProfile() {
         $('.plan-profile-toggle').css('display', 'block');
     }
 
-    
+    // Handle putting the plan in the plan profile widget
 
     if ( $.cookie('plan') == undefined ) {
 
@@ -1033,6 +1032,30 @@ function updatePlanProfile() {
         $('#plan-profile .plan-item:first .quantity').val(planObject.quantity);
         $('#plan-profile #total').text($.cookie('total'));
     }
+
+    // Add products to widget
+    productObject = JSON.parse($.cookie('product1'));
+    var new_html = '<div class="plan-item clearfix"';
+    new_html += 'data-product-type="product">';
+    new_html += '<div class="item-text">';
+    new_html += '<h4 class="description">';
+    new_html += productObject.product_name;
+    new_html += '</h4>';
+    new_html += '<h4 class="price">';
+    new_html += productObject.cost;
+    new_html += '</h4>';
+    new_html += '<input type="text" class="quantity" value="';
+    new_html += productObject.quantity;
+    new_html += '">';
+    new_html += '<img src="img/shared/close_icon_black_no_border.png"';
+    new_html += 'alt="" class="remove-item">';
+
+    $('#plan-items').append(new_html);
+
+    // productObject.product_name = product_title;
+    // productObject.cost = product_price;
+    // productObject.quantity = quantity;
+
 }
 
 

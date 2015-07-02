@@ -71,13 +71,7 @@
                             </div>
                             <img src="img/shared/close_icon_black_no_border.png" alt="" class="remove-item">
                         </div>
-                        <!-- <div class="plan-item clearfix">
-                            <div class="item-text">
-                                <h4 class="description">Startup Base Plan</h4>
-                                <h4 class="price">$17/month</h4>
-                            </div>
-                            <img src="img/shared/close_icon_black_no_border.png" alt="" class="remove-item">
-                        </div> -->
+                        
                     </div>
                     <div id="cost">
                         <h4>Estimated Total Cost</h4>
