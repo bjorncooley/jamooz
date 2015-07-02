@@ -440,7 +440,6 @@ $(function(){
 
     // Slide up card details
     showCardDetails();
-
     hideCardDetails();
 
     /* ----------------------------------------- */
@@ -467,9 +466,6 @@ $(function(){
         }
 
         updatePlanProfile();
-
-       
-
     });
 
     $('.remove-item').click(function(){
@@ -616,7 +612,6 @@ $(function(){
             $('html, body').animate({
                 scrollTop : $('#apps-add-ons').offset().top - 50,
             }, 800);
-
         }       
     }); 
 
@@ -965,9 +960,7 @@ function updatePlanProfile() {
         $('#plan-profile .plan-item:first .price').data('price', planObject.cost);
         $('#plan-profile .plan-item:first .quantity').val(planObject.quantity);
         $('#plan-profile #total').text($.cookie('total'));
-    }   
-
-    
+    }
 }
 
 
