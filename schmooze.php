@@ -16,7 +16,9 @@
             <div id="schmooze-nav">
                 <div class="row padding-bottom-30 padding-top-30">
                     <div class="large-3 columns">
-                        <img src="img/shared/jamooz_small_logo.png" alt="">
+                        <a href="./">
+                            <img src="img/shared/jamooz_small_logo.png" alt="">
+                        </a>
                     </div>
                     <div class="large-9 columns clearfix text-right padding-top-15">
                             <button class="radius large-3 columns small-centered mint no-background mint-border uppercase">Get Early Access</button>
