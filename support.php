@@ -12,9 +12,11 @@
         <div class="small-12 large-6 columns">
             <div>
                 <p class="uppercase">Technical Support</p>
-                <button class="teal-background white">
-                    See the Sucess Center
-                </button>
+                <a href="./success/">
+                    <button class="teal-background white">
+                        See the Sucess Center
+                    </button>
+                </a>
                 <button class="teal-background white">
                     Send us an Email
                 </button>
@@ -55,9 +57,11 @@
                 publish &amp; curate this hub to ensure we're providing the
                 highest quality, intuitive information. It also helps our
                 team stay organized!</p>
-                <button class="red-orange-background white">
-                    See the Success Center
-                </button>
+                <a href="./success/">
+                    <button class="red-orange-background white">
+                        See the Success Center
+                    </button>
+                </a>
             </div>
             <div>
                 <p class="uppercase">Need API Documentation?</p>
