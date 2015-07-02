@@ -35,11 +35,6 @@ $(window).load(function(){
     }
 });
 
-function hereFunction() {
-
-    console.log('here');
-}
-
 $(window).resize(function(){
 
     checkMobile();
@@ -259,8 +254,6 @@ $(function(){
                 'top' : top,
                 'position' : 'absolute',
             });
-
-            console.log($('#mobile-nav').height());
 
             // Set html height to mobile nav height
             $('html').height($('#mobile-nav').height());
@@ -768,7 +761,6 @@ function animateSignalGraphics() {
     if ( !mobile ) {
 
         if ( $('.signal-graphic.current').length == 0 ) {
-            console.log('no graphic');
             $('#signal-1').addClass('current');
             $('.signal-graphic').each(function(){
 
@@ -944,7 +936,16 @@ function updatePlanProfile() {
         $('#num-items').text($.cookie('num_items'));
     } else {
 
+        
         $('#num-items').text('0');
+    }
+
+    if ( $('.plan-profile-toggle #num-items').text() == '0' ) {
+
+        $('.plan-profile-toggle').css('display', 'none');
+    } else {
+
+        $('.plan-profile-toggle').css('display', 'block');
     }
 
     
