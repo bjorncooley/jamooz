@@ -45,7 +45,6 @@ $(window).resize(function(){
     }
 
     universalSetup();
-    setFullHeightSections();
 });
 
 $(window).scroll(function(){
@@ -803,7 +802,6 @@ function universalSetup() {
     movePlanCards();
     setUpGetStarted();
     updatePlanProfile();
-    setFullHeightSections();
 
     if ( $('#devices').length != 0 ) {
 
@@ -812,6 +810,7 @@ function universalSetup() {
 
     moveSlides();
     getVideoPositions();
+    setFullHeightSections();
 }
 
 function mobileSetupFunctions() {
@@ -841,11 +840,15 @@ function setFullHeightSections() {
         var original_height = $(this).height();
         var difference = window_height - original_height;
         var vertical_adjust = difference / 2;
+        
 
         if ( difference > 0 ) {
 
+            var original_padding = parseInt($(this).css('padding-top'));
+            vertical_adjust = vertical_adjust + original_padding;
             $(this).height(window_height);
             $(this).css('padding-top', vertical_adjust + 'px');
+
         }
     });
 }
