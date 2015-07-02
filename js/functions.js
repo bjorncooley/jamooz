@@ -689,7 +689,12 @@ function addProductToPlan(that) {
     productObject.cost = product_price;
     productObject.quantity = quantity;
 
-    total = parseInt(total) + (product_price * quantity);
+    // Enterprise plan objects have no total, so leave amount TBD
+    if ( total != 'TBD' ) {
+
+        total = parseInt(total) + (product_price * quantity);
+    }
+
     num_items = num_items + 1;
     num_products = num_products + 1;
 
