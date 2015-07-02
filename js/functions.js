@@ -659,6 +659,7 @@ function addProductToPlan(that) {
     $.cookie('update', true);
     var total = $.cookie('total');
     var num_items = $.cookie('num_items');
+    var num_products = $.cookie('num_products');
 
     if ( total == undefined ) {
 
@@ -674,19 +675,32 @@ function addProductToPlan(that) {
         num_items = parseInt(num_items);
     }
 
+    if ( num_products == undefined ) {
+
+        num_products = 0;
+
+    } else {
+
+        num_products = parseInt(num_products);
+    }
+
     var productObject = new Object();
     productObject.product_name = product_title;
     productObject.cost = product_price;
     productObject.quantity = quantity;
 
     total = product_price * quantity;
+    num_items = num_items + 1;
+    num_products = num_products + 1;
 
-    $.cookie(product_title, JSON.stringify(productObject));
+    var cookie_title = 'product' + num_products;
+    console.log(cookie_title);
 
-    num_items = num_items + quantity;
-
+    $.cookie(cookie_title, JSON.stringify(productObject));
     $.cookie('total', total);
     $.cookie('num_items', num_items);
+    $.cookie('num_products', num_products);
+
     togglePlanProfile();
     updatePlanProfile();
 
