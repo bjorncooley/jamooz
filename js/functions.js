@@ -1054,7 +1054,7 @@ function updatePlanProfile() {
         new_html += '<h4 class="description">';
         new_html += productObject.product_name;
         new_html += '</h4>';
-        new_html += '<h4 class="price">';
+        new_html += '<h4 class="price">$';
         new_html += productObject.cost;
         new_html += '</h4>';
         new_html += '<input type="text" class="quantity" value="';
