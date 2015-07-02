@@ -343,7 +343,8 @@ $(function(){
             $(this).find('p').text('Add to Plan');
         }
 
-        
+        that = $(this);
+        addProductToPlan(that);
     });
 
     // Card swapping
@@ -556,6 +557,7 @@ $(function(){
             if ( num_items == undefined ) {
 
                 num_items = 0;
+
             } else {
 
                 num_items = parseInt(num_items);
@@ -637,6 +639,62 @@ $(function(){
     
 
 });
+
+
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* ------------------------ PLAN PROFILE ------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+
+function addProductToPlan(that) {
+
+    // Get the product title and price from the add-container siblings
+    var $product = that.siblings().children('.product-title');
+    var product_title = $product.text();
+    var product_price = $product.data('price');
+    var quantity = 1;
+
+    // Add product to cookies
+    $.cookie('update', true);
+    var total = $.cookie('total');
+    var num_items = $.cookie('num_items');
+
+    if ( total == undefined ) {
+
+        total = 0;
+    }
+
+    if ( num_items == undefined ) {
+
+        num_items = 0;
+
+    } else {
+
+        num_items = parseInt(num_items);
+    }
+
+    var productObject = new Object();
+    productObject.product_name = product_title;
+    productObject.cost = product_price;
+    productObject.quantity = quantity;
+
+    total = product_price * quantity;
+
+    $.cookie(product_title, JSON.stringify(productObject));
+
+    num_items = num_items + quantity;
+
+    $.cookie('total', total);
+    $.cookie('num_items', num_items);
+    togglePlanProfile();
+    updatePlanProfile();
+
+    console.log(product_title);
+    console.log(product_price);
+
+}
+
 
 /* --------------------------------------------------------------- */
 /* --------------------------------------------------------------- */

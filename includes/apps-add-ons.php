@@ -4,7 +4,8 @@
         <img src="img/shared/slider_left_arrow_white.png" alt="" class="left-arrow slide-left-arrow">
         <div class="row">
             <div class="small-12 large-6 columns">
-                <h1 class="no-text-transform light">Efax Pro.</h1>
+                <h1 class="no-text-transform light product-title"
+                data-price="200">Efax Pro.</h1>
                 <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi libero sed, facere a ipsam. Eveniet iure, recusandae eligendi, ex magni aperiam ipsa provident quam dicta quae temporibus voluptate porro eos?</p>
             </div>
             <div class="small-12 large-6 columns show-for-large-up">
