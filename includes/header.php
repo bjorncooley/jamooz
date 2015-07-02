@@ -43,7 +43,7 @@
                         </a>
                     </div>
                     <div class="large-9 columns clearfix text-right padding-top-15">
-                            <a href="./success.php">
+                            <a href="./support.php">
                                 <button class="no-border no-background dark-gray radius large-3 columns small-centered uppercase">Support</button>
                             </a>
                             <a href="./pricing.php">

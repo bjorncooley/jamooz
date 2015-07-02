@@ -47,7 +47,7 @@
             <a href="./get-started.php">
                 <button class="teal-background uppercase radius width-100-percent white">Get Started for 30 Days Free</button>
             </a>
-            <h6>A customer success teammate is ready. <a href="#">Support</a></h6>
+            <h6>A customer success teammate is ready. <a href="./support.php">Support</a></h6>
             <h6>Already setup? <a href="#" class="login-button">Login</a></h6>
             <div id="hero-down-arrow" class="black">
                 <img src="img/shared/down_arrow_black.png" alt="" class="padding-top-15 pointer">
