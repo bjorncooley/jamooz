@@ -327,7 +327,9 @@ $(function(){
     });
 
 
-    $('.add-container').click(function(){
+    $('.add-container').click(function(e){
+
+        e.stopPropagation();
 
         if ( !$(this).hasClass('selected') ) {
 
@@ -335,7 +337,6 @@ $(function(){
             $(this).find('img').attr('src', 'img/shared/blue_check_icon.png');
             $(this).find('p').text('Added');
 
-            addItemToCookie();
         } else {
 
             $(this).find('img').attr('src', 'img/shared/yellow_plus_icon.png');
@@ -545,6 +546,8 @@ $(function(){
 
         } else {
 
+            console.log("Plun button activated");
+
             $.cookie('update', true);
             var total = $.cookie('total');
             var num_items = $.cookie('num_items');
@@ -661,6 +664,8 @@ function addProductToPlan(that) {
     var num_items = $.cookie('num_items');
     var num_products = $.cookie('num_products');
 
+    console.log("Num items: " + num_items);
+
     if ( total == undefined ) {
 
         total = 0;
@@ -696,6 +701,7 @@ function addProductToPlan(that) {
     }
 
     num_items = num_items + 1;
+    console.log("Num items at end: " + num_items);
     num_products = num_products + 1;
 
     var cookie_title = 'product' + num_products;
@@ -1112,20 +1118,20 @@ function togglePlanProfile() {
     }
 }
 
-function addItemToCookie() {
+// function addItemToCookie() {
 
-    var num_items = parseInt($.cookie('num_items'));
+//     var num_items = parseInt($.cookie('num_items'));
 
-    if ( num_items == 0 ) {
+//     if ( num_items == 0 ) {
 
-        //togglePlanProfile();
-    }
+//         //togglePlanProfile();
+//     }
 
-    num_items += 1;
-    $.cookie('num_items', num_items);
+//     num_items += 1;
+//     $.cookie('num_items', num_items);
 
-    updatePlanProfile();
-}
+//     updatePlanProfile();
+// }
 
 
 function setMobileNav() {
