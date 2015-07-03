@@ -464,7 +464,6 @@ $(function(){
 
                 $.cookie('total', quantity * planObject.cost);
             }
-            
         }
 
         updatePlanProfile();
