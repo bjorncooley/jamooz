@@ -448,21 +448,45 @@ $(function(){
     /* ---------- PLAN PROFILE WIDGET ---------- */
     /* ----------------------------------------- */
 
-    $('.plan-item .quantity').change(function(){
+    $(document).on('change', '.plan-item .quantity', function(){
 
         if ( $(this).parents('.plan-item').data('productType') == 'plan' ) {
 
+            console.log("Plan product changed");
+
             var quantity = $(this).val();
-            var previousTotal = $.cookie('total');
+            var previousTotal = parseInt($.cookie('total'));
 
             $.cookie('update', true);
             planObject = JSON.parse($.cookie('plan'));
             planObject.quantity = quantity;
             $.cookie('plan', JSON.stringify(planObject));
 
-            if ( $.isNumeric(planObject.cost) ) {
+            if ( $.isNumeric(previousTotal) ) {
 
-                $.cookie('total', quantity * planObject.cost);
+                var total = previousTotal + (quantity * planObject.cost);
+                $.cookie('total', total);
+            } 
+
+        } else {
+
+            console.log("Other product changed");
+
+            var quantity = $(this).val();
+            var previousTotal = parseInt($.cookie('total'));
+
+            $.cookie('update', true);
+            var cookie_title = $(this).parents('.plan-item').data('productCookie');
+            console.log(cookie_title);
+            productObject = JSON.parse($.cookie(cookie_title));
+            productObject.quantity = quantity;
+            console.log(productObject.quantity);
+            $.cookie(cookie_title, JSON.stringify(productObject));
+
+            if ( $.isNumeric(previousTotal) ) {
+
+                var total = previousTotal + (quantity * productObject.cost);
+                $.cookie('total', total);
             }
         }
 
@@ -544,8 +568,6 @@ $(function(){
             alert("Please select a plan");
 
         } else {
-
-            console.log("Plun button activated");
 
             $.cookie('update', true);
             var total = $.cookie('total');
@@ -663,8 +685,6 @@ function addProductToPlan(that) {
     var num_items = $.cookie('num_items');
     var num_products = $.cookie('num_products');
 
-    console.log("Num items: " + num_items);
-
     if ( total == undefined ) {
 
         total = 0;
@@ -692,6 +712,7 @@ function addProductToPlan(that) {
     productObject.product_name = product_title;
     productObject.cost = product_price;
     productObject.quantity = quantity;
+    productObject.added = false;
 
     // Enterprise plan objects have no total, so leave amount TBD
     if ( total != 'TBD' ) {
@@ -700,11 +721,9 @@ function addProductToPlan(that) {
     }
 
     num_items = num_items + 1;
-    console.log("Num items at end: " + num_items);
     num_products = num_products + 1;
 
     var cookie_title = 'product' + num_products;
-    console.log(cookie_title);
 
     $.cookie(cookie_title, JSON.stringify(productObject));
     $.cookie('total', total);
@@ -713,10 +732,6 @@ function addProductToPlan(that) {
 
     togglePlanProfile();
     updatePlanProfile();
-
-    console.log(product_title);
-    console.log(product_price);
-
 }
 
 
@@ -1044,32 +1059,44 @@ function updatePlanProfile() {
     }
 
     // Add products to widget
-    if ( $.cookie('product1') != undefined ) {
+    var num_products = parseInt($.cookie('num_products'));
 
-        productObject = JSON.parse($.cookie('product1'));
-        var new_html = '<div class="plan-item clearfix"';
-        new_html += 'data-product-type="product">';
-        new_html += '<div class="item-text">';
-        new_html += '<h4 class="description">';
-        new_html += productObject.product_name;
-        new_html += '</h4>';
-        new_html += '<h4 class="price">$';
-        new_html += productObject.cost;
-        new_html += '</h4>';
-        new_html += '<input type="text" class="quantity" value="';
-        new_html += productObject.quantity;
-        new_html += '">';
-        new_html += '<img src="img/shared/close_icon_black_no_border.png"';
-        new_html += 'alt="" class="remove-item">';
+    console.log("Number of products: " + num_products);
 
-        $('#plan-items').append(new_html);
+    for ( i=1; i<=num_products; i++) {
+
+        console.log("i: " + i);
+
+        var cookie_title = 'product' + i;
+
+        if ( $.cookie(cookie_title) != undefined ) {
+
+            productObject = JSON.parse($.cookie(cookie_title));
+
+            if ( productObject.added != true ) {
+
+                var new_html = '<div class="plan-item clearfix"';
+                new_html += 'data-product-type="product"';
+                new_html += 'data-product-cookie="product' + i + '">';
+                new_html += '<div class="item-text">';
+                new_html += '<h4 class="description">';
+                new_html += productObject.product_name;
+                new_html += '</h4>';
+                new_html += '<h4 class="price">$';
+                new_html += productObject.cost;
+                new_html += '</h4>';
+                new_html += '<input type="text" class="quantity" value="';
+                new_html += productObject.quantity;
+                new_html += '">';
+                new_html += '<img src="img/shared/close_icon_black_no_border.png"';
+                new_html += 'alt="" class="remove-item">';
+
+                $('#plan-items').append(new_html);
+                productObject.added = true;
+                $.cookie(cookie_title, JSON.stringify(productObject));
+            }
+        }
     }
-    
-
-    // productObject.product_name = product_title;
-    // productObject.cost = product_price;
-    // productObject.quantity = quantity;
-
 }
 
 
