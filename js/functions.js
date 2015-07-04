@@ -452,8 +452,6 @@ $(function(){
 
         if ( $(this).parents('.plan-item').data('productType') == 'plan' ) {
 
-            console.log("Plan product changed");
-
             var quantity = $(this).val();
 
             $.cookie('update', true);
@@ -464,8 +462,6 @@ $(function(){
             calculatePlanTotal(); 
 
         } else {
-
-            console.log("Other product changed");
 
             var quantity = $(this).val();
 
@@ -481,18 +477,34 @@ $(function(){
         updatePlanProfile();
     });
 
-    $('.remove-item').click(function(){
+    $(document).on('click', '.remove-item', function(){
 
-        var product_type = $(this).parent().data('productType');
-        var num_items = parseInt($.cookie('num_items'));
+        var product_type = $(this).parents('.plan-item').data('productType');
 
-        $.removeCookie(product_type);
-        $.removeCookie(product_type + '-cost');
+        console.log("Product type: " + product_type);
 
+        if ( product_type == 'plan' ) {
+
+            $.removeCookie('plan');
+
+        } else {
+
+            var num_products = parseInt($.cookie('num_products'));
+            num_products -= 1;
+            $.cookie('num_products', num_products);
+
+            var cookie_title = $(this).parents('.plan-item').data('productCookie');
+            console.log("Cookie title: " + cookie_title);
+            $.removeCookie(cookie_title);
+
+            // Remove item from Plan Profile HTML widget
+            $(this).parents('.plan-item').remove();
+        }
+
+        var num_items = parseInt($.cookie('num_items'))
         num_items -= 1;
         $.cookie('num_items', num_items);
-        $.cookie('total', 0);
-
+        calculatePlanTotal();
         updatePlanProfile();
 
     });
@@ -655,9 +667,6 @@ function calculatePlanTotal() {
     var total = $.cookie('total');
     var num_products = parseInt($.cookie('num_products'));
 
-    console.log("Starting total: " + total);
-    console.log("Num products :" + num_products);
-
     if ( total == undefined ) {
 
         total = 0;
@@ -668,7 +677,6 @@ function calculatePlanTotal() {
 
         var planObject = JSON.parse($.cookie('plan'));
         var plan_total = planObject.cost * planObject.quantity;
-        console.log("Plan total: " + plan_total);
     }
 
     if ( num_products != undefined ) {
@@ -680,7 +688,6 @@ function calculatePlanTotal() {
             var cookie_title = 'product' + i;
             var productObject = JSON.parse($.cookie(cookie_title));
             var product_total = product_total + productObject.cost * productObject.quantity;
-            console.log("Product total: " + product_total);
         }
     }
 
@@ -695,7 +702,6 @@ function calculatePlanTotal() {
     $.cookie('total', total);
 
     updatePlanProfile();
-    console.log("New total is: " + total);
 }
 
 function addProductToPlan(that) {
