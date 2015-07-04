@@ -455,25 +455,19 @@ $(function(){
             console.log("Plan product changed");
 
             var quantity = $(this).val();
-            var previousTotal = parseInt($.cookie('total'));
 
             $.cookie('update', true);
             planObject = JSON.parse($.cookie('plan'));
             planObject.quantity = quantity;
             $.cookie('plan', JSON.stringify(planObject));
 
-            if ( $.isNumeric(previousTotal) ) {
-
-                var total = previousTotal + (quantity * planObject.cost);
-                $.cookie('total', total);
-            } 
+            calculatePlanTotal(); 
 
         } else {
 
             console.log("Other product changed");
 
             var quantity = $(this).val();
-            var previousTotal = parseInt($.cookie('total'));
 
             $.cookie('update', true);
             var cookie_title = $(this).parents('.plan-item').data('productCookie');
@@ -481,11 +475,7 @@ $(function(){
             productObject.quantity = quantity;
             $.cookie(cookie_title, JSON.stringify(productObject));
 
-            if ( $.isNumeric(previousTotal) ) {
-
-                var total = previousTotal + (quantity * productObject.cost);
-                $.cookie('total', total);
-            }
+            calculatePlanTotal();
         }
 
         updatePlanProfile();
@@ -568,13 +558,7 @@ $(function(){
         } else {
 
             $.cookie('update', true);
-            var total = $.cookie('total');
             var num_items = $.cookie('num_items');
-
-            if ( total == undefined ) {
-
-                total = 0;
-            }
 
             if ( num_items == undefined ) {
 
@@ -595,7 +579,6 @@ $(function(){
                     planObject.cost = 17
                     planObject.quantity = 1;
 
-                    total = 17;
                     break;
 
                 case 'small-business-plan':
@@ -604,7 +587,6 @@ $(function(){
                     planObject.cost = 25;
                     planObject.quantity = 1;
 
-                    total = 25;
                     break;
 
                 case 'enterprise-plan':
@@ -613,7 +595,6 @@ $(function(){
                     planObject.cost = 'TBD';
                     planObject.quantity = 1;
 
-                    total = 'TBD';
                     break;
 
                 default:
@@ -625,8 +606,8 @@ $(function(){
 
             num_items = 1;
 
-            $.cookie('total', total);
             $.cookie('num_items', num_items);
+            calculatePlanTotal();
             togglePlanProfile();
             updatePlanProfile();
 
@@ -686,7 +667,8 @@ function calculatePlanTotal() {
     if ( $.cookie('plan') != undefined ) {
 
         var planObject = JSON.parse($.cookie('plan'));
-        var plan_total = planObject.cost;
+        var plan_total = planObject.cost * planObject.quantity;
+        console.log("Plan total: " + plan_total);
     }
 
     if ( num_products != undefined ) {
