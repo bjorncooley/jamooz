@@ -101,7 +101,7 @@
                 <h1 class="no-text-transform light">Preset Phones</h1>
                 <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi libero sed, facere a ipsam. Eveniet iure, recusandae eligendi, ex magni aperiam ipsa provident quam dicta quae temporibus voluptate porro eos?</p>
             </div>
-            <div class="small-12 columns text-center add-container">
+            <div class="small-12 columns text-center">
                 <button class="white red-orange-background" id="device-slide-button">See All Phones</button>
             </div>
         </div>
