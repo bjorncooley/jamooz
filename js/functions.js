@@ -47,6 +47,11 @@ $(window).load(function(){
         setPlanCardStatus();
     }
 
+    if ( $('#extras').length != 0 ) {
+
+        setExtrasStatus();
+    }
+
     /* ---------------------------------------------- */
     /* -------------- SOFTARE/HARDWARE -------------- */
     /* ---------------------------------------------- */
@@ -607,7 +612,7 @@ $(function(){
                 num_items += 1;
                 $.cookie('num_items', num_items);
             }
-            
+
             var planObject = new Object();
 
             switch(plan) {
@@ -823,6 +828,36 @@ function setPlanCardStatus() {
         if( $('#get-started').length != 0 ) {
 
             $('#get-started #apps-add-ons').css('display', 'block');
+        }
+    }
+}
+
+function setExtrasStatus() {
+
+    var num_products = $.cookie('num_products');
+
+    if ( num_products != undefined ) {
+
+        for ( i=1; i<=num_products; i++ ) {
+
+            var cookie_name = 'product' + i;
+            console.log("Product name: " + cookie_name);
+
+            var productObject = JSON.parse($.cookie(cookie_name));
+            console.log('Product object: ' + productObject);
+
+            var product_title = productObject.product_name;
+            console.log("Product title: " + product_title);
+
+            $('.product-title').each(function(){
+
+                if( $(this).text() == product_title ) {
+
+                    var $target = $(this).parent().siblings('.add-container');
+                    $target.addClass('selected');
+                    $target.children('img').attr('src', 'img/shared/blue_check_icon.png');
+                }
+            });
         }
     }
 }
