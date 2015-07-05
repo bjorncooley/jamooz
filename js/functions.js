@@ -501,9 +501,11 @@ $(function(){
             $(this).parents('.plan-item').remove();
         }
 
-        var num_items = parseInt($.cookie('num_items'))
+        var num_items = parseInt($.cookie('num_items'));
+        console.log("starting num items: " + num_items);
         num_items -= 1;
         $.cookie('num_items', num_items);
+        console.log("ending num items: " + num_items);
         calculatePlanTotal();
         updatePlanProfile();
 
