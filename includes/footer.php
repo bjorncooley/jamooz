@@ -107,7 +107,8 @@
 
             <footer>
                 <link href='http://fonts.googleapis.com/css?family=Roboto:500,400,300,100' rel='stylesheet' type='text/css'>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+                <script src="../libraries/jquery-1.11.0.js"></script>
+                <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
                 <script src="js/vendor/modernizr.js"></script>
                 <script src="js/vendor/jquery.cookie.js"></script>
                 <script src="js/vendor/jquery.rotate.js"></script>

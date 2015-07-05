@@ -814,6 +814,12 @@ function setPlanCardStatus() {
 
         $(this).addClass('selected');
         $('*[data-product="' + data_product + '"]').find('img[src="img/shared/yellow_plus_icon.png"]').attr('src', 'img/shared/blue_check_icon.png');
+
+        // If on the get started page, show the extras slider
+        if( $('#get-started').length != 0 ) {
+
+            $('#get-started #apps-add-ons').css('display', 'block');
+        }
     }
 }
 
