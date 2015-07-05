@@ -589,22 +589,25 @@ $(function(){
         } else {
 
             $.cookie('update', true);
-            var num_items = $.cookie('num_items');
-            console.log("num items: " + num_items);
 
-            if ( num_items == undefined ) {
+            // If plan wasn't already defined, increment num_items
+            if ( $.cookie('plan') == undefined ) {
 
-                num_items = 0;
+                var num_items = $.cookie('num_items');
 
-            } else {
+                if ( num_items == undefined ) {
 
-                num_items = parseInt(num_items);
+                    num_items = 0;
+
+                } else {
+
+                    num_items = parseInt(num_items);
+                }
+
+                num_items += 1;
+                $.cookie('num_items', num_items);
             }
-
-            num_items += 1;
-
-            console.log("new num items: " + num_items);
-
+            
             var planObject = new Object();
 
             switch(plan) {
@@ -639,7 +642,7 @@ $(function(){
             }
 
             $.cookie('plan', JSON.stringify(planObject));
-            $.cookie('num_items', num_items);
+
             calculatePlanTotal();
             togglePlanProfile();
             updatePlanProfile();
