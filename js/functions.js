@@ -41,6 +41,12 @@ $(window).load(function(){
     universalSetup();
     setFullHeightSections();
 
+    /* ---------- PLANS/PRODUCTS PRESETS ------------ */
+    if ( $('#plans').length != 0 ) {
+
+        setPlanCardStatus();
+    }
+
     /* ---------------------------------------------- */
     /* -------------- SOFTARE/HARDWARE -------------- */
     /* ---------------------------------------------- */
@@ -769,6 +775,46 @@ function addProductToPlan(that) {
 
     calculatePlanTotal();
     togglePlanProfile();
+}
+
+function setPlanCardStatus() {
+
+    var current_plan = $.cookie('plan');
+
+    if ( current_plan != undefined ) {
+
+        var planObject = JSON.parse(current_plan);
+        var plan_title = planObject.item_name;
+        console.log("Plan title: " + plan_title);
+        var data_product = '';
+
+        switch(plan_title) {
+
+            case 'Startup Base Plan':
+
+                data_product = 'startup-plan';
+                break;
+
+            case 'Small Business Plan':
+
+                data_product = 'small-business-plan';
+                break;
+
+            case 'Enterprise Base Plan':
+
+                data_product = 'enterprise-plan';
+                break;
+
+            default:
+
+                data_product = undefined;
+        }
+
+        console.log("data product: " + data_product);
+
+        $(this).addClass('selected');
+        $('*[data-product="' + data_product + '"]').find('img[src="img/shared/yellow_plus_icon.png"]').attr('src', 'img/shared/blue_check_icon.png');
+    }
 }
 
 
