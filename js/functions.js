@@ -812,8 +812,9 @@ function setPlanCardStatus() {
 
         console.log("data product: " + data_product);
 
-        $(this).addClass('selected');
-        $('*[data-product="' + data_product + '"]').find('img[src="img/shared/yellow_plus_icon.png"]').attr('src', 'img/shared/blue_check_icon.png');
+        var $target = $('*[data-product="' + data_product + '"]').find('img[src="img/shared/yellow_plus_icon.png"]')
+        $target.attr('src', 'img/shared/blue_check_icon.png');
+        $target.parents('.card').addClass('selected');
 
         // If on the get started page, show the extras slider
         if( $('#get-started').length != 0 ) {
