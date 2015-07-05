@@ -695,7 +695,8 @@ button.yellow-background {
         #plan-profile #plan-profile-content #plan-items .plan-item .item-text {
           float: left; }
           #plan-profile #plan-profile-content #plan-items .plan-item .item-text .description {
-            margin-bottom: 30px; }
+            margin-bottom: 30px;
+            max-width: 200px; }
           #plan-profile #plan-profile-content #plan-items .plan-item .item-text .quantity {
             width: 30px;
             padding: 3px;
