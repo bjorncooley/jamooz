@@ -9,6 +9,22 @@ var num_videos;
 $(window).unload(function(){
 
     postUserData();
+
+    // Add products to widget
+    var num_products = parseInt($.cookie('num_products'));
+
+    for ( i=1; i<=num_products; i++) {
+
+        var cookie_title = 'product' + i;
+
+        if ( $.cookie(cookie_title) != undefined ) {
+
+            productObject = JSON.parse($.cookie(cookie_title));
+            productObject.added = false;
+            $.cookie(cookie_title, JSON.stringify(productObject));
+
+        }
+    }
 }); 
 
 $(window).load(function(){
@@ -1082,6 +1098,7 @@ function updatePlanProfile() {
 
     // Add products to widget
     var num_products = parseInt($.cookie('num_products'));
+    console.log("num products: " + num_products);
 
     for ( i=1; i<=num_products; i++) {
 
@@ -1090,6 +1107,7 @@ function updatePlanProfile() {
         if ( $.cookie(cookie_title) != undefined ) {
 
             productObject = JSON.parse($.cookie(cookie_title));
+            console.log(productObject.added);
 
             if ( productObject.added != true ) {
 

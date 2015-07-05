@@ -700,6 +700,8 @@ button.yellow-background {
             width: 30px;
             padding: 3px;
             text-align: center; }
+          #plan-profile #plan-profile-content #plan-items .plan-item .item-text .price {
+            width: 116px; }
         #plan-profile #plan-profile-content #plan-items .plan-item .remove-item {
           float: right;
           padding-top: 5px;
