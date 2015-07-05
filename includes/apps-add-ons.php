@@ -5,14 +5,14 @@
         <div class="row">
             <div class="small-12 large-6 columns">
                 <h1 class="no-text-transform light product-title"
-                data-price="200">Efax Pro.</h1>
+                data-price="20">Efax Pro.</h1>
                 <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi libero sed, facere a ipsam. Eveniet iure, recusandae eligendi, ex magni aperiam ipsa provident quam dicta quae temporibus voluptate porro eos?</p>
             </div>
             <div class="small-12 large-6 columns show-for-large-up">
                 <img src="img/pricing/efax_icon.png" alt="">
             </div>
             <div class="small-12 columns text-center add-container">
-                <h5>$200</h5>
+                <h5>$20/Month</h5>
                 <img src="img/shared/yellow_plus_icon.png" alt="">
                 <p class="small uppercase">Add to Plan</p>
             </div>
@@ -26,11 +26,11 @@
                 <img src="img/pricing/efax_icon.png" alt="">
             </div>
             <div class="small-12 large-6 columns">
-                <h1 class="no-text-transform light product-title" data-price="200">Call Center Queue &amp; Reporting</h1>
+                <h1 class="no-text-transform light product-title" data-price="10">Call Center Queue &amp; Reporting</h1>
                 <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi libero sed, facere a ipsam. Eveniet iure, recusandae eligendi, ex magni aperiam ipsa provident quam dicta quae temporibus voluptate porro eos?</p>
             </div>
             <div class="small-12 columns text-center add-container">
-                <h5>$200</h5>
+                <h5>$10/Month</h5>
                 <img src="img/shared/yellow_plus_icon.png" alt="">
                 <p class="small uppercase">Add to Plan</p>
             </div>
@@ -41,14 +41,14 @@
         <img src="img/shared/slider_left_arrow_white.png" alt="" class="left-arrow slide-left-arrow">
         <div class="row">
             <div class="small-12 large-6 columns">
-                <h1 class="no-text-transform light product-title" data-price="200">Call Recording.</h1>
+                <h1 class="no-text-transform light product-title" data-price="20">Call Recording.</h1>
                 <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi libero sed, facere a ipsam. Eveniet iure, recusandae eligendi, ex magni aperiam ipsa provident quam dicta quae temporibus voluptate porro eos?</p>
             </div>
             <div class="small-12 large-6 columns show-for-large-up">
                 <img src="img/pricing/efax_icon.png" alt="">
             </div>
             <div class="small-12 columns text-center add-container">
-                <h5>$200</h5>
+                <h5>$20/Month</h5>
                 <img src="img/shared/yellow_plus_icon.png" alt="">
                 <p class="small uppercase">Add to Plan</p>
             </div>
@@ -62,11 +62,11 @@
                 <img src="img/pricing/efax_icon.png" alt="">
             </div>
             <div class="small-12 large-6 columns">
-                <h1 class="no-text-transform light product-title" data-price="200">Administrative App</h1>
+                <h1 class="no-text-transform light product-title" data-price="10">Administrative App</h1>
                 <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi libero sed, facere a ipsam. Eveniet iure, recusandae eligendi, ex magni aperiam ipsa provident quam dicta quae temporibus voluptate porro eos?</p>
             </div>
             <div class="small-12 columns text-center add-container">
-                <h5>$200</h5>
+                <h5>$10/Month</h5>
                 <img src="img/shared/yellow_plus_icon.png" alt="">
                 <p class="small uppercase">Add to Plan</p>
             </div>
@@ -77,14 +77,14 @@
         <img src="img/shared/slider_left_arrow_white.png" alt="" class="left-arrow slide-left-arrow">
         <div class="row">
             <div class="small-12 large-6 columns">
-                <h1 class="no-text-transform light product-title" data-price="200">Auto Attendant.</h1>
+                <h1 class="no-text-transform light product-title" data-price="20">Auto Attendant.</h1>
                 <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi libero sed, facere a ipsam. Eveniet iure, recusandae eligendi, ex magni aperiam ipsa provident quam dicta quae temporibus voluptate porro eos?</p>
             </div>
             <div class="small-12 large-6 columns show-for-large-up">
                 <img src="img/pricing/efax_icon.png" alt="">
             </div>
             <div class="small-12 columns text-center add-container">
-                <h5>$200</h5>
+                <h5>$20/Month</h5>
                 <img src="img/shared/yellow_plus_icon.png" alt="">
                 <p class="small uppercase">Add to Plan</p>
             </div>
