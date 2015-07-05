@@ -12,7 +12,7 @@
                 <img src="img/pricing/efax_icon.png" alt="">
             </div>
             <div class="small-12 columns text-center add-container">
-                <h5>$20/Month</h5>
+                <h5>$200</h5>
                 <img src="img/shared/yellow_plus_icon.png" alt="">
                 <p class="small uppercase">Add to Plan</p>
             </div>
@@ -30,7 +30,7 @@
                 <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi libero sed, facere a ipsam. Eveniet iure, recusandae eligendi, ex magni aperiam ipsa provident quam dicta quae temporibus voluptate porro eos?</p>
             </div>
             <div class="small-12 columns text-center add-container">
-                <h5>$10/Month</h5>
+                <h5>$200</h5>
                 <img src="img/shared/yellow_plus_icon.png" alt="">
                 <p class="small uppercase">Add to Plan</p>
             </div>
@@ -48,7 +48,7 @@
                 <img src="img/pricing/efax_icon.png" alt="">
             </div>
             <div class="small-12 columns text-center add-container">
-                <h5>$20/Month</h5>
+                <h5>$200</h5>
                 <img src="img/shared/yellow_plus_icon.png" alt="">
                 <p class="small uppercase">Add to Plan</p>
             </div>
@@ -66,7 +66,7 @@
                 <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi libero sed, facere a ipsam. Eveniet iure, recusandae eligendi, ex magni aperiam ipsa provident quam dicta quae temporibus voluptate porro eos?</p>
             </div>
             <div class="small-12 columns text-center add-container">
-                <h5>$10/Month</h5>
+                <h5>$200</h5>
                 <img src="img/shared/yellow_plus_icon.png" alt="">
                 <p class="small uppercase">Add to Plan</p>
             </div>
@@ -84,7 +84,7 @@
                 <img src="img/pricing/efax_icon.png" alt="">
             </div>
             <div class="small-12 columns text-center add-container">
-                <h5>$20/Month</h5>
+                <h5>$200</h5>
                 <img src="img/shared/yellow_plus_icon.png" alt="">
                 <p class="small uppercase">Add to Plan</p>
             </div>
