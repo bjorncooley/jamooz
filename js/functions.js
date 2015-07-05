@@ -497,8 +497,6 @@ $(function(){
 
         var product_type = $(this).parents('.plan-item').data('productType');
 
-        console.log("Product type: " + product_type);
-
         if ( product_type == 'plan' ) {
 
             $.removeCookie('plan');
@@ -510,7 +508,6 @@ $(function(){
             $.cookie('num_products', num_products);
 
             var cookie_title = $(this).parents('.plan-item').data('productCookie');
-            console.log("Cookie title: " + cookie_title);
             $.removeCookie(cookie_title);
 
             // Remove item from Plan Profile HTML widget
@@ -518,10 +515,8 @@ $(function(){
         }
 
         var num_items = parseInt($.cookie('num_items'));
-        console.log("starting num items: " + num_items);
         num_items -= 1;
         $.cookie('num_items', num_items);
-        console.log("ending num items: " + num_items);
         calculatePlanTotal();
         updatePlanProfile();
 
@@ -589,6 +584,7 @@ $(function(){
 
             $.cookie('update', true);
             var num_items = $.cookie('num_items');
+            console.log("num items: " + num_items);
 
             if ( num_items == undefined ) {
 
@@ -598,6 +594,10 @@ $(function(){
 
                 num_items = parseInt(num_items);
             }
+
+            num_items += 1;
+
+            console.log("new num items: " + num_items);
 
             var planObject = new Object();
 
@@ -633,9 +633,6 @@ $(function(){
             }
 
             $.cookie('plan', JSON.stringify(planObject));
-
-            num_items = 1;
-
             $.cookie('num_items', num_items);
             calculatePlanTotal();
             togglePlanProfile();
@@ -733,6 +730,7 @@ function addProductToPlan(that) {
     // Add product to cookies
     $.cookie('update', true);
     var num_items = $.cookie('num_items');
+    console.log("Initial num items: " + num_items);
     var num_products = $.cookie('num_products');
 
     if ( num_items == undefined ) {
@@ -760,6 +758,7 @@ function addProductToPlan(that) {
     productObject.added = false;
 
     num_items = num_items + 1;
+    console.log("Final num items: " + num_items);
     num_products = num_products + 1;
 
     var cookie_title = 'product' + num_products;
@@ -1098,7 +1097,6 @@ function updatePlanProfile() {
 
     // Add products to widget
     var num_products = parseInt($.cookie('num_products'));
-    console.log("num products: " + num_products);
 
     for ( i=1; i<=num_products; i++) {
 
@@ -1107,7 +1105,6 @@ function updatePlanProfile() {
         if ( $.cookie(cookie_title) != undefined ) {
 
             productObject = JSON.parse($.cookie(cookie_title));
-            console.log(productObject.added);
 
             if ( productObject.added != true ) {
 
