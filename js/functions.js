@@ -372,7 +372,7 @@ $(function(){
         }
 
         that = $(this);
-        addProductToPlan(that);
+        addRemoveProduct(that);
     });
 
     // Card swapping
@@ -733,7 +733,7 @@ function calculatePlanTotal() {
     updatePlanProfile();
 }
 
-function addProductToPlan(that) {
+function addRemoveProduct(that) {
 
     // Get the product title and price from the add-container siblings
     var $product = that.siblings().children('.product-title');
@@ -741,21 +741,8 @@ function addProductToPlan(that) {
     var product_price = $product.data('price');
     var quantity = 1;
 
-    // Add product to cookies
-    $.cookie('update', true);
-    var num_items = $.cookie('num_items');
-    console.log("Initial num items: " + num_items);
+    // Check if product already exists
     var num_products = $.cookie('num_products');
-
-    if ( num_items == undefined ) {
-
-        num_items = 0;
-
-    } else {
-
-        num_items = parseInt(num_items);
-    }
-
     if ( num_products == undefined ) {
 
         num_products = 0;
@@ -765,24 +752,72 @@ function addProductToPlan(that) {
         num_products = parseInt(num_products);
     }
 
-    var productObject = new Object();
-    productObject.product_name = product_title;
-    productObject.cost = product_price;
-    productObject.quantity = quantity;
-    productObject.added = false;
+    var cookie_title;
+    var in_plan = false;
+    var $product_element;
 
-    num_items = num_items + 1;
-    console.log("Final num items: " + num_items);
-    num_products = num_products + 1;
+    console.log("Num products: " + num_products);
 
-    var cookie_title = 'product' + num_products;
+    for ( i=1; i<=num_products; i++ ) {
 
-    $.cookie(cookie_title, JSON.stringify(productObject));
-    $.cookie('num_items', num_items);
-    $.cookie('num_products', num_products);
+        console.log("Beginning i: " + i);
+
+        var cookie_name = 'product' + i;
+        var productObject = JSON.parse($.cookie(cookie_name));
+        cookie_title = productObject.product_name;
+
+        if ( product_title == cookie_title ) {
+
+            // If the product already exists, remove from cookies and plan
+            in_plan = true;
+            console.log("In plan: " + in_plan);
+            $.removeCookie(cookie_name);
+            $product_element = $('*[data-product-cookie="' + cookie_name + '"]');
+            $product_element.remove();
+
+            num_products -= 1;
+            $.cookie('num_products', num_products);
+
+            var num_items = parseInt($.cookie('num_items'));
+            num_items -= 1;
+            $.cookie('num_items', num_items);
+        }
+    }
+
+    // Otherwise, add product to cookies
+    if ( in_plan == false ) {
+
+        $.cookie('update', true);
+        var num_items = $.cookie('num_items');
+
+        if ( num_items == undefined ) {
+
+            num_items = 0;
+
+        } else {
+
+            num_items = parseInt(num_items);
+        }
+
+        var productObject = new Object();
+        productObject.product_name = product_title;
+        productObject.cost = product_price;
+        productObject.quantity = quantity;
+        productObject.added = false;
+
+        num_items = num_items + 1;
+        num_products = num_products + 1;
+
+        var cookie_title = 'product' + num_products;
+
+        $.cookie(cookie_title, JSON.stringify(productObject));
+        $.cookie('num_items', num_items);
+        $.cookie('num_products', num_products);
+    }
 
     calculatePlanTotal();
-    togglePlanProfile();
+    updatePlanProfile();
+
 }
 
 function setPlanCardStatus() {
@@ -793,7 +828,6 @@ function setPlanCardStatus() {
 
         var planObject = JSON.parse(current_plan);
         var plan_title = planObject.item_name;
-        console.log("Plan title: " + plan_title);
         var data_product = '';
 
         switch(plan_title) {
@@ -818,8 +852,6 @@ function setPlanCardStatus() {
                 data_product = undefined;
         }
 
-        console.log("data product: " + data_product);
-
         var $target = $('*[data-product="' + data_product + '"]').find('img[src="img/shared/yellow_plus_icon.png"]')
         $target.attr('src', 'img/shared/blue_check_icon.png');
         $target.parents('.card').addClass('selected');
@@ -841,13 +873,8 @@ function setExtrasStatus() {
         for ( i=1; i<=num_products; i++ ) {
 
             var cookie_name = 'product' + i;
-            console.log("Product name: " + cookie_name);
-
             var productObject = JSON.parse($.cookie(cookie_name));
-            console.log('Product object: ' + productObject);
-
             var product_title = productObject.product_name;
-            console.log("Product title: " + product_title);
 
             $('.product-title').each(function(){
 
