@@ -350,7 +350,13 @@ $(function(){
             $(this).siblings('.plan').find('img').attr('src', 'img/shared/yellow_plus_icon.png');
         }
 
-        
+        // If the card is a device card, add that device as a product
+        if ( $(this).hasClass('device') ) {
+
+            console.log("This is a device card");
+            var that = $(this).find('.card-details-container');
+            addRemoveProduct(that);
+        }
     });
 
 
@@ -371,7 +377,7 @@ $(function(){
             $(this).find('p').text('Add to Plan');
         }
 
-        that = $(this);
+        var that = $(this);
         addRemoveProduct(that);
     });
 
@@ -736,10 +742,13 @@ function calculatePlanTotal() {
 function addRemoveProduct(that) {
 
     // Get the product title and price from the add-container siblings
-    var $product = that.siblings().children('.product-title');
+    var $product = that.siblings().find('.product-title');
     var product_title = $product.text();
     var product_price = $product.data('price');
     var quantity = 1;
+
+    console.log("Title: " + product_title);
+    console.log("Price: " + product_price);
 
     // Check if product already exists
     var num_products = $.cookie('num_products');
@@ -756,11 +765,7 @@ function addRemoveProduct(that) {
     var in_plan = false;
     var $product_element;
 
-    console.log("Num products: " + num_products);
-
     for ( i=1; i<=num_products; i++ ) {
-
-        console.log("Beginning i: " + i);
 
         var cookie_name = 'product' + i;
         var productObject = JSON.parse($.cookie(cookie_name));
@@ -770,7 +775,6 @@ function addRemoveProduct(that) {
 
             // If the product already exists, remove from cookies and plan
             in_plan = true;
-            console.log("In plan: " + in_plan);
             $.removeCookie(cookie_name);
             $product_element = $('*[data-product-cookie="' + cookie_name + '"]');
             $product_element.remove();

@@ -9,7 +9,7 @@
                         <div class="shadowed">
                             <div class="card-text-container">
                                 <div class="card-text">
-                                    <h5 class="text-center uppercase">Cisco IP 7960A</h5>
+                                    <h5 class="text-center uppercase product-title" data-price="200">Cisco IP 7960A</h5>
                                 </div>
                             </div>
                             <div class="text-center">
@@ -30,7 +30,7 @@
                         <div class="shadowed">
                             <div class="card-text-container">
                                 <div class="card-text">
-                                    <h5 class="text-center uppercase">Cisco IP 7960A</h5>
+                                    <h5 class="text-center uppercase product-title" data-price="200">Cisco IP 7960B</h5>
                                 </div>
                             </div>
                             <div class="text-center">
@@ -52,7 +52,7 @@
                         <div class="shadowed">
                             <div class="card-text-container">
                                 <div class="card-text">
-                                    <h5 class="text-center uppercase">Cisco IP 7960A</h5>
+                                    <h5 class="text-center uppercase product-title" data-price="200">Cisco IP 7960C</h5>
                                 </div>
                             </div>
                             <div class="text-center">
@@ -74,7 +74,7 @@
                         <div class="shadowed">
                             <div class="card-text-container">
                                 <div class="card-text">
-                                    <h5 class="text-center uppercase">Cisco IP 7960A</h5>
+                                    <h5 class="text-center uppercase product-title" data-price="200">Cisco IP 7960D</h5>
                                 </div>
                             </div>
                             <div class="text-center">
@@ -100,7 +100,7 @@
                         <div class="shadowed">
                             <div class="card-text-container">
                                 <div class="card-text">
-                                    <h5 class="text-center uppercase">Cisco IP 7960A</h5>
+                                    <h5 class="text-center uppercase product-title" data-price="200">Cisco IP 7960E</h5>
                                 </div>
                             </div>
                             <div class="text-center">
@@ -122,7 +122,7 @@
                         <div class="shadowed">
                             <div class="card-text-container">
                                 <div class="card-text">
-                                    <h5 class="text-center uppercase">Cisco IP 7960A</h5>
+                                    <h5 class="text-center uppercase product-title" data-price="200">Cisco IP 7960F</h5>
                                 </div>
                             </div>
                             <div class="text-center">
@@ -144,7 +144,7 @@
                         <div class="shadowed">
                             <div class="card-text-container">
                                 <div class="card-text">
-                                    <h5 class="text-center uppercase">Cisco IP 7960A</h5>
+                                    <h5 class="text-center uppercase product-title" data-price="200">Cisco IP 7960G</h5>
                                 </div>
                             </div>
                             <div class="text-center">
@@ -166,7 +166,7 @@
                         <div class="shadowed">
                             <div class="card-text-container">
                                 <div class="card-text">
-                                    <h5 class="text-center uppercase">Cisco IP 7960A</h5>
+                                    <h5 class="text-center uppercase product-title" data-price="200">Cisco IP 7960A</h5>
                                 </div>
                             </div>
                             <div class="text-center">
