@@ -52,6 +52,7 @@ $(window).load(function(){
         setExtrasStatus();
     }
 
+
     /* ---------------------------------------------- */
     /* -------------- SOFTARE/HARDWARE -------------- */
     /* ---------------------------------------------- */
@@ -880,12 +881,21 @@ function setExtrasStatus() {
             var productObject = JSON.parse($.cookie(cookie_name));
             var product_title = productObject.product_name;
 
-            $('.product-title').each(function(){
+            $('.slide .product-title').each(function(){
 
                 if( $(this).text() == product_title ) {
 
                     var $target = $(this).parent().siblings('.add-container');
                     $target.addClass('selected');
+                    $target.children('img').attr('src', 'img/shared/blue_check_icon.png');
+                }
+            });
+
+            $('.device .product-title').each(function(){
+
+                if( $(this).text() == product_title ) {
+
+                    var $target = $(this).parents('.card-text-container').siblings('.text-center');
                     $target.children('img').attr('src', 'img/shared/blue_check_icon.png');
                 }
             });
