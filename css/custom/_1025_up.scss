@@ -852,11 +852,17 @@ button.yellow-background {
 
     #schmooze-intro {
 
+        h3 {
+
+            max-width: 410px;
+        }
+
         .mobile-screens {
 
             .image-container {
 
                 min-height: 805px;
+                margin-top: 0;
 
                 img {
 

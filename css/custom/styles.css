@@ -282,7 +282,8 @@ p.tiny {
 
 /*Layout*/
 .center {
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: block; }
 
 .inline-block > div, .inline-block > h1, .inline-block > h2, .inline-block > h3, .inline-block > h4, .inline-block > h5, .inline-block > img, .inline-block > a, .inline-block > p, .inline-block > input, .inline-block > button {
   display: inline-block; }
@@ -992,8 +993,6 @@ button.yellow-background {
     margin-right: auto; }
 #schmooze-page #schmooze-intro {
   padding-top: 80px; }
-  #schmooze-page #schmooze-intro h3 {
-    max-width: 410px; }
   #schmooze-page #schmooze-intro form input, #schmooze-page #schmooze-intro form button {
     height: 50px; }
   #schmooze-page #schmooze-intro form input {
@@ -1003,7 +1002,7 @@ button.yellow-background {
     #schmooze-page #schmooze-intro .mobile-screens .image-container {
       min-height: 610px;
       display: block;
-      margin: 30px auto 0;
+      margin: 70px auto 0;
       width: 30%;
       min-width: 320px;
       position: relative; }
@@ -1596,8 +1595,11 @@ button.yellow-background {
   /* --------------------- */
   #schmooze-page #schmooze-nav img {
     display: inline-block; }
+  #schmooze-page #schmooze-intro h3 {
+    max-width: 410px; }
   #schmooze-page #schmooze-intro .mobile-screens .image-container {
-    min-height: 805px; }
+    min-height: 805px;
+    margin-top: 0; }
     #schmooze-page #schmooze-intro .mobile-screens .image-container img {
       width: auto;
       max-width: none; }

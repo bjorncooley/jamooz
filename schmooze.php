@@ -28,7 +28,7 @@
             </div>
 
             <div id="schmooze-intro" class="row hero">
-                <div class="large-6 columns">
+                <div class="small-10 small-offset-1 large-6 large-offset-0 columns">
                     <h1 class="mint padding-top-50 padding-bottom-50 no-text-transform large">Schmooze by Jamooz</h1>
                     <h3 class="small">Jamooz technology, curated. Phone, messaging, voicemail,
                     &amp; file sharing redesigned for personal use &amp; team collaboration.</h3>
@@ -52,7 +52,7 @@
                     
                 </div>
                 <div class="row" id="hero-down-arrow">
-                    <div class="large-12 columns text-center padding-top-120">
+                    <div class="large-12 columns text-center padding-top-80">
                         <p class="small uppercase">Learn More</p>
                         <img src="img/shared/down_arrow_black.png" alt="">
                     </div>
@@ -69,7 +69,7 @@
                 <div class="large-4 columns">
                     <p>Seamlessly flip between your private communication and the public pulse.</p> 
                     <p>Creating a flow of communication across your team or call center is now a lot simpler. Setup preferences for automation of calls, messages, file sharing or voicemails coming from specific channels that you want in the public pulse. Or simply unlock something in your personal communications to make it accessible.</p>
-                    <button class="mint-border mint no-background width-285">Get early access</button>
+                    <button class="mint-border mint no-background width-285 center">Get early access</button>
                 </div>
             </div>
             <div id="communications">
