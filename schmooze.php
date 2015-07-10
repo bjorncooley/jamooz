@@ -21,7 +21,8 @@
                         </a>
                     </div>
                     <div class="large-9 columns clearfix text-right padding-top-15">
-                            <button class="radius large-3 columns small-centered mint no-background mint-border uppercase">Get Early Access</button>
+                            <button class="radius large-3 columns small-centered mint no-background mint-border uppercase"
+                            id="early-access-button">Get Early Access</button>
                         
                     </div>
                 </div>
@@ -69,7 +70,8 @@
                 <div class="large-4 columns">
                     <p>Seamlessly flip between your private communication and the public pulse.</p> 
                     <p>Creating a flow of communication across your team or call center is now a lot simpler. Setup preferences for automation of calls, messages, file sharing or voicemails coming from specific channels that you want in the public pulse. Or simply unlock something in your personal communications to make it accessible.</p>
-                    <button class="mint-border mint no-background width-285 center">Get early access</button>
+                    <button class="mint-border mint no-background width-285 center"
+                    id="early-access-button">Get early access</button>
                 </div>
             </div>
             <div id="communications">

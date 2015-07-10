@@ -687,8 +687,17 @@ $(function(){
             $('#device-discounts').offset({ top: extras_top });
         }
     });  
-    
 
+
+    /* -------------------------------- */
+    /* --------  SCHMOOZE PAGE  ------- */
+    /* -------------------------------- */
+    
+    $('#schmooze-page #early-access-button').click(function(){
+
+        $('html, body').animate({ scrollTop : 
+            $('#coming-soon').offset().top }, 1400)
+    });
 });
 
 

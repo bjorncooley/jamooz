@@ -5,7 +5,7 @@ ul {
 li {
   list-style: none; }
 
-button:hover {
+button:hover, button:focus {
   color: initial; }
 
 .hide {
