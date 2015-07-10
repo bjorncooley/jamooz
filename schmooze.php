@@ -34,10 +34,15 @@
                     <h3 class="small">Jamooz technology, curated. Phone, messaging, voicemail,
                     &amp; file sharing redesigned for personal use &amp; team collaboration.</h3>
                     <h3 class="medium-blue padding-top-50 padding-bottom-50">Coming soon.</h3>
-                    <form action="" method="post" class="inline-block">
-                        <input type="text" placeholder="Email address">
-                        <button class="bright-green-background white uppercase">Get Early Access</button>
+                    <form class="inline-block">
+                        <input type="email" placeholder="Email address">
+                        <button class="bright-green-background white uppercase submit-schmooze-form">Get Early Access</button>
                     </form>
+                    <div class="bright-green-background white schmooze-confirmation">
+                        <p>Thanks for signing up for early access!</p>
+                        <p>We will be in touch with you via email with next
+                        steps. Thanks!</p>
+                    </div>
                 </div>
                 <div class="large-5 large-offset-1 columns">
                     <div class="mobile-screens">
@@ -127,12 +132,17 @@
             <div id="coming-soon" class="bright-green-background white text-center">
                 <h3>Coming soon in 2015.</h3>
                 <h5 class="padding-bottom-50">Get early access today. Fill in to reserve a limited spot.</h5>
-                <input type="text" placeholder="Email address">
-                <div class="padding-top-50">
-                    <button class="red-orange-background white uppercase">
+                <div class="bright-green-background schmooze-confirmation">
+                    <p>Thanks for signing up for early access!</p>
+                    <p>We will be in touch with you via email with next
+                    steps. Thanks!</p>
+                </div>
+                <form action="">
+                    <input type="email" placeholder="Email address">
+                    <button class="red-orange-background white uppercase margin-top-50 submit-schmooze-form">
                         Get Early Access Today
                     </button>
-                </div>
+                </form>
                 
                 <p class="tiny white">a customer success teammate will be in touch</p>
             </div>

@@ -1163,6 +1163,14 @@ button.yellow-background {
         margin-right: auto;
     }
 
+    .schmooze-confirmation {
+
+        p {
+
+            max-width: none;
+        }
+    }
+
     h3.small {
 
         font-size: 1.5em;
@@ -1200,6 +1208,14 @@ button.yellow-background {
 
                 max-width: 310px;
             }
+        }
+
+        div.bright-green-background {
+
+            padding: 30px 30px 15px;
+            position: relative;
+            top: -19px;
+            display: none;
         }
 
         .mobile-screens {
@@ -1290,6 +1306,7 @@ button.yellow-background {
     #coming-soon {
 
         padding: 100px 0 80px;
+        position: relative;
 
         input {
             
@@ -1304,6 +1321,20 @@ button.yellow-background {
             max-width: 90%;
             padding: 15px 0;
             @include border_radius(5px);
+        }
+
+        .schmooze-confirmation {
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 162px;
+            display: none;
+
+            p {
+
+                margin-bottom: 0;
+            }
         }
     }
 

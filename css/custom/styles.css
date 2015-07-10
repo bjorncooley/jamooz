@@ -360,6 +360,9 @@ p.tiny {
 .margin-top-15 {
   margin-top: 15px; }
 
+.margin-top-50 {
+  margin-top: 50px; }
+
 body {
   position: relative;
   display: none; }
@@ -995,6 +998,8 @@ button.yellow-background {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto; }
+#schmooze-page .schmooze-confirmation p {
+  max-width: none; }
 #schmooze-page h3.small {
   font-size: 1.5em; }
 #schmooze-page h3 {
@@ -1011,6 +1016,11 @@ button.yellow-background {
     height: 50px; }
   #schmooze-page #schmooze-intro form input {
     max-width: 310px; }
+  #schmooze-page #schmooze-intro div.bright-green-background {
+    padding: 30px 30px 15px;
+    position: relative;
+    top: -19px;
+    display: none; }
   #schmooze-page #schmooze-intro .mobile-screens {
     position: relative; }
     #schmooze-page #schmooze-intro .mobile-screens .image-container {
@@ -1058,7 +1068,8 @@ button.yellow-background {
     margin: 0 auto;
     padding: 15px 0; }
 #schmooze-page #coming-soon {
-  padding: 100px 0 80px; }
+  padding: 100px 0 80px;
+  position: relative; }
   #schmooze-page #coming-soon input {
     width: 90%;
     max-width: 500px;
@@ -1069,6 +1080,14 @@ button.yellow-background {
     padding: 15px 0;
     border-radius: 5px;
     -moz-border-radius: 5px; }
+  #schmooze-page #coming-soon .schmooze-confirmation {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 162px;
+    display: none; }
+    #schmooze-page #coming-soon .schmooze-confirmation p {
+      margin-bottom: 0; }
 #schmooze-page #support {
   min-height: 512px;
   padding-top: 100px;
