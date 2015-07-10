@@ -710,6 +710,21 @@ button.yellow-background {
             margin-right: auto;
         }
 
+        button {
+
+            &:hover {
+
+                @include animate_background_color(white);
+
+                div.white {
+
+                    @include animate_color($mint);
+                }
+            }
+
+
+        }
+
     }
 
     #schmooze {

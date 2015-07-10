@@ -769,6 +769,20 @@ button.yellow-background {
     padding: 20px 60px;
     margin-left: auto;
     margin-right: auto; }
+  #home #support button:hover {
+    background-color: white;
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear; }
+    #home #support button:hover div.white {
+      color: #91cc8b;
+      -webkit-transition: color 200ms linear;
+      -moz-transition: color 200ms linear;
+      -o-transition: color 200ms linear;
+      -ms-transition: color 200ms linear;
+      transition: color 200ms linear; }
 #home #schmooze {
   padding: 80px 0 60px; }
   #home #schmooze img {
