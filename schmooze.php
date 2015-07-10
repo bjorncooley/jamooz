@@ -99,16 +99,16 @@
             </div>
             <div class="row">
                 <div class="large-12 columns text-center">
-                    <img src="img/schmooze/graphs.png" alt="" class="padding-top-80 padding-bottom-50">
-                    <h3 class="small mint padding-bottom-30">Smart analytics, intuitive design.</h3>
+                    <h3 class="small mint padding-top-50 padding-bottom-50">Smart analytics, intuitive design.</h3>
+                    <img src="img/schmooze/graphs.png" alt="" class="padding-bottom-50">
                     <p>Jamooz takes analytics to the next step with actions. See where all of your team's efforts are being put. Then share the stats with your team to
                     highlight areas of improvement.</p>
                 </div>
             </div>  
             <div class="row">
                 <div class="large-12 columns text-center">
-                    <img src="img/schmooze/timeline.png" alt="" class="padding-top-80 padding-bottom-50">
-                    <h3 class="small mint padding-bottom-30">Archive conversations, easy searchability</h3>
+                    <h3 class="small mint padding-top-50 padding-bottom-50">Archive conversations, easy searchability</h3>
+                    <img src="img/schmooze/timeline.png" alt="" class="padding-bottom-50">                    
                     <p class="padding-bottom-80">Jamooz takes analytics to the next step with actions. See where all of your team's efforts are being put. Then share the stats with your team to
                     highlight areas of improvement.</p>
                 </div>
