@@ -849,6 +849,25 @@ button.yellow-background {
             display: inline-block;
         }
     }
+
+    #schmooze-intro {
+
+        .mobile-screens {
+
+            .image-container {
+
+                min-height: 805px;
+
+                img {
+
+                    width: auto;
+                    max-width: none;
+                }
+            }
+
+            
+        }
+    }
 }
 
 /* -------------- */

@@ -28,7 +28,7 @@
             </div>
 
             <div id="schmooze-intro" class="row hero">
-                <div class="large-8 columns">
+                <div class="large-6 columns">
                     <h1 class="mint padding-top-50 padding-bottom-50 no-text-transform large">Schmooze by Jamooz</h1>
                     <h3 class="small">Jamooz technology, curated. Phone, messaging, voicemail,
                     &amp; file sharing redesigned for personal use &amp; team collaboration.</h3>
@@ -38,12 +38,21 @@
                         <button class="bright-green-background white uppercase">Get Early Access</button>
                     </form>
                 </div>
-                <div class="large-4 columns">
-                    <img src="img/schmooze/phone.png" alt="">
-                    <p class="tiny text-center">Native Apps for Android &amp; iOS</p>
+                <div class="large-5 large-offset-1 columns">
+                    <div class="mobile-screens">
+                        <div class="image-container">
+                            <img src="img/schmooze/iphone.png" alt="Image of iPhone">
+                            <img src="img/schmooze/android.png" alt="Image of Android phone">
+                            <video autoplay loop class="show-for-large-up">
+                              <source src="video/schmooze_540.mp4" type="video/mp4">
+                            </video>
+                            <p class="tiny text-center">Native Apps for Android &amp; iOS</p>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div class="row" id="hero-down-arrow">
-                    <div class="large-12 columns text-center padding-top-80">
+                    <div class="large-12 columns text-center padding-top-120">
                         <p class="small uppercase">Learn More</p>
                         <img src="img/shared/down_arrow_black.png" alt="">
                     </div>

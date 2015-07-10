@@ -353,6 +353,9 @@ p.tiny {
 .padding-bottom-80 {
   padding-bottom: 80px; }
 
+.padding-top-120 {
+  padding-top: 120px; }
+
 .margin-top-15 {
   margin-top: 15px; }
 
@@ -987,6 +990,44 @@ button.yellow-background {
     display: block;
     margin-left: auto;
     margin-right: auto; }
+#schmooze-page #schmooze-intro {
+  padding-top: 80px; }
+  #schmooze-page #schmooze-intro h3 {
+    max-width: 410px; }
+  #schmooze-page #schmooze-intro form input, #schmooze-page #schmooze-intro form button {
+    height: 50px; }
+  #schmooze-page #schmooze-intro form input {
+    max-width: 310px; }
+  #schmooze-page #schmooze-intro .mobile-screens {
+    position: relative; }
+    #schmooze-page #schmooze-intro .mobile-screens .image-container {
+      min-height: 610px;
+      display: block;
+      margin: 30px auto 0;
+      width: 30%;
+      min-width: 320px;
+      position: relative; }
+    #schmooze-page #schmooze-intro .mobile-screens img {
+      position: absolute;
+      width: 70%; }
+      #schmooze-page #schmooze-intro .mobile-screens img:nth-of-type(1) {
+        top: 0;
+        right: 0;
+        max-width: 250px; }
+      #schmooze-page #schmooze-intro .mobile-screens img:nth-of-type(2) {
+        top: 70px;
+        right: 70px;
+        width: 75%;
+        max-width: 270px; }
+    #schmooze-page #schmooze-intro .mobile-screens video {
+      position: absolute;
+      top: 128px;
+      right: 86px; }
+    #schmooze-page #schmooze-intro .mobile-screens p {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0; }
 #schmooze-page #communications h2 {
   max-width: 500px;
   margin: 0 auto;
@@ -1028,15 +1069,6 @@ button.yellow-background {
     margin-right: auto; }
 #schmooze-page #footer img {
   padding: 60px 0 20px; }
-
-#schmooze-intro {
-  padding-top: 80px; }
-  #schmooze-intro h3 {
-    max-width: 410px; }
-  #schmooze-intro form input, #schmooze-intro form button {
-    height: 50px; }
-  #schmooze-intro form input {
-    max-width: 310px; }
 
 /* --------------- */
 /* --- SUCCESS --- */
@@ -1564,6 +1596,11 @@ button.yellow-background {
   /* --------------------- */
   #schmooze-page #schmooze-nav img {
     display: inline-block; }
+  #schmooze-page #schmooze-intro .mobile-screens .image-container {
+    min-height: 805px; }
+    #schmooze-page #schmooze-intro .mobile-screens .image-container img {
+      width: auto;
+      max-width: none; }
 
   /* -------------- */
   /* --- FOOTER --- */
