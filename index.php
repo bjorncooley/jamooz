@@ -30,18 +30,15 @@
 ?>
 <?php include('includes/header.php'); ?>
 <div id="home">
-    <div class="row show-for-large-up" id="page-brand">
-        <div class="large-12 columns text-center">
-            <img src="img/shared/jamooz_logo_large.png" alt="Large Jamooz logo" class="large-centered">
-        </div>
-    </div>
     <div id="hero" class="hero">
+        <div class="row show-for-large-up" id="page-brand">
+            <div class="large-12 columns text-center">
+                <img src="img/shared/jamooz_logo_large.png" alt="Large Jamooz logo" class="large-centered">
+            </div>
+        </div>
         <div class="text-center">
             <h1 class="large">Ease Into a Better Communication Experience For
             Your Office Staff</h1>
-        </div>
-        <div class="text-center">
-            <img src="img/home/hero.jpg" alt="">
         </div>
         <div class="text-center" id="hero-text">
             <a href="./get-started.php">

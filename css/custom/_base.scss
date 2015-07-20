@@ -646,8 +646,11 @@ button.yellow-background {
 
     #hero {
 
-        h1 {
+        background: url(../../img/home/hero.png) no-repeat center;
 
+        h1 {
+            
+            padding: 50px 0 30px;
             font-size: 2.2em;
         }
 

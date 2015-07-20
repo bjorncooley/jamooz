@@ -150,6 +150,9 @@ button.yellow-background {
 
 #home {
 
+    position: relative;
+    top: -80px;
+
     video {
 
         max-width: 100%;
@@ -158,6 +161,7 @@ button.yellow-background {
     #page-brand {
 
         margin-top: -80px;
+        margin-bottom: 40px;
 
         img {
 
@@ -168,10 +172,16 @@ button.yellow-background {
 
     #hero {
 
-        margin-bottom: -80px;
         padding-top: 50px;
 
+        h1 {
+
+            padding: 0;
+        }
+
         #hero-text {
+
+            margin-top: 150px;
 
             button {
 
@@ -179,17 +189,22 @@ button.yellow-background {
                 padding: 20px 30px;
             }
 
-            &>a, &>h6 {
+            // &>a, &>h6 {
 
-                position: relative;
-                top: -160px;
-            }
+            //     position: relative;
+            //     top: -160px;
+            // }
 
-            #hero-down-arrow {
+            // #hero-down-arrow {
 
-                position: relative;
-                top: -100px;
-            }
+            //     position: relative;
+            //     top: -100px;
+            // }
+        }
+
+        #hero-down-arrow {
+
+            margin-top: 60px;
         }
     }
 
